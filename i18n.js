@@ -1,6 +1,6 @@
 const translations = {
     en: {
-        "nav.badge": "Pivoted in 2014",
+        "nav.badge": "Leverage Singapore",
         "nav.mission": "Mission",
         "nav.core": "Core",
         "nav.ecosystem": "Ecosystem",
@@ -52,7 +52,7 @@ const translations = {
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. All Rights Reserved."
     },
     zh: {
-        "nav.badge": "2014年转型",
+        "nav.badge": "用好新加坡",
         "nav.mission": "使命",
         "nav.core": "核心",
         "nav.ecosystem": "生态",
@@ -104,7 +104,7 @@ const translations = {
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. All Rights Reserved."
     },
     es: {
-        "nav.badge": "Pivotado en 2014",
+        "nav.badge": "Aprovechar Singapur",
         "nav.mission": "Misión",
         "nav.core": "Núcleo",
         "nav.ecosystem": "Ecosistema",
@@ -156,7 +156,7 @@ const translations = {
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. Todos los derechos reservados."
     },
     de: {
-        "nav.badge": "Ausgerichtet in 2014",
+        "nav.badge": "Singapur Nutzen",
         "nav.mission": "Mission",
         "nav.core": "Kern",
         "nav.ecosystem": "Ökosystem",
@@ -208,7 +208,7 @@ const translations = {
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. Alle Rechte vorbehalten."
     },
     it: {
-        "nav.badge": "Pivotato nel 2014",
+        "nav.badge": "Sfruttare Singapore",
         "nav.mission": "Missione",
         "nav.core": "Nucleo",
         "nav.ecosystem": "Ecosistema",
