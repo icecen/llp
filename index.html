@@ -81,7 +81,7 @@
             </div>
 
             <div class="text-center reveal-up" style="margin-top: 5rem;">
-                <a href="booking-app/index.html" class="highlight-bg course-booking-btn" style="padding: 1rem 3rem; font-size: 1rem; letter-spacing: 0.15em; display: inline-block; font-family: var(--font-english); font-weight: 600; text-transform: uppercase; border-radius: 4px; transition: var(--transition-smooth);" data-i18n="course.cta">立即预约体验课程</a>
+                <a href="javascript:void(0);" id="open-booking-btn" class="highlight-bg course-booking-btn" style="padding: 1rem 3rem; font-size: 1rem; letter-spacing: 0.15em; display: inline-block; font-family: var(--font-english); font-weight: 600; text-transform: uppercase; border-radius: 4px; transition: var(--transition-smooth);" data-i18n="course.cta">立即预约体验课程</a>
             </div>
         </div>
     </section>
@@ -240,6 +240,23 @@
             <p data-i18n="footer.copyright">&copy; 2026 BORVAN SINGAPORE. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal-content" style="border-radius: 8px;">
+            <button class="modal-close" id="close-booking-modal">&times;</button>
+            <h3 class="modal-header" style="text-align: center; margin-top: 1rem;" data-i18n="booking.modal.title">预约体验课程</h3>
+            <div style="font-size: 1.1rem; color: var(--color-text-secondary); margin-bottom: 2rem; line-height: 1.8; text-align: center;">
+                <p data-i18n="booking.modal.desc" style="margin-bottom: 1rem;">请拨打电话或添加联系人预约您的体验课程：</p>
+                <p style="font-size: 2rem; color: var(--color-accent); font-weight: 600; margin: 1.5rem 0; font-family: var(--font-english); letter-spacing: 0.05em;">
+                    <a href="tel:+6587327804" style="color: inherit; text-decoration: underline;">+65 87327804</a>
+                </p>
+            </div>
+            <div style="text-align: center;">
+                <a href="tel:+6587327804" class="highlight-bg" style="padding: 0.8rem 2rem; display: inline-block; border-radius: 4px; font-weight: 500; text-transform: uppercase;" data-i18n="booking.modal.call">立即拨打电话</a>
+            </div>
+        </div>
+    </div>
 
     <script src="i18n.js"></script>
     <script src="script.js?v=2"></script>

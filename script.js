@@ -76,4 +76,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    // Booking modal open/close logic
+    const openBookingBtn = document.getElementById('open-booking-btn');
+    const bookingModal = document.getElementById('booking-modal');
+    const closeBookingBtn = document.getElementById('close-booking-modal');
+
+    if (openBookingBtn && bookingModal && closeBookingBtn) {
+        openBookingBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            bookingModal.classList.add('active');
+        });
+
+        closeBookingBtn.addEventListener('click', () => {
+            bookingModal.classList.remove('active');
+        });
+
+        // Close on clicking overlay background
+        bookingModal.addEventListener('click', (e) => {
+            if (e.target === bookingModal) {
+                bookingModal.classList.remove('active');
+            }
+        });
+    }
 });
