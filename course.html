@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商务中文价值表达课程 | BORVAN SINGAPORE</title>
+    <meta name="description" content="连接东南亚与中国，让品牌的发展带来更多的美好。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+SC:wght@300;400;600;900&family=Inter:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
+    <style>
+        .service-detail-header {
+            padding: 15vh 5vw 8vh 5vw;
+            background-color: var(--color-dark-bg);
+            color: var(--color-dark-text);
+            text-align: center;
+        }
+        .service-detail-content {
+            padding: 8vh 5vw 12vh 5vw;
+            background-color: var(--color-surface);
+        }
+        .detail-card {
+            background-color: #FFF;
+            padding: 4rem;
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.04);
+            border-top: 4px solid var(--color-accent);
+        }
+        .detail-item {
+            margin-bottom: 3rem;
+        }
+        .detail-item:last-child {
+            margin-bottom: 0;
+        }
+        .detail-title {
+            font-size: 1.5rem;
+            color: var(--color-text-primary);
+            margin-bottom: 1rem;
+            font-family: var(--font-heading);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .detail-title::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 2px;
+            background-color: var(--color-accent);
+        }
+        .detail-desc {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            padding-left: calc(15px + 1rem);
+        }
+        .price-tag-custom {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            border-top: 1px solid rgba(0,0,0,0.05);
+            margin-top: 4rem;
+            padding-top: 3rem;
+            text-align: center;
+            line-height: 1.8;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: var(--transition-smooth);
+            text-align: center;
+            width: 100%;
+        }
+        .back-link:hover {
+            color: var(--color-accent);
+        }
+        @media (max-width: 768px) {
+            .detail-card { padding: 2rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="architect-nav scrolled">
+        <div class="nav-branding">
+            <div class="nav-logo">BORVAN SINGAPORE</div>
+            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.65rem; padding: 0.15rem 0.4rem; text-transform: uppercase;">用好新加坡</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#course">返回主页 BACK</a></li>
+        </ul>
+    </nav>
+
+    <header class="service-detail-header">
+        <h1 class="section-title text-accent" style="margin-bottom: 1rem;">商务中文价值表达课程</h1>
+        <div class="title-line center mx-auto"></div>
+        <p class="section-desc" style="margin-bottom: 0;">上课地址：新加坡 The Adelphi大厦 | 课时：9课时 | 价格：1800新币</p>
+    </header>
+
+    <section class="service-detail-content">
+        <div class="container">
+            <div class="detail-card">
+                <div class="detail-item">
+                    <h3 class="detail-title">发现价值</h3>
+                    <p class="detail-desc">提炼品牌核心商业价值，并在商务语境下进行精准的中文表达与文化包装。</p>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail-title">放大价值</h3>
+                    <p class="detail-desc">掌握面向大中华及东南亚市场的商务演讲与路演技巧，建立无可撼动的信任感。</p>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail-title">交易价值</h3>
+                    <p class="detail-desc">学习跨文化谈判技巧与合作艺术，让品牌资产转化为源源不断的商业成交与生态合力。</p>
+                </div>
+                
+                <div class="price-tag-custom">
+                    <p style="margin-bottom: 1rem;">请拨打电话或添加联系人预约您的体验课程：</p>
+                    <p style="font-size: 2rem; color: var(--color-accent); font-weight: 600; margin: 1.5rem 0; font-family: var(--font-english); letter-spacing: 0.05em;">
+                        <a href="tel:+6587327804" style="color: inherit; text-decoration: underline;">+65 87327804</a>
+                    </p>
+                    <div style="margin-top: 1.5rem;">
+                        <a href="tel:+6587327804" class="highlight-bg" style="padding: 0.8rem 2rem; display: inline-block; border-radius: 4px; font-weight: 500; text-transform: uppercase; color: #FFF; font-size: 0.95rem;">立即拨打电话</a>
+                    </div>
+                </div>
+            </div>
+            <a href="index.html" class="back-link">← 返 回 主 页</a>
+        </div>
+    </section>
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>

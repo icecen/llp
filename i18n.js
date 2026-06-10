@@ -54,9 +54,7 @@ const translations = {
         "footer.locations": "Locations",
         "footer.social": "Social",
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. All Rights Reserved.",
-        "booking.modal.title": "Book a Trial Lesson",
-        "booking.modal.desc": "Please call or add contact to book your trial lesson:",
-        "booking.modal.call": "Call Now"
+        "course.view_details": "View Course Details Now"
     },
     zh: {
         "nav.badge": "用好新加坡",
@@ -113,9 +111,7 @@ const translations = {
         "footer.locations": "Locations",
         "footer.social": "Social",
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. All Rights Reserved.",
-        "booking.modal.title": "预约体验课程",
-        "booking.modal.desc": "请拨打电话或添加联系人预约您的体验课程：",
-        "booking.modal.call": "立即拨打电话"
+        "course.view_details": "立即了解课程详情"
     },
     es: {
         "nav.badge": "Aprovechar Singapur",
@@ -172,9 +168,7 @@ const translations = {
         "footer.locations": "Ubicaciones",
         "footer.social": "Social",
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. Todos los derechos reservados.",
-        "booking.modal.title": "Reservar una lección de prueba",
-        "booking.modal.desc": "Por favor llame o agregue contacto para reservar su lección de prueba:",
-        "booking.modal.call": "Llamar ahora"
+        "course.view_details": "Ver detalles del curso ahora"
     },
     de: {
         "nav.badge": "Singapur Nutzen",
@@ -231,9 +225,7 @@ const translations = {
         "footer.locations": "Standorte",
         "footer.social": "Sozial",
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. Alle Rechte vorbehalten.",
-        "booking.modal.title": "Probestunde buchen",
-        "booking.modal.desc": "Bitte rufen Sie an oder fügen Sie einen Kontakt hinzu, um Ihre Probestunde zu buchen:",
-        "booking.modal.call": "Jetzt anrufen"
+        "course.view_details": "Jetzt Kursdetails anzeigen"
     },
     it: {
         "nav.badge": "Sfruttare Singapore",
@@ -290,9 +282,7 @@ const translations = {
         "footer.locations": "Sedi",
         "footer.social": "Social",
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. Tutti i diritti riservati.",
-        "booking.modal.title": "Prenota una lezione di prova",
-        "booking.modal.desc": "Si prega di chiamare o aggiungere un contatto per prenotare la lezione di prova:",
-        "booking.modal.call": "Chiama ora"
+        "course.view_details": "Visualizza i dettagli del corso ora"
     }
 };
 
