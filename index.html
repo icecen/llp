@@ -22,21 +22,21 @@
             <div class="nav-badge"
                 style="font-family: var(--font-english); font-size: 0.65rem; padding: 0.15rem 0.4rem; text-transform: uppercase;" data-i18n="nav.badge">
                 用好新加坡</div>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#mission" data-i18n="nav.mission">使命</a></li>
-            <li><a href="#services" data-i18n="nav.core">核心</a></li>
-            <li><a href="#ecosystem" data-i18n="nav.ecosystem">生态</a></li>
-            <li><a href="#contact" data-i18n="nav.contact">联络</a></li>
-            <li class="lang-selector" style="display: flex; align-items: center;">
-                <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)" style="background: transparent; color: inherit; border: 1px solid var(--color-accent); border-radius: 4px; padding: 2px 5px; font-family: var(--font-english); font-size: 0.75rem; text-transform: uppercase; cursor: pointer; outline: none;">
-                    <option value="en" selected style="color: black;">English</option>
-                    <option value="zh" style="color: black;">中文</option>
+            <div class="lang-selector" style="display: flex; align-items: center; margin-top: 0.25rem;">
+                <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)" style="background: transparent; color: inherit; border: 1px solid var(--color-accent); border-radius: 4px; padding: 1px 4px; font-family: var(--font-english); font-size: 0.65rem; text-transform: uppercase; cursor: pointer; outline: none;">
+                    <option value="en" style="color: black;">English</option>
+                    <option value="zh" selected style="color: black;">中文</option>
                     <option value="es" style="color: black;">Español</option>
                     <option value="de" style="color: black;">Deutsch</option>
                     <option value="it" style="color: black;">Italiano</option>
                 </select>
-            </li>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#course" data-i18n="nav.mission">课程</a></li>
+            <li><a href="#services" data-i18n="nav.core">核心</a></li>
+            <li><a href="#ecosystem" data-i18n="nav.ecosystem">生态</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">联络</a></li>
         </ul>
     </nav>
 
@@ -52,7 +52,7 @@
                 </div>
             </div>
             <p class="hero-subtitle reveal-text delay-2" data-i18n="hero.subtitle">连接东南亚与中国，每一次表达都与价值相关。</p>
-            <a href="#mission" class="scroll-down reveal-text delay-3" data-i18n="hero.cta">用AI智能体探索您的品牌生态圈 <span class="arrow">↓</span></a>
+            <a href="#course" class="scroll-down reveal-text delay-3" data-i18n="hero.cta">探索商务中文价值表达课程 <span class="arrow">↓</span></a>
         </div>
     </header>
 
@@ -66,20 +66,27 @@
             </div>
             
             <div class="service-grid" style="margin-top: 4rem;">
-                <div class="service-card reveal-up" style="padding: 3rem 2rem;">
-                    <h3 class="card-title text-center" style="font-size: 1.8rem; margin: 0;" data-i18n="hero.discover">发现价值</h3>
+                <div class="service-card reveal-up" style="padding: 3rem 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h3 class="card-title text-center" style="font-size: 1.5rem; margin-bottom: 1rem;" data-i18n="hero.discover">发现价值</h3>
+                    <p class="card-desc" style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary);" data-i18n="course.discover.desc">提炼品牌核心商业价值，并在商务语境下进行精准的中文表达与文化包装。</p>
                 </div>
-                <div class="service-card reveal-up delay-1" style="padding: 3rem 2rem;">
-                    <h3 class="card-title text-center text-accent" style="font-size: 1.8rem; margin: 0;" data-i18n="hero.amplify">放大价值</h3>
+                <div class="service-card reveal-up delay-1" style="padding: 3rem 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h3 class="card-title text-center text-accent" style="font-size: 1.5rem; margin-bottom: 1rem;" data-i18n="hero.amplify">放大价值</h3>
+                    <p class="card-desc" style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary);" data-i18n="course.amplify.desc">掌握面向大中华及东南亚市场的商务演讲与路演技巧，建立无可撼动的信任感。</p>
                 </div>
-                <div class="service-card reveal-up delay-2" style="padding: 3rem 2rem;">
-                    <h3 class="card-title text-center" style="font-size: 1.8rem; margin: 0;" data-i18n="hero.trade">交易价值</h3>
+                <div class="service-card reveal-up delay-2" style="padding: 3rem 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h3 class="card-title text-center" style="font-size: 1.5rem; margin-bottom: 1rem;" data-i18n="hero.trade">交易价值</h3>
+                    <p class="card-desc" style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary);" data-i18n="course.trade.desc">学习跨文化谈判技巧与合作艺术，让品牌资产转化为源源不断的商业成交与生态合力。</p>
                 </div>
+            </div>
+
+            <div class="text-center reveal-up" style="margin-top: 5rem;">
+                <a href="booking-app/index.html" class="highlight-bg course-booking-btn" style="padding: 1rem 3rem; font-size: 1rem; letter-spacing: 0.15em; display: inline-block; font-family: var(--font-english); font-weight: 600; text-transform: uppercase; border-radius: 4px; transition: var(--transition-smooth);" data-i18n="course.cta">立即预约体验课程</a>
             </div>
         </div>
     </section>
 
-    <section class="section mission" id="mission" style="background-color: var(--color-surface);">
+    <section class="section mission premium-upgrade" id="mission">
         <div class="container">
             <div class="text-center reveal-up">
                 <span style="font-family: var(--font-english); color: var(--color-accent); letter-spacing: 0.15em; font-size: 0.85rem; text-transform: uppercase;" data-i18n="product2.label">服务产品二</span>
@@ -214,7 +221,7 @@
             <div class="contact-info-grid">
                 <div class="contact-item">
                     <h4 class="contact-label" data-i18n="footer.email">Email</h4>
-                    <a href="mailto:hello@xiaomicafe.net" class="contact-value">hello@xiaomicafe.net</a>
+                    <a href="mailto:iencen@yahoo.com" class="contact-value">iencen@yahoo.com</a>
                 </div>
                 <div class="contact-item">
                     <h4 class="contact-label" data-i18n="footer.locations">Locations</h4>

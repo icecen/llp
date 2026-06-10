@@ -955,3 +955,71 @@ a.contact-value:hover {
         margin: 0 auto;
     }
 }
+
+/* Premium Upgrade (Dark Luxury Theme) */
+.premium-upgrade {
+    background-color: var(--color-dark-bg) !important;
+    color: var(--color-dark-text) !important;
+}
+
+.premium-upgrade .section-title {
+    color: var(--color-dark-text);
+}
+
+.premium-upgrade .section-desc {
+    color: #CCCCCC !important;
+}
+
+.premium-upgrade .solution-item {
+    background-color: var(--color-dark-surface) !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3) !important;
+    border-top: 3px solid transparent;
+}
+
+.premium-upgrade .solution-item:hover {
+    border-top-color: var(--color-accent) !important;
+    background-color: #222222 !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6) !important;
+}
+
+.premium-upgrade .solution-title {
+    color: var(--color-dark-text) !important;
+}
+
+/* Elegant Language Selector Dropdown Customization */
+.lang-selector select {
+    border: 1px solid var(--color-accent) !important;
+    border-radius: 4px;
+    padding: 2px 6px;
+    background: transparent;
+    color: inherit;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.lang-selector select:hover {
+    border-color: #FFFFFF !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.architect-nav.scrolled .lang-selector select:hover {
+    border-color: var(--color-text-primary) !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Course Booking Button Interactive Style */
+.course-booking-btn {
+    box-shadow: 0 4px 15px rgba(178, 149, 98, 0.2);
+    border: 1px solid var(--color-accent);
+}
+
+.course-booking-btn:hover {
+    background-color: #FFFFFF !important;
+    color: var(--color-text-primary) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(178, 149, 98, 0.4);
+}
+
