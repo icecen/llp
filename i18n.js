@@ -54,7 +54,16 @@ const translations = {
         "footer.locations": "Locations",
         "footer.social": "Social",
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. All Rights Reserved.",
-        "course.view_details": "View Course Details Now"
+        "course.view_details": "View Course Details Now",
+        "course.section_label": "Club Courses",
+        "course.section_title": "Professional Business Value Expression Series",
+        "product1_zh.label": "Business Chinese Series",
+        "product1_zh.title": "Business Chinese Value Expression Course",
+        "product1_zh.desc": "Location: The Adelphi, Singapore<br>Duration: 9 Lessons<br>Price: 1800 SGD",
+        "product1_en.label": "Business English Series",
+        "product1_en.title": "Business English Professional Club Course<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
+        "product1_en.desc": "Location: The Adelphi, Singapore<br>Duration: 20 Lessons<br>Price: 3000 SGD",
+        "course.book_now": "Call Now to Book"
     },
     zh: {
         "nav.badge": "用好新加坡",
@@ -111,7 +120,16 @@ const translations = {
         "footer.locations": "Locations",
         "footer.social": "Social",
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. All Rights Reserved.",
-        "course.view_details": "立即了解课程详情"
+        "course.view_details": "立即了解课程详情",
+        "course.section_label": "精品俱乐部课程",
+        "course.section_title": "专业商务价值表达系列",
+        "product1_zh.label": "商务中文系列",
+        "product1_zh.title": "商务中文价值表达课程",
+        "product1_zh.desc": "上课地址：新加坡 The Adelphi大厦<br>课时：9课时<br>价格：1800新币",
+        "product1_en.label": "商务英文系列",
+        "product1_en.title": "商务英文专业俱乐部课程<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
+        "product1_en.desc": "上课地址：新加坡 The Adelphi大厦<br>课时：20课时<br>价格：3000新币",
+        "course.book_now": "立即拨号预约体验"
     },
     es: {
         "nav.badge": "Aprovechar Singapur",
@@ -168,7 +186,16 @@ const translations = {
         "footer.locations": "Ubicaciones",
         "footer.social": "Social",
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. Todos los derechos reservados.",
-        "course.view_details": "Ver detalles del curso ahora"
+        "course.view_details": "Ver detalles del curso ahora",
+        "course.section_label": "Cursos del Club",
+        "course.section_title": "Serie de Expresión de Valor de Negocios Profesionales",
+        "product1_zh.label": "Serie de Chino de Negocios",
+        "product1_zh.title": "Curso de Expresión de Valor en Chino de Negocios",
+        "product1_zh.desc": "Ubicación: The Adelphi, Singapur<br>Duración: 9 Lecciones<br>Precio: 1800 SGD",
+        "product1_en.label": "Serie de Inglés de Negocios",
+        "product1_en.title": "Curso de Club Profesional de Inglés de Negocios<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
+        "product1_en.desc": "Ubicación: The Adelphi, Singapur<br>Duración: 20 Lecciones<br>Precio: 3000 SGD",
+        "course.book_now": "Llamar ahora para reservar"
     },
     de: {
         "nav.badge": "Singapur Nutzen",
@@ -225,7 +252,16 @@ const translations = {
         "footer.locations": "Standorte",
         "footer.social": "Sozial",
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. Alle Rechte vorbehalten.",
-        "course.view_details": "Jetzt Kursdetails anzeigen"
+        "course.view_details": "Jetzt Kursdetails anzeigen",
+        "course.section_label": "Club-Kurse",
+        "course.section_title": "Professionelle Business-Werteausdruck-Serie",
+        "product1_zh.label": "Business-Chinesisch Serie",
+        "product1_zh.title": "Business-Chinesisch Werteausdruck-Kurs",
+        "product1_zh.desc": "Ort: The Adelphi, Singapur<br>Dauer: 9 Lektionen<br>Preis: 1800 SGD",
+        "product1_en.label": "Business-Englisch Serie",
+        "product1_en.title": "Business-Englisch Professional Club Kurs<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
+        "product1_en.desc": "Ort: The Adelphi, Singapur<br>Dauer: 20 Lektionen<br>Preis: 3000 SGD",
+        "course.book_now": "Jetzt anrufen zur Reservierung"
     },
     it: {
         "nav.badge": "Sfruttare Singapore",
@@ -282,7 +318,16 @@ const translations = {
         "footer.locations": "Sedi",
         "footer.social": "Social",
         "footer.copyright": "&copy; 2026 BORVAN SINGAPORE. Tutti i diritti riservati.",
-        "course.view_details": "Visualizza i dettagli del corso ora"
+        "course.view_details": "Visualizza i dettagli del corso ora",
+        "course.section_label": "Corsi del Club",
+        "course.section_title": "Serie Professionale di Espressione del Valore Commerciale",
+        "product1_zh.label": "Serie di Cinese Commerciale",
+        "product1_zh.title": "Corso di Espressione del Valore in Cinese Commerciale",
+        "product1_zh.desc": "Luogo: The Adelphi, Singapore<br>Durata: 9 Lezioni<br>Prezzo: 1800 SGD",
+        "product1_en.label": "Serie di Inglese Commerciale",
+        "product1_en.title": "Corso del Club Professionale di Inglese Commerciale<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
+        "product1_en.desc": "Luogo: The Adelphi, Singapore<br>Durata: 20 Lezioni<br>Prezzo: 3000 SGD",
+        "course.book_now": "Chiama ora per prenotare"
     }
 };
 
