@@ -20,14 +20,23 @@
         <div class="nav-branding">
             <div class="nav-logo">BORVAN SINGAPORE</div>
             <div class="nav-badge"
-                style="font-family: var(--font-english); font-size: 0.65rem; padding: 0.15rem 0.4rem; text-transform: uppercase;">
+                style="font-family: var(--font-english); font-size: 0.65rem; padding: 0.15rem 0.4rem; text-transform: uppercase;" data-i18n="nav.badge">
                 pivoted in 2014</div>
         </div>
         <ul class="nav-links">
-            <li><a href="#mission">使命 Mission</a></li>
-            <li><a href="#services">核心 Core</a></li>
-            <li><a href="#ecosystem">生态 Ecosystem</a></li>
-            <li><a href="#contact">联络 Contact</a></li>
+            <li><a href="#mission" data-i18n="nav.mission">使命</a></li>
+            <li><a href="#services" data-i18n="nav.core">核心</a></li>
+            <li><a href="#ecosystem" data-i18n="nav.ecosystem">生态</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">联络</a></li>
+            <li class="lang-selector" style="display: flex; align-items: center;">
+                <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)" style="background: transparent; color: inherit; border: 1px solid var(--color-accent); border-radius: 4px; padding: 2px 5px; font-family: var(--font-english); font-size: 0.75rem; text-transform: uppercase; cursor: pointer; outline: none;">
+                    <option value="en" selected style="color: black;">English</option>
+                    <option value="zh" style="color: black;">中文</option>
+                    <option value="es" style="color: black;">Español</option>
+                    <option value="de" style="color: black;">Deutsch</option>
+                    <option value="it" style="color: black;">Italiano</option>
+                </select>
+            </li>
         </ul>
     </nav>
 
@@ -35,43 +44,65 @@
         <div class="hero-bg" style="background-image: url('hero_abstract.png');"></div>
         <div class="hero-content">
             <div class="title-group">
-                <h1 class="hero-title reveal-text delay-1">
-                    <span class="block" style="margin-bottom: 1rem;">发现价值 <span style="display: block; font-family: var(--font-english); font-size: 0.55em; font-weight: 300; opacity: 0.65; letter-spacing: 0.2em; margin-top: 0.2rem;">DISCOVER</span></span>
-                    <span class="block text-accent" style="margin: 1.5rem 0;">放大价值 <span style="display: block; font-family: var(--font-english); font-size: 0.55em; font-weight: 300; opacity: 0.65; letter-spacing: 0.2em; margin-top: 0.2rem;">AMPLIFY</span></span>
-                    <span class="block">交易价值 <span style="display: block; font-family: var(--font-english); font-size: 0.55em; font-weight: 300; opacity: 0.65; letter-spacing: 0.2em; margin-top: 0.2rem;">TRADE VALUE</span></span>
+                <h1 class="hero-title reveal-text delay-1" data-i18n="hero.title">
+                    建立品牌文明影响力
                 </h1>
-                <div class="post-title reveal-text delay-2">
+                <div class="post-title reveal-text delay-2" data-i18n="hero.club">
                     咖啡产业品牌俱乐部
                 </div>
             </div>
-            <p class="hero-subtitle reveal-text delay-2">连接东南亚与中国，每一次出现都在增加品牌价值。</p>
-            <a href="#mission" class="scroll-down reveal-text delay-3">用AI智能体探索您的品牌生态圈 <span class="arrow">↓</span></a>
+            <p class="hero-subtitle reveal-text delay-2" data-i18n="hero.subtitle">连接东南亚与中国，每一次表达都与价值相关。</p>
+            <a href="#mission" class="scroll-down reveal-text delay-3" data-i18n="hero.cta">用AI智能体探索您的品牌生态圈 <span class="arrow">↓</span></a>
         </div>
     </header>
 
-    <section class="section mission" id="mission">
+    <section class="section course" id="course">
         <div class="container">
             <div class="text-center reveal-up">
-                <h2 class="section-title small-title">为企业家提供<br>品牌价值增效的定制方案。</h2>
+                <span style="font-family: var(--font-english); color: var(--color-accent); letter-spacing: 0.15em; font-size: 0.85rem; text-transform: uppercase;" data-i18n="product1.label">服务产品一</span>
+                <h2 class="section-title small-title" style="margin-top: 1rem;" data-i18n="product1.title">商务中文价值表达课程</h2>
                 <div class="title-line center mx-auto"></div>
-                <p class="section-desc" style="margin-bottom: 4rem;">无论您寻求在东南亚扩展商业版图，还是希望在中国市场建立文化共鸣，我们与您一起打造充满创造力的品牌殿堂。
+                <p class="section-desc" data-i18n="product1.desc">上课地址：新加坡 The Adelphi大厦 | 课时：9课时 | 价格：1800新币</p>
+            </div>
+            
+            <div class="service-grid" style="margin-top: 4rem;">
+                <div class="service-card reveal-up" style="padding: 3rem 2rem;">
+                    <h3 class="card-title text-center" style="font-size: 1.8rem; margin: 0;" data-i18n="hero.discover">发现价值</h3>
+                </div>
+                <div class="service-card reveal-up delay-1" style="padding: 3rem 2rem;">
+                    <h3 class="card-title text-center text-accent" style="font-size: 1.8rem; margin: 0;" data-i18n="hero.amplify">放大价值</h3>
+                </div>
+                <div class="service-card reveal-up delay-2" style="padding: 3rem 2rem;">
+                    <h3 class="card-title text-center" style="font-size: 1.8rem; margin: 0;" data-i18n="hero.trade">交易价值</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section mission" id="mission" style="background-color: var(--color-surface);">
+        <div class="container">
+            <div class="text-center reveal-up">
+                <span style="font-family: var(--font-english); color: var(--color-accent); letter-spacing: 0.15em; font-size: 0.85rem; text-transform: uppercase;" data-i18n="product2.label">服务产品二</span>
+                <h2 class="section-title small-title" style="margin-top: 1rem;" data-i18n="mission.title">为企业家提供<br>品牌价值增效的定制方案。</h2>
+                <div class="title-line center mx-auto"></div>
+                <p class="section-desc" style="margin-bottom: 4rem;" data-i18n="mission.desc">无论您寻求在东南亚扩展商业版图，还是希望在中国市场建立文化共鸣，我们与您一起打造充满创造力的品牌殿堂。
                 </p>
             </div>
 
             <div class="solutions-grid mx-auto reveal-up delay-1" style="max-width: 1000px; margin-top: 3rem;">
                 <div class="solution-item" onclick="window.location.href='enterprise.html'">
                     <span class="solution-number">01</span>
-                    <h4 class="solution-title">企业出海评估与改善</h4>
+                    <h4 class="solution-title" data-i18n="solutions.1">企业出海评估与改善</h4>
                     <div class="solution-line"></div>
                 </div>
                 <div class="solution-item" onclick="window.location.href='channel.html'">
                     <span class="solution-number">02</span>
-                    <h4 class="solution-title">海外渠道拓展</h4>
+                    <h4 class="solution-title" data-i18n="solutions.2">海外渠道拓展</h4>
                     <div class="solution-line"></div>
                 </div>
                 <div class="solution-item" onclick="window.location.href='trade.html'">
                     <span class="solution-number">03</span>
-                    <h4 class="solution-title">品牌增效交易</h4>
+                    <h4 class="solution-title" data-i18n="solutions.3">品牌增效交易</h4>
                     <div class="solution-line"></div>
                 </div>
             </div>
@@ -80,34 +111,31 @@
 
     <section class="section services" id="services">
         <div class="container">
-            <h2 class="section-title text-center reveal-up small-title">企业海外 <span class="highlight-bg">品牌价值</span> 的三重奏
+            <h2 class="section-title text-center reveal-up small-title" data-i18n="services.header">企业海外 <span class="highlight-bg">品牌价值</span> 的三重奏
             </h2>
             <div class="title-line center mx-auto"></div>
-            <p class="text-center section-desc reveal-up delay-1">围绕品牌资产，构建从内在精神到外在行动，再到生态共同体的闭环。</p>
+            <p class="text-center section-desc reveal-up delay-1" data-i18n="services.desc">围绕品牌资产，构建从内在精神到外在行动，再到生态共同体的闭环。</p>
 
             <div class="service-grid">
                 <!-- Pillar 1 -->
                 <div class="service-card reveal-up">
                     <div class="card-number">01</div>
-                    <h3 class="card-title">品牌故事与文化传达</h3>
-                    <h4 class="card-subtitle">Cultural Narrative</h4>
-                    <p class="card-desc">从品牌传承的角度提炼核心故事。将品牌基因置入受众的语境中，以目标市场的国家文化习惯为载体，精准且深刻地传达品牌影响力，让价值被真正听懂。</p>
+                    <h3 class="card-title" data-i18n="services.title1">品牌故事与文化传达</h3>
+                    <p class="card-desc" data-i18n="services.desc1">从品牌传承的角度提炼核心故事。将品牌基因置入受众的语境中，以目标市场的国家文化习惯为载体，精准且深刻地传达品牌影响力，让价值被真正听懂。</p>
                 </div>
 
                 <!-- Pillar 2 -->
                 <div class="service-card reveal-up delay-1">
                     <div class="card-number">02</div>
-                    <h3 class="card-title">艺术与业务的融合</h3>
-                    <h4 class="card-subtitle">Influence Strategy & Execution</h4>
-                    <p class="card-desc">制定与执行立体化的品牌影响力战略。通过“艺术创意 + 品牌业务”的极致结合，以令人直呼惊叹的视角呈现品牌给世界带来的美好，建立无可撼动的美学壁垒。</p>
+                    <h3 class="card-title" data-i18n="services.title2">艺术与业务的融合</h3>
+                    <p class="card-desc" data-i18n="services.desc2">制定与执行立体化的品牌影响力战略。通过“艺术创意 + 品牌业务”的极致结合，以令人直呼惊叹的视角呈现品牌给世界带来的美好，建立无可撼动的美学壁垒。</p>
                 </div>
 
                 <!-- Pillar 3 -->
                 <div class="service-card reveal-up delay-2">
                     <div class="card-number">03</div>
-                    <h3 class="card-title">价值交易与生态共建</h3>
-                    <h4 class="card-subtitle">Value Trading Ecosystem</h4>
-                    <p class="card-desc">超越传统服务的界限。打破信息壁垒，让与品牌相关的资源形成一个更大的价值交易平台，孕育无穷力量。赋能关联商业体系，共建一个可持续的价值共同体。</p>
+                    <h3 class="card-title" data-i18n="services.title3">价值交易与生态共建</h3>
+                    <p class="card-desc" data-i18n="services.desc3">超越传统服务的界限。打破信息壁垒，让与品牌相关的资源形成一个更大的价值交易平台，孕育无穷力量。赋能关联商业体系，共建一个可持续的价值共同体。</p>
                 </div>
             </div>
         </div>
@@ -115,27 +143,27 @@
 
     <section class="section ecosystem" id="ecosystem">
         <div class="container reveal-up">
-            <h2 class="ecosystem-title">引力场</h2>
+            <h2 class="ecosystem-title" data-i18n="ecosystem.title">引力场</h2>
             <div class="title-line center mx-auto"></div>
-            <p class="ecosystem-quote">"围绕价值核心去探索存在的意义。"</p>
+            <p class="ecosystem-quote" data-i18n="ecosystem.quote">"围绕价值核心去探索存在的意义。"</p>
 
             <div class="partners-showcase">
-                <h3 class="partners-title">价值共建者伙伴</h3>
+                <h3 class="partners-title" data-i18n="ecosystem.partners">价值共建者伙伴</h3>
                 <div class="partners-grid">
                     <div class="partner-logo partner-logo-with-case">
-                        <span>SOUTHEAST ASIA</span>
-                        <a href="http://www.sinleonglee.sg" target="_blank" class="partner-case">案例：新隆利公司</a>
+                        <span data-i18n="partners.sea">东南亚</span>
+                        <a href="http://www.sinleonglee.sg" target="_blank" class="partner-case" data-i18n="partners.case1">案例：新隆利公司</a>
                     </div>
                     <div class="partner-logo partner-logo-with-case">
-                        <span>GREATER CHINA</span>
-                        <a href="https://www.hnfarms.com.cn/" target="_blank" class="partner-case">案例：海垦热作产业集团有限公司</a>
+                        <span data-i18n="partners.china">大中华区</span>
+                        <a href="https://www.hnfarms.com.cn/" target="_blank" class="partner-case" data-i18n="partners.case2">案例：海垦热作产业集团有限公司</a>
                     </div>
                     <div class="partner-logo partner-logo-with-case">
-                        <span>BRAND PARTNERS</span>
+                        <span data-i18n="partners.brands">品牌合作伙伴</span>
                         <a href="https://orientdesign.com.sg/" target="_blank" class="partner-case">OrientDesign</a>
                     </div>
                     <div class="partner-logo partner-logo-with-case">
-                        <span>CULTURAL INSTITUTIONS</span>
+                        <span data-i18n="partners.culture">文化机构</span>
                         <a href="https://www.ulc.com.sg/" target="_blank" class="partner-case">United Language
                             Centre</a>
                     </div>
@@ -151,20 +179,20 @@
                 <div class="image-accent"></div>
             </div>
             <div class="mission-text reveal-up delay-1">
-                <h2 class="section-title">成就梦想的价值。</h2>
+                <h2 class="section-title" data-i18n="team.title1">成就梦想的价值。</h2>
                 <div class="title-line"></div>
-                <p class="lead-text">"我们所有的准备，都是为了与您一起成就企业品牌的成功。"</p>
-                <p class="desc-text">像建筑师雕琢每一寸空间一样，我们表达品牌背后的生命张力。在这个跨越国界与文化的时代，我们致力于发现隐藏的商业价值，促进跨越传统的生态交易。</p>
+                <p class="lead-text" data-i18n="team.quote1">"我们所有的准备，都是为了与您一起成就企业品牌的成功。"</p>
+                <p class="desc-text" data-i18n="team.desc1">像建筑师雕琢每一寸空间一样，我们表达品牌背后的生命张力。在这个跨越国界与文化的时代，我们致力于发现隐藏的商业价值，促进跨越传统的生态交易。</p>
             </div>
         </div>
 
         <!-- 联合创始人版块 -->
         <div class="container grid-2" style="margin-top: 8vw;">
             <div class="mission-text reveal-up">
-                <h2 class="section-title">董仙富 | 联合创始人</h2>
+                <h2 class="section-title" data-i18n="team.title2">董仙富 | 联合创始人</h2>
                 <div class="title-line"></div>
-                <p class="lead-text">"共同构筑连接地域与文化的商业桥梁。"</p>
-                <p class="desc-text">作为联合创始人，董仙富先生致力于将最前沿的企业教练视角融入每一次合作。携手并肩，深入洞察区域市场的多元需求，与品牌共建长远且厚重的价值引力场。</p>
+                <p class="lead-text" data-i18n="team.quote2">"共同构筑连接地域与文化的商业桥梁。"</p>
+                <p class="desc-text" data-i18n="team.desc2">作为联合创始人，董仙富先生致力于将最前沿的企业教练视角融入每一次合作。携手并肩，深入洞察区域市场的多元需求，与品牌共建长远且厚重的价值引力场。</p>
             </div>
             <div class="mission-image reveal-up delay-1">
                 <img src="dongxianfu.jpg" alt="联合创始人肖像" class="portrait-img">
@@ -177,22 +205,23 @@
         <div class="container text-center">
             <div style="margin-bottom: 1rem;">
                 <!-- Removed Text -->
-                <div class="nav-badge" style="display: inline-block; font-size: 0.9rem; padding: 0.3rem 1rem;">
+                <div class="nav-badge" style="display: inline-block; font-size: 0.9rem; padding: 0.3rem 1rem;" data-i18n="footer.badge">
                     在新加坡建立品牌文明影响力</div>
+                <p style="margin-top: 1.5rem; color: #CCC; font-size: 1.1rem; letter-spacing: 0.05em;" data-i18n="footer.invite">邀请您成为价值共建者伙伴。</p>
             </div>
             <div class="title-line center mx-auto" style="margin-bottom: 4rem;"></div>
 
             <div class="contact-info-grid">
                 <div class="contact-item">
-                    <h4 class="contact-label">Email</h4>
+                    <h4 class="contact-label" data-i18n="footer.email">Email</h4>
                     <a href="mailto:hello@xiaomicafe.net" class="contact-value">hello@xiaomicafe.net</a>
                 </div>
                 <div class="contact-item">
-                    <h4 class="contact-label">Locations</h4>
-                    <p class="contact-value">Singapore | Beijing | Hainan | Ningbo</p>
+                    <h4 class="contact-label" data-i18n="footer.locations">Locations</h4>
+                    <p class="contact-value">Singapore | Beijing | Hainan</p>
                 </div>
                 <div class="contact-item">
-                    <h4 class="contact-label">Social</h4>
+                    <h4 class="contact-label" data-i18n="footer.social">Social</h4>
                     <div class="social-links-center">
                         <a href="#" class="social-icon">WhatsApp</a>
                         <a href="#" class="social-icon">WeChat</a>
@@ -201,10 +230,11 @@
             </div>
         </div>
         <div class="footer-bottom" style="margin-top: 5rem;">
-            <p>&copy; 2026 BORVAN SINGAPORE. All Rights Reserved.</p>
+            <p data-i18n="footer.copyright">&copy; 2026 BORVAN SINGAPORE. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js?v=2"></script>
 </body>
 
