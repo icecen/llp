@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>放大品牌影响力 | BORVAN SINGAPORE</title>
+    <title data-i18n="channel.title">放大品牌影响力 | BORVAN SINGAPORE</title>
     <meta name="description" content="连接东南亚与中国，让品牌的发展带来更多的美好。">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,43 +92,53 @@
     <nav class="architect-nav scrolled">
         <div class="nav-branding">
             <div class="nav-logo">BORVAN SINGAPORE</div>
-            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;">用好新加坡</div>
+            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;" data-i18n="nav.badge">用好新加坡</div>
+            <div class="lang-selector" style="display: flex; align-items: center; margin-top: 0.25rem;">
+                <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)" style="background: transparent; color: inherit; border: 1px solid var(--color-accent); border-radius: 4px; padding: 1px 4px; font-family: var(--font-english); font-size: 0.65rem; text-transform: uppercase; cursor: pointer; outline: none;">
+                    <option value="en" style="color: black;">English</option>
+                    <option value="zh" selected style="color: black;">中文</option>
+                    <option value="es" style="color: black;">Español</option>
+                    <option value="de" style="color: black;">Deutsch</option>
+                    <option value="it" style="color: black;">Italiano</option>
+                </select>
+            </div>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html#mission">返回主页 BACK</a></li>
+            <li><a href="index.html#mission" data-i18n="nav.back_to_home">返回主页 BACK</a></li>
         </ul>
     </nav>
 
     <header class="service-detail-header">
-        <h1 class="section-title text-accent" style="margin-bottom: 1rem;">放大品牌影响力</h1>
+        <h1 class="section-title text-accent" style="margin-bottom: 1rem;" data-i18n="channel.header_title">放大品牌影响力</h1>
         <div class="title-line center mx-auto"></div>
-        <p class="section-desc" style="margin-bottom: 0;">构建顺畅无阻的跨境合作网络，拓展高价值核心客群。</p>
+        <p class="section-desc" style="margin-bottom: 0;" data-i18n="channel.header_desc">构建顺畅无阻的跨境合作网络，拓展高价值核心客群。</p>
     </header>
 
     <section class="service-detail-content">
         <div class="container">
             <div class="detail-card">
                 <div class="detail-item">
-                    <h3 class="detail-title">品牌呈现</h3>
-                    <p class="detail-desc">将您的品牌核心理念转化为直抵人心的极具美感的跨文化叙事。我们确保品牌在海外各个主流渠道与专业圈层终端，以最具视觉张力与文化影响力的形态进行高质量展露，迅速建立海外受众的信任度。</p>
+                    <h3 class="detail-title" data-i18n="channel.item1_title">品牌呈现</h3>
+                    <p class="detail-desc" data-i18n="channel.item1_desc">将您的品牌核心理念转化为直抵人心的极具美感的跨文化叙事。我们确保品牌在海外各个主流渠道与专业圈层终端，以最具视觉张力与文化影响力的形态进行高质量展露，迅速建立海外受众的信任度。</p>
                 </div>
                 <div class="detail-item">
-                    <h3 class="detail-title">用AI构建成长社群</h3>
-                    <p class="detail-desc">在错综复杂的跨境商业生态中，精准连接本土衍生需求与您的品牌核心优势。我们致力于促成产业链条上下游的高效啮合，为您打造一条顺畅无阻的黄金合作通道。</p>
+                    <h3 class="detail-title" data-i18n="channel.item2_title">用AI构建成长社群</h3>
+                    <p class="detail-desc" data-i18n="channel.item2_desc">在错综复杂的跨境商业生态中，精准连接本土衍生需求与您的品牌核心优势。我们致力于促成产业链条上下游的高效啮合，为您打造一条顺畅无阻的黄金合作通道。</p>
                 </div>
                 <div class="detail-item">
-                    <h3 class="detail-title">战略客户开发</h3>
-                    <p class="detail-desc">精准锁定高价值且对品牌长远发展具备决定性战略意义的核心圈层客群。我们代表企业开展系统性的深度渗透与互动，助推建立持久的战略伙伴关系，获取决定性的市场资源背书。</p>
+                    <h3 class="detail-title" data-i18n="channel.item3_title">战略客户开发</h3>
+                    <p class="detail-desc" data-i18n="channel.item3_desc">精准锁定高价值且对品牌长远发展具备决定性战略意义的核心圈层客群。我们代表企业开展系统性的深度渗透与互动，助推建立持久的战略伙伴关系，获取决定性的市场资源背书。</p>
                 </div>
                 
-                <div class="price-tag">
+                <div class="price-tag" data-i18n="channel.price">
                     服务报价：人民币7万元起
                 </div>
             </div>
-            <a href="index.html" class="back-link">← 返 回 主 页</a>
+            <a href="index.html" class="back-link" data-i18n="course.back_link">← 返 回 主 页</a>
         </div>
     </section>
 
+    <script src="i18n.js"></script>
     <script src="script.js?v=2"></script>
 </body>
 </html>

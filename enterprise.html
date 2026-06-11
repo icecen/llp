@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>企业出海评估与改善 | BORVAN SINGAPORE</title>
+    <title data-i18n="enterprise.title">企业出海评估与改善 | BORVAN SINGAPORE</title>
     <meta name="description" content="连接东南亚与中国，让品牌的发展带来更多的美好。">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,43 +92,53 @@
     <nav class="architect-nav scrolled">
         <div class="nav-branding">
             <div class="nav-logo">BORVAN SINGAPORE</div>
-            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;">用好新加坡</div>
+            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;" data-i18n="nav.badge">用好新加坡</div>
+            <div class="lang-selector" style="display: flex; align-items: center; margin-top: 0.25rem;">
+                <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)" style="background: transparent; color: inherit; border: 1px solid var(--color-accent); border-radius: 4px; padding: 1px 4px; font-family: var(--font-english); font-size: 0.65rem; text-transform: uppercase; cursor: pointer; outline: none;">
+                    <option value="en" style="color: black;">English</option>
+                    <option value="zh" selected style="color: black;">中文</option>
+                    <option value="es" style="color: black;">Español</option>
+                    <option value="de" style="color: black;">Deutsch</option>
+                    <option value="it" style="color: black;">Italiano</option>
+                </select>
+            </div>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html#mission">返回主页 BACK</a></li>
+            <li><a href="index.html#mission" data-i18n="nav.back_to_home">返回主页 BACK</a></li>
         </ul>
     </nav>
 
     <header class="service-detail-header">
-        <h1 class="section-title text-accent" style="margin-bottom: 1rem;">企业出海评估与改善</h1>
+        <h1 class="section-title text-accent" style="margin-bottom: 1rem;" data-i18n="enterprise.header_title">企业出海评估与改善</h1>
         <div class="title-line center mx-auto"></div>
-        <p class="section-desc" style="margin-bottom: 0;">为您建立稳固的出海大本营，保障商业版图稳健扩张。</p>
+        <p class="section-desc" style="margin-bottom: 0;" data-i18n="enterprise.header_desc">为您建立稳固的出海大本营，保障商业版图稳健扩张。</p>
     </header>
 
     <section class="service-detail-content">
         <div class="container">
             <div class="detail-card">
                 <div class="detail-item">
-                    <h3 class="detail-title">海外机构的设置</h3>
-                    <p class="detail-desc">提供在地化落地的全景规划，从工商注册体系搭建至实体经营场所的一站式构建。我们深度适配当地的政策与人文环境，为您建立稳固且合规的海外大本营，奠定坚实的发展基石。</p>
+                    <h3 class="detail-title" data-i18n="enterprise.item1_title">海外机构的设置</h3>
+                    <p class="detail-desc" data-i18n="enterprise.item1_desc">提供在地化落地的全景规划，从工商注册体系搭建至实体经营场所的一站式构建。我们深度适配当地的政策与人文环境，为您建立稳固且合规的海外大本营，奠定坚实的发展基石。</p>
                 </div>
                 <div class="detail-item">
-                    <h3 class="detail-title">年度运营维护</h3>
-                    <p class="detail-desc">如同维护精巧的建筑架构一般，为您的企业海外运行提供全天候的持久动能。涵盖财务税务系统化管理、人事组织构架优化以及日常综合后勤运营的深度支持。</p>
+                    <h3 class="detail-title" data-i18n="enterprise.item2_title">年度运营维护</h3>
+                    <p class="detail-desc" data-i18n="enterprise.item2_desc">如同维护精巧的建筑架构一般，为您的企业海外运行提供全天候的持久动能。涵盖财务税务 system化管理、人事组织构架优化以及日常综合后勤运营的深度支持。</p>
                 </div>
                 <div class="detail-item">
-                    <h3 class="detail-title">合规咨询</h3>
-                    <p class="detail-desc">深入洞察各区域在地法律法规、劳动守则与行业标准体系。以严谨专业的风控视角为您提前排除潜在风险漏洞，建立完善的合规生命周期审查机制，确保扩张稳健无虞。</p>
+                    <h3 class="detail-title" data-i18n="enterprise.item3_title">合规咨询</h3>
+                    <p class="detail-desc" data-i18n="enterprise.item3_desc">深入洞察各区域在地法律法规、劳动守则与行业标准体系。以严谨专业的风控视角为您提前排除潜在风险漏洞，建立完善的合规生命周期审查机制，确保扩张稳健无虞。</p>
                 </div>
                 
-                <div class="price-tag">
+                <div class="price-tag" data-i18n="enterprise.price">
                     服务报价：人民币12万元起
                 </div>
             </div>
-            <a href="index.html" class="back-link">← 返 回 主 页</a>
+            <a href="index.html" class="back-link" data-i18n="course.back_link">← 返 回 主 页</a>
         </div>
     </section>
 
+    <script src="i18n.js"></script>
     <script src="script.js?v=2"></script>
 </body>
 </html>

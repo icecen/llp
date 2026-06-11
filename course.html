@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商务中文价值表达课程 | BORVAN SINGAPORE</title>
+    <title data-i18n="course.title">商务中文价值表达课程 | BORVAN SINGAPORE</title>
     <meta name="description" content="连接东南亚与中国，让品牌的发展带来更多的美好。">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,49 +91,59 @@
     <nav class="architect-nav scrolled">
         <div class="nav-branding">
             <div class="nav-logo">BORVAN SINGAPORE</div>
-            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;">用好新加坡</div>
+            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;" data-i18n="nav.badge">用好新加坡</div>
+            <div class="lang-selector" style="display: flex; align-items: center; margin-top: 0.25rem;">
+                <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)" style="background: transparent; color: inherit; border: 1px solid var(--color-accent); border-radius: 4px; padding: 1px 4px; font-family: var(--font-english); font-size: 0.65rem; text-transform: uppercase; cursor: pointer; outline: none;">
+                    <option value="en" style="color: black;">English</option>
+                    <option value="zh" selected style="color: black;">中文</option>
+                    <option value="es" style="color: black;">Español</option>
+                    <option value="de" style="color: black;">Deutsch</option>
+                    <option value="it" style="color: black;">Italiano</option>
+                </select>
+            </div>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html#course">返回主页 BACK</a></li>
+            <li><a href="index.html#course" data-i18n="nav.back_to_home">返回主页 BACK</a></li>
         </ul>
     </nav>
 
     <header class="service-detail-header">
-        <h1 class="section-title text-accent" style="margin-bottom: 1rem;">商务中文价值表达课程</h1>
+        <h1 class="section-title text-accent" style="margin-bottom: 1rem;" data-i18n="product1_zh.title">商务中文价值表达课程</h1>
         <div class="title-line center mx-auto"></div>
-        <p class="section-desc" style="margin-bottom: 0;">上课地址：新加坡 The Adelphi大厦 | 课时：9课时 | 价格：1800新币</p>
+        <p class="section-desc" style="margin-bottom: 0;" data-i18n="product1_zh.desc">上课地址：新加坡 The Adelphi大厦 | 课时：9课时 | 价格：1800新币</p>
     </header>
 
     <section class="service-detail-content">
         <div class="container">
             <div class="detail-card">
                 <div class="detail-item">
-                    <h3 class="detail-title">发现价值</h3>
-                    <p class="detail-desc">提炼品牌核心商业价值，并在商务语境下进行精准的中文表达与文化包装。</p>
+                    <h3 class="detail-title" data-i18n="hero.discover">发现价值</h3>
+                    <p class="detail-desc" data-i18n="course.discover.desc">提炼品牌核心商业价值，并在商务语境下进行精准的中文表达与文化包装。</p>
                 </div>
                 <div class="detail-item">
-                    <h3 class="detail-title">放大价值</h3>
-                    <p class="detail-desc">掌握面向大中华及东南亚市场的商务演讲与路演技巧，建立无可撼动的信任感。</p>
+                    <h3 class="detail-title" data-i18n="hero.amplify">放大价值</h3>
+                    <p class="detail-desc" data-i18n="course.amplify.desc">掌握面向大中华及东南亚市场的商务演讲与路演技巧，建立无可撼动的信任感。</p>
                 </div>
                 <div class="detail-item">
-                    <h3 class="detail-title">交易价值</h3>
-                    <p class="detail-desc">学习跨文化谈判技巧与合作艺术，让品牌资产转化为源源不断的商业成交与生态合力。</p>
+                    <h3 class="detail-title" data-i18n="hero.trade">交易价值</h3>
+                    <p class="detail-desc" data-i18n="course.trade.desc">学习跨文化谈判技巧与合作艺术，让品牌资产转化为源源不断的商业成交与生态合力。</p>
                 </div>
                 
                 <div class="price-tag-custom">
-                    <p style="margin-bottom: 1rem;">请拨打电话或添加联系人预约您的体验课程：</p>
+                    <p style="margin-bottom: 1rem;" data-i18n="course.price_tag_p1">请拨打电话或添加联系人预约您的体验课程：</p>
                     <p style="font-size: 2rem; color: var(--color-accent); font-weight: 600; margin: 1.5rem 0; font-family: var(--font-english); letter-spacing: 0.05em;">
                         <a href="tel:+6587327804" style="color: inherit; text-decoration: underline;">+65 87327804</a>
                     </p>
                     <div style="margin-top: 1.5rem;">
-                        <a href="tel:+6587327804" class="highlight-bg" style="padding: 0.8rem 2rem; display: inline-block; border-radius: 4px; font-weight: 500; text-transform: uppercase; color: #FFF; font-size: 0.95rem;">立即拨打电话</a>
+                        <a href="tel:+6587327804" class="highlight-bg" style="padding: 0.8rem 2rem; display: inline-block; border-radius: 4px; font-weight: 500; text-transform: uppercase; color: #FFF; font-size: 0.95rem;" data-i18n="course.price_tag_btn">立即拨打电话</a>
                     </div>
                 </div>
             </div>
-            <a href="index.html" class="back-link">← 返 回 主 页</a>
+            <a href="index.html" class="back-link" data-i18n="course.back_link">← 返 回 主 页</a>
         </div>
     </section>
 
+    <script src="i18n.js"></script>
     <script src="script.js?v=2"></script>
 </body>
 </html>

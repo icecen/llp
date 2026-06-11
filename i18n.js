@@ -64,7 +64,64 @@ const translations = {
         "product1_en.label": "Business English Series",
         "product1_en.title": "Business English Professional Club Course<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "Location: The Adelphi, Singapore<br>Duration: 20 Lessons<br>Price: 3000 SGD",
-        "course.book_now": "Call Now to Book"
+        "course.book_now": "Call Now to Book",
+        
+        // Secondary Pages Common
+        "nav.back_to_home": "BACK TO HOME",
+        "course.back_link": "← BACK TO HOME",
+        
+        // channel.html
+        "channel.title": "Amplify Brand Influence | BORVAN SINGAPORE",
+        "channel.header_title": "Amplify Brand Influence",
+        "channel.header_desc": "Build a smooth cross-border cooperation network and expand high-value core client groups.",
+        "channel.item1_title": "Brand Presentation",
+        "channel.item1_desc": "Translate your brand's core concept into a touching and aesthetic cross-cultural narrative. We ensure high-quality brand exposure across major overseas channels and professional networks to quickly build trust with overseas audiences.",
+        "channel.item2_title": "Build Growth Communities with AI",
+        "channel.item2_desc": "In the complex cross-border business ecosystem, precisely connect local derived needs with your brand's core strengths. We are committed to facilitating efficient alignment of upstream and downstream industrial chains, building a golden path for cooperation.",
+        "channel.item3_title": "Strategic Client Development",
+        "channel.item3_desc": "Precisely target high-value core audience groups that are of decisive strategic significance to the long-term development of the brand. We carry out systematic deep penetration and interaction to help build lasting strategic partnerships.",
+        "channel.price": "Service Quote: From 70,000 RMB",
+        
+        // course.html
+        "course.title": "Business Chinese Value Expression Course | BORVAN SINGAPORE",
+        "course.price_tag_p1": "Please call or add contact to book your trial lesson:",
+        "course.price_tag_btn": "Call Now",
+        
+        // enterprise.html
+        "enterprise.title": "Enterprise Overseas Assessment & Improvement | BORVAN SINGAPORE",
+        "enterprise.header_title": "Enterprise Overseas Assessment & Improvement",
+        "enterprise.header_desc": "Build a solid overseas base for you to ensure steady expansion of your business landscape.",
+        "enterprise.item1_title": "Setting up Overseas Institutions",
+        "enterprise.item1_desc": "Provide panoramic planning for localized landing, from building business registration systems to one-stop construction of physical venues. We adapt to local policies and culture to build a stable and compliant base.",
+        "enterprise.item2_title": "Annual Operation & Maintenance",
+        "enterprise.item2_desc": "Just like maintaining a delicate architectural structure, we provide 24/7 power for your overseas business operations. Covers tax management, HR optimization, and daily logistics.",
+        "enterprise.item3_title": "Compliance Consulting",
+        "enterprise.item3_desc": "In-depth insight into local laws, regulations, labor rules, and industry standards. From a rigorous risk control perspective, we eliminate potential risks to ensure steady expansion.",
+        "enterprise.price": "Service Quote: From 120,000 RMB",
+        
+        // sevensquare.html
+        "sevensquare.title": "Seven Square | BORVAN SINGAPORE",
+        "sevensquare.header_title": "Seven Square",
+        "sevensquare.header_desc": "We build AI era educational scenarios",
+        "sevensquare.intro": "Seven Square is an education outsourcing brand for learning organizations, providing a wide range of AI application courses. It helps individuals in enterprises better experience and enhance their value through AI, giving growing talents in the organization a chance to be seen.",
+        "sevensquare.item1_title": "AI Community Architecture & Tech Selection",
+        "sevensquare.item1_desc": "Deeply analyze how to use advanced generative AI tools, agents, and community management systems to build cross-cultural brand service communities with automated interaction and cross-time-zone operations, laying a solid technical foundation.",
+        "sevensquare.item2_title": "Cross-Cultural Brand Communication & Identity",
+        "sevensquare.item2_desc": "Based on a global perspective, integrating multicultural characteristics of East, West, and Southeast Asia. Use AI to customize brand stories that fit different cultural habits, precisely conveying brand influence and establishing deep trust.",
+        "sevensquare.item3_title": "High-Value Community Conversion & Ecosystem Co-creation",
+        "sevensquare.item3_desc": "Go beyond traditional operation, establish deep user connections through AI profiling and personalized care. Design high-value commercial closed loops and monetization channels to make the community a growth gravity field.",
+        "sevensquare.price": "Enterprise purchasing AI application full-year courses (12 times) 8000 SGD, 120 minutes each.",
+        
+        // trade.html
+        "trade.title": "Brand Value Trading | BORVAN SINGAPORE",
+        "trade.header_desc": "Link to the global high-quality capital market system and realize high-dimensional evolution of brand value.",
+        "trade.item1_title": "Strategic Cooperation",
+        "trade.item1_desc": "Find and contact business ecosystem partners with resource consensus and complementarity. Broaden brand space geometrically through forward-looking marketing and brand co-branding.",
+        "trade.item2_title": "Mergers & Acquisitions",
+        "trade.item2_desc": "Discover deep hidden value in the global business ecology. Find high-quality M&A targets and design capital operations to achieve growth.",
+        "trade.item3_title": "Equity Financing",
+        "trade.item3_desc": "Introduce strategic investors who fit the development philosophy and provide strong localization industrial empowerment, providing rich financial support.",
+        "trade.price": "Service Quote: From 450,000 RMB"
     },
     zh: {
         "nav.badge": "用好新加坡",
@@ -76,7 +133,7 @@ const translations = {
         "hero.discover": "发现价值",
         "hero.amplify": "放大价值",
         "hero.trade": "交易价值",
-        "hero.club": "咖啡产业品牌俱乐部",
+        "hero.club": "咖啡产业 brand 俱乐部",
         "hero.subtitle": "连接东南亚与中国，每一次表达都与价值相关。",
         "hero.cta": "探索我们的服务 <span class='arrow'>↓</span>",
         "product1.label": "服务产品一",
@@ -131,7 +188,64 @@ const translations = {
         "product1_en.label": "商务英文系列",
         "product1_en.title": "商务英文专业俱乐部课程<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "上课地址：新加坡 The Adelphi大厦<br>课时：20课时<br>价格：3000新币",
-        "course.book_now": "立即拨号预约体验"
+        "course.book_now": "立即拨号预约体验",
+        
+        // Secondary Pages Common
+        "nav.back_to_home": "返回主页 BACK",
+        "course.back_link": "← 返 回 主 页",
+        
+        // channel.html
+        "channel.title": "放大品牌影响力 | BORVAN SINGAPORE",
+        "channel.header_title": "放大品牌影响力",
+        "channel.header_desc": "构建顺畅无阻的跨境合作网络，拓展高价值核心客群。",
+        "channel.item1_title": "品牌呈现",
+        "channel.item1_desc": "将您的品牌核心理念转化为直抵人心的极具美感的跨文化叙事。我们确保品牌在海外各个主流渠道与专业圈层终端，以最具视觉张力与文化影响力的形态进行高质量展露，迅速建立海外受众的信任度。",
+        "channel.item2_title": "用AI构建成长社群",
+        "channel.item2_desc": "在错综复杂的跨境商业生态中，精准连接本土衍生需求与您的品牌核心优势。我们致力于促成产业链条上下游的高效啮合，为您打造一条顺畅无阻的黄金合作通道。",
+        "channel.item3_title": "战略客户开发",
+        "channel.item3_desc": "精准锁定高价值且对品牌长远发展具备决定性战略意义的核心圈层客群。我们代表企业开展系统性的深度渗透与互动，助推建立持久的战略伙伴关系，获取决定性的市场资源背书。",
+        "channel.price": "服务报价：人民币7万元起",
+        
+        // course.html
+        "course.title": "商务中文价值表达课程 | BORVAN SINGAPORE",
+        "course.price_tag_p1": "请拨打电话或添加联系人预约您的体验课程：",
+        "course.price_tag_btn": "立即拨打电话",
+        
+        // enterprise.html
+        "enterprise.title": "企业出海评估与改善 | BORVAN SINGAPORE",
+        "enterprise.header_title": "企业出海评估与改善",
+        "enterprise.header_desc": "为您建立稳固的出海大本营，保障商业版图稳健扩张。",
+        "enterprise.item1_title": "海外机构的设置",
+        "enterprise.item1_desc": "提供在地化落地的全景规划，从工商注册体系搭建至实体经营场所的一站式构建。我们深度适配当地的政策与人文环境，为您建立稳固且合规的海外大本营，奠定坚实的发展基石。",
+        "enterprise.item2_title": "年度运营维护",
+        "enterprise.item2_desc": "如同维护精巧的建筑架构一般，为您的企业海外运行提供全天候的持久动能。涵盖财务税务系统化管理、人事组织构架优化以及日常综合后勤运营的深度支持。",
+        "enterprise.item3_title": "合规咨询",
+        "enterprise.item3_desc": "深入洞察各区域在地法律法规、劳动守则与行业标准体系。以严谨专业的风控视角为您提前排除潜在风险漏洞，建立完善的合规生命周期审查机制，确保扩张稳健无虞。",
+        "enterprise.price": "服务报价：人民币12万元起",
+        
+        // sevensquare.html
+        "sevensquare.title": "Seven Square | BORVAN SINGAPORE",
+        "sevensquare.header_title": "Seven Square",
+        "sevensquare.header_desc": "我们建立AI时代教育场景",
+        "sevensquare.intro": "Seven Square是学习型组织的教育外包品牌，提供广泛的AI应用课程。帮助企业中的个体通过ai更好的体验和提升自己的价值，让组织内正在成长的人有机会被看到。",
+        "sevensquare.item1_title": "AI社群架构与技术选型",
+        "sevensquare.item1_desc": "深度解析如何利用最先进的生成式AI工具、智能体与社群管理系统，构建具备自动化交互、跨时区运营能力的跨文化品牌服务社群，为社群高效运转奠定坚实的技术底层基础。",
+        "sevensquare.item2_title": "跨文化品牌传播与认同",
+        "sevensquare.item2_desc": "立足全球化视野，融合中西方及东南亚的多元文化特性。利用AI定制高度贴合不同文化习惯的品牌故事与传播素材，精准传达品牌温度与核心价值，建立深层的信任与文化归属感。",
+        "sevensquare.item3_title": "社群高价值转换与生态共建",
+        "sevensquare.item3_desc": "超越传统粗放运营，通过AI智能画像与个性化关怀建立用户深度链接。汇聚生态伙伴资源，设计高附加值商业闭环与变现通道，让社群成为推动品牌持续成长、互利共赢的引力场。",
+        "sevensquare.price": "企业采购AI应用全年课程（12次）8000新币，每次120分钟。",
+        
+        // trade.html
+        "trade.title": "品牌增效交易 | BORVAN SINGAPORE",
+        "trade.header_desc": "链接全球优质资本市场体系，实现品牌价值的高维进化。",
+        "trade.item1_title": "战略合作",
+        "trade.item1_desc": "寻觅并接洽具备高度资源共识与互补性的商业生态圈伙伴。通过具有前瞻性的联合营销方案、创新的跨界品牌联名及长效的深层架构资源共享，以几何倍数拓宽品牌的生存繁衍空间。",
+        "trade.item2_title": "企业并购",
+        "trade.item2_desc": "以敏锐嗅觉洞悉复杂的全球商业生态深层隐秘价值。凭借精准的评判标尺为您发掘质地优良、战略互补的海外并购标的，并运用成熟的资本运作设计，跨越周期实现品牌版图的外延成长。",
+        "trade.item3_title": "股权融资",
+        "trade.item3_desc": "引入在发展理念上高度契合，并能提供强大本土化产业赋能的战略型投资者。为品牌出海的高能级跃升提供最充沛且强劲的金融血液。",
+        "trade.price": "服务报价：人民币45万元起"
     },
     es: {
         "nav.badge": "Aprovechar Singapur",
@@ -151,7 +265,7 @@ const translations = {
         "product1.desc": "Ubicación: The Adelphi, Singapur | Duración: 9 Lecciones | Precio: 1800 SGD",
         "course.discover.desc": "Extraer el valor comercial central y realizar una expresión precisa en chino y un empaque cultural en contextos comerciales.",
         "course.amplify.desc": "Dominar las habilidades de presentación y roadshow comercial para los mercados de la Gran China y el Sudeste Asiático, estableciendo una confianza inquebrantable.",
-        "course.trade.desc": "Aprender habilidades de negociación intercultural y el arte de la cooperación, convirtiendo los activos de marca en transacciones comerciales continuas.",
+        "course.trade.desc": "Aprender habilidades de negociación intercultural y el art de la cooperación, convirtiendo los activos de marca en transacciones comerciales continuas.",
         "course.cta": "Reservar una lección de prueba ahora",
         "product2.label": "Mejora del Valor de Marca · Producto de actualización de servicio",
         "mission.title": "Soluciones Personalizadas de<br>Internacionalización de la Marca para Empresarios.",
@@ -164,9 +278,9 @@ const translations = {
         "services.title1": "Historia de la Marca y Transmisión Cultural",
         "services.desc1": "Destilamos la historia central desde la perspectiva del legado de la marca. Integramos los genes de la marca en el contexto de la audiencia, utilizando los hábitos culturales del mercado objetivo como vehículo para transmitir de manera precisa y profunda la influencia de la marca, logrando que el valor sea realmente comprendido.",
         "services.title2": "Fusión de Arte y Negocios",
-        "services.desc2": "Diseñamos y ejecutamos una estrategia multidimensional de influencia de marca. A través de la combinación definitiva de 'creatividad artística + negocio de marca', presentamos la belleza que la marca aporta al mundo desde una perspectiva asombrosa, estableciendo una barrera estética inquebrantable.",
+        "services.desc2": "Diseñamos y ejecutamos una estrategia multidimensional de influencia de marca. A través de la combinación de 'creatividad artística + negocio de marca', presentamos la belleza que la marca aporta al mundo desde una perspectiva asombrosa.",
         "services.title3": "Comercio de Valor y Co-creación de Ecosistemas",
-        "services.desc3": "Vamos más allá de los límites de los servicios tradicionales. Rompemos las barreras de información para permitir que los recursos relacionados con la marca formen una plataforma de comercio de valor más amplia, albergando una fuerza infinita. Empoderamos los sistemas comerciales asociados para co-crear una comunidad de valor sostenible.",
+        "services.desc3": "Vamos más allá de los límites de los servicios tradicionales. Rompemos las barreras de información para permitir que los recursos relacionados con la marca formen una plataforma de comercio de valor más amplia.",
         "services.more3": "Conocer detalles del curso →",
         "ecosystem.title": "Campo de Gravedad",
         "ecosystem.quote": "\"Explora el significado de la existencia alrededor del núcleo del valor.\"",
@@ -198,7 +312,64 @@ const translations = {
         "product1_en.label": "Serie de Inglés de Negocios",
         "product1_en.title": "Curso de Club Profesional de Inglés de Negocios<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "Ubicación: The Adelphi, Singapur<br>Duración: 20 Lecciones<br>Precio: 3000 SGD",
-        "course.book_now": "Llamar ahora para reservar"
+        "course.book_now": "Llamar ahora para reservar",
+        
+        // Secondary Pages Common
+        "nav.back_to_home": "VOLVER A LA INICIO",
+        "course.back_link": "← VOLVER AL INICIO",
+        
+        // channel.html
+        "channel.title": "Amplificar la Influencia de la Marca | BORVAN SINGAPORE",
+        "channel.header_title": "Amplificar la Influencia de la Marca",
+        "channel.header_desc": "Construya una red fluida de cooperación transfronteriza y amplíe los grupos de clientes principales de alto valor.",
+        "channel.item1_title": "Presentación de Marca",
+        "channel.item1_desc": "Traduzca el concepto central de su marca en una narrativa intercultural estética y conmovedora. Garantizamos una exposición de marca de alta calidad en canales extranjeros y redes profesionales para generar confianza rápidamente.",
+        "channel.item2_title": "Construir Comunidades de Crecimiento con IA",
+        "channel.item2_desc": "En el complejo ecosistema empresarial transfronterizo, conecte con precisión las necesidades locales derivadas con las fortalezas de su marca. Nos comprometemos a facilitar la alineación eficiente de las de valor.",
+        "channel.item3_title": "Desarrollo de Clientes Estratégicos",
+        "channel.item3_desc": "Apunte con precisión a grupos de audiencia principal de alto valor de importancia estratégica decisiva para el desarrollo de la marca a largo plazo. Realizamos una penetración profunda.",
+        "channel.price": "Cotización del servicio: Desde 70.000 RMB",
+        
+        // course.html
+        "course.title": "Curso de Expresión de Valor en Chino de Negocios | BORVAN SINGAPORE",
+        "course.price_tag_p1": "Por favor llame o agregue contacto para reservar su lección de prueba:",
+        "course.price_tag_btn": "Llamar ahora",
+        
+        // enterprise.html
+        "enterprise.title": "Evaluación y Mejora en el Extranjero | BORVAN SINGAPORE",
+        "enterprise.header_title": "Evaluación y Mejora de Empresas en el Extranjero",
+        "enterprise.header_desc": "Establezca una base sólida en el extranjero para garantizar una expansión constante de su negocio.",
+        "enterprise.item1_title": "Establecimiento de Instituciones en el Extranjero",
+        "enterprise.item1_desc": "Proporcione una planificación integral para el aterrizaje localizado. Nos adaptamos a las políticas y la cultura locales para construir una base de manera estable.",
+        "enterprise.item2_title": "Operación y Mantenimiento Anual",
+        "enterprise.item2_desc": "Al igual que el mantenimiento de una estructura delicada, brindamos energía las 24 horas, los 7 días de la semana. Cubre impuestos, optimización de recursos humanos y logística.",
+        "enterprise.item3_title": "Consultoría de Cumplimiento",
+        "enterprise.item3_desc": "Información detallada sobre las leyes, regulaciones y normas locales. Desde una perspectiva rigurosa, eliminamos riesgos potenciales para garantizar una expansión constante.",
+        "enterprise.price": "Cotización del servicio: Desde 120.000 RMB",
+        
+        // sevensquare.html
+        "sevensquare.title": "Seven Square | BORVAN SINGAPORE",
+        "sevensquare.header_title": "Seven Square",
+        "sevensquare.header_desc": "Construimos escenarios educativos de la era de la IA",
+        "sevensquare.intro": "Seven Square es una marca de subcontratación de educación para organizaciones de aprendizaje, que ofrece una amplia gama de cursos. Ayuda a las personas a mejorar su valor a través de la IA.",
+        "sevensquare.item1_title": "Arquitectura de Comunidad de IA y Selección de Tecnología",
+        "sevensquare.item1_desc": "Analice en profundidad cómo utilizar herramientas avanzadas de IA generativa, agentes y sistemas para construir comunidades de servicios de marca interculturales con interacción automatizada.",
+        "sevensquare.item2_title": "Comunicación e Identidad de Marca Intercultural",
+        "sevensquare.item2_desc": "Basado en una perspectiva global, integrando características multiculturales. Utilice la IA para personalizar historias de marca que se adapten a diferentes hábitos culturales.",
+        "sevensquare.item3_title": "Conversión de Comunidad de Alto Valor y Co-creación de Ecosistemas",
+        "sevensquare.item3_desc": "Vaya más allá de la operación tradicional, establezca conexiones profundas a través de perfiles de IA y atención personalizada. Diseñe canales de monetización de alto valor.",
+        "sevensquare.price": "Compra empresarial de cursos de aplicación de IA para todo el año (12 veces) 8000 SGD, 120 minutos cada uno.",
+        
+        // trade.html
+        "trade.title": "Comercio de Mejora de Marca | BORVAN SINGAPORE",
+        "trade.header_desc": "Conéctese al sistema de mercado de capitales global de alta calidad y logre una evolución multidimensional del valor de marca.",
+        "trade.item1_title": "Cooperación Estratégica",
+        "trade.item1_desc": "Encuentre y contacte socios del ecosistema empresarial. Amplíe el espacio de la marca geométricamente a través de marketing prospectivo y marca compartida.",
+        "trade.item2_title": "Fusiones y Adquisiciones",
+        "trade.item2_desc": "Descubra el valor oculto en la ecología empresarial global. Encuentre objetivos de adquisición de alta calidad y diseñe operaciones para lograr el crecimiento.",
+        "trade.item3_title": "Financiamiento de Capital",
+        "trade.item3_desc": "Introducir inversores estratégicos que se ajusten a la filosofía de desarrollo y brinden un fuerte empoderamiento industrial local.",
+        "trade.price": "Cotización del servicio: Desde 450.000 RMB"
     },
     de: {
         "nav.badge": "Singapur Nutzen",
@@ -229,11 +400,11 @@ const translations = {
         "services.header": "Das Trio des <span class='highlight-bg'>Markenwerts</span> im KI-Zeitalter",
         "services.desc": "Um den Markenwert herum bauen wir einen geschlossenen Kreislauf vom inneren Geist über das äußere Handeln bis hin zu einer ökologischen Gemeinschaft auf.",
         "services.title1": "Markengeschichte und kulturelle Vermittlung",
-        "services.desc1": "Wir destillieren die Kerngeschichte aus der Perspektive des Markenerbes. Wir integrieren die Marken-Gene in den Kontext des Publikums und nutzen die kulturellen Gewohnheiten des Zielmarktes als Träger, um den Markeneinfluss präzise und tiefgreifend zu vermitteln, damit der Wert wirklich verstanden wird.",
+        "services.desc1": "Wir destillieren die Kerngeschichte aus der Perspektive des Markenerbes. Wir integrieren die Marken-Gene in den Kontext des Publikums und nutzen die kulturellen Gewohnheiten des Zielmarktes als Träger.",
         "services.title2": "Verschmelzung von Kunst und Wirtschaft",
-        "services.desc2": "Wir entwickeln und setzen eine multidimensionale Strategie für Markeneinfluss um. Durch die ultimative Kombination aus 'künstlerischer Kreativität + Markengeschäft' präsentieren wir die Schönheit, die die Marke der Welt bringt, aus einer atemberaubenden Perspektive und errichten eine unerschütterliche ästhetische Barriere.",
+        "services.desc2": "Wir entwickeln und setzen eine multidimensionale Strategie für Markeneinfluss um. Durch die Kombination aus 'künstlerischer Kreativität + Markengeschäft' präsentieren wir die Schönheit, die die Marke bringt.",
         "services.title3": "Werthandel & Ökosystem-Koproduktion",
-        "services.desc3": "Wir gehen über die Grenzen traditioneller Dienstleistungen hinaus. Wir brechen Informationsbarrieren ab, damit markenbezogene Ressourcen eine größere Plattform für Werthandel bilden und unendliche Kraft entfalten können. Wir befähigen verbundene Geschäftssysteme, gemeinsam eine nachhaltige Wertegemeinschaft aufzubauen.",
+        "services.desc3": "Wir gehen über die Grenzen traditioneller Dienstleistungen hinaus. Wir brechen Informationsbarrieren ab, damit markenbezogene Ressourcen eine größere Plattform für Werthandel bilden.",
         "services.more3": "Kursdetails anzeigen →",
         "ecosystem.title": "Schwerkraftfeld",
         "ecosystem.quote": "\"Erforsche die Bedeutung der Existenz rund um den Kern des Wertes.\"",
@@ -265,7 +436,64 @@ const translations = {
         "product1_en.label": "Business-Englisch Serie",
         "product1_en.title": "Business-Englisch Professional Club Kurs<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "Ort: The Adelphi, Singapur<br>Dauer: 20 Lektionen<br>Preis: 3000 SGD",
-        "course.book_now": "Jetzt anrufen zur Reservierung"
+        "course.book_now": "Jetzt anrufen zur Reservierung",
+        
+        // Secondary Pages Common
+        "nav.back_to_home": "ZURÜCK ZUR STARTSEITE",
+        "course.back_link": "← ZURÜCK ZUR STARTSEITE",
+        
+        // channel.html
+        "channel.title": "Markeneinfluss Verstärken | BORVAN SINGAPORE",
+        "channel.header_title": "Markeneinfluss Verstärken",
+        "channel.header_desc": "Bauen Sie ein reibungsloses grenzüberschreitendes Kooperationsnetzwerk auf und erweitern Sie hochwertige Kernkundengruppen.",
+        "channel.item1_title": "Markenpräsentation",
+        "channel.item1_desc": "Übersetzen Sie das Kernkonzept Ihrer Marke in ein herzerwärmendes und ästhetisches interkulturelles Narrativ. Wir sorgen für eine qualitativ hochwertige Markenpräsentation in Überseekanälen und professionellen Netzwerken.",
+        "channel.item2_title": "Wachstumsgemeinschaften mit KI aufbauen",
+        "channel.item2_desc": "Verbinden Sie im komplexen grenzüberschreitenden Geschäftsumfeld lokale Bedürfnisse präzise mit den Kernstärken Ihrer Marke. Wir setzen uns für eine effiziente Ausrichtung der Wertschöpfungsketten ein.",
+        "channel.item3_title": "Strategische Kundenentwicklung",
+        "channel.item3_desc": "Richten Sie sich präzise an hochwertige Kernzielgruppen, die für die langfristige Entwicklung der Marke von entscheidender strategischer Bedeutung sind. Wir führen systematische Tiefenpenetration durch.",
+        "channel.price": "Serviceangebot: Ab 70.000 RMB",
+        
+        // course.html
+        "course.title": "Business-Chinesisch Werteausdruck-Kurs | BORVAN SINGAPORE",
+        "course.price_tag_p1": "Bitte rufen Sie an oder fügen Sie einen Kontakt hinzu, um Ihre Probestunde zu buchen:",
+        "course.price_tag_btn": "Jetzt anrufen",
+        
+        // enterprise.html
+        "enterprise.title": "Auslandsbewertung und -verbesserung | BORVAN SINGAPORE",
+        "enterprise.header_title": "Auslandsbewertung und -verbesserung für Unternehmen",
+        "enterprise.header_desc": "Bauen Sie eine solide Auslandsbasis für eine stetige Expansion Ihres Unternehmens auf.",
+        "enterprise.item1_title": "Einrichtung von Auslandsinstitutionen",
+        "enterprise.item1_desc": "Bieten Sie eine umfassende Planung für die lokale Ansiedlung. Wir passen uns den lokalen Richtlinien und der Kultur an, um eine stabile Basis aufzubauen.",
+        "enterprise.item2_title": "Jährlicher Betrieb & Wartung",
+        "enterprise.item2_desc": "Genau wie die Wartung einer empfindlichen Struktur bieten wir rund um die Uhr Strom für Ihren Auslandsbetrieb. Umfasst Steuern, HR-Optimierung und Logistik.",
+        "enterprise.item3_title": "Compliance-Beratung",
+        "enterprise.item3_desc": "Detaillierter Einblick in lokale Gesetze, Vorschriften und Arbeitsregeln. Aus einer strengen Risikokontrollperspektive eliminieren wir potenzielle Risiken.",
+        "enterprise.price": "Serviceangebot: Ab 120.000 RMB",
+        
+        // sevensquare.html
+        "sevensquare.title": "Seven Square | BORVAN SINGAPORE",
+        "sevensquare.header_title": "Seven Square",
+        "sevensquare.header_desc": "Wir bauen Bildungsszenarien im KI-Zeitalter",
+        "sevensquare.intro": "Seven Square ist eine Bildungs-Outsourcing-Marke für lernende Organisationen, die eine breite Palette an Kursen anbietet. Sie hilft Einzelpersonen, ihren Wert durch KI zu steigern.",
+        "sevensquare.item1_title": "KI-Gemeinschaftsarchitektur & Technologieauswahl",
+        "sevensquare.item1_desc": "Analysieren Sie eingehend, wie Sie fortschrittliche generative KI-Tools, Agenten und Systeme nutzen können, um interkulturelle Markenservice-Gemeinschaften mit automatisierter Interaktion aufzubauen.",
+        "sevensquare.item2_title": "Interkulturelle Markenkommunikation & Identität",
+        "sevensquare.item2_desc": "Basierend auf einer globalen Perspektive, die multikulturelle Merkmale integriert. Nutzen Sie KI, um Markengeschichten anzupassen, die zu verschiedenen Gewohnheiten passen.",
+        "sevensquare.item3_title": "Hochwertige Community-Konvertierung & Ökosystem-Koproduktion",
+        "sevensquare.item3_desc": "Gehen über den traditionellen Betrieb hinaus und bauen Sie tiefe Verbindungen durch KI-Profiling auf. Entwerfen Sie hochwertige Monetarisierungskanäle.",
+        "sevensquare.price": "Unternehmenskauf von KI-Anwendungskursen für das ganze Jahr (12 Mal) 8000 SGD, jeweils 120 Minuten.",
+        
+        // trade.html
+        "trade.title": "Markenwert-Handel | BORVAN SINGAPORE",
+        "trade.header_desc": "Verbinden Sie sich mit dem globalen hochwertigen Kapitalmarktsystem und realisieren Sie eine hochdimensionale Entwicklung des Markenwerts.",
+        "trade.item1_title": "Strategische Kooperation",
+        "trade.item1_desc": "Finden und kontaktieren Sie Partner im Geschäftsökosystem. Erweitern Sie den Markenraum geometrisch durch vorausschauendes Marketing und Co-Branding.",
+        "trade.item2_title": "Fusionen & Übernahmen",
+        "trade.item2_desc": "Entdecken Sie verborgene Werte in der globalen Geschäftsökologie. Finden Sie hochwertige Übernahmeziele und gestalten Sie Kapitaltransaktionen für Wachstum.",
+        "trade.item3_title": "Eigenkapitalfinanzierung",
+        "trade.item3_desc": "Führen Sie strategische Investoren ein, die zur Entwicklungsphilosophie passen und eine starke lokale industrielle Stärkung bieten.",
+        "trade.price": "Serviceangebot: Ab 450.000 RMB"
     },
     it: {
         "nav.badge": "Sfruttare Singapore",
@@ -296,11 +524,11 @@ const translations = {
         "services.header": "Il Trio del <span class='highlight-bg'>Valore del Marchio</span> nell'Era dell'IA",
         "services.desc": "Concentrandoci sugli asset del marchio, costruiamo un ciclo chiuso dallo spirito interiore all'azione esteriore, e infine a una comunità ecologica.",
         "services.title1": "Storia del Marchio e Trasmissione Culturale",
-        "services.desc1": "Distilliamo la storia centrale dal punto di vista del patrimonio del marchio. Integriamo i geni del marchio nel contesto del pubblico, utilizzando le abitudini culturali del mercato target come veicolo per trasmettere in modo preciso e profondo l'influenza del marchio, affinché il valore sia veramente compreso.",
+        "services.desc1": "Distilliamo la storia centrale dal punto di vista del patrimonio del marchio. Integriamo i geni del marchio nel contesto del pubblico, utilizzando le abitudini culturali del mercato target come veicolo.",
         "services.title2": "Fusione di Arte e Business",
-        "services.desc2": "Sviluppiamo ed eseguiamo una strategia multidimensionale di influenza del marchio. Attraverso la combinazione definitiva di 'creatività artistica + business del marchio', presentiamo la bellezza che il marchio porta nel mondo da una prospettiva mozzafiato, stabilendo una barriera estetica incrollabile.",
+        "services.desc2": "Sviluppiamo ed eseguiamo una strategia multidimensionale di influenza del marchio. Attraverso la combinazione di 'creatività artistica + business del marchio', presentiamo la bellezza che il marchio porta nel mondo.",
         "services.title3": "Scambio di Valore e Co-creazione di Ecosistemi",
-        "services.desc3": "Superiamo i confini dei servizi tradizionali. Abbattiamo le barriere informative per consentire alle risorse legate al marchio di formare una piattaforma di scambio di valore più ampia, coltivando una forza infinita. Potenziamo i sistemi commerciali associati per co-creare una comunità di valore sostenibile.",
+        "services.desc3": "Superiamo i confini dei servizi tradizionali. Abbattiamo le barriere informative per consentire alle risorse legate al marchio di formare una piattaforma di scambio di valore più ampia.",
         "services.more3": "Scopri i dettagli del corso →",
         "ecosystem.title": "Campo di Gravità",
         "ecosystem.quote": "\"Esplora il significato dell'esistenza attorno al nucleo del valore.\"",
@@ -332,13 +560,71 @@ const translations = {
         "product1_en.label": "Serie di Inglese Commerciale",
         "product1_en.title": "Corso del Club Professionale di Inglese Commerciale<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "Luogo: The Adelphi, Singapore<br>Durata: 20 Lezioni<br>Prezzo: 3000 SGD",
-        "course.book_now": "Chiama ora per prenotare"
+        "course.book_now": "Chiama ora per prenotare",
+        
+        // Secondary Pages Common
+        "nav.back_to_home": "TORNA ALLA HOME",
+        "course.back_link": "← TORNA ALLA HOME",
+        
+        // channel.html
+        "channel.title": "Amplificare l'Influenza del Marchio | BORVAN SINGAPORE",
+        "channel.header_title": "Amplificare l'Influenza del Marchio",
+        "channel.header_desc": "Costruisci una rete di cooperazione transfrontaliera fluida ed espandi i gruppi di clienti principali ad alto valore.",
+        "channel.item1_title": "Presentazione del Marchio",
+        "channel.item1_desc": "Traduci il concetto centrale del tuo marchio in una narrazione interculturale estetica e toccante. Garantiamo un'esposizione del marchio di alta qualità sui canali esteri e sulle reti professionali.",
+        "channel.item2_title": "Costruire Comunità di Crescita con l'IA",
+        "channel.item2_desc": "Nel complesso ecosistema aziendale transfrontaliero, collega con precisione le esigenze derivate locali con i punti di forza del tuo marchio. Ci impegniamo a facilitare l'allineamento delle catene.",
+        "channel.item3_title": "Sviluppo di Clienti Strategici",
+        "channel.item3_desc": "Rivolgiti con precisione a gruppi di pubblico principali ad alto valore che hanno un'importanza strategica decisiva per lo sviluppo a lungo termine del marchio. Eseguiamo una penetrazione profonda.",
+        "channel.price": "Preventivo del servizio: Da 70.000 RMB",
+        
+        // course.html
+        "course.title": "Corso di Espressione del Valore in Cinese Commerciale | BORVAN SINGAPORE",
+        "course.price_tag_p1": "Si prega di chiamare o aggiungere un contatto per prenotare la lezione di prova:",
+        "course.price_tag_btn": "Chiama ora",
+        
+        // enterprise.html
+        "enterprise.title": "Valutazione e Miglioramento all'Estero | BORVAN SINGAPORE",
+        "enterprise.header_title": "Valutazione e Miglioramento delle Imprese all'Estero",
+        "enterprise.header_desc": "Costruisci per te una solida base all'estero per garantire una costante espansione del tuo business.",
+        "enterprise.item1_title": "Istituzione di Sedi all'Estero",
+        "enterprise.item1_desc": "Fornire una pianificazione panoramica per l'atterraggio localizzato. Ci adattiamo alle politiche e alla cultura locali per costruire una base stabile.",
+        "enterprise.item2_title": "Gestione e Manutenzione Annuale",
+        "enterprise.item2_desc": "Proprio come la manutenzione di una struttura delicata, forniamo energia 24 ore su 24, 7 giorni su 7. Copre la gestione fiscale, l'ottimizzazione delle risorse umane e la logistica.",
+        "enterprise.item3_title": "Consulenza sulla Conformità",
+        "enterprise.item3_desc": "Approfondimento su leggi, regolamenti e norme locali. Da una rigorosa prospettiva di controllo dei rischi, eliminiamo i rischi potenziali.",
+        "enterprise.price": "Preventivo del servizio: Da 120.000 RMB",
+        
+        // sevensquare.html
+        "sevensquare.title": "Seven Square | BORVAN SINGAPORE",
+        "sevensquare.header_title": "Seven Square",
+        "sevensquare.header_desc": "Costruiamo scenari educativi nell'era dell'IA",
+        "sevensquare.intro": "Seven Square è un marchio di outsourcing educativo per organizzazioni che apprendono, offrendo un'ampia gamma di corsi. Aiuta le persone a migliorare il proprio valore attraverso l'IA.",
+        "sevensquare.item1_title": "AI Community Architecture & Tech Selection",
+        "sevensquare.item1_desc": "Analizza in profondità come utilizzare strumenti di IA generativa avanzati, agenti e sistemi per costruire comunità di servizi di marchio interculturali con interazione automatizzata.",
+        "sevensquare.item2_title": "Comunicazione e Identità di Marchio Interculturale",
+        "sevensquare.item2_desc": "Basato su una prospettiva globale, che integra caratteristiche multiculturali. Utilizza l'IA per personalizzare storie di marchio che si adattano a diverse abitudini.",
+        "sevensquare.item3_title": "Co-creazione di Ecosistemi e Conversione",
+        "sevensquare.item3_desc": "Vai oltre la gestione tradizionale, stabilisci connessioni profonde tramite la profilazione IA e la cura personalizzata. Progetta canali di monetizzazione ad alto valore.",
+        "sevensquare.price": "Acquisto aziendale di corsi annuali sull'applicazione dell'IA (12 volte) 8000 SGD, 120 minuti ciascuno.",
+        
+        // trade.html
+        "trade.title": "Scambio di Valore del Marchio | BORVAN SINGAPORE",
+        "trade.header_desc": "Collegati al sistema del mercato dei capitali globale ad alta qualità e realizza un'evoluzione multidimensionale del valore del marchio.",
+        "trade.item1_title": "Cooperazione Strategica",
+        "trade.item1_desc": "Trova e contatta partner dell'ecosistema aziendale. Amplia lo spazio del marchio geometricamente tramite marketing lungimirante e co-branding.",
+        "trade.item2_title": "Fusioni e Acquisizioni",
+        "trade.item2_desc": "Scopri il valore nascosto nell'ecologia aziendale globale. Trova obiettivi di acquisizione ad alta qualità e progetta operazioni per ottenere la crescita.",
+        "trade.item3_title": "Finanziamento Azionario",
+        "trade.item3_desc": "Introduci investitori strategici in linea con la filosofia di sviluppo e che forniscono un forte potenziamento industriale locale.",
+        "trade.price": "Preventivo del servizio: Da 450.000 RMB"
     }
 };
 
 function changeLanguage(lang) {
     if (!translations[lang]) return;
     
+    localStorage.setItem('selectedLanguage', lang);
     document.documentElement.lang = lang;
     
     document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -351,10 +637,11 @@ function changeLanguage(lang) {
 
 // Initialize default language
 document.addEventListener('DOMContentLoaded', () => {
-    changeLanguage('zh');
+    const savedLang = localStorage.getItem('selectedLanguage') || 'zh';
+    changeLanguage(savedLang);
     // Also synchronize the lang-switch select box value
     const langSwitch = document.getElementById('lang-switch');
     if (langSwitch) {
-        langSwitch.value = 'zh';
+        langSwitch.value = savedLang;
     }
 });

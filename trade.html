@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>品牌增效交易 | BORVAN SINGAPORE</title>
+    <title data-i18n="trade.title">品牌增效交易 | BORVAN SINGAPORE</title>
     <meta name="description" content="连接东南亚与中国，让品牌的发展带来更多的美好。">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,43 +92,53 @@
     <nav class="architect-nav scrolled">
         <div class="nav-branding">
             <div class="nav-logo">BORVAN SINGAPORE</div>
-            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;">用好新加坡</div>
+            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;" data-i18n="nav.badge">用好新加坡</div>
+            <div class="lang-selector" style="display: flex; align-items: center; margin-top: 0.25rem;">
+                <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)" style="background: transparent; color: inherit; border: 1px solid var(--color-accent); border-radius: 4px; padding: 1px 4px; font-family: var(--font-english); font-size: 0.65rem; text-transform: uppercase; cursor: pointer; outline: none;">
+                    <option value="en" style="color: black;">English</option>
+                    <option value="zh" selected style="color: black;">中文</option>
+                    <option value="es" style="color: black;">Español</option>
+                    <option value="de" style="color: black;">Deutsch</option>
+                    <option value="it" style="color: black;">Italiano</option>
+                </select>
+            </div>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html#mission">返回主页 BACK</a></li>
+            <li><a href="index.html#mission" data-i18n="nav.back_to_home">返回主页 BACK</a></li>
         </ul>
     </nav>
 
     <header class="service-detail-header">
-        <h1 class="section-title text-accent" style="margin-bottom: 1rem;">品牌增效交易</h1>
+        <h1 class="section-title text-accent" style="margin-bottom: 1rem;" data-i18n="solutions.3">品牌增效交易</h1>
         <div class="title-line center mx-auto"></div>
-        <p class="section-desc" style="margin-bottom: 0;">链接全球优质资本市场体系，实现品牌价值的高维进化。</p>
+        <p class="section-desc" style="margin-bottom: 0;" data-i18n="trade.header_desc">链接全球优质资本市场体系，实现品牌价值的高维进化。</p>
     </header>
 
     <section class="service-detail-content">
         <div class="container">
             <div class="detail-card">
                 <div class="detail-item">
-                    <h3 class="detail-title">战略合作</h3>
-                    <p class="detail-desc">寻觅并接洽具备高度资源共识与互补性的商业生态圈伙伴。通过具有前瞻性的联合营销方案、创新的跨界品牌联名及长效的深层架构资源共享，以几何倍数拓宽品牌的生存繁衍空间。</p>
+                    <h3 class="detail-title" data-i18n="trade.item1_title">战略合作</h3>
+                    <p class="detail-desc" data-i18n="trade.item1_desc">寻觅并接洽具备高度资源共识与互补性的商业生态圈伙伴。通过具有前瞻性的联合营销方案、创新的跨界品牌联名及长效的深层架构资源共享，以几何倍数拓宽品牌的生存繁衍空间。</p>
                 </div>
                 <div class="detail-item">
-                    <h3 class="detail-title">企业并购</h3>
-                    <p class="detail-desc">以敏锐嗅觉洞悉复杂的全球商业生态深层隐秘价值。凭借精准的评判标尺为您发掘质地优良、战略互补的海外并购标的，并运用成熟的资本运作设计，跨越周期实现品牌版图的外延成长。</p>
+                    <h3 class="detail-title" data-i18n="trade.item2_title">企业并购</h3>
+                    <p class="detail-desc" data-i18n="trade.item2_desc">以敏锐嗅觉洞悉复杂的全球商业生态深层隐秘价值。凭借精准的评判标尺为您发掘质地优良、战略互补的海外并购标的，并运用成熟的资本运作设计，跨越周期实现品牌版图的外延成长。</p>
                 </div>
                 <div class="detail-item">
-                    <h3 class="detail-title">股权融资</h3>
-                    <p class="detail-desc">引入在发展理念上高度契合，并能提供强大本土化产业赋能的战略型投资者。为品牌出海的高能级跃升提供最充沛且强劲的金融血液。</p>
+                    <h3 class="detail-title" data-i18n="trade.item3_title">股权融资</h3>
+                    <p class="detail-desc" data-i18n="trade.item3_desc">引入在发展理念上高度契合，并能提供强大本土化产业赋能的战略型投资者。为品牌出海的高能级跃升提供最充沛且强劲的金融血液。</p>
                 </div>
                 
-                <div class="price-tag">
+                <div class="price-tag" data-i18n="trade.price">
                     服务报价：人民币45万元起
                 </div>
             </div>
-            <a href="index.html" class="back-link">← 返 回 主 页</a>
+            <a href="index.html" class="back-link" data-i18n="course.back_link">← 返 回 主 页</a>
         </div>
     </section>
 
+    <script src="i18n.js"></script>
     <script src="script.js?v=2"></script>
 </body>
 </html>

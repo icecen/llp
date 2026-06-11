@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seven Square | BORVAN SINGAPORE</title>
+    <title data-i18n="sevensquare.title">Seven Square | BORVAN SINGAPORE</title>
     <meta name="description" content="连接东南亚与中国，让品牌的发展带来更多的美好。">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,46 +92,56 @@
     <nav class="architect-nav scrolled">
         <div class="nav-branding">
             <div class="nav-logo">BORVAN SINGAPORE</div>
-            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;">用好新加坡</div>
+            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;" data-i18n="nav.badge">用好新加坡</div>
+            <div class="lang-selector" style="display: flex; align-items: center; margin-top: 0.25rem;">
+                <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)" style="background: transparent; color: inherit; border: 1px solid var(--color-accent); border-radius: 4px; padding: 1px 4px; font-family: var(--font-english); font-size: 0.65rem; text-transform: uppercase; cursor: pointer; outline: none;">
+                    <option value="en" style="color: black;">English</option>
+                    <option value="zh" selected style="color: black;">中文</option>
+                    <option value="es" style="color: black;">Español</option>
+                    <option value="de" style="color: black;">Deutsch</option>
+                    <option value="it" style="color: black;">Italiano</option>
+                </select>
+            </div>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html#services">返回主页 BACK</a></li>
+            <li><a href="index.html#services" data-i18n="nav.back_to_home">返回主页 BACK</a></li>
         </ul>
     </nav>
 
     <header class="service-detail-header">
-        <h1 class="section-title text-accent" style="margin-bottom: 1rem;">Seven Square</h1>
+        <h1 class="section-title text-accent" style="margin-bottom: 1rem;" data-i18n="sevensquare.header_title">Seven Square</h1>
         <div class="title-line center mx-auto"></div>
-        <p class="section-desc" style="margin-bottom: 0;">我们建立AI时代教育场景</p>
+        <p class="section-desc" style="margin-bottom: 0;" data-i18n="sevensquare.header_desc">我们建立AI时代教育场景</p>
     </header>
 
     <section class="service-detail-content">
         <div class="container">
             <div class="detail-card">
-                <div class="detail-intro" style="font-size: 1.15rem; line-height: 1.8; color: var(--color-text-secondary); margin-bottom: 3.5rem; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 2.5rem; text-align: justify;">
+                <div class="detail-intro" style="font-size: 1.15rem; line-height: 1.8; color: var(--color-text-secondary); margin-bottom: 3.5rem; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 2.5rem; text-align: justify;" data-i18n="sevensquare.intro">
                     Seven Square是学习型组织的教育外包品牌，提供广泛的AI应用课程。帮助企业中的个体通过ai更好的体验和提升自己的价值，让组织内正在成长的人有机会被看到。
                 </div>
                 <div class="detail-item">
-                    <h3 class="detail-title">AI社群架构与技术选型</h3>
-                    <p class="detail-desc">深度解析如何利用最先进的生成式AI工具、智能体与社群管理系统，构建具备自动化交互、跨时区运营能力的跨文化品牌服务社群，为社群高效运转奠定坚实的技术底层基础。</p>
+                    <h3 class="detail-title" data-i18n="sevensquare.item1_title">AI社群架构与技术选型</h3>
+                    <p class="detail-desc" data-i18n="sevensquare.item1_desc">深度解析如何利用最先进的生成式AI工具、智能体与社群管理系统，构建具备自动化交互、跨时区运营能力的跨文化品牌服务社群，为社群高效运转奠定坚实的技术底层基础。</p>
                 </div>
                 <div class="detail-item">
-                    <h3 class="detail-title">跨文化品牌传播与认同</h3>
-                    <p class="detail-desc">立足全球化视野，融合中西方及东南亚的多元文化特性。利用AI定制高度贴合不同文化习惯的品牌故事与传播素材，精准传达品牌温度与核心价值，建立深层的信任与文化归属感。</p>
+                    <h3 class="detail-title" data-i18n="sevensquare.item2_title">跨文化品牌传播与认同</h3>
+                    <p class="detail-desc" data-i18n="sevensquare.item2_desc">立足全球化视野，融合中西方及东南亚的多元文化特性。利用AI定制高度贴合不同文化习惯的品牌故事与传播素材，精准传达品牌温度与核心价值，建立深层的信任与文化归属感。</p>
                 </div>
                 <div class="detail-item">
-                    <h3 class="detail-title">社群高价值转换与生态共建</h3>
-                    <p class="detail-desc">超越传统粗放运营，通过AI智能画像与个性化关怀建立用户深度链接。汇聚生态伙伴资源，设计高附加值商业闭环与变现通道，让社群成为推动品牌持续成长、互利共赢的引力场。</p>
+                    <h3 class="detail-title" data-i18n="sevensquare.item3_title">社群高价值转换与生态共建</h3>
+                    <p class="detail-desc" data-i18n="sevensquare.item3_desc">超越传统粗放运营，通过AI智能画像与个性化关怀建立用户深度链接。汇聚生态伙伴资源，设计高附加值商业闭环与变现通道，让社群成为推动品牌持续成长、互利共赢的引力场。</p>
                 </div>
                 
-                <div class="price-tag" style="line-height: 1.6;">
+                <div class="price-tag" style="line-height: 1.6;" data-i18n="sevensquare.price">
                     企业采购AI应用全年课程（12次）8000新币，每次120分钟。
                 </div>
             </div>
-            <a href="index.html" class="back-link">← 返 回 主 页</a>
+            <a href="index.html" class="back-link" data-i18n="course.back_link">← 返 回 主 页</a>
         </div>
     </section>
 
+    <script src="i18n.js"></script>
     <script src="script.js?v=2"></script>
 </body>
 </html>
