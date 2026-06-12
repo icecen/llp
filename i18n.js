@@ -64,7 +64,7 @@ const translations = {
         "product1_en.label": "Business English Series",
         "product1_en.title": "Business English Professional Club Course<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "Location: The Adelphi, Singapore<br>Duration: 20 Lessons<br>Price: 3000 SGD",
-        "course.book_now": "Call Now to Book",
+        "course.book_now": "Book Free Experience",
         
         // Secondary Pages Common
         "nav.back_to_home": "BACK TO HOME",
@@ -188,7 +188,7 @@ const translations = {
         "product1_en.label": "商务英文系列",
         "product1_en.title": "商务英文专业俱乐部课程<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "上课地址：新加坡 The Adelphi大厦<br>课时：20课时<br>价格：3000新币",
-        "course.book_now": "立即拨号预约体验",
+        "course.book_now": "预约免费体验",
         
         // Secondary Pages Common
         "nav.back_to_home": "返回主页 BACK",
@@ -312,7 +312,7 @@ const translations = {
         "product1_en.label": "Serie de Inglés de Negocios",
         "product1_en.title": "Curso de Club Profesional de Inglés de Negocios<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "Ubicación: The Adelphi, Singapur<br>Duración: 20 Lecciones<br>Precio: 3000 SGD",
-        "course.book_now": "Llamar ahora para reservar",
+        "course.book_now": "Reservar experiencia gratuita",
         
         // Secondary Pages Common
         "nav.back_to_home": "VOLVER A LA INICIO",
@@ -436,7 +436,7 @@ const translations = {
         "product1_en.label": "Business-Englisch Serie",
         "product1_en.title": "Business-Englisch Professional Club Kurs<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "Ort: The Adelphi, Singapur<br>Dauer: 20 Lektionen<br>Preis: 3000 SGD",
-        "course.book_now": "Jetzt anrufen zur Reservierung",
+        "course.book_now": "Kostenloses Erlebnis buchen",
         
         // Secondary Pages Common
         "nav.back_to_home": "ZURÜCK ZUR STARTSEITE",
@@ -560,7 +560,7 @@ const translations = {
         "product1_en.label": "Serie di Inglese Commerciale",
         "product1_en.title": "Corso del Club Professionale di Inglese Commerciale<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "Luogo: The Adelphi, Singapore<br>Durata: 20 Lezioni<br>Prezzo: 3000 SGD",
-        "course.book_now": "Chiama ora per prenotare",
+        "course.book_now": "Prenota un'esperienza gratuita",
         
         // Secondary Pages Common
         "nav.back_to_home": "TORNA ALLA HOME",
