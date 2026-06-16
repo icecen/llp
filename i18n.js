@@ -82,7 +82,7 @@ const translations = {
         "channel.item2_desc": "In the complex cross-border business ecosystem, precisely connect local derived needs with your brand's core strengths. We are committed to facilitating efficient alignment of upstream and downstream industrial chains, building a golden path for cooperation.",
         "channel.item3_title": "Strategic Client Development",
         "channel.item3_desc": "Precisely target high-value core audience groups that are of decisive strategic significance to the long-term development of the brand. We carry out systematic deep penetration and interaction to help build lasting strategic partnerships.",
-        "channel.price": "Service Quote: From 70,000 RMB",
+        "channel.price": "Service Quote: From 14,000 SGD",
         
         // course.html
         "course.title": "Business Chinese Expression Course | BORVAN SINGAPORE",
@@ -99,7 +99,7 @@ const translations = {
         "enterprise.item2_desc": "Just like maintaining a delicate architectural structure, we provide 24/7 power for your overseas business operations. Covers tax management, HR optimization, and daily logistics.",
         "enterprise.item3_title": "Compliance Consulting",
         "enterprise.item3_desc": "In-depth insight into local laws, regulations, labor rules, and industry standards. From a rigorous risk control perspective, we eliminate potential risks to ensure steady expansion.",
-        "enterprise.price": "Service Quote: From 120,000 RMB",
+        "enterprise.price": "Service Quote: From 24,000 SGD",
         
         // sevensquare.html
         "sevensquare.title": "Seven Square | BORVAN SINGAPORE",
@@ -123,7 +123,7 @@ const translations = {
         "trade.item2_desc": "Discover deep hidden value in the global business ecology. Find high-quality M&A targets and design capital operations to achieve growth.",
         "trade.item3_title": "Equity Financing",
         "trade.item3_desc": "Introduce strategic investors who fit the development philosophy and provide strong localization industrial empowerment, providing rich financial support.",
-        "trade.price": "Service Quote: From 450,000 RMB"
+        "trade.price": "Service Quote: From 90,000 SGD"
     },
     zh: {
         "nav.badge": "用好新加坡",
@@ -208,7 +208,7 @@ const translations = {
         "channel.item2_desc": "在错综复杂的跨境商业生态中，精准连接本土衍生需求与您的品牌核心优势。我们致力于促成产业链条上下游的高效啮合，为您打造一条顺畅无阻的黄金合作通道。",
         "channel.item3_title": "战略客户开发",
         "channel.item3_desc": "精准锁定高价值且对品牌长远发展具备决定性战略意义的核心圈层客群。我们代表企业开展系统性的深度渗透与互动，助推建立持久的战略伙伴关系，获取决定性的市场资源背书。",
-        "channel.price": "服务报价：人民币7万元起",
+        "channel.price": "服务报价：1.4万新币起",
         
         // course.html
         "course.title": "商务华文表达课程 | BORVAN SINGAPORE",
@@ -225,7 +225,7 @@ const translations = {
         "enterprise.item2_desc": "如同维护精巧的建筑架构一般，为您的企业海外运行提供全天候的持久动能。涵盖财务税务系统化管理、人事组织构架优化以及日常综合后勤运营的深度支持。",
         "enterprise.item3_title": "合规咨询",
         "enterprise.item3_desc": "深入洞察各区域在地法律法规、劳动守则与行业标准体系。以严谨专业的风控视角为您提前排除潜在风险漏洞，建立完善的合规生命周期审查机制，确保扩张稳健无虞。",
-        "enterprise.price": "服务报价：人民币12万元起",
+        "enterprise.price": "服务报价：2.4万新币起",
         
         // sevensquare.html
         "sevensquare.title": "Seven Square | BORVAN SINGAPORE",
@@ -249,7 +249,7 @@ const translations = {
         "trade.item2_desc": "以敏锐嗅觉洞悉复杂的全球商业生态深层隐秘价值。凭借精准的评判标尺为您发掘质地优良、战略互补的海外并购标的，并运用成熟的资本运作设计，跨越周期实现品牌版图的外延成长。",
         "trade.item3_title": "股权融资",
         "trade.item3_desc": "引入在发展理念上高度契合，并能提供强大本土化产业赋能的战略型投资者。为品牌出海的高能级跃升提供最充沛且强劲的金融血液。",
-        "trade.price": "服务报价：人民币45万元起"
+        "trade.price": "服务报价：9万新币起"
     },
     es: {
         "nav.badge": "Aprovechar Singapur",
@@ -334,7 +334,7 @@ const translations = {
         "channel.item2_desc": "En el complejo ecosistema empresarial transfronterizo, conecte con precisión las necesidades locales derivadas con las fortalezas de su marca. Nos comprometemos a facilitar la alineación eficiente de las de valor.",
         "channel.item3_title": "Desarrollo de Clientes Estratégicos",
         "channel.item3_desc": "Apunte con precisión a grupos de audiencia principal de alto valor de importancia estratégica decisiva para el desarrollo de la marca a largo plazo. Realizamos una penetración profunda.",
-        "channel.price": "Cotización del servicio: Desde 70.000 RMB",
+        "channel.price": "Cotización del servicio: Desde 14.000 SGD",
         
         // course.html
         "course.title": "Curso de Expresión en Chino de Negocios | BORVAN SINGAPORE",
@@ -351,7 +351,7 @@ const translations = {
         "enterprise.item2_desc": "Al igual que el mantenimiento de una estructura delicada, brindamos energía las 24 horas, los 7 días de la semana. Cubre impuestos, optimización de recursos humanos y logística.",
         "enterprise.item3_title": "Consultoría de Cumplimiento",
         "enterprise.item3_desc": "Información detallada sobre las leyes, regulaciones y normas locales. Desde una perspectiva rigurosa, eliminamos riesgos potenciales para garantizar una expansión constante.",
-        "enterprise.price": "Cotización del servicio: Desde 120.000 RMB",
+        "enterprise.price": "Cotización del servicio: Desde 24.000 SGD",
         
         // sevensquare.html
         "sevensquare.title": "Seven Square | BORVAN SINGAPORE",
@@ -375,7 +375,7 @@ const translations = {
         "trade.item2_desc": "Descubra el valor oculto en la ecología empresarial global. Encuentre objetivos de adquisición de alta calidad y diseñe operaciones para lograr el crecimiento.",
         "trade.item3_title": "Financiamiento de Capital",
         "trade.item3_desc": "Introducir inversores estratégicos que se ajusten a la filosofía de desarrollo y brinden un fuerte empoderamiento industrial local.",
-        "trade.price": "Cotización del servicio: Desde 450.000 RMB"
+        "trade.price": "Cotización del servicio: Desde 90.000 SGD"
     },
     de: {
         "nav.badge": "Singapur Nutzen",
@@ -460,7 +460,7 @@ const translations = {
         "channel.item2_desc": "Verbinden Sie im komplexen grenzüberschreitenden Geschäftsumfeld lokale Bedürfnisse präzise mit den Kernstärken Ihrer Marke. Wir setzen uns für eine effiziente Ausrichtung der Wertschöpfungsketten ein.",
         "channel.item3_title": "Strategische Kundenentwicklung",
         "channel.item3_desc": "Richten Sie sich präzise an hochwertige Kernzielgruppen, die für die langfristige Entwicklung der Marke von entscheidender strategischer Bedeutung sind. Wir führen systematische Tiefenpenetration durch.",
-        "channel.price": "Serviceangebot: Ab 70.000 RMB",
+        "channel.price": "Serviceangebot: Ab 14.000 SGD",
         
         // course.html
         "course.title": "Business-Chinesisch Ausdruck-Kurs | BORVAN SINGAPORE",
@@ -477,7 +477,7 @@ const translations = {
         "enterprise.item2_desc": "Genau wie die Wartung einer empfindlichen Struktur bieten wir rund um die Uhr Strom für Ihren Auslandsbetrieb. Umfasst Steuern, HR-Optimierung und Logistik.",
         "enterprise.item3_title": "Compliance-Beratung",
         "enterprise.item3_desc": "Detaillierter Einblick in lokale Gesetze, Vorschriften und Arbeitsregeln. Aus einer strengen Risikokontrollperspektive eliminieren wir potenzielle Risiken.",
-        "enterprise.price": "Serviceangebot: Ab 120.000 RMB",
+        "enterprise.price": "Serviceangebot: Ab 24.000 SGD",
         
         // sevensquare.html
         "sevensquare.title": "Seven Square | BORVAN SINGAPORE",
@@ -501,7 +501,7 @@ const translations = {
         "trade.item2_desc": "Entdecken Sie verborgene Werte in der globalen Geschäftsökologie. Finden Sie hochwertige Übernahmeziele und gestalten Sie Kapitaltransaktionen für Wachstum.",
         "trade.item3_title": "Eigenkapitalfinanzierung",
         "trade.item3_desc": "Führen Sie strategische Investoren ein, die zur Entwicklungsphilosophie passen und eine starke lokale industrielle Stärkung bieten.",
-        "trade.price": "Serviceangebot: Ab 450.000 RMB"
+        "trade.price": "Serviceangebot: Ab 90.000 SGD"
     },
     it: {
         "nav.badge": "Sfruttare Singapore",
@@ -586,7 +586,7 @@ const translations = {
         "channel.item2_desc": "Nel complesso ecosistema aziendale transfrontaliero, collega con precisione le esigenze derivate locali con i punti di forza del tuo marchio. Ci impegniamo a facilitare l'allineamento delle catene.",
         "channel.item3_title": "Sviluppo di Clienti Strategici",
         "channel.item3_desc": "Rivolgiti con precisione a gruppi di pubblico principali ad alto valore che hanno un'importanza strategica decisiva per lo sviluppo a lungo termine del marchio. Eseguiamo una penetrazione profonda.",
-        "channel.price": "Preventivo del servizio: Da 70.000 RMB",
+        "channel.price": "Preventivo del servizio: Da 14.000 SGD",
         
         // course.html
         "course.title": "Corso di Espressione in Cinese Commerciale | BORVAN SINGAPORE",
@@ -603,7 +603,7 @@ const translations = {
         "enterprise.item2_desc": "Proprio come la manutenzione di una struttura delicata, forniamo energia 24 ore su 24, 7 giorni su 7. Copre la gestione fiscale, l'ottimizzazione delle risorse umane e la logistica.",
         "enterprise.item3_title": "Consulenza sulla Conformità",
         "enterprise.item3_desc": "Approfondimento su leggi, regolamenti e norme locali. Da una rigorosa prospettiva di controllo dei rischi, eliminiamo i rischi potenziali.",
-        "enterprise.price": "Preventivo del servizio: Da 120.000 RMB",
+        "enterprise.price": "Preventivo del servizio: Da 24.000 SGD",
         
         // sevensquare.html
         "sevensquare.title": "Seven Square | BORVAN SINGAPORE",
@@ -627,7 +627,7 @@ const translations = {
         "trade.item2_desc": "Scopri il valore nascosto nell'ecologia aziendale globale. Trova obiettivi di acquisizione ad alta qualità e progetta operazioni per ottenere la crescita.",
         "trade.item3_title": "Finanziamento Azionario",
         "trade.item3_desc": "Introduci investitori strategici in linea con la filosofia di sviluppo e che forniscono un forte potenziamento industriale locale.",
-        "trade.price": "Preventivo del servizio: Da 450.000 RMB"
+        "trade.price": "Preventivo del servizio: Da 90.000 SGD"
     }
 };
 

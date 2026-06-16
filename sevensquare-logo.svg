@@ -11,10 +11,10 @@
   </defs>
 
   <!-- Orange Chat Bubble (Top-Left) -->
-  <path d="M 87,21 A 24,24 0 1,1 75,65.8 Q 64,74 54,75 Q 62,66 66.2,57 A 24,24 0 0,1 87,21 Z" fill="url(#bubbleGradient)" />
+  <path d="M 66.215,57 A 24,24 0 1,1 75,65.785 Q 64,74 54,75 Q 62,66 66.215,57 Z" fill="url(#bubbleGradient)" />
 
   <!-- Blue Donut (Top-Right) -->
-  <path fill-rule="evenodd" d="M123,21 C136.25,21 147,31.75 147,45 C147,58.25 136.25,69 123,69 C109.75,69 99,58.25 99,45 C99,31.75 109.75,21 123,21 Z M123,35 C128.5,35 133,39.5 133,45 C133,50.5 128.5,55 123,55 C117.5,55 113,50.5 113,45 C113,39.5 117.5,35 123,35 Z" fill="url(#blueGradient)" />
+  <path fill-rule="evenodd" d="M 99,45 A 24,24 0 0,1 147,45 A 24,24 0 0,1 99,45 Z M 113,45 A 10,10 0 0,1 133,45 A 10,10 0 0,1 113,45 Z" fill="url(#blueGradient)" />
 
   <!-- 6 Slanted Squares (3x2 Grid) -->
   <g transform="skewX(-20)" fill="url(#blueGradient)">
