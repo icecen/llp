@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="120" height="120">
+  <defs>
+    <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B4A" />
+      <stop offset="100%" stop-color="#E1523D" />
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Orange Chat Bubble (Top-Left) -->
+  <path d="M87,21 C100.25,21 111,31.75 111,45 C111,58.25 100.25,69 87,69 C81.2,69 75.9,66.9 71.8,63.4 L57,72 C55.8,72.7 54.5,71.2 55.3,70.0 L63.2,58.2 C62.4,54.1 62,49.6 62,45 C62,31.75 72.75,21 87,21 Z" fill="url(#bubbleGradient)" />
+
+  <!-- Blue Donut (Top-Right) -->
+  <path fill-rule="evenodd" d="M123,21 C136.25,21 147,31.75 147,45 C147,58.25 136.25,69 123,69 C109.75,69 99,58.25 99,45 C99,31.75 109.75,21 123,21 Z M123,35 C128.5,35 133,39.5 133,45 C133,50.5 128.5,55 123,55 C117.5,55 113,50.5 113,45 C113,39.5 117.5,35 123,35 Z" fill="url(#blueGradient)" />
+
+  <!-- 6 Slanted Squares (3x2 Grid) -->
+  <g transform="skewX(-20)" fill="url(#blueGradient)">
+    <rect x="113" y="90" width="24" height="24" rx="6" />
+    <rect x="148" y="90" width="24" height="24" rx="6" />
+    <rect x="113" y="122" width="24" height="24" rx="6" />
+    <rect x="148" y="122" width="24" height="24" rx="6" />
+    <rect x="113" y="154" width="24" height="24" rx="6" />
+    <rect x="148" y="154" width="24" height="24" rx="6" />
+  </g>
+</svg>
