@@ -140,8 +140,8 @@ const translations = {
         "pricing.item3_title": "Seven Square AI Full-year Course",
         "pricing.item3_details": "6 times, 120 mins each",
         "pricing.item4_title": "Executive Leader Mentorship",
-        "pricing.item4_details": "1 month / store",
-        "pricing.item4_price": "3000 SGD",
+        "pricing.item4_details": "4 times / store / month",
+        "pricing.item4_price": "Service Quote 3,000 SGD",
         "pricing.item4_desc": "One-on-one localized coaching service for entrepreneurs and business leaders to support retail/store operations, team development, localized branding, and AI integration directly in Singapore and Southeast Asian stores.",
         "pricing.item5_title": "Building Brand Influence",
         "pricing.item5_details": "Customized Service",
@@ -291,8 +291,8 @@ const translations = {
         "pricing.item3_title": "Seven Square AI应用全年课程",
         "pricing.item3_details": "6次，每次120分钟",
         "pricing.item4_title": "企业领袖陪跑",
-        "pricing.item4_details": "一个月一个店",
-        "pricing.item4_price": "3000新币",
+        "pricing.item4_details": "每店每月4次",
+        "pricing.item4_price": "服务报价3000新币",
         "pricing.item4_desc": "面向企业家及企业高管的专属在地化陪跑服务，深度赋能零售门店运营、团队成长、本土化品牌语境构建以及AI工具的实际落地应用，助力业务在新加坡及东南亚稳健成长。",
         "pricing.item5_title": "构筑品牌影响力",
         "pricing.item5_details": "定制化服务",
@@ -442,8 +442,8 @@ const translations = {
         "pricing.item3_title": "Seven Square AI Curso de todo el año",
         "pricing.item3_details": "6 veces, 120 minutos cada uno",
         "pricing.item4_title": "Acompañamiento para Líderes Empresariales",
-        "pricing.item4_details": "1 mes / tienda",
-        "pricing.item4_price": "3000 SGD",
+        "pricing.item4_details": "4 veces / tienda / mes",
+        "pricing.item4_price": "Cotización 3.000 SGD",
         "pricing.item4_desc": "Servicio de coaching personalizado para empresarios y líderes de negocios para apoyar las operaciones de las tiendas, el desarrollo de equipos, la marca localizada y la integración de IA en Singapur y el Sudeste Asiático.",
         "pricing.item5_title": "Construir la Influencia de la Marca",
         "pricing.item5_details": "Servicio Personalizado",
@@ -593,8 +593,8 @@ const translations = {
         "pricing.item3_title": "Seven Square KI-Anwendungskurs für das ganze Jahr",
         "pricing.item3_details": "6 Mal, jeweils 120 Minuten",
         "pricing.item4_title": "Mentoring für Unternehmensleiter",
-        "pricing.item4_details": "1 Monat / Filiale",
-        "pricing.item4_price": "3000 SGD",
+        "pricing.item4_details": "4 Mal / Filiale / Monat",
+        "pricing.item4_price": "Angebot 3.000 SGD",
         "pricing.item4_desc": "Individueller Mentoring-Service für Unternehmer und Führungskräfte zur Unterstützung des Filialbetriebs, des Teambaus, des lokalen Brandings und der KI-Integration in Singapur und Südostasien.",
         "pricing.item5_title": "Markeneinfluss aufbauen",
         "pricing.item5_details": "Maßgeschneiderter Service",
@@ -744,8 +744,8 @@ const translations = {
         "pricing.item3_title": "Seven Square AI Corso per tutto l'anno",
         "pricing.item3_details": "6 volte, 120 minuti ciascuno",
         "pricing.item4_title": "Coaching per Leader Aziendali",
-        "pricing.item4_details": "1 mese / negozio",
-        "pricing.item4_price": "3000 SGD",
+        "pricing.item4_details": "4 volte / negozio / mese",
+        "pricing.item4_price": "Preventivo 3.000 SGD",
         "pricing.item4_desc": "Servizio di coaching personalizzato per imprenditori e dirigenti per supportare le attività dei negozi, lo sviluppo dei team, il branding localizzato e l'integrazione dell'IA a Singapore e nel Sud-est asiatico.",
         "pricing.item5_title": "Costruire l'Influenza del Marchio",
         "pricing.item5_details": "Servizio Personalizzato",
@@ -762,10 +762,15 @@ function changeLanguage(lang) {
     localStorage.setItem('selectedLanguage', lang);
     document.documentElement.lang = lang;
     
-    document.querySelectorAll('[data-i18n]').forEach(element => {
+    document.querySelectorAll('[data-i18n], [data-i18n-label]').forEach(element => {
         const key = element.getAttribute('data-i18n');
-        if (translations[lang][key]) {
+        if (key && translations[lang][key]) {
             element.innerHTML = translations[lang][key];
+        }
+        
+        const labelKey = element.getAttribute('data-i18n-label');
+        if (labelKey && translations[lang][labelKey]) {
+            element.setAttribute('data-label', translations[lang][labelKey]);
         }
     });
 }
