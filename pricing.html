@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="pricing.title">服务报价汇总 | BORVAN SINGAPORE</title>
+    <meta name="description" content="连接东南亚与中国，让品牌的发展带来更多的美好。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+SC:wght@300;400;600;900&family=Inter:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
+    <style>
+        .service-detail-header {
+            padding: 15vh 5vw 8vh 5vw;
+            background-color: var(--color-dark-bg);
+            color: var(--color-dark-text);
+            text-align: center;
+        }
+        .service-detail-content {
+            padding: 8vh 5vw 12vh 5vw;
+            background-color: var(--color-surface);
+        }
+        .detail-card {
+            background-color: #FFF;
+            padding: 4rem 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.04);
+            border-top: 4px solid var(--color-accent);
+        }
+        .pricing-table-container {
+            margin-top: 1rem;
+            overflow-x: auto;
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        .pricing-table th {
+            background-color: var(--color-surface);
+            color: var(--color-text-primary);
+            padding: 1.2rem 1.5rem;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 1.05rem;
+            border-bottom: 2px solid var(--color-accent);
+            letter-spacing: 0.05em;
+        }
+        .pricing-table td {
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            vertical-align: middle;
+        }
+        .pricing-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        .pricing-table tbody tr {
+            transition: background-color 0.3s ease;
+        }
+        .pricing-table tbody tr:hover {
+            background-color: rgba(178, 149, 98, 0.03);
+        }
+        .btn-table-detail {
+            display: inline-block;
+            padding: 0.35rem 0.9rem;
+            background-color: transparent;
+            border: 1px solid var(--color-accent);
+            color: var(--color-accent);
+            border-radius: 2px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+            font-family: var(--font-english);
+        }
+        .btn-table-detail:hover {
+            background-color: var(--color-accent);
+            color: #fff;
+        }
+        .featured-row {
+            border-left: 4px solid var(--color-accent);
+            background-color: rgba(178, 149, 98, 0.01);
+        }
+        .detail-card-highlight {
+            border-top: 4px solid var(--color-accent);
+            background-color: #FFF;
+            padding: 4rem 3rem;
+            max-width: 1000px;
+            margin: 4rem auto 0 auto;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.04);
+        }
+        .detail-title {
+            font-size: 1.5rem;
+            color: var(--color-text-primary);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-heading);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .detail-title::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 2px;
+            background-color: var(--color-accent);
+        }
+        .detail-desc {
+            font-size: 1.05rem;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            padding-left: calc(15px + 1rem);
+            text-align: justify;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 4rem;
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: var(--transition-smooth);
+            text-align: center;
+            width: 100%;
+        }
+        .back-link:hover {
+            color: var(--color-accent);
+        }
+        @media (max-width: 768px) {
+            .detail-card, .detail-card-highlight { padding: 2rem 1.5rem; }
+            .pricing-table th, .pricing-table td { padding: 1rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="architect-nav scrolled">
+        <div class="nav-branding">
+            <div class="nav-logo">BORVAN SINGAPORE</div>
+            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;" data-i18n="nav.badge">用好新加坡</div>
+            <div class="lang-selector" style="display: flex; align-items: center; margin-top: 0.25rem;">
+                <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)" style="background: transparent; color: inherit; border: 1px solid var(--color-accent); border-radius: 4px; padding: 1px 4px; font-family: var(--font-english); font-size: 0.65rem; text-transform: uppercase; cursor: pointer; outline: none;">
+                    <option value="en" style="color: black;">English</option>
+                    <option value="zh" selected style="color: black;">中文</option>
+                    <option value="es" style="color: black;">Español</option>
+                    <option value="de" style="color: black;">Deutsch</option>
+                    <option value="it" style="color: black;">Italiano</option>
+                </select>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.back_to_home">返回主页 BACK</a></li>
+        </ul>
+    </nav>
+
+    <header class="service-detail-header">
+        <h1 class="section-title text-accent" style="margin-bottom: 1rem;" data-i18n="pricing.header_title">服务与课程报价汇总</h1>
+        <div class="title-line center mx-auto"></div>
+        <p class="section-desc" style="margin-bottom: 0;" data-i18n="pricing.header_desc">透明的服务报价体系，助力企业构筑品牌文明影响力与国际化落地。</p>
+    </header>
+
+    <section class="service-detail-content">
+        <div class="container">
+            <!-- Summary Table Card -->
+            <div class="detail-card">
+                <div class="pricing-table-container">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="pricing.col_service">服务与课程项目</th>
+                                <th data-i18n="pricing.col_details">服务形式与课时</th>
+                                <th data-i18n="pricing.col_price">价格 (新币)</th>
+                                <th data-i18n="pricing.col_action">详情</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-weight: 500;" data-i18n="pricing.item1_title">商务华文表达课程</td>
+                                <td data-i18n="pricing.item1_details">9课时</td>
+                                <td style="font-weight: 600; color: var(--color-accent);">1,800 SGD</td>
+                                <td><a href="course.html" class="btn-table-detail" data-i18n="pricing.detail_btn">立即了解</a></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;" data-i18n="pricing.item2_title">商务英文专业俱乐部课程</td>
+                                <td data-i18n="pricing.item2_details">20课时</td>
+                                <td style="font-weight: 600; color: var(--color-accent);">3,000 SGD</td>
+                                <td><a href="https://www.ulc.com.sg/ulc-professionals-club/" target="_blank" class="btn-table-detail" data-i18n="pricing.detail_btn">立即了解</a></td>
+                            </tr>
+                            <tr class="featured-row">
+                                <td style="font-weight: 600;" data-i18n="pricing.item4_title">企业领袖陪跑</td>
+                                <td style="font-weight: 500;" data-i18n="pricing.item4_details">一个月一个店</td>
+                                <td style="font-weight: 700; color: var(--color-accent);" data-i18n="pricing.item4_price">3,000新币</td>
+                                <td><a href="#leader-coaching" class="btn-table-detail" data-i18n="pricing.detail_btn">立即了解</a></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;" data-i18n="pricing.item3_title">Seven Square AI应用全年课程</td>
+                                <td data-i18n="pricing.item3_details">6次，每次120分钟</td>
+                                <td style="font-weight: 600; color: var(--color-accent);">8,000 SGD</td>
+                                <td><a href="sevensquare.html" class="btn-table-detail" data-i18n="pricing.detail_btn">立即了解</a></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;" data-i18n="pricing.item5_title">构筑品牌影响力</td>
+                                <td data-i18n="pricing.item5_details">定制化服务</td>
+                                <td style="font-weight: 600; color: var(--color-accent);" data-i18n="channel.price">1.4万新币起</td>
+                                <td><a href="channel.html" class="btn-table-detail" data-i18n="pricing.detail_btn">立即了解</a></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;" data-i18n="pricing.item6_title">企业出海评估与改善</td>
+                                <td data-i18n="pricing.item6_details">定制化评估与改善</td>
+                                <td style="font-weight: 600; color: var(--color-accent);" data-i18n="enterprise.price">2.4万新币起</td>
+                                <td><a href="enterprise.html" class="btn-table-detail" data-i18n="pricing.detail_btn">立即了解</a></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 500;" data-i18n="pricing.item7_title">组织系统增效</td>
+                                <td data-i18n="pricing.item7_details">定制化系统交易与增效</td>
+                                <td style="font-weight: 600; color: var(--color-accent);" data-i18n="trade.price">9万新币起</td>
+                                <td><a href="trade.html" class="btn-table-detail" data-i18n="pricing.detail_btn">立即了解</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- New Content Section: Leader Coaching Details -->
+            <div class="detail-card-highlight" id="leader-coaching">
+                <h3 class="detail-title" data-i18n="pricing.item4_title">企业领袖陪跑</h3>
+                <p class="detail-desc" data-i18n="pricing.item4_desc">
+                    面向企业家及企业高管的专属在地化陪跑服务，深度赋能零售门店运营、团队成长、本土化品牌语境构建以及AI工具的实际落地应用，助力业务在新加坡及东南亚稳健成长。
+                </p>
+            </div>
+
+            <a href="index.html" class="back-link" data-i18n="course.back_link">← 返 回 主 页</a>
+        </div>
+    </section>
+
+    <script src="i18n.js"></script>
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
