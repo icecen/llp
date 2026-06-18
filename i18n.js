@@ -145,7 +145,7 @@ const translations = {
         "pricing.item4_title": "Executive Leader Mentorship",
         "pricing.item4_details": "4 times / store / month",
         "pricing.item4_price": "3,000 SGD",
-        "pricing.item4_desc": "One-on-one localized coaching service for entrepreneurs and business leaders to support retail/store operations, team development, localized branding, and AI integration directly in Singapore and Southeast Asian stores.",
+        "pricing.item4_desc": "Exclusive localized coaching service for entrepreneurs and executives, focusing on empowering retail store operations and management. Through guidance and side-by-side partnership, we help your business build brand equity and achieve steady growth in Singapore and Southeast Asia.",
         "pricing.item5_title": "Building Brand Influence",
         "pricing.item5_details": "Customized Service",
         "pricing.item5_price": "From 14,000 SGD",
@@ -154,7 +154,15 @@ const translations = {
         "pricing.item6_price": "From 24,000 SGD",
         "pricing.item7_title": "Organizational System Synergy",
         "pricing.item7_details": "Customized Platform Integration",
-        "pricing.item7_price": "From 90,000 SGD"
+        "pricing.item7_price": "From 90,000 SGD",
+        "pricing.coaching_effects_title": "Core Focus & Actual Effects",
+        "pricing.coaching_effects_item1": "<strong>Empower Founders' Organizational Insight</strong>: Establish transparent internal information flows and metrics dashboards, enabling decision-makers to track core business progress and team dynamics in real-time.",
+        "pricing.coaching_effects_item2": "<strong>Align Team Cohesion</strong>: Diagnose the root causes of team friction, reshape communication paths between management and staff, and unleash individual potential to enhance collaborative efficiency.",
+        "pricing.coaching_effects_item3": "<strong>Streamline Operational Systems</strong>: Review and reconstruct standard operating procedures (SOPs) for retail and service delivery, creating robust self-correction mechanisms to ensure smooth cross-border collaboration.",
+        "pricing.coaching_process_title": "Coaching Process",
+        "pricing.coaching_process_item1": "<strong>Diagnostic Alignment</strong>: Conduct on-site business assessments to identify bottlenecks and align with the founder on clear, phased milestones.",
+        "pricing.coaching_process_item2": "<strong>Regular Coaching & Supervision</strong>: Combine weekly reviews, bi-weekly deep-dive workshops, and periodic on-site store audits to ensure execution.",
+        "pricing.coaching_process_item3": "<strong>Dynamic Review & Tracking</strong>: Measure operational performance monthly and dynamically adjust plans based on market conditions and team feedback."
     },
     zh: {
         "nav.badge": "用好新加坡",
@@ -302,7 +310,7 @@ const translations = {
         "pricing.item4_title": "企业领袖陪跑",
         "pricing.item4_details": "每店每月4次",
         "pricing.item4_price": "3,000 新币",
-        "pricing.item4_desc": "面向企业家及企业高管的专属在地化陪跑服务，深度赋能零售门店运营、团队成长、本土化品牌语境构建以及AI工具的实际落地应用，助力业务在新加坡及东南亚稳健成长。",
+        "pricing.item4_desc": "面向企业家及企业高管的专属在地化陪跑服务，深度赋能零售门店运营与管理。通过陪伴式的引导，助力企业在新加坡及东南亚实现稳健增长与品牌资产沉淀。",
         "pricing.item5_title": "构筑品牌影响力",
         "pricing.item5_details": "定制化服务",
         "pricing.item5_price": "14,000 新币起",
@@ -311,7 +319,15 @@ const translations = {
         "pricing.item6_price": "24,000 新币起",
         "pricing.item7_title": "组织系统增效",
         "pricing.item7_details": "定制化系统交易与增效",
-        "pricing.item7_price": "90,000 新币起"
+        "pricing.item7_price": "90,000 新币起",
+        "pricing.coaching_effects_title": "核心赋能与实际效果",
+        "pricing.coaching_effects_item1": "<strong>支持创办人掌握组织动态</strong>：建立透明的内部信息流与指标看板，让决策者能够实时、准确地掌握核心业务进展与团队工作状态。",
+        "pricing.coaching_effects_item2": "<strong>调整团队凝聚力</strong>：诊断团队内耗根源，重塑核心管理层与基础员工的沟通路径，通过机制创新激活个体，提升组织的整体协同效率。",
+        "pricing.coaching_effects_item3": "<strong>梳理营运系统</strong>：梳理并重构零售与业务营运的标准流程（SOP），建立高效的自我纠偏机制，保障跨国团队异地协作的顺畅运行。",
+        "pricing.coaching_process_title": "陪跑工作流程",
+        "pricing.coaching_process_item1": "<strong>现状诊断与目标对齐</strong>：深度走访业务现场，分析痛点与瓶颈，与创办人共同设定清晰的陪跑阶段性目标。",
+        "pricing.coaching_process_item2": "<strong>定期会谈与现场督导</strong>：采用周会复盘、双周深度专题研讨及不定期的现场驻店督导相结合的方式，确保改进行动落地。",
+        "pricing.coaching_process_item3": "<strong>动态调整与成效评估</strong>：每月对运营改善成效进行量化追踪，根据市场环境与团队状态灵活调整方案，实现成效闭环。"
     },
     es: {
         "nav.badge": "Aprovechar Singapur",
@@ -459,7 +475,7 @@ const translations = {
         "pricing.item4_title": "Acompañamiento para Líderes Empresariales",
         "pricing.item4_details": "4 veces / tienda / mes",
         "pricing.item4_price": "3.000 SGD",
-        "pricing.item4_desc": "Servicio de coaching personalizado para empresarios y líderes de negocios para apoyar las operaciones de las tiendas, el desarrollo de equipos, la marca localizada y la integración de IA en Singapur y el Sudeste Asiático.",
+        "pricing.item4_desc": "Servicio exclusivo de coaching localizado para empresarios y ejecutivos, centrado en potenciar la operación y gestión de tiendas minoristas. A través de un acompañamiento cercano, ayudamos a construir el valor de la marca y lograr un crecimiento constante en Singapur y el Sudeste Asiático.",
         "pricing.item5_title": "Construir la Influencia de la Marca",
         "pricing.item5_details": "Servicio Personalizado",
         "pricing.item5_price": "Desde 14.000 SGD",
@@ -468,7 +484,15 @@ const translations = {
         "pricing.item6_price": "Desde 24.000 SGD",
         "pricing.item7_title": "Sinergia de Sistemas Organizacionales",
         "pricing.item7_details": "Integración de Plataforma Personalizada",
-        "pricing.item7_price": "Desde 90.000 SGD"
+        "pricing.item7_price": "Desde 90.000 SGD",
+        "pricing.coaching_effects_title": "Enfoque Principal y Efectos Reales",
+        "pricing.coaching_effects_item1": "<strong>Apoyar la Visión Organizativa del Fundador</strong>: Establecer flujos de información internos transparentes y paneles de métricas, permitiendo a los líderes monitorear el progreso del negocio y las dinámicas del equipo en tiempo real.",
+        "pricing.coaching_effects_item2": "<strong>Alinear la Cohesión del Equipo</strong>: Diagnosticar la fricción interna del equipo, rediseñar las vías de comunicación entre directivos y personal, y activar el potencial individual para mejorar la colaboración.",
+        "pricing.coaching_effects_item3": "<strong>Optimizar Sistemas Operativos</strong>: Revisar y reconstruir los procedimientos operativos estándar (SOP) para operaciones minoristas, creando mecanismos robustos de autocorrección para una colaboración transfronteriza fluida.",
+        "pricing.coaching_process_title": "Proceso de Acompañamiento",
+        "pricing.coaching_process_item1": "<strong>Diagnóstico y Alineación</strong>: Evaluar las operaciones en el sitio para identificar cuellos de botella y definir objetivos claros junto con el fundador.",
+        "pricing.coaching_process_item2": "<strong>Sesiones y Supervisión Regular</strong>: Combinar reuniones semanales, talleres profundos quincenales y auditorías en tienda para asegurar la ejecución del plan.",
+        "pricing.coaching_process_item3": "<strong>Ajuste Dinámico y Seguimiento</strong>: Medir el rendimiento operativo mensualmente y adaptar dinamicamente las estrategias según la respuesta del equipo y del mercado."
     },
     de: {
         "nav.badge": "Singapur Nutzen",
@@ -616,7 +640,7 @@ const translations = {
         "pricing.item4_title": "Mentoring für Unternehmensleiter",
         "pricing.item4_details": "4 Mal / Filiale / Monat",
         "pricing.item4_price": "3.000 SGD",
-        "pricing.item4_desc": "Individueller Mentoring-Service für Unternehmer und Führungskräfte zur Unterstützung des Filialbetriebs, des Teambaus, des lokalen Brandings und der KI-Integration in Singapur und Südostasien.",
+        "pricing.item4_desc": "Exklusiver, lokaler Mentoring-Service für Unternehmer und Führungskräfte, der sich auf die Stärkung des Filialbetriebs und des Managements konzentriert. Durch eine enge Partnerschaft helfen wir Ihrem Unternehmen, Markenwert aufzubauen und in Singapur und Südostasien stabil zu wachsen.",
         "pricing.item5_title": "Markeneinfluss aufbauen",
         "pricing.item5_details": "Maßgeschneiderter Service",
         "pricing.item5_price": "Ab 14.000 SGD",
@@ -625,7 +649,15 @@ const translations = {
         "pricing.item6_price": "Ab 24.000 SGD",
         "pricing.item7_title": "Synergie von Organisationssystemen",
         "pricing.item7_details": "Individuelle Plattformintegration",
-        "pricing.item7_price": "Ab 90.000 SGD"
+        "pricing.item7_price": "Ab 90.000 SGD",
+        "pricing.coaching_effects_title": "Kernfokus & Reale Effekte",
+        "pricing.coaching_effects_item1": "<strong>Unterstützung der organisatorischen Einsicht des Gründers</strong>: Richten Sie transparente interne Informationsflüsse und Dashboards ein, damit Entscheider Geschäftsfortschritte und Teamdynamik in Echtzeit verfolgen können.",
+        "pricing.coaching_effects_item2": "<strong>Ausrichtung der Teamkohäsion</strong>: Diagnostizieren Sie Reibungen im Team, gestalten Sie die Kommunikationswege zwischen Management und Mitarbeitern neu und aktivieren Sie Potenziale zur Effizienzsteigerung.",
+        "pricing.coaching_effects_item3": "<strong>Optimierung der Betriebssysteme</strong>: Strukturieren und rekonstruieren Sie Standard-Betriebsabläufe (SOPs) für den Einzelhandel, um robuste Selbstkorrekturmechanismen für die grenzüberschreitende Zusammenarbeit zu schaffen.",
+        "pricing.coaching_process_title": "Mentoring-Prozess",
+        "pricing.coaching_process_item1": "<strong>Diagnose & Ausrichtung</strong>: Führen Sie Betriebsanalysen vor Ort durch, um Engpässe zu identifizieren und klare, phasenweise Ziele mit dem Gründer abzustimmen.",
+        "pricing.coaching_process_item2": "<strong>Regelmäßige Treffen & Vor-Ort-Supervision</strong>: Kombinieren Sie wöchentliche Reviews, zweiwöchentliche Workshops und regelmäßige Store-Audits vor Ort, um die Umsetzung sicherzustellen.",
+        "pricing.coaching_process_item3": "<strong>Dynamische Anpassung & Erfolgsmessung</strong>: Messen Sie monatlich die Betriebsleistung und passen Sie Konzepte flexibel an Marktbedingungen und Teamfeedback an."
     },
     it: {
         "nav.badge": "Sfruttare Singapore",
@@ -773,7 +805,7 @@ const translations = {
         "pricing.item4_title": "Coaching per Leader Aziendali",
         "pricing.item4_details": "4 volte / negozio / mese",
         "pricing.item4_price": "3.000 SGD",
-        "pricing.item4_desc": "Servizio di coaching personalizzato per imprenditori e dirigenti per supportare le attività dei negozi, lo sviluppo dei team, il branding localizzato e l'integrazione dell'IA a Singapore e nel Sud-est asiatico.",
+        "pricing.item4_desc": "Servizio esclusivo di coaching localizzato per imprenditori e dirigenti, focalizzato sul potenziamento dell'operatività e della gestione dei punti vendita. Attraverso una stretta partnership, aiutiamo la vostra azienda a costruire valore del marchio e a crescere stabilmente a Singapore e nel Sud-est asiatico.",
         "pricing.item5_title": "Costruire l'Influenza del Marchio",
         "pricing.item5_details": "Servizio Personalizzato",
         "pricing.item5_price": "Da 14.000 SGD",
@@ -782,7 +814,15 @@ const translations = {
         "pricing.item6_price": "Da 24.000 SGD",
         "pricing.item7_title": "Sinergia dei Sistemi Organizzativi",
         "pricing.item7_details": "Integrazione Personalizzata della Piattaforma",
-        "pricing.item7_price": "Da 90.000 SGD"
+        "pricing.item7_price": "Da 90.000 SGD",
+        "pricing.coaching_effects_title": "Focus Principale ed Effetti Reali",
+        "pricing.coaching_effects_item1": "<strong>Supportare il Controllo Organizzativo del Fondatore</strong>: Stabilire flussi informativi interni trasparenti e dashboard di metriche, consentendo ai decision-maker di monitorare i progressi del business e le dinamiche del team in tempo reale.",
+        "pricing.coaching_effects_item2": "<strong>Allineare la Coesione del Team</strong>: Diagnosticare le cause degli attriti nel team, riprogettare i canali di comunicazione tra management e dipendenti e sbloccare il potenziale individuale per migliorare la collaborazione.",
+        "pricing.coaching_effects_item3": "<strong>Ottimizzare i Sistemi Operativi</strong>: Revisionare e ricostruire le procedure operative standard (SOP) per le attività di vendita al dettaglio, creando meccanismi robusti di autocorrezione per una fluida collaborazione transfrontaliera.",
+        "pricing.coaching_process_title": "Processo di Coaching",
+        "pricing.coaching_process_item1": "<strong>Diagnosi e Allineamento</strong>: Condurre valutazioni aziendali in loco per identificare i colli di bottiglia e definire traguardi chiari con il fondatore.",
+        "pricing.coaching_process_item2": "<strong>Incontri e Supervisione Regolari</strong>: Combinare revisioni settimanali, workshop quindicinali di approfondimento e audit periodici in loco per garantire l'esecuzione.",
+        "pricing.coaching_process_item3": "<strong>Revisione Dinamica e Monitoraggio</strong>: Misurare le prestazioni operative mensilmente e adattare dinamicamente le strategie in base alle risposte del mercato e del team."
     }
 };
 
