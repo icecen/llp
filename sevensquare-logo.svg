@@ -1,23 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="120" height="120">
   <defs>
-    <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF6B4A" />
-      <stop offset="100%" stop-color="#E1523D" />
+    <!-- Premium Metallic Gold Gradients -->
+    <!-- Gold gradient for the bubble (diagonal, rich metallic glow) -->
+    <linearGradient id="goldBubbleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" /> <!-- Metallic Gold -->
+      <stop offset="25%" stop-color="#FFF3D1" /> <!-- Bright shine -->
+      <stop offset="50%" stop-color="#AA771C" /> <!-- Rich deep gold shadow -->
+      <stop offset="75%" stop-color="#F3E5AB" /> <!-- Soft golden sheen -->
+      <stop offset="100%" stop-color="#86611D" /> <!-- Dark bronze depth -->
     </linearGradient>
-    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3B82F6" />
-      <stop offset="100%" stop-color="#1E3A8A" />
+
+    <!-- Gold gradient for the donut (opposite angle to create contrast/3D separation) -->
+    <linearGradient id="goldDonutGradient" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" />
+      <stop offset="30%" stop-color="#FFF3D1" />
+      <stop offset="60%" stop-color="#A27924" />
+      <stop offset="85%" stop-color="#FCEBB6" />
+      <stop offset="100%" stop-color="#805B17" />
+    </linearGradient>
+
+    <!-- Gold gradient for the squares (horizontal flow to tie the grid together) -->
+    <linearGradient id="goldSquaresGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86611D" />
+      <stop offset="25%" stop-color="#C5A059" />
+      <stop offset="50%" stop-color="#FFF3D1" />
+      <stop offset="75%" stop-color="#E6CA83" />
+      <stop offset="100%" stop-color="#9A7A35" />
     </linearGradient>
   </defs>
 
-  <!-- Orange Chat Bubble (Top-Left) -->
-  <path d="M 66.215,57 A 24,24 0 1,1 75,65.785 Q 64,74 54,75 Q 62,66 66.215,57 Z" fill="url(#bubbleGradient)" />
+  <!-- Gold Chat Bubble (Top-Left) -->
+  <path d="M 66.215,57 A 24,24 0 1,1 75,65.785 Q 64,74 54,75 Q 62,66 66.215,57 Z" fill="url(#goldBubbleGradient)" />
 
-  <!-- Blue Donut (Top-Right) -->
-  <path fill-rule="evenodd" d="M 99,45 A 24,24 0 0,1 147,45 A 24,24 0 0,1 99,45 Z M 113,45 A 10,10 0 0,1 133,45 A 10,10 0 0,1 113,45 Z" fill="url(#blueGradient)" />
+  <!-- Gold Donut (Top-Right) -->
+  <path fill-rule="evenodd" d="M 99,45 A 24,24 0 0,1 147,45 A 24,24 0 0,1 99,45 Z M 113,45 A 10,10 0 0,1 133,45 A 10,10 0 0,1 113,45 Z" fill="url(#goldDonutGradient)" />
 
   <!-- 6 Slanted Squares (3x2 Grid) -->
-  <g transform="skewX(-20)" fill="url(#blueGradient)">
+  <g transform="skewX(-20)" fill="url(#goldSquaresGradient)">
     <rect x="113" y="90" width="24" height="24" rx="6" />
     <rect x="148" y="90" width="24" height="24" rx="6" />
     <rect x="113" y="122" width="24" height="24" rx="6" />

@@ -112,7 +112,7 @@ const translations = {
         "sevensquare.item2_desc": "Based on a global perspective, integrating multicultural characteristics of East, West, and Southeast Asia. Use AI to customize brand stories that fit different cultural habits, precisely conveying brand influence and establishing deep trust.",
         "sevensquare.item3_title": "High-Value Community Conversion & Ecosystem Co-creation",
         "sevensquare.item3_desc": "Go beyond traditional operation, establish deep user connections through AI profiling and personalized care. Design high-value commercial closed loops and monetization channels to make the community a growth gravity field.",
-        "sevensquare.price": "Enterprise purchasing AI application full-year courses (12 times) 8000 SGD, 120 minutes each.",
+        "sevensquare.price": "Enterprise purchasing AI application full-year courses (6 times) 8000 SGD, 120 minutes each.",
         
         // trade.html
         "trade.title": "Brand Value Trading | BORVAN SINGAPORE",
@@ -238,7 +238,7 @@ const translations = {
         "sevensquare.item2_desc": "立足全球化视野，融合中西方及东南亚的多元文化特性。利用AI定制高度贴合不同文化习惯的品牌故事与传播素材，精准传达品牌温度与核心价值，建立深层的信任与文化归属感。",
         "sevensquare.item3_title": "社群高价值转换与生态共建",
         "sevensquare.item3_desc": "超越传统粗放运营，通过AI智能画像与个性化关怀建立用户深度链接。汇聚生态伙伴资源，设计高附加值商业闭环与变现通道，让社群成为推动品牌持续成长、互利共赢的引力场。",
-        "sevensquare.price": "企业采购AI应用全年课程（12次）8000新币，每次120分钟。",
+        "sevensquare.price": "企业采购AI应用全年课程（6次）8000新币，每次120分钟。",
         
         // trade.html
         "trade.title": "品牌增效交易 | BORVAN SINGAPORE",
@@ -364,7 +364,7 @@ const translations = {
         "sevensquare.item2_desc": "Basado en una perspectiva global, integrando características multiculturales. Utilice la IA para personalizar historias de marca que se adapten a diferentes hábitos culturales.",
         "sevensquare.item3_title": "Conversión de Comunidad de Alto Valor y Co-creación de Ecosistemas",
         "sevensquare.item3_desc": "Vaya más allá de la operación tradicional, establezca conexiones profundas a través de perfiles de IA y atención personalizada. Diseñe canales de monetización de alto valor.",
-        "sevensquare.price": "Compra empresarial de cursos de aplicación de IA para todo el año (12 veces) 8000 SGD, 120 minutos cada uno.",
+        "sevensquare.price": "Compra empresarial de cursos de aplicación de IA para todo el año (6 veces) 8000 SGD, 120 minutos cada uno.",
         
         // trade.html
         "trade.title": "Comercio de Mejora de Marca | BORVAN SINGAPORE",
@@ -490,7 +490,7 @@ const translations = {
         "sevensquare.item2_desc": "Basierend auf einer globalen Perspektive, die multikulturelle Merkmale integriert. Nutzen Sie KI, um Markengeschichten anzupassen, die zu verschiedenen Gewohnheiten passen.",
         "sevensquare.item3_title": "Hochwertige Community-Konvertierung & Ökosystem-Koproduktion",
         "sevensquare.item3_desc": "Gehen über den traditionellen Betrieb hinaus und bauen Sie tiefe Verbindungen durch KI-Profiling auf. Entwerfen Sie hochwertige Monetarisierungskanäle.",
-        "sevensquare.price": "Unternehmenskauf von KI-Anwendungskursen für das ganze Jahr (12 Mal) 8000 SGD, jeweils 120 Minuten.",
+        "sevensquare.price": "Unternehmenskauf von KI-Anwendungskursen für das ganze Jahr (6 Mal) 8000 SGD, jeweils 120 Minuten.",
         
         // trade.html
         "trade.title": "Markenwert-Handel | BORVAN SINGAPORE",
@@ -616,7 +616,7 @@ const translations = {
         "sevensquare.item2_desc": "Basato su una prospettiva globale, che integra caratteristiche multiculturali. Utilizza l'IA per personalizzare storie di marchio che si adattano a diverse abitudini.",
         "sevensquare.item3_title": "Co-creazione di Ecosistemi e Conversione",
         "sevensquare.item3_desc": "Vai oltre la gestione tradizionale, stabilisci connessioni profonde tramite la profilazione IA e la cura personalizzata. Progetta canali di monetizzazione ad alto valore.",
-        "sevensquare.price": "Acquisto aziendale di corsi annuali sull'applicazione dell'IA (12 volte) 8000 SGD, 120 minuti ciascuno.",
+        "sevensquare.price": "Acquisto aziendale di corsi annuali sull'applicazione dell'IA (6 volte) 8000 SGD, 120 minuti ciascuno.",
         
         // trade.html
         "trade.title": "Scambio di Valore del Marchio | BORVAN SINGAPORE",
