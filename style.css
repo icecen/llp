@@ -1041,3 +1041,70 @@ a.contact-value:hover {
     box-shadow: 0 10px 30px rgba(178, 149, 98, 0.4);
 }
 
+/* Mobile Bottom Floating Capsule Navigation */
+.mobile-bottom-nav {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 420px;
+    height: 64px;
+    background: rgba(17, 17, 17, 0.82);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(178, 149, 98, 0.3);
+    border-radius: 32px;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-bottom-nav-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 0 8px;
+}
+
+.mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.65rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    gap: 4px;
+    flex: 1;
+}
+
+.mobile-nav-item svg {
+    stroke: rgba(255, 255, 255, 0.65);
+    transition: all 0.25s ease;
+}
+
+.mobile-nav-item:hover, .mobile-nav-item.active {
+    color: var(--color-accent);
+}
+
+.mobile-nav-item:hover svg, .mobile-nav-item.active svg {
+    stroke: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.mobile-bottom-nav.nav-hidden {
+    transform: translate(-50%, 100px);
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .mobile-bottom-nav {
+        display: block;
+    }
+}
+

@@ -76,4 +76,70 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Inject Mobile Floating Bottom Navigation
+    const injectMobileNav = () => {
+        const isIndex = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/') || !window.location.pathname.includes('.html');
+        const indexPrefix = isIndex ? '' : 'index.html';
+        const isPricing = window.location.pathname.includes('pricing.html');
+        
+        const mobileNavHtml = `
+            <div class="mobile-bottom-nav">
+                <div class="mobile-bottom-nav-inner">
+                    <a href="${indexPrefix}#course" class="mobile-nav-item" data-nav="course">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        <span class="mobile-nav-text" data-i18n="nav.mission">课程</span>
+                    </a>
+                    <a href="${indexPrefix}#services" class="mobile-nav-item" data-nav="core">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 3h12l4 6-10 13L2 9z"></path>
+                            <path d="M11 3 8 9l4 13 4-13-3-6z"></path>
+                            <path d="M2 9h20"></path>
+                        </svg>
+                        <span class="mobile-nav-text" data-i18n="nav.core">核心</span>
+                    </a>
+                    <a href="pricing.html" class="mobile-nav-item ${isPricing ? 'active' : ''}" data-nav="pricing">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                        </svg>
+                        <span class="mobile-nav-text" data-i18n="nav.pricing">报价</span>
+                    </a>
+                    <a href="${indexPrefix}#contact" class="mobile-nav-item" data-nav="contact">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span class="mobile-nav-text" data-i18n="nav.contact">联络</span>
+                    </a>
+                </div>
+            </div>
+        `;
+        
+        document.body.insertAdjacentHTML('beforeend', mobileNavHtml);
+        
+        // Translate the newly injected nav
+        if (typeof changeLanguage === 'function') {
+            const currentLang = localStorage.getItem('selectedLanguage') || 'zh';
+            changeLanguage(currentLang);
+        }
+        
+        // Hide on scroll down, show on scroll up logic
+        const mobileNav = document.querySelector('.mobile-bottom-nav');
+        if (mobileNav) {
+            let lastScrollY = window.scrollY;
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                    mobileNav.classList.add('nav-hidden');
+                } else {
+                    mobileNav.classList.remove('nav-hidden');
+                }
+                lastScrollY = window.scrollY;
+            });
+        }
+    };
+    injectMobileNav();
 });
