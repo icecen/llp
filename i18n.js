@@ -24,8 +24,8 @@ const translations = {
         "mission.title": "Customized Solutions for<br>Brand Internationalization.",
         "mission.desc": "Whether you seek to expand your business footprint in Southeast Asia or establish cultural resonance in the Chinese market, we build a creative brand hall together with you.",
         "solutions.1": "Enterprise Overseas Assessment & Improvement",
-        "solutions.2": "Amplifying Brand Influence",
-        "solutions.3": "Brand Value Trading",
+        "solutions.2": "Building Brand Influence",
+        "solutions.3": "Organizational System Synergy",
         "services.header": "The Trio of <span class='highlight-bg'>Brand & Team</span> in the AI Era",
         "services.desc": "Centering on brand assets, we build a closed loop from inner spirit to outer action, and then to an ecological community.",
         "services.title1": "Brand Story & Cultural Narrative",
@@ -73,8 +73,8 @@ const translations = {
         "course.back_link": "← BACK TO HOME",
         
         // channel.html
-        "channel.title": "Amplify Brand Influence | BORVAN SINGAPORE",
-        "channel.header_title": "Amplify Brand Influence",
+        "channel.title": "Build Brand Influence | BORVAN SINGAPORE",
+        "channel.header_title": "Build Brand Influence",
         "channel.header_desc": "Build a smooth cross-border cooperation network and expand high-value core client groups.",
         "channel.item1_title": "Brand Presentation",
         "channel.item1_desc": "Translate your brand's core concept into a touching and aesthetic cross-cultural narrative. We ensure high-quality brand exposure across major overseas channels and professional networks to quickly build trust with overseas audiences.",
@@ -115,7 +115,7 @@ const translations = {
         "sevensquare.price": "Enterprise purchasing AI application full-year courses (6 times) 8000 SGD, 120 minutes each.",
         
         // trade.html
-        "trade.title": "Brand Value Trading | BORVAN SINGAPORE",
+        "trade.title": "Organizational System Synergy | BORVAN SINGAPORE",
         "trade.header_desc": "Link to the global high-quality capital market system and realize high-dimensional evolution of brand value.",
         "trade.item1_title": "Strategic Cooperation",
         "trade.item1_desc": "Find and contact business ecosystem partners with resource consensus and complementarity. Broaden brand space geometrically through forward-looking marketing and brand co-branding.",
@@ -150,8 +150,8 @@ const translations = {
         "mission.title": "为企业家提供<br>品牌国际化定制方案。",
         "mission.desc": "无论您寻求在东南亚扩展商业版图，还是希望在中国市场建立文化共鸣，我们与您一起打造充满创造力的品牌殿堂。",
         "solutions.1": "企业出海评估与改善",
-        "solutions.2": "放大品牌影响力",
-        "solutions.3": "品牌增效交易",
+        "solutions.2": "构筑品牌影响力",
+        "solutions.3": "组织系统增效",
         "services.header": "AI时代 <span class='highlight-bg'>品牌与团队</span> 的三重奏",
         "services.desc": "围绕品牌资产，构建从内在精神到外在行动，再到生态共同体的闭环。",
         "services.title1": "品牌故事与文化传达",
@@ -199,8 +199,8 @@ const translations = {
         "course.back_link": "← 返 回 主 页",
         
         // channel.html
-        "channel.title": "放大品牌影响力 | BORVAN SINGAPORE",
-        "channel.header_title": "放大品牌影响力",
+        "channel.title": "构筑品牌影响力 | BORVAN SINGAPORE",
+        "channel.header_title": "构筑品牌影响力",
         "channel.header_desc": "构建顺畅无阻的跨境合作网络，拓展高价值核心客群。",
         "channel.item1_title": "品牌呈现",
         "channel.item1_desc": "将您的品牌核心理念转化为直抵人心的极具美感的跨文化叙事。我们确保品牌在海外各个主流渠道与专业圈层终端，以最具视觉张力与文化影响力的形态进行高质量展露，迅速建立海外受众的信任度。",
@@ -241,7 +241,7 @@ const translations = {
         "sevensquare.price": "企业采购AI应用全年课程（6次）8000新币，每次120分钟。",
         
         // trade.html
-        "trade.title": "品牌增效交易 | BORVAN SINGAPORE",
+        "trade.title": "组织系统增效 | BORVAN SINGAPORE",
         "trade.header_desc": "链接全球优质资本市场体系，实现品牌价值的高维进化。",
         "trade.item1_title": "战略合作",
         "trade.item1_desc": "寻觅并接洽具备高度资源共识与互补性的商业生态圈伙伴。通过具有前瞻性的联合营销方案、创新的跨界品牌联名及长效的深层架构资源共享，以几何倍数拓宽品牌的生存繁衍空间。",
@@ -276,8 +276,8 @@ const translations = {
         "mission.title": "Soluciones Personalizadas de<br>Internacionalización de la Marca para Empresarios.",
         "mission.desc": "Ya sea que busque expandir su presencia comercial en el Sudeste Asiático o establecer resonancia cultural en el mercado chino, construimos un salón de marca creativo junto con usted.",
         "solutions.1": "Evaluación y Mejora en el Extranjero",
-        "solutions.2": "Amplificación de la Influencia de la Marca",
-        "solutions.3": "Comercio de Mejora de Marca",
+        "solutions.2": "Construcción de la Influencia de la Marca",
+        "solutions.3": "Sinergia de Sistemas Organizacionales",
         "services.header": "El Trío de <span class='highlight-bg'>Marca y Equipo</span> en la Era de la IA",
         "services.desc": "Centrándonos en los activos de la marca, construimos un circuito cerrado desde el espíritu interno hasta la acción externa, y luego hacia una comunidad ecológica.",
         "services.title1": "Historia de la Marca y Transmisión Cultural",
@@ -325,8 +325,8 @@ const translations = {
         "course.back_link": "← VOLVER AL INICIO",
         
         // channel.html
-        "channel.title": "Amplificar la Influencia de la Marca | BORVAN SINGAPORE",
-        "channel.header_title": "Amplificar la Influencia de la Marca",
+        "channel.title": "Construir la Influencia de la Marca | BORVAN SINGAPORE",
+        "channel.header_title": "Construir la Influencia de la Marca",
         "channel.header_desc": "Construya una red fluida de cooperación transfronteriza y amplíe los grupos de clientes principales de alto valor.",
         "channel.item1_title": "Presentación de Marca",
         "channel.item1_desc": "Traduzca el concepto central de su marca en una narrativa intercultural estética y conmovedora. Garantizamos una exposición de marca de alta calidad en canales extranjeros y redes profesionales para generar confianza rápidamente.",
@@ -367,7 +367,7 @@ const translations = {
         "sevensquare.price": "Compra empresarial de cursos de aplicación de IA para todo el año (6 veces) 8000 SGD, 120 minutos cada uno.",
         
         // trade.html
-        "trade.title": "Comercio de Mejora de Marca | BORVAN SINGAPORE",
+        "trade.title": "Sinergia de Sistemas Organizacionales | BORVAN SINGAPORE",
         "trade.header_desc": "Conéctese al sistema de mercado de capitales global de alta calidad y logre una evolución multidimensional del valor de marca.",
         "trade.item1_title": "Cooperación Estratégica",
         "trade.item1_desc": "Encuentre y contacte socios del ecosistema empresarial. Amplíe el espacio de la marca geométricamente a través de marketing prospectivo y marca compartida.",
@@ -402,8 +402,8 @@ const translations = {
         "mission.title": "Maßgeschneiderte Lösungen zur<br>Markeninternationalisierung für Unternehmer.",
         "mission.desc": "Ob Sie Ihre Geschäftspräsenz in Südostasien erweitern oder kulturelle Resonanz auf dem chinesischen Markt aufbauen möchten, wir bauen gemeinsam mit Ihnen eine kreative Markenhalle.",
         "solutions.1": "Auslandsbewertung und -verbesserung",
-        "solutions.2": "Markeneinfluss Verstärken",
-        "solutions.3": "Markenwert-Handel",
+        "solutions.2": "Markeneinfluss aufbauen",
+        "solutions.3": "Synergie von Organisationssystemen",
         "services.header": "Das Trio von <span class='highlight-bg'>Marke & Team</span> im KI-Zeitalter",
         "services.desc": "Um den Markenwert herum bauen wir einen geschlossenen Kreislauf vom inneren Geist über das äußere Handeln bis hin zu einer ökologischen Gemeinschaft auf.",
         "services.title1": "Markengeschichte und kulturelle Vermittlung",
@@ -451,8 +451,8 @@ const translations = {
         "course.back_link": "← ZURÜCK ZUR STARTSEITE",
         
         // channel.html
-        "channel.title": "Markeneinfluss Verstärken | BORVAN SINGAPORE",
-        "channel.header_title": "Markeneinfluss Verstärken",
+        "channel.title": "Markeneinfluss aufbauen | BORVAN SINGAPORE",
+        "channel.header_title": "Markeneinfluss aufbauen",
         "channel.header_desc": "Bauen Sie ein reibungsloses grenzüberschreitendes Kooperationsnetzwerk auf und erweitern Sie hochwertige Kernkundengruppen.",
         "channel.item1_title": "Markenpräsentation",
         "channel.item1_desc": "Übersetzen Sie das Kernkonzept Ihrer Marke in ein herzerwärmendes und ästhetisches interkulturelles Narrativ. Wir sorgen für eine qualitativ hochwertige Markenpräsentation in Überseekanälen und professionellen Netzwerken.",
@@ -493,7 +493,7 @@ const translations = {
         "sevensquare.price": "Unternehmenskauf von KI-Anwendungskursen für das ganze Jahr (6 Mal) 8000 SGD, jeweils 120 Minuten.",
         
         // trade.html
-        "trade.title": "Markenwert-Handel | BORVAN SINGAPORE",
+        "trade.title": "Synergie von Organisationssystemen | BORVAN SINGAPORE",
         "trade.header_desc": "Verbinden Sie sich mit dem globalen hochwertigen Kapitalmarktsystem und realisieren Sie eine hochdimensionale Entwicklung des Markenwerts.",
         "trade.item1_title": "Strategische Kooperation",
         "trade.item1_desc": "Finden und kontaktieren Sie Partner im Geschäftsökosystem. Erweitern Sie den Markenraum geometrisch durch vorausschauendes Marketing und Co-Branding.",
@@ -528,8 +528,8 @@ const translations = {
         "mission.title": "Soluzioni Personalizzate di<br>Internazionalizzazione del Marchio per Imprenditori.",
         "mission.desc": "Sia che tu voglia espandere la tua presenza commerciale nel Sud-est asiatico o stabilire una risonanza culturale nel mercato cinese, costruiamo con te una sala creativa del marchio.",
         "solutions.1": "Valutazione e Miglioramento all'Estero",
-        "solutions.2": "Amplificare l'Influenza del Marchio",
-        "solutions.3": "Scambio di Valore del Marchio",
+        "solutions.2": "Costruire l'Influenza del Marchio",
+        "solutions.3": "Sinergia dei Sistemi Organizzativi",
         "services.header": "Il Trio di <span class='highlight-bg'>Marchio e Team</span> nell'Era dell'IA",
         "services.desc": "Concentrandoci sugli asset del marchio, costruiamo un ciclo chiuso dallo spirito interiore all'azione esteriore, e infine a una comunità ecologica.",
         "services.title1": "Storia del Marchio e Trasmissione Culturale",
@@ -577,8 +577,8 @@ const translations = {
         "course.back_link": "← TORNA ALLA HOME",
         
         // channel.html
-        "channel.title": "Amplificare l'Influenza del Marchio | BORVAN SINGAPORE",
-        "channel.header_title": "Amplificare l'Influenza del Marchio",
+        "channel.title": "Costruire l'Influenza del Marchio | BORVAN SINGAPORE",
+        "channel.header_title": "Costruire l'Influenza del Marchio",
         "channel.header_desc": "Costruisci una rete di cooperazione transfrontaliera fluida ed espandi i gruppi di clienti principali ad alto valore.",
         "channel.item1_title": "Presentazione del Marchio",
         "channel.item1_desc": "Traduci il concetto centrale del tuo marchio in una narrazione interculturale estetica e toccante. Garantiamo un'esposizione del marchio di alta qualità sui canali esteri e sulle reti professionali.",
@@ -619,7 +619,7 @@ const translations = {
         "sevensquare.price": "Acquisto aziendale di corsi annuali sull'applicazione dell'IA (6 volte) 8000 SGD, 120 minuti ciascuno.",
         
         // trade.html
-        "trade.title": "Scambio di Valore del Marchio | BORVAN SINGAPORE",
+        "trade.title": "Sinergia dei Sistemi Organizzativi | BORVAN SINGAPORE",
         "trade.header_desc": "Collegati al sistema del mercato dei capitali globale ad alta qualità e realizza un'evoluzione multidimensionale del valore del marchio.",
         "trade.item1_title": "Cooperazione Strategica",
         "trade.item1_desc": "Trova e contatta partner dell'ecosistema aziendale. Amplia lo spazio del marchio geometricamente tramite marketing lungimirante e co-branding.",
