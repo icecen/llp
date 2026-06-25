@@ -105,8 +105,8 @@ const translations = {
         
         // liangchen.html
         "liangchen.title": "Introducer Profile - Liang Chen | BORVAN SINGAPORE",
-        "liangchen.header_title": "Introducer Profile & News",
-        "liangchen.header_desc": "Get to know more about Mr. Liang Chen's education, social responsibilities, and mainstream media coverage.",
+        "liangchen.header_title": "Introducer Profile",
+        "liangchen.header_desc": "Get to know more about Mr. Liang Chen's education and social responsibilities.",
         "liangchen.name": "LC Liang Chen",
         "liangchen.title_sub": "Introducer of BORVAN SINGAPORE",
         "liangchen.education_title": "Education",
@@ -121,10 +121,6 @@ const translations = {
         "liangchen.soc2_desc": "Anhui University of Finance and Economics",
         "liangchen.soc3_title": "Practice Mentor for MBA School",
         "liangchen.soc3_desc": "Communication University of China",
-        "liangchen.news_title": "News Reports & Literature",
-        "liangchen.news1_source": "Beijing Evening News",
-        "liangchen.news1_title": "'Tracing the Liang-Chen Proposal and the Protection of Beijing's Ancient City'",
-        "liangchen.news1_desc": "A report reviewing the 1950 proposal by Liang Sicheng and Chen Zhanxiang (the famous 'Liang-Chen Proposal'). It advocated for the complete protection of Beijing's ancient city axis and historical architecture, serving as a landmark in urban planning and cultural heritage preservation.",
         
         // enterprise.html
         "enterprise.title": "Enterprise Overseas Assessment & Improvement | BORVAN SINGAPORE",
@@ -307,8 +303,8 @@ const translations = {
         
         // liangchen.html
         "liangchen.title": "引荐官简介 - 梁陈 | BORVAN SINGAPORE",
-        "liangchen.header_title": "引荐官背景与报道",
-        "liangchen.header_desc": "深入了解梁陈先生的教育背景、社会责任以及主流媒体的新闻报道。",
+        "liangchen.header_title": "引荐官背景介绍",
+        "liangchen.header_desc": "深入了解梁陈先生的教育背景与社会责任。",
         "liangchen.name": "（LC）梁陈",
         "liangchen.title_sub": "BORVAN SINGAPORE 引荐官",
         "liangchen.education_title": "教育背景",
@@ -323,10 +319,6 @@ const translations = {
         "liangchen.soc2_desc": "安徽财经大学",
         "liangchen.soc3_title": "MBA学院 实践导师",
         "liangchen.soc3_desc": "中国传媒大学",
-        "liangchen.news_title": "新闻报道与文献",
-        "liangchen.news1_source": "北京晚报 Beijing Evening News",
-        "liangchen.news1_title": "《寻踪“梁陈方案”与北京古城保护》",
-        "liangchen.news1_desc": "报道回顾了1950年梁思成与陈占祥共同提出的《关于中央人民政府行政中心区位置的建议》（即著名的“梁陈方案”）。该方案主张完整保护北京古城区的中轴线与历史风貌，在新城区建立行政中心，是城市规划与文明保护史上的里程碑。",
         
         // enterprise.html
         "enterprise.title": "企业出海评估与改善 | BORVAN SINGAPORE",
@@ -509,8 +501,8 @@ const translations = {
         
         // liangchen.html
         "liangchen.title": "Perfil del Introductor - Liang Chen | BORVAN SINGAPORE",
-        "liangchen.header_title": "Perfil del Introductor y Noticias",
-        "liangchen.header_desc": "Conozca más sobre la educación del Sr. Liang Chen, sus responsabilidades sociales y su cobertura en los principales medios.",
+        "liangchen.header_title": "Perfil del Introductor",
+        "liangchen.header_desc": "Conozca más sobre la educación del Sr. Liang Chen y sus responsabilidades sociales.",
         "liangchen.name": "LC Liang Chen",
         "liangchen.title_sub": "Introductor de BORVAN SINGAPORE",
         "liangchen.education_title": "Educación",
@@ -525,10 +517,6 @@ const translations = {
         "liangchen.soc2_desc": "Universidad de Finanzas y Economía de Anhui",
         "liangchen.soc3_title": "Mentor de Práctica para la Escuela de MBA",
         "liangchen.soc3_desc": "Universidad de Comunicación de China",
-        "liangchen.news_title": "Reportes de Prensa y Literatura",
-        "liangchen.news1_source": "Beijing Evening News",
-        "liangchen.news1_title": "'Rastreando la Propuesta Liang-Chen y la Protección de la Ciudad Antigua de Pekín'",
-        "liangchen.news1_desc": "Un reportaje que repasa la propuesta de 1950 de Liang Sicheng y Chen Zhanxiang. Abogaba por la protección completa de la ciudad antigua de Pekín y su eje histórico, sirviendo como un hito en la planificación urbana y conservación del patrimonio cultural.",
         
         // enterprise.html
         "enterprise.title": "Evaluación y Mejora en el Extranjero | BORVAN SINGAPORE",
@@ -711,8 +699,8 @@ const translations = {
         
         // liangchen.html
         "liangchen.title": "Empfehlungsgeberprofil - Liang Chen | BORVAN SINGAPORE",
-        "liangchen.header_title": "Empfehlungsgeberprofil & Nachrichten",
-        "liangchen.header_desc": "Erfahren Sie mehr über Herrn Liang Chens Ausbildung, soziale Verantwortung und Berichterstattung in den Hauptmedien.",
+        "liangchen.header_title": "Empfehlungsgeberprofil",
+        "liangchen.header_desc": "Erfahren Sie mehr über Herrn Liang Chens Ausbildung und soziale Verantwortung.",
         "liangchen.name": "LC Liang Chen",
         "liangchen.title_sub": "Empfehlungsgeber von BORVAN SINGAPORE",
         "liangchen.education_title": "Ausbildung",
@@ -727,10 +715,6 @@ const translations = {
         "liangchen.soc2_desc": "Universität für Finanzen und Wirtschaft Anhui",
         "liangchen.soc3_title": "Praxismentor für die MBA-Schule",
         "liangchen.soc3_desc": "Kommunikationsuniversität von China",
-        "liangchen.news_title": "Presseberichte & Literatur",
-        "liangchen.news1_source": "Beijing Evening News",
-        "liangchen.news1_title": "„Auf den Spuren des Liang-Chen-Entwurfs und des Schutzes der Altstadt von Peking“",
-        "liangchen.news1_desc": "Ein Bericht über den Entwurf von Liang Sicheng und Chen Zhanxiang aus dem Jahr 1950 (bekannt als 'Liang-Chen-Entwurf'). Er plädierte für den vollständigen Schutz der historischen Altstadt von Peking und gilt als Meilenstein der Stadtplanung und Erhaltung des kulturellen Erbes.",
         
         // enterprise.html
         "enterprise.title": "Auslandsbewertung und -verbesserung | BORVAN SINGAPORE",
@@ -913,8 +897,8 @@ const translations = {
         
         // liangchen.html
         "liangchen.title": "Profilo del Referente - Liang Chen | BORVAN SINGAPORE",
-        "liangchen.header_title": "Profilo del Referente e Notizie",
-        "liangchen.header_desc": "Scopri di più sul percorso accademico, sulle responsabilità sociali e sulle testate giornalistiche che parlano di Liang Chen.",
+        "liangchen.header_title": "Profilo del Referente",
+        "liangchen.header_desc": "Scopri di più sul percorso accademico e sulle responsabilità sociali di Liang Chen.",
         "liangchen.name": "LC Liang Chen",
         "liangchen.title_sub": "Referente di BORVAN SINGAPORE",
         "liangchen.education_title": "Istruzione",
@@ -929,10 +913,6 @@ const translations = {
         "liangchen.soc2_desc": "Università di Finanza ed Economia dell'Anhui",
         "liangchen.soc3_title": "Tutor di Pratica per la Scuola MBA",
         "liangchen.soc3_desc": "Università di Comunicazione della Cina",
-        "liangchen.news_title": "Stampa e Letteratura",
-        "liangchen.news1_source": "Beijing Evening News",
-        "liangchen.news1_title": "'Sulle tracce della proposta Liang-Chen e della tutela della città antica di Pechino'",
-        "liangchen.news1_desc": "Un reportage che ripercorre la proposta del 1950 di Liang Sicheng e del pianificatore Chen Zhanxiang (la celebre proposta 'Liang-Chen'). Sosteneva la completa tutela della città antica di Pechino e del suo asse storico, pietra miliare dell'urbanistica e della salvaguardia dei beni culturali.",
         
         // enterprise.html
         "enterprise.title": "Valutazione e Miglioramento all'Estero | BORVAN SINGAPORE",
