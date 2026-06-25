@@ -354,31 +354,7 @@ a {
     margin: 0 auto;
 }
 
-.image-name-tag {
-    position: absolute;
-    bottom: calc(2rem + 15px);
-    left: 15px;
-    background: rgba(20, 20, 20, 0.85);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-left: 3px solid var(--color-accent);
-    color: #FFFFFF;
-    padding: 0.6rem 1.5rem;
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
-    letter-spacing: 0.1em;
-    border-radius: 0 4px 4px 0;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    z-index: 10;
-    pointer-events: none;
-    transition: var(--transition-smooth);
-}
 
-.mission-image:hover .image-name-tag {
-    background: rgba(178, 149, 98, 0.95);
-    color: #FFFFFF;
-    border-left-color: #FFFFFF;
-}
 
 .portrait-img {
     width: 100%;
