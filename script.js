@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <path d="M11 3 8 9l4 13 4-13-3-6z"></path>
                             <path d="M2 9h20"></path>
                         </svg>
-                        <span class="mobile-nav-text" data-i18n="nav.core">核心</span>
+                        <span class="mobile-nav-text" data-i18n="nav.core">创新</span>
                     </a>
                     <a href="pricing.html" class="mobile-nav-item ${isPricing ? 'active' : ''}" data-nav="pricing">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -142,4 +142,52 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
     injectMobileNav();
+
+    // WeChat copy-to-clipboard functionality with custom toast
+    const toastMessages = {
+        zh: "微信号 'voicecoffee' 已复制到剪贴板，请打开微信添加",
+        en: "WeChat ID 'voicecoffee' has been copied to clipboard. Please open WeChat to add.",
+        es: "¡El ID de WeChat 'voicecoffee' ha sido copiado al portapapeles! Abra WeChat para agregar.",
+        de: "WeChat-ID 'voicecoffee' wurde in die Zwischenablage kopiert. Bitte öffnen Sie WeChat zum Hinzufügen.",
+        it: "L'ID WeChat 'voicecoffee' è stato copiato negli appunti. Apri WeChat per aggiungere."
+    };
+
+    function showToast(message) {
+        let toast = document.getElementById('custom-toast');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'custom-toast';
+            toast.className = 'custom-toast';
+            document.body.appendChild(toast);
+        }
+        toast.textContent = message;
+        toast.classList.add('show');
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 3000);
+    }
+
+    const wechatBtn = document.getElementById('wechat-btn');
+    if (wechatBtn) {
+        wechatBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const wechatId = wechatBtn.getAttribute('data-wechat');
+            navigator.clipboard.writeText(wechatId).then(() => {
+                const currentLang = localStorage.getItem('selectedLanguage') || 'zh';
+                const msg = toastMessages[currentLang] || toastMessages['zh'];
+                showToast(msg);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                const fallbackMsg = {
+                    zh: "微信号：voicecoffee",
+                    en: "WeChat ID: voicecoffee",
+                    es: "ID de WeChat: voicecoffee",
+                    de: "WeChat-ID: voicecoffee",
+                    it: "ID WeChat: voicecoffee"
+                };
+                const currentLang = localStorage.getItem('selectedLanguage') || 'zh';
+                alert((fallbackMsg[currentLang] || fallbackMsg['zh']));
+            });
+        });
+    }
 });

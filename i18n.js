@@ -2,7 +2,7 @@ const translations = {
     en: {
         "nav.badge": "Leverage Singapore",
         "nav.mission": "Course",
-        "nav.core": "Core",
+        "nav.core": "Innovation",
         "nav.ecosystem": "Ecosystem",
         "nav.contact": "Contact",
         "hero.pretitle": "Insight into Human Creativity",
@@ -167,7 +167,7 @@ const translations = {
     zh: {
         "nav.badge": "用好新加坡",
         "nav.mission": "课程",
-        "nav.core": "核心",
+        "nav.core": "创新",
         "nav.ecosystem": "生态",
         "nav.contact": "联络",
         "hero.pretitle": "洞察人的创造力",
@@ -332,7 +332,7 @@ const translations = {
     es: {
         "nav.badge": "Aprovechar Singapur",
         "nav.mission": "Curso",
-        "nav.core": "Núcleo",
+        "nav.core": "Innovación",
         "nav.ecosystem": "Ecosistema",
         "nav.contact": "Contacto",
         "hero.pretitle": "Perspicacia sobre la creatividad humana",
@@ -497,7 +497,7 @@ const translations = {
     de: {
         "nav.badge": "Singapur Nutzen",
         "nav.mission": "Kurs",
-        "nav.core": "Kern",
+        "nav.core": "Innovation",
         "nav.ecosystem": "Ökosystem",
         "nav.contact": "Kontakt",
         "hero.pretitle": "Einblick in die menschliche Kreativität",
@@ -662,7 +662,7 @@ const translations = {
     it: {
         "nav.badge": "Sfruttare Singapore",
         "nav.mission": "Corso",
-        "nav.core": "Nucleo",
+        "nav.core": "Innovazione",
         "nav.ecosystem": "Ecosistema",
         "nav.contact": "Contatto",
         "hero.pretitle": "Intuizione nella creatività umana",
