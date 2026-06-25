@@ -1141,3 +1141,14 @@ a.contact-value:hover {
     opacity: 1;
 }
 
+/* Founder Profile Links styling */
+.profile-link {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+.profile-link:hover {
+    color: var(--color-accent);
+}
+
+
