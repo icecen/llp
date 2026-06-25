@@ -1,0 +1,51 @@
+﻿Created At: 2026-06-25T17:06:39Z
+Completed At: 2026-06-25T17:06:39Z
+File Path: `file:///C:/Users/PC/.gemini/antigravity-ide/scratch/value_portfolio/i18n.js`
+Total Lines: 858
+Total Bytes: 77398
+Showing lines 1 to 800
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: const translations = {
+2:     en: {
+3:         "nav.badge": "Leverage Singapore",
+4:         "nav.mission": "Course",
+5:         "nav.core": "Innovation",
+6:         "nav.ecosystem": "Ecosystem",
+7:         "nav.contact": "Contact",
+8:         "hero.pretitle": "Insight into Human Creativity",
+9:         "hero.title": "Building Brand Civilization Influence",
+10:         "hero.posttitle": "Connecting Southeast Asia and China, achieving organization core value heritage and efficiency enhancement",
+11:         "hero.discover": "Distill Brand Core Value",
+12:         "hero.amplify": "Establish Brand Communication Context",
+13:         "hero.trade": "Understand Cultural Differences in Business Negotiation",
+14:         "hero.club": "Coffee Industry Brand Club",
+15:         "hero.cta": "Explore Our Services <span class='arrow'>鈫?/span>",
+16:         "product1.label": "Service Product 1",
+17:         "product1.title": "Business Chinese Expression Course",
+18:         "product1.desc": "Location: The Adelphi, Singapore | Duration: 9 Lessons | Price: 1800 SGD",
+19:         "course.discover.desc": "Extract core business value and conduct precise Chinese expression and cultural packaging in business contexts.",
+20:         "course.amplify.desc": "Master business presentation and roadshow skills for Greater China and Southeast Asian markets, establishing unshakeable trust.",
+21:         "course.trade.desc": "Learn cross-cultural negotiation skills and the art of cooperation, turning brand assets into continuous commercial transactions and ecosystem synergy.",
+22:         "
+<truncated 45283 bytes>
+inear la Cohesi贸n del Equipo</strong>: Diagnosticar la fricci贸n interna del equipo, redise帽ar las v铆as de comunicaci贸n entre directivos y personal, y activar el potencial individual para mejorar la colaboraci贸n.",
+491:         "pricing.coaching_effects_item3": "<strong>Optimizar Sistemas Operativos</strong>: Revisar y reconstruir los procedimientos operativos est谩ndar (SOP) para operaciones minoristas, creando mecanismos robustos de autocorrecci贸n para una colaboraci贸n transfronteriza fluida.",
+492:         "pricing.coaching_process_title": "Proceso de Acompa帽amiento",
+493:         "pricing.coaching_process_item1": "<strong>Diagn贸stico y Alineaci贸n</strong>: Evaluar las operaciones en el sitio para identificar cuellos de botella y definir objetivos claros junto con el fundador.",
+494:         "pricing.coaching_process_item2": "<strong>Sesiones y Supervisi贸n Regular</strong>: Combinar reuniones semanales, talleres profundos quincenales y auditor铆as en tienda para asegurar la ejecuci贸n del plan.",
+495:         "pricing.coaching_process_item3": "<strong>Ajuste Din谩mico y Seguimiento</strong>: Medir el rendimiento operativo mensualmente y adaptar dinamicamente las estrategias seg煤n la respuesta del equipo y del mercado."
+496:     },
+497:     de: {
+498:         "nav.badge": "Singapur Nutzen",
+499:         "nav.mission": "Kurs",
+500:         "nav.core": "Innovation",
+501:         "nav.ecosystem": "脰kosystem",
+502:         "nav.contact": "Kontakt",
+503:         "hero.pretitle": "Einblick in die menschliche Kreativit盲t",
+504:         "hero.title": "Aufbau der Marken-Zivilisation",
+505:         "hero.posttitle": "Verbindung von S眉dostasien und China, um die Weitergabe und Effizienzsteigerung des Kernwerts von Organisationen zu realisieren",
+506:         "hero.discover": "Marken-Kernwert herausarbeiten",
+507:         "hero.amplify": "Markenkommuni
+<truncated 28694 bytes>
+
+NOTE: The output was truncated because it was too long. Use a more targeted query or a smaller range to get the information you need.
