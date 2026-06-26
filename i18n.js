@@ -1,6 +1,6 @@
 const translations = {
     en: {
-        "nav.badge": "Leverage Singapore",
+        "nav.badge": "Leverage Singapore, Cultivate New Ecosystems",
         "nav.mission": "Course",
         "nav.core": "Innovation",
         "nav.ecosystem": "Ecosystem",
@@ -189,7 +189,7 @@ const translations = {
         "pricing.item7_price": "From 90,000 SGD"
     },
     zh: {
-        "nav.badge": "用好新加坡",
+        "nav.badge": "用好新加坡，培植新生态",
         "nav.mission": "课程",
         "nav.core": "创新",
         "nav.ecosystem": "生态",
@@ -378,7 +378,7 @@ const translations = {
         "pricing.item7_price": "90,000 新币起"
     },
     es: {
-        "nav.badge": "Aprovechar Singapur",
+        "nav.badge": "Aprovechar Singapur, Cultivar Nuevos Ecosistemas",
         "nav.mission": "Curso",
         "nav.core": "Innovación",
         "nav.ecosystem": "Ecosistema",
@@ -567,7 +567,7 @@ const translations = {
         "pricing.item7_price": "Desde 90.000 SGD"
     },
     de: {
-        "nav.badge": "Singapur Nutzen",
+        "nav.badge": "Singapur Nutzen, Neue Ökosysteme Pflegen",
         "nav.mission": "Kurs",
         "nav.core": "Innovation",
         "nav.ecosystem": "Ökosystem",
@@ -756,7 +756,7 @@ const translations = {
         "pricing.item7_price": "Ab 90.000 SGD"
     },
     it: {
-        "nav.badge": "Sfruttare Singapore",
+        "nav.badge": "Sfruttare Singapore, Coltivare Nuovi Ecosistemi",
         "nav.mission": "Corso",
         "nav.core": "Innovazione",
         "nav.ecosystem": "Ecosistema",
