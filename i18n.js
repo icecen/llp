@@ -66,6 +66,9 @@ const translations = {
         "product1_en.label": "Business English Series",
         "product1_en.title": "Business English Professional Club Course<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "Location: The Adelphi, Singapore<br>Duration: 40 Lessons (20 Sessions)<br>Price: 3000 SGD",
+        "product1_charity.label": "Public Welfare Integration",
+        "product1_charity.title": "Compulsory Course for Parents of Study Abroad Students",
+        "product1_charity.desc": "Location: The Adelphi, Singapore<br>Duration: 2 Hours<br>Price: Free",
         "course.book_now": "Book Free Experience",
         
         // Secondary Pages Common
@@ -252,6 +255,9 @@ const translations = {
         "product1_en.label": "商务英文系列",
         "product1_en.title": "商务英文专业俱乐部课程<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "上课地址：新加坡 The Adelphi大厦<br>课时：40个课时 (共20次课)<br>价格：3000新币",
+        "product1_charity.label": "公益融入课堂",
+        "product1_charity.title": "留学父母必修课",
+        "product1_charity.desc": "上课地址：新加坡 The Adelphi大厦<br>课时：2小时<br>价格：免费",
         "course.book_now": "预约免费体验",
         
         // Secondary Pages Common
@@ -438,6 +444,9 @@ const translations = {
         "product1_en.label": "Serie de Inglés de Negocios",
         "product1_en.title": "Curso de Club Profesional de Inglés de Negocios<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "Ubicación: The Adelphi, Singapur<br>Duración: 40 Lecciones (20 Sesiones)<br>Precio: 3000 SGD",
+        "product1_charity.label": "Integración del Bienestar Público",
+        "product1_charity.title": "Curso Obligatorio para Padres de Estudiantes en el Extranjero",
+        "product1_charity.desc": "Ubicación: The Adelphi, Singapur<br>Duración: 2 Horas<br>Precio: Gratis",
         "course.book_now": "Reservar experiencia gratuita",
         
         // Secondary Pages Common
@@ -624,6 +633,9 @@ const translations = {
         "product1_en.label": "Business-Englisch-Reihe",
         "product1_en.title": "Business-Englisch Professional Club Kurs<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "Ort: The Adelphi, Singapur<br>Dauer: 40 Lektionen (20 Sitzungen)<br>Preis: 3000 SGD",
+        "product1_charity.label": "Gemeinnützige Integration",
+        "product1_charity.title": "Pflichtkurs für Eltern von Auslandsstudenten",
+        "product1_charity.desc": "Ort: The Adelphi, Singapur<br>Dauer: 2 Stunden<br>Preis: Kostenlos",
         "course.book_now": "Kostenloses Erlebnis buchen",
         
         // Secondary Pages Common
@@ -810,6 +822,9 @@ const translations = {
         "product1_en.label": "Serie di Inglese Commerciale",
         "product1_en.title": "Corso del Club Professionale di Inglese Commerciale<br><span style='font-size: 1.1rem; font-family: var(--font-english); font-weight: 300; display: block; margin-top: 0.3rem;'>UPC ULC professionals club</span>",
         "product1_en.desc": "Luogo: The Adelphi, Singapore<br>Durata: 20 Lezioni<br>Prezzo: 3000 SGD",
+        "product1_charity.label": "Integrazione nel Benessere Pubblico",
+        "product1_charity.title": "Corso Obbligatorio per Genitori di Studenti all'Estero",
+        "product1_charity.desc": "Luogo: The Adelphi, Singapore<br>Durata: 2 Ore<br>Prezzo: Gratuito",
         "course.book_now": "Prenota un'esperienza gratuita",
         
         // Secondary Pages Common
