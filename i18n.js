@@ -1,6 +1,6 @@
 const translations = {
     en: {
-        "nav.badge": "Leverage Singapore, Cultivate New Ecosystems",
+        "nav.badge": "Leverage Singapore, Plant New Seeds",
         "nav.mission": "Course",
         "nav.core": "Innovation",
         "nav.ecosystem": "Ecosystem",
@@ -191,7 +191,7 @@ const translations = {
         "pricing.item7_price": "From 90,000 SGD"
     },
     zh: {
-        "nav.badge": "用好新加坡，培植新生态",
+        "nav.badge": "用好新加坡，种好新种子",
         "nav.mission": "课程",
         "nav.core": "创新",
         "nav.ecosystem": "生态",
@@ -332,15 +332,15 @@ const translations = {
         "sevensquare.title": "Seven Square AI 转型训练营 | BORVAN SINGAPORE",
         "sevensquare.header_title": "Seven Square AI 转型训练营",
         "sevensquare.header_desc": "4周课程包：用AI建立品牌文明资产与工作流",
-        "sevensquare.intro": "本训练营专为 SME 老板和核心员工设计，采用每周1次、每次3小时的形式，通过4周的深度共创，帮助企业建立自己的 AI 应用与落地体系。",
+        "sevensquare.intro": "本训练营专为 SME 企业主及核心团队设计，采用每周1次、每次3小时的形式，通过4周的深度共创，帮助企业建立自己的 AI 应用与落地体系。",
         "sevensquare.item1_title": "W1: AI Productivity 基础",
-        "sevensquare.item1_desc": "<strong>核心产出：个人 AI 工作流</strong><br>• ChatGPT / Claude / Gemini 核心差异与选型<br>• 高效 Prompt 提示词基础与构建技巧<br>• 智能文件分析与信息快速提取<br>• 会议纪要智能生成与要点提炼<br>• 商务邮件高效撰写与自动回复<br>• 日常办公自动化工作流的搭建",
+        "sevensquare.item1_desc": "<strong>核心产出：</strong>个人 AI 高效工作流<br>• ChatGPT / Claude / Gemini 核心差异与选型深度对比<br>• 高效 Prompt（提示词）设计基础与高级构建技巧<br>• 智能文件分析与海量信息快速提取<br>• 会议纪要智能生成与核心要点自动提炼<br>• 商务邮件高效撰写与自动化回复系统搭建",
         "sevensquare.item2_title": "W2: AI for Sales & Marketing",
-        "sevensquare.item2_desc": "<strong>核心产出：AI 销售与内容模板库</strong><br>• 目标客户画像的深度精准勾勒<br>• 销售话术模板与话术库的智能构建<br>• 客户 Follow-up 跟进邮件的自动生成<br>• 社交媒体文案智能生成<br>• EDM 模板与营销内容设计<br>• 广告文案快速撰写",
+        "sevensquare.item2_desc": "<strong>核心产出：</strong>AI 销售与营销内容模板库<br>• 目标客户画像（Persona）的深度精准勾勒<br>• 智能销售话术库与多场景沟通模板构建<br>• 客户跟进（Follow-up）邮件的流线化自动生成<br>• 跨平台社交媒体（Social Media）文案智能矩阵<br>• EDM（营销邮件）与差异化广告文案快速撰写",
         "sevensquare.item3_title": "W3: AI for Finance, HR & Admin",
-        "sevensquare.item3_desc": "<strong>核心产出：公司内部 AI 助手原型</strong><br>• 财务报表摘要与财务状况智能分析<br>• 报销说明、报销审核指引自动撰写<br>• HR 招聘岗位职责（JD）的生成与匹配<br>• 员工手册与企业内部规范文档整理<br>• 业务标准作业程序（SOP）文档生成<br>• 客户服务常见问题（FAQ）问答库构建",
+        "sevensquare.item3_desc": "<strong>核心产出：</strong>企业专属 AI 助手原型<br>• 财务报表摘要精炼与财务状况智能洞察<br>• 报销说明、费用审核指引自动撰写<br>• HR 职位说明（JD）的高效生成与人才资质匹配<br>• 员工手册与企业内部规范文档的智能化整理<br>• 业务标准作业程序（SOP）文档的自动化生成<br>• 客户服务常见问题（FAQ）智能问答库构建",
         "sevensquare.item4_title": "W4: AI Agent & Company AI Policy",
-        "sevensquare.item4_desc": "<strong>核心产出：公司 AI 落地与实施计划</strong><br>• 什么是 AI Agent 及其商业价值<br>• 如何零代码搭建简单的企业专属 Agent<br>• 公司内部 AI 使用规范与信息安全守则<br>• 企业数据安全防护与敏感信息过滤<br>• 跨部门 AI 落地推进计划与路线图",
+        "sevensquare.item4_desc": "<strong>核心产出：</strong>公司 AI 落地与实施计划<br>• 什么是 AI Agent 及其商业价值<br>• 如何零代码搭建简单的企业专属 Agent<br>• 公司内部 AI 使用规范与信息安全守则<br>• 企业数据安全防护与敏感信息过滤<br>• 跨部门 AI 落地推进计划与路线图",
         "sevensquare.price": "<strong>课程费用与报名建议</strong><br>• 个人报名：SGD 699 - 1,200 / 人<br>• 企业包班：SGD 3,000 - 8,000 (视人数和定制程度)",
         
         // trade.html
@@ -382,7 +382,7 @@ const translations = {
         "pricing.item7_price": "90,000 新币起"
     },
     es: {
-        "nav.badge": "Aprovechar Singapur, Cultivar Nuevos Ecosistemas",
+        "nav.badge": "Aprovechar Singapur, Sembrar Nuevas Semillas",
         "nav.mission": "Curso",
         "nav.core": "Innovación",
         "nav.ecosystem": "Ecosistema",
@@ -573,7 +573,7 @@ const translations = {
         "pricing.item7_price": "Desde 90.000 SGD"
     },
     de: {
-        "nav.badge": "Singapur Nutzen, Neue Ökosysteme Pflegen",
+        "nav.badge": "Singapur Nutzen, Neue Samen Säen",
         "nav.mission": "Kurs",
         "nav.core": "Innovation",
         "nav.ecosystem": "Ökosystem",
@@ -764,7 +764,7 @@ const translations = {
         "pricing.item7_price": "Ab 90.000 SGD"
     },
     it: {
-        "nav.badge": "Sfruttare Singapore, Coltivare Nuovi Ecosistemi",
+        "nav.badge": "Sfruttare Singapore, Seminare Nuovi Semi",
         "nav.mission": "Corso",
         "nav.core": "Innovazione",
         "nav.ecosystem": "Ecosistema",
