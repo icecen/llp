@@ -289,7 +289,7 @@ const translations = {
         "course.price_tag_p1": "请拨打电话或添加联系人预约您的体验课程：",
         "course.price_tag_btn": "立即拨打电话",
         "course.goal_label": "核心目标：",
-        "course.focus_label": "教学重点：",
+        "course.focus_label": "重点：",
         "course.branding.name": "Founder Identity Architecture™",
         "course.branding.positioning": "Founder Identity Architecture™ 是一套专注于创始人及成长型企业的高端企业教练系统。",
         "course.branding.competence": "我们的核心能力是帮助企业重新定义问题。",
