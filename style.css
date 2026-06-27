@@ -1151,4 +1151,79 @@ a.contact-value:hover {
     color: var(--color-accent);
 }
 
+/* Founder Identity Architecture section styling */
+.services-intro-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+
+.services-intro-left {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--color-text-primary);
+    font-style: italic;
+    border-left: 2px solid var(--color-accent);
+    padding-left: 2rem;
+}
+
+.services-intro-right {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+}
+
+.services-intro-right p {
+    margin-bottom: 1rem;
+}
+
+.services-intro-right p:last-child {
+    margin-bottom: 0;
+}
+
+/* Pricing Philosophy styling */
+.pricing-philosophy-box {
+    margin-top: 5rem;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px dashed var(--color-accent);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.pricing-philosophy-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.pricing-philosophy-desc {
+    font-size: 1.05rem;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .services-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+    .services-intro-left {
+        font-size: 1.2rem;
+        padding-left: 1.5rem;
+    }
+    .pricing-philosophy-box {
+        padding: 2rem 1.5rem;
+        margin-top: 3rem;
+    }
+}
+
 
