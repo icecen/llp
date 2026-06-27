@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const isIndex = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/') || !window.location.pathname.includes('.html');
         const indexPrefix = isIndex ? '' : 'index.html';
         const isPricing = window.location.pathname.includes('pricing.html');
+        const isSevenSquare = window.location.pathname.includes('sevensquare.html');
         
         const mobileNavHtml = `
             <div class="mobile-bottom-nav">
@@ -93,13 +94,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         </svg>
                         <span class="mobile-nav-text" data-i18n="nav.mission">课程</span>
                     </a>
-                    <a href="${indexPrefix}#services" class="mobile-nav-item" data-nav="core">
+                    <a href="sevensquare.html" class="mobile-nav-item ${isSevenSquare ? 'active' : ''}" data-nav="core">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M6 3h12l4 6-10 13L2 9z"></path>
                             <path d="M11 3 8 9l4 13 4-13-3-6z"></path>
                             <path d="M2 9h20"></path>
                         </svg>
-                        <span class="mobile-nav-text" data-i18n="nav.core">创新</span>
+                        <span class="mobile-nav-text" data-i18n="nav.core">AI</span>
                     </a>
                     <a href="pricing.html" class="mobile-nav-item ${isPricing ? 'active' : ''}" data-nav="pricing">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

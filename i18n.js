@@ -2,7 +2,7 @@ const translations = {
     en: {
         "nav.badge": "Leverage Singapore, Plant New Seeds",
         "nav.mission": "Course",
-        "nav.core": "Innovation",
+        "nav.core": "AI",
         "nav.ecosystem": "Ecosystem",
         "nav.contact": "Contact",
         "hero.pretitle": "Insight into Human Creativity",
@@ -199,7 +199,7 @@ const translations = {
     zh: {
         "nav.badge": "用好新加坡，种好新种子",
         "nav.mission": "课程",
-        "nav.core": "创新",
+        "nav.core": "AI",
         "nav.ecosystem": "生态",
         "nav.contact": "联络",
         "hero.pretitle": "洞察人的创造力",
@@ -396,7 +396,7 @@ const translations = {
     es: {
         "nav.badge": "Aprovechar Singapur, Sembrar Nuevas Semillas",
         "nav.mission": "Curso",
-        "nav.core": "Innovación",
+        "nav.core": "AI",
         "nav.ecosystem": "Ecosistema",
         "nav.contact": "Contacto",
         "hero.pretitle": "Perspicacia sobre la creatividad humana",
@@ -593,7 +593,7 @@ const translations = {
     de: {
         "nav.badge": "Singapur Nutzen, Neue Samen Säen",
         "nav.mission": "Kurs",
-        "nav.core": "Innovation",
+        "nav.core": "AI",
         "nav.ecosystem": "Ökosystem",
         "nav.contact": "Kontakt",
         "hero.pretitle": "Einblick in die menschliche Kreativität",
@@ -790,7 +790,7 @@ const translations = {
     it: {
         "nav.badge": "Sfruttare Singapore, Seminare Nuovi Semi",
         "nav.mission": "Corso",
-        "nav.core": "Innovazione",
+        "nav.core": "AI",
         "nav.ecosystem": "Ecosistema",
         "nav.contact": "Contatto",
         "hero.pretitle": "Intuizione nella creatività umana",
