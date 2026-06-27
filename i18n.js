@@ -291,7 +291,7 @@ const translations = {
         "services.phase3_duration": "10 周",
         "services.phase3_price": "SGD 50,000–100,000",
         "services.pricing_philosophy_title": "Pricing Philosophy 定价原则",
-        "services.pricing_philosophy_desc": "我们的收费是基于价值。是更高质量的判断，更低的决策风险，更一致的组织成长。",
+        "services.pricing_philosophy_desc": "更清晰地价值判断锚点，更系统化地决策风险评估，更一致地组织成长共识。",
         "ecosystem.title": "引力场",
         "ecosystem.quote": "\"围绕价值核心去探索存在的意义。\"",
         "ecosystem.partners": "价值共建者伙伴",
