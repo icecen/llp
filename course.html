@@ -13,14 +13,209 @@
     <link rel="stylesheet" href="style.css?v=3">
     <style>
         .service-detail-header {
-            padding: 15vh 5vw 8vh 5vw;
+            padding: 18vh 5vw 10vh 5vw;
             background-color: var(--color-dark-bg);
             color: var(--color-dark-text);
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-detail-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(178, 149, 98, 0.15) 0%, transparent 70%);
+            pointer-events: none;
         }
         .service-detail-content {
-            padding: 8vh 5vw 12vh 5vw;
+            padding: 10vh 5vw 12vh 5vw;
             background-color: var(--color-surface);
+        }
+        .framework-intro-box {
+            max-width: 900px;
+            margin: 0 auto 5rem auto;
+            text-align: center;
+            padding: 3.5rem 3rem;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(178, 149, 98, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.02);
+            transition: var(--transition-smooth);
+        }
+        .framework-intro-box:hover {
+            border-color: rgba(178, 149, 98, 0.4);
+            box-shadow: 0 20px 50px rgba(178, 149, 98, 0.05);
+        }
+        .branding-tag {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            letter-spacing: 0.05em;
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+        }
+        .branding-competence {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--color-text-primary);
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        .framework-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto 4rem auto;
+            position: relative;
+        }
+        
+        @media (min-width: 993px) {
+            .framework-grid::before {
+                content: '';
+                position: absolute;
+                top: 4.5rem;
+                left: 12%;
+                right: 12%;
+                height: 1px;
+                background: linear-gradient(to right, rgba(178, 149, 98, 0.05), rgba(178, 149, 98, 0.4) 50%, rgba(178, 149, 98, 0.05));
+                z-index: 1;
+            }
+        }
+        
+        .framework-card {
+            background: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(178, 149, 98, 0.15);
+            border-radius: 6px;
+            padding: 3rem 2rem 2.5rem 2rem;
+            position: relative;
+            z-index: 2;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+        
+        .framework-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+        
+        .framework-card:hover {
+            transform: translateY(-8px);
+            background: #FFF;
+            box-shadow: 0 20px 45px rgba(178, 149, 98, 0.08);
+            border-color: rgba(178, 149, 98, 0.35);
+        }
+        
+        .framework-card:hover::after {
+            opacity: 1;
+        }
+        
+        .card-header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1.2rem;
+        }
+        
+        .card-letter {
+            font-family: var(--font-english);
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        
+        .card-duration {
+            font-family: var(--font-english);
+            font-size: 0.85rem;
+            color: var(--color-accent);
+            background-color: rgba(178, 149, 98, 0.08);
+            border: 1px solid rgba(178, 149, 98, 0.2);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .card-subtitle {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .card-subtitle::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background-color: var(--color-accent);
+            transition: width 0.3s ease;
+        }
+        
+        .framework-card:hover .card-subtitle::after {
+            width: 60px;
+        }
+        
+        .card-body {
+            flex-grow: 1;
+        }
+        
+        .card-meta-item {
+            margin-bottom: 1.8rem;
+        }
+        .card-meta-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .meta-label {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .meta-label::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: var(--color-accent);
+        }
+        
+        .meta-desc {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
         }
         .detail-card {
             background-color: #FFF;
@@ -30,75 +225,9 @@
             box-shadow: 0 20px 50px rgba(0,0,0,0.04);
             border-top: 4px solid var(--color-accent);
         }
-        .detail-item {
-            margin-bottom: 3rem;
-        }
-        .detail-item:last-child {
-            margin-bottom: 0;
-        }
-        .detail-title {
-            font-size: 1.5rem;
-            color: var(--color-text-primary);
-            margin-bottom: 1rem;
-            font-family: var(--font-heading);
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        .detail-title::before {
-            content: '';
-            display: block;
-            width: 15px;
-            height: 2px;
-            background-color: var(--color-accent);
-        }
-        .detail-desc {
-            font-size: 1.1rem;
-            color: var(--color-text-secondary);
-            line-height: 1.8;
-            padding-left: calc(15px + 1rem);
-        }
-        .duration-badge {
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: var(--color-accent);
-            background-color: rgba(178, 149, 98, 0.08);
-            border: 1px solid rgba(178, 149, 98, 0.2);
-            padding: 0.15rem 0.6rem;
-            border-radius: 4px;
-            font-family: var(--font-english), var(--font-sans);
-            margin-left: auto;
-        }
-        .module-specs {
-            list-style: none;
-            padding: 0;
-            margin: 1.2rem 0 0 0;
-            border-top: 1px dashed rgba(0, 0, 0, 0.08);
-            padding-top: 1.2rem;
-        }
-        .module-specs li {
-            margin-bottom: 0.6rem;
-            font-size: 1rem;
-            color: var(--color-text-secondary);
-            display: flex;
-            align-items: flex-start;
-            gap: 0.8rem;
-            line-height: 1.6;
-        }
-        .module-specs li:last-child {
-            margin-bottom: 0;
-        }
-        .module-specs li strong {
-            color: var(--color-text-primary);
-            min-width: 85px;
-            flex-shrink: 0;
-        }
         .price-tag-custom {
             font-size: 1.1rem;
             color: var(--color-text-secondary);
-            border-top: 1px solid rgba(0,0,0,0.05);
-            margin-top: 4rem;
-            padding-top: 3rem;
             text-align: center;
             line-height: 1.8;
         }
@@ -116,8 +245,24 @@
         .back-link:hover {
             color: var(--color-accent);
         }
-        @media (max-width: 768px) {
-            .detail-card { padding: 2rem; }
+        @media (max-width: 992px) {
+            .framework-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .framework-card {
+                padding: 2.5rem 1.8rem;
+            }
+            .framework-intro-box {
+                padding: 2.5rem 1.5rem;
+                margin-bottom: 3rem;
+            }
+            .branding-competence {
+                font-size: 1.5rem;
+            }
+            .detail-card {
+                padding: 2.5rem 1.5rem;
+            }
         }
     </style>
 </head>
@@ -143,87 +288,86 @@
     </nav>
 
     <header class="service-detail-header">
-        <h1 class="section-title text-accent" style="margin-bottom: 1rem;" data-i18n="product1_zh.title">企业教练课程</h1>
+        <div class="pre-brand" style="font-family: var(--font-english); font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 0.8rem;" data-i18n="product1_zh.title">企业教练课程</div>
+        <h1 class="section-title text-accent" style="margin-bottom: 1.5rem; font-family: var(--font-heading); font-weight: 600;" data-i18n="course.branding.name">Founder Identity Architecture™</h1>
         <div class="title-line center mx-auto"></div>
-        <p class="section-desc" style="margin-bottom: 0;" data-i18n="product1_zh.desc">上课地址：新加坡 The Adelphi大厦 | 课时：18个课时 (共9次课) | 价格：1800新币</p>
+        <p class="section-desc" style="margin-bottom: 0; font-family: var(--font-body);" data-i18n="product1_zh.desc">上课地址：新加坡 The Adelphi大厦 | 课时：18个课时 (共9次课) | 价格：1800新币</p>
     </header>
 
     <section class="service-detail-content">
         <div class="container">
-            <div class="detail-card">
-                <!-- Module 1 -->
-                <div class="detail-item">
-                    <h3 class="detail-title">
-                        <span data-i18n="course.discover.title">品牌核心价值梳理</span>
-                        <span class="duration-badge" data-i18n="course.discover.duration">8小时</span>
-                    </h3>
-                    <div class="detail-desc">
-                        <p style="margin-bottom: 1rem;" data-i18n="course.discover.desc"><strong>课程定位：</strong>深度解构并提炼品牌底层商业逻辑，在跨文化语境下完成精准的国际化叙事与文化资产重塑。</p>
-                        <ul class="module-specs">
-                            <li>
-                                <strong data-i18n="course.goal_label">核心目标：</strong>
-                                <span data-i18n="course.discover.goal">厘清创始人特质与品牌长效资产的共生关系，深度探寻企业可持续发展的内生动力。</span>
-                            </li>
-                            <li>
-                                <strong data-i18n="course.focus_label">教学重点：</strong>
-                                <span data-i18n="course.discover.focus">品牌哲学构建、创始人动机洞察、商业价值叙事。</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Module 2 -->
-                <div class="detail-item">
-                    <h3 class="detail-title">
-                        <span data-i18n="course.amplify.title">品牌落地要素整合</span>
-                        <span class="duration-badge" data-i18n="course.amplify.duration">6小时</span>
-                    </h3>
-                    <div class="detail-desc">
-                        <p style="margin-bottom: 1rem;" data-i18n="course.amplify.desc"><strong>课程定位：</strong>聚焦企业海外战略首站，全面打通在新加坡落地启动的合规路径与核心资源配置。</p>
-                        <ul class="module-specs">
-                            <li>
-                                <strong data-i18n="course.goal_label">核心目标：</strong>
-                                <span data-i18n="course.amplify.goal">明确新加坡市场准入的关键合规要素，确立高效、可落地的出海执行路线图。</span>
-                            </li>
-                            <li>
-                                <strong data-i18n="course.focus_label">教学重点：</strong>
-                                <span data-i18n="course.amplify.focus">落地启动实操指引、新加坡政策与法规深度合规、跨境资源战略整合。</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Module 3 -->
-                <div class="detail-item">
-                    <h3 class="detail-title">
-                        <span data-i18n="course.trade.title">创新思维与实现</span>
-                        <span class="duration-badge" data-i18n="course.trade.duration">4小时</span>
-                    </h3>
-                    <div class="detail-desc">
-                        <p style="margin-bottom: 1rem;" data-i18n="course.trade.desc"><strong>课程定位：</strong>融合新加坡独特的国际化商业生态，驱动企业进行全新维度的商业模式进化与二次创新。</p>
-                        <ul class="module-specs">
-                            <li>
-                                <strong data-i18n="course.goal_label">核心目标：</strong>
-                                <span data-i18n="course.trade.goal">深度嵌入新加坡生态元素，完成前沿商业模式的闭环设计与出海实战演练。</span>
-                            </li>
-                            <li>
-                                <strong data-i18n="course.focus_label">教学重点：</strong>
-                                <span data-i18n="course.trade.focus">狮城商业生态元素融合、创新商业模式顶层设计、商业思维落地与实战验证。</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="price-tag-custom">
-                    <p style="margin-bottom: 1rem;" data-i18n="course.price_tag_p1">请拨打电话或添加联系人预约您的体验课程：</p>
-                    <p style="font-size: 2rem; color: var(--color-accent); font-weight: 600; margin: 1.5rem 0; font-family: var(--font-english); letter-spacing: 0.05em;">
-                        <a href="tel:+6587327804" style="color: inherit; text-decoration: underline;">+65 87327804</a>
-                    </p>
-                    <div style="margin-top: 1.5rem;">
-                        <a href="tel:+6587327804" class="highlight-bg" style="padding: 0.8rem 2rem; display: inline-block; border-radius: 4px; font-weight: 500; text-transform: uppercase; color: #FFF; font-size: 0.95rem;" data-i18n="course.price_tag_btn">立即拨打电话</a>
-                    </div>
-                </div>
+            <!-- Brand positioning & core capability statement -->
+            <div class="framework-intro-box">
+                <div class="branding-tag" data-i18n="course.branding.positioning">Founder Identity Architecture™ 是一套专注于创始人及成长型企业的高端企业教练系统。</div>
+                <h2 class="branding-competence" data-i18n="course.branding.competence">我们的核心能力是帮助企业重新定义问题。</h2>
             </div>
+
+            <!-- Three Rebuilding Layers (Grid Layout) -->
+            <div class="framework-grid">
+                <!-- Origin Card -->
+                <article class="framework-card">
+                    <div>
+                        <div class="card-header-flex">
+                            <span class="card-letter" data-i18n="course.origin.title">Origin</span>
+                            <span class="card-duration" data-i18n="course.origin.duration">8小时</span>
+                        </div>
+                        <h3 class="card-subtitle" data-i18n="course.origin.subtitle">我们为什么存在？</h3>
+                        <div class="card-body">
+                            <div class="card-meta-item">
+                                <div class="meta-label" data-i18n="course.goal_label">核心目标：</div>
+                                <div class="meta-desc" data-i18n="course.origin.goal">厘清创始人特质与品牌长效资产的共生关系，深度探寻企业可持续发展的内生动力与品牌哲学构建。</div>
+                            </div>
+                            <div class="card-meta-item">
+                                <div class="meta-label" data-i18n="course.focus_label">教学重点：</div>
+                                <div class="meta-desc" data-i18n="course.origin.focus">品牌哲学构建、创始人动机洞察、商业价值叙事。</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Identity Card -->
+                <article class="framework-card">
+                    <div>
+                        <div class="card-header-flex">
+                            <span class="card-letter" data-i18n="course.identity.title">Identity</span>
+                            <span class="card-duration" data-i18n="course.identity.duration">6小时</span>
+                        </div>
+                        <h3 class="card-subtitle" data-i18n="course.identity.subtitle">我们今天是谁？</h3>
+                        <div class="card-body">
+                            <div class="card-meta-item">
+                                <div class="meta-label" data-i18n="course.goal_label">核心目标：</div>
+                                <div class="meta-desc" data-i18n="course.identity.goal">明确市场准入的关键合规要素，确立高效、可落地的国际化执行路线图与资源战略整合。</div>
+                            </div>
+                            <div class="card-meta-item">
+                                <div class="meta-label" data-i18n="course.focus_label">教学重点：</div>
+                                <div class="meta-desc" data-i18n="course.identity.focus">落地启动实操指引、合规框架构建、跨境资源战略整合。</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Future Card -->
+                <article class="framework-card">
+                    <div>
+                        <div class="card-header-flex">
+                            <span class="card-letter" data-i18n="course.future.title">Future</span>
+                            <span class="card-duration" data-i18n="course.future.duration">4小时</span>
+                        </div>
+                        <h3 class="card-subtitle" data-i18n="course.future.subtitle">我们将成为什么？</h3>
+                        <div class="card-body">
+                            <div class="card-meta-item">
+                                <div class="meta-label" data-i18n="course.goal_label">核心目标：</div>
+                                <div class="meta-desc" data-i18n="course.future.goal">深度嵌入国际商业生态元素，驱动企业进行全新维度的商业模式进化、二次创新与未来蓝图设计。</div>
+                            </div>
+                            <div class="card-meta-item">
+                                <div class="meta-label" data-i18n="course.focus_label">教学重点：</div>
+                                <div class="meta-desc" data-i18n="course.future.focus">商业生态元素融合、创新模式顶层设计、前沿商业思维与实战演练。</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
             <a href="index.html" class="back-link" data-i18n="course.back_link">← 返 回 主 页</a>
         </div>
     </section>
