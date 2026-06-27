@@ -292,7 +292,7 @@ const translations = {
         "services.phase3_price": "SGD 50,000–100,000",
         "services.pricing_philosophy_title": "Pricing Philosophy 定价原则",
         "services.pricing_philosophy_desc": "更清晰地价值判断锚点，更系统化地决策风险评估，更一致地组织成长共识。",
-        "ecosystem.title": "引力场",
+        "ecosystem.title": "引力场 SEVEN SQUARE",
         "ecosystem.quote": "\"围绕价值核心去探索存在的意义。\"",
         "ecosystem.partners": "价值共建者伙伴",
         "partners.sea": "东南亚",
@@ -401,8 +401,8 @@ const translations = {
         "enterprise.price": "服务报价：2.4万新币起",
         
         // sevensquare.html
-        "sevensquare.title": "Seven Square AI 转型训练营 | BORVAN SINGAPORE",
-        "sevensquare.header_title": "Seven Square AI 转型训练营",
+        "sevensquare.title": "AI 转型训练营 | BORVAN SINGAPORE",
+        "sevensquare.header_title": "AI 转型训练营",
         "sevensquare.header_desc": "4周课程包：用AI建立品牌文明资产与工作流",
         "sevensquare.intro": "本训练营专为 SME 企业主及核心团队设计，采用每周1次、每次3小时的形式，通过4周的深度共创，帮助企业建立自己的 AI 应用与落地体系。",
         "sevensquare.item1_title": "W1: AI Productivity 基础",
