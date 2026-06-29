@@ -953,6 +953,15 @@ function changeLanguage(lang) {
         console.warn('LocalStorage unavailable:', e);
     }
     
+    // Update URL parameter without reloading page for clear visual feedback & sharing
+    try {
+        if (window.history && window.history.replaceState) {
+            const url = new URL(window.location.href);
+            url.searchParams.set('lang', lang);
+            window.history.replaceState(null, '', url.toString());
+        }
+    } catch (e) {}
+    
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
     
     // 1. Sync all language selector elements on the page
@@ -1007,9 +1016,23 @@ document.addEventListener('change', (e) => {
 // Initialize on load and DOMContentLoaded
 function initI18n() {
     let savedLang = 'zh';
+    
+    // Priority 1: URL parameter ?lang=...
     try {
-        savedLang = localStorage.getItem('selectedLanguage') || 'zh';
-    } catch (e) {}
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLang = urlParams.get('lang');
+        if (urlLang && translations[urlLang]) {
+            savedLang = urlLang;
+        } else {
+            // Priority 2: LocalStorage
+            savedLang = localStorage.getItem('selectedLanguage') || 'zh';
+        }
+    } catch (e) {
+        try {
+            savedLang = localStorage.getItem('selectedLanguage') || 'zh';
+        } catch (err) {}
+    }
+    
     changeLanguage(savedLang);
 }
 
