@@ -945,37 +945,76 @@ const translations = {
 };
 
 function changeLanguage(lang) {
-    if (!translations[lang]) return;
+    if (!translations[lang]) lang = 'zh';
     
-    localStorage.setItem('selectedLanguage', lang);
-    document.documentElement.lang = lang;
+    try {
+        localStorage.setItem('selectedLanguage', lang);
+    } catch (e) {
+        console.warn('LocalStorage unavailable:', e);
+    }
     
-    // Sync all language switcher dropdowns on the page
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
+    
+    // 1. Sync all language selector elements on the page
     document.querySelectorAll('.lang-switch').forEach(select => {
         select.value = lang;
     });
     
-    document.querySelectorAll('[data-i18n], [data-i18n-label]').forEach(element => {
+    // 2. Translate all elements with data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
-        if (key && translations[lang] && translations[lang][key] !== undefined) {
-            element.innerHTML = translations[lang][key];
+        if (key) {
+            let text = translations[lang] ? translations[lang][key] : null;
+            if (text === undefined || text === null) {
+                // Fallback to Chinese or English if missing
+                text = (translations['zh'] && translations['zh'][key] !== undefined) 
+                       ? translations['zh'][key] 
+                       : (translations['en'] ? translations['en'][key] : null);
+            }
+            if (text !== undefined && text !== null) {
+                element.innerHTML = text;
+            }
         }
-        
+    });
+    
+    // 3. Translate all elements with data-i18n-label
+    document.querySelectorAll('[data-i18n-label]').forEach(element => {
         const labelKey = element.getAttribute('data-i18n-label');
-        if (labelKey && translations[lang] && translations[lang][labelKey] !== undefined) {
-            element.setAttribute('data-label', translations[lang][labelKey]);
+        if (labelKey) {
+            let text = translations[lang] ? translations[lang][labelKey] : null;
+            if (text === undefined || text === null) {
+                text = (translations['zh'] && translations['zh'][labelKey] !== undefined) 
+                       ? translations['zh'][labelKey] 
+                       : (translations['en'] ? translations['en'][labelKey] : null);
+            }
+            if (text !== undefined && text !== null) {
+                element.setAttribute('data-label', text);
+            }
         }
     });
 }
 
-// Initialize default language
-document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('selectedLanguage') || 'zh';
-    changeLanguage(savedLang);
-    
-    document.querySelectorAll('.lang-switch').forEach(select => {
-        select.addEventListener('change', function() {
-            changeLanguage(this.value);
-        });
-    });
+// Export to global window explicitly
+window.changeLanguage = changeLanguage;
+
+// Global event listener via delegation so dynamically added or existing elements trigger reliably
+document.addEventListener('change', (e) => {
+    if (e.target && (e.target.classList.contains('lang-switch') || e.target.id === 'lang-switch')) {
+        changeLanguage(e.target.value);
+    }
 });
+
+// Initialize on load and DOMContentLoaded
+function initI18n() {
+    let savedLang = 'zh';
+    try {
+        savedLang = localStorage.getItem('selectedLanguage') || 'zh';
+    } catch (e) {}
+    changeLanguage(savedLang);
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initI18n);
+} else {
+    initI18n();
+}
