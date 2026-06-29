@@ -22,13 +22,19 @@
             <div class="nav-badge"
                 style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;" data-i18n="nav.badge">
                 用好新加坡，种好新种子</div>
-            <div class="lang-selector" style="display: flex; align-items: center; margin-top: 0.25rem;">
-                <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)" style="background: transparent; color: inherit; border: 1px solid var(--color-accent); border-radius: 4px; padding: 1px 4px; font-family: var(--font-english); font-size: 0.65rem; text-transform: uppercase; cursor: pointer; outline: none;">
-                    <option value="en" selected style="color: black;">English</option>
-                    <option value="zh" style="color: black;">中文</option>
-                    <option value="ja" style="color: black;">日本語</option>
-                    <option value="es" style="color: black;">Español</option>
-                </select>
+            <div class="lang-selector">
+                <div class="lang-selector-group">
+                    <button type="button" class="lang-btn" onclick="changeLanguage('zh')" data-lang-val="zh">中文</button>
+                    <button type="button" class="lang-btn" onclick="changeLanguage('en')" data-lang-val="en">EN</button>
+                    <button type="button" class="lang-btn" onclick="changeLanguage('ja')" data-lang-val="ja">JA</button>
+                    <button type="button" class="lang-btn" onclick="changeLanguage('es')" data-lang-val="es">ES</button>
+                    <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)" style="background: transparent; color: inherit; border: 1px solid var(--color-accent); border-radius: 4px; padding: 1px 4px; font-family: var(--font-english); font-size: 0.65rem; text-transform: uppercase; cursor: pointer; outline: none;">
+                        <option value="zh" style="color: black;">中文</option>
+                        <option value="en" style="color: black;">English</option>
+                        <option value="ja" style="color: black;">日本語</option>
+                        <option value="es" style="color: black;">Español</option>
+                    </select>
+                </div>
             </div>
         </div>
         <ul class="nav-links">

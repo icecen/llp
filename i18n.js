@@ -964,9 +964,16 @@ function changeLanguage(lang) {
     
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
     
-    // 1. Sync all language selector elements on the page
+    // 1. Sync all language selector elements & buttons on the page
     document.querySelectorAll('.lang-switch').forEach(select => {
         select.value = lang;
+    });
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        if (btn.getAttribute('data-lang-val') === lang) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
     });
     
     // 2. Translate all elements with data-i18n

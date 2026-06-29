@@ -1226,4 +1226,38 @@ a.contact-value:hover {
     }
 }
 
+/* Custom Interactive Language Switcher Buttons */
+.lang-selector-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 0.25rem;
+    flex-wrap: wrap;
+}
+.lang-btn {
+    background: transparent;
+    color: var(--color-text-secondary, #999);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: var(--font-english, 'Inter', sans-serif);
+    font-size: 0.65rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    outline: none;
+}
+.lang-btn:hover {
+    color: #fff;
+    border-color: var(--color-accent, #c5a059);
+    background: rgba(197, 160, 89, 0.15);
+}
+.lang-btn.active {
+    color: #000 !important;
+    background-color: var(--color-accent, #c5a059) !important;
+    border-color: var(--color-accent, #c5a059) !important;
+    font-weight: 700 !important;
+}
+
 
