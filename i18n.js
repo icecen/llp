@@ -1,6 +1,6 @@
 const translations = {
     en: {
-        "nav.badge": "Leverage Singapore, Plant New Seeds",
+        "nav.badge": "Leverage Singapore Create New Possibilities",
         "nav.mission": "Course",
         "nav.core": "AI",
         "nav.ecosystem": "Ecosystem",
@@ -239,7 +239,7 @@ const translations = {
         "pricing.item7_price": "From 90,000 SGD"
     },
     zh: {
-        "nav.badge": "用好新加坡，种好新种苗",
+        "nav.badge": "用好新加坡 创造新可能",
         "nav.mission": "课程",
         "nav.core": "AI",
         "nav.ecosystem": "生态",
