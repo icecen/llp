@@ -354,7 +354,7 @@ const translations = {
         
         "charity.title": "公益融入课堂·留学父母必修课 | BORVAN SINGAPORE",
         "charity.hero_tag": "PUBLIC WELFARE COMMUNITY · 公益融入课堂",
-        "charity.hero_title": "打破异国孤独，与孩子共创“发展性”成长",
+        "charity.hero_title": "打破陪读焦虑，与孩子共同成长",
         "charity.hero_desc": "重新定义陪伴与教育的生命维度。这不仅是一堂留学生的父母必修课，更是一个汇聚不同背景陪读妈妈的成长社群。我们拒绝单向奉献与焦虑传染，倡导父母与孩子在新加坡共创自我发展。",
         "charity.join_btn": "预约每周公益分享会",
         "charity.sec1_title": "新加坡国际学校留学的现实难题与困境",

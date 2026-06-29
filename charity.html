@@ -9,11 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-primary);
+        }
         .charity-hero {
             padding: 9rem 2rem 4.5rem;
-            background: linear-gradient(180deg, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.98) 100%);
+            background: #FFFFFF;
             text-align: center;
             border-bottom: 1px solid rgba(178, 149, 98, 0.2);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
         }
         .section-grid {
             display: grid;
@@ -22,16 +27,17 @@
             margin-top: 2.5rem;
         }
         .concept-card {
-            background: rgba(255, 255, 255, 0.02);
+            background: #FFFFFF;
             border: 1px solid rgba(178, 149, 98, 0.2);
             border-radius: 6px;
             padding: 2.2rem 2rem;
             transition: var(--transition-smooth);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
         }
         .concept-card:hover {
             border-color: var(--color-accent);
             transform: translateY(-4px);
-            background: rgba(255, 255, 255, 0.04);
+            box-shadow: 0 15px 35px rgba(178, 149, 98, 0.08);
         }
         .compare-box {
             display: grid;
@@ -45,11 +51,12 @@
             }
         }
         .compare-card {
-            background: rgba(255, 255, 255, 0.02);
+            background: #FFFFFF;
             border: 1px solid rgba(178, 149, 98, 0.25);
             border-top: 3px solid var(--color-accent);
             padding: 2.2rem 2rem;
             border-radius: 6px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
         }
         .badge-tag {
             display: inline-block;
@@ -63,13 +70,14 @@
             letter-spacing: 0.15em;
             font-family: var(--font-english);
             text-transform: uppercase;
+            font-weight: 600;
         }
         .form-input {
             width: 100%;
             padding: 0.9rem 1rem;
-            background: rgba(15, 23, 42, 0.9);
-            border: 1px solid rgba(178, 149, 98, 0.3);
-            color: #ffffff;
+            background: #FFFFFF;
+            border: 1px solid rgba(178, 149, 98, 0.4);
+            color: var(--color-text-primary);
             border-radius: 4px;
             outline: none;
             font-size: 0.95rem;
@@ -77,11 +85,11 @@
         }
         .form-input:focus {
             border-color: var(--color-accent);
-            box-shadow: 0 0 8px rgba(178, 149, 98, 0.3);
+            box-shadow: 0 0 8px rgba(178, 149, 98, 0.2);
         }
         .form-input option {
-            background-color: #0f172a;
-            color: #ffffff;
+            background-color: #FFFFFF;
+            color: var(--color-text-primary);
         }
     </style>
 </head>
@@ -109,7 +117,7 @@
     <header class="charity-hero">
         <div class="container" style="max-width: 850px; margin: 0 auto;">
             <span class="badge-tag" data-i18n="charity.hero_tag">PUBLIC WELFARE COMMUNITY · 公益融入课堂</span>
-            <h1 style="font-size: 2.4rem; font-weight: 600; margin-bottom: 1.2rem; line-height: 1.4; color: var(--color-text-primary);" data-i18n="charity.hero_title">打破异国孤独，与孩子共创“发展性”成长</h1>
+            <h1 style="font-family: var(--font-heading); font-size: 1.85rem; font-weight: 500; letter-spacing: 0.06em; margin-bottom: 1.2rem; line-height: 1.5; color: var(--color-text-primary);" data-i18n="charity.hero_title">打破陪读焦虑，与孩子共同成长</h1>
             <p style="font-size: 1.05rem; color: var(--color-text-secondary); line-height: 1.8; margin-bottom: 2.2rem;" data-i18n="charity.hero_desc">
                 重新定义陪伴与教育的生命维度。这不仅是一堂留学生的父母必修课，更是一个汇聚不同背景陪读妈妈的成长社群。我们拒绝单向奉献与焦虑传染，倡导父母与孩子在新加坡共创自我发展。
             </p>
@@ -120,7 +128,7 @@
     </header>
 
     <!-- Section 1: Top Discussed Challenges -->
-    <section class="architect-section" style="background: var(--color-bg-primary); padding: 4.5rem 2rem;">
+    <section class="architect-section" style="padding: 4.5rem 2rem;">
         <div class="container" style="max-width: 1050px; margin: 0 auto;">
             <div style="text-align: center; max-width: 750px; margin: 0 auto 2.5rem;">
                 <h2 style="font-size: 2rem; margin-bottom: 0.8rem; color: var(--color-text-primary);" data-i18n="charity.sec1_title">新加坡国际学校留学的现实难题与困境</h2>
@@ -151,9 +159,9 @@
     </section>
 
     <!-- Section 2: Core Philosophy - Parent-Child Co-Creation -->
-    <section class="architect-section" style="background: rgba(255,255,255,0.015); padding: 4.5rem 2rem; border-top: 1px solid rgba(178, 149, 98, 0.15);">
+    <section class="architect-section" style="padding: 4.5rem 2rem; background: rgba(255,255,255,0.5); border-top: 1px solid rgba(178, 149, 98, 0.15);">
         <div class="container" style="max-width: 950px; margin: 0 auto;">
-            <div style="background: rgba(178, 149, 98, 0.04); border: 1px solid rgba(178, 149, 98, 0.3); padding: 2.8rem 2rem; border-radius: 8px; text-align: center;">
+            <div style="background: #FFFFFF; border: 1px solid rgba(178, 149, 98, 0.3); padding: 2.8rem 2rem; border-radius: 8px; text-align: center; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);">
                 <span class="badge-tag" data-i18n="charity.core_tag">CORE PHILOSOPHY · 核心主线</span>
                 <h2 style="font-size: 1.9rem; margin-top: 0.3rem; margin-bottom: 1.2rem; color: var(--color-text-primary);" data-i18n="charity.core_title">陪伴的核心：父母与孩子共创“发展性”</h2>
                 <p style="font-size: 1rem; line-height: 1.9; color: var(--color-text-secondary); max-width: 800px; margin: 0 auto;" data-i18n="charity.core_desc">
@@ -164,7 +172,7 @@
     </section>
 
     <!-- Section 3: Intimacy & Parent-Child Dynamics -->
-    <section class="architect-section" style="background: var(--color-bg-primary); padding: 4.5rem 2rem;">
+    <section class="architect-section" style="padding: 4.5rem 2rem;">
         <div class="container" style="max-width: 1050px; margin: 0 auto;">
             <div style="text-align: center; max-width: 750px; margin: 0 auto 2.5rem;">
                 <h2 style="font-size: 2rem; margin-bottom: 0.8rem; color: var(--color-text-primary);" data-i18n="charity.sec3_title">家庭亲密关系：如何深刻影响亲子气场</h2>
@@ -172,11 +180,11 @@
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                <div style="background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 6px; border: 1px solid rgba(178, 149, 98, 0.15);">
+                <div style="background: #FFFFFF; padding: 2rem; border-radius: 6px; border: 1px solid rgba(178, 149, 98, 0.2); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);">
                     <h3 style="font-size: 1.15rem; color: var(--color-text-primary); margin-bottom: 0.8rem; font-weight: 600;" data-i18n="charity.dyn1_title">情绪场域的共振效应</h3>
                     <p style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;" data-i18n="charity.dyn1_desc">母亲在异国的焦虑与孤独，往往源自家庭亲密支持系统的缺失。调整夫妻沟通管道，能有效卸下母亲肩上的情绪重担。</p>
                 </div>
-                <div style="background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 6px; border: 1px solid rgba(178, 149, 98, 0.15);">
+                <div style="background: #FFFFFF; padding: 2rem; border-radius: 6px; border: 1px solid rgba(178, 149, 98, 0.2); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);">
                     <h3 style="font-size: 1.15rem; color: var(--color-text-primary); margin-bottom: 0.8rem; font-weight: 600;" data-i18n="charity.dyn2_title">解绑心理粘连与期待转移</h3>
                     <p style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.8;" data-i18n="charity.dyn2_desc">当夫妻关系健康充盈时，父母不会将个人未竟的心愿强加于孩子，从而给孩子创造健康独立、有安全感的成长空间。</p>
                 </div>
@@ -185,7 +193,7 @@
     </section>
 
     <!-- Section 4: Accompanying vs Boarding Solutions -->
-    <section class="architect-section" style="background: rgba(255,255,255,0.015); padding: 4.5rem 2rem; border-top: 1px solid rgba(178, 149, 98, 0.15);">
+    <section class="architect-section" style="padding: 4.5rem 2rem; background: rgba(255,255,255,0.5); border-top: 1px solid rgba(178, 149, 98, 0.15);">
         <div class="container" style="max-width: 1050px; margin: 0 auto;">
             <div style="text-align: center; max-width: 750px; margin: 0 auto 2.5rem;">
                 <h2 style="font-size: 2rem; margin-bottom: 0.8rem; color: var(--color-text-primary);" data-i18n="charity.sec4_title">陪读家庭 vs 寄宿/不陪读家庭：课题与解法</h2>
@@ -221,7 +229,7 @@
     </section>
 
     <!-- Section 5: Community & Weekly Sharing -->
-    <section class="architect-section" style="background: var(--color-bg-primary); padding: 4.5rem 2rem;">
+    <section class="architect-section" style="padding: 4.5rem 2rem;">
         <div class="container" style="max-width: 950px; margin: 0 auto;">
             <div style="text-align: center; margin-bottom: 2.5rem;">
                 <span class="badge-tag" data-i18n="charity.comm_tag">WEEKLY SHARING · 成长社群</span>
@@ -232,7 +240,7 @@
             </div>
 
             <!-- Booking Form Card -->
-            <div id="booking" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(178, 149, 98, 0.3); border-radius: 8px; padding: 2.5rem 2rem; max-width: 600px; margin: 0 auto;">
+            <div id="booking" style="background: #FFFFFF; border: 1px solid rgba(178, 149, 98, 0.3); border-radius: 8px; padding: 2.5rem 2rem; max-width: 600px; margin: 0 auto; box-shadow: 0 15px 35px rgba(0,0,0,0.03);">
                 <h3 style="font-size: 1.4rem; text-align: center; margin-bottom: 1.5rem; color: var(--color-text-primary); font-weight: 600;" data-i18n="charity.form_title">预约参加每周公益体验课</h3>
                 <form onsubmit="event.preventDefault(); alert('预约成功！社群小助手将尽快与您联系。');">
                     <div style="margin-bottom: 1.2rem;">
@@ -258,7 +266,7 @@
     </section>
 
     <!-- Footer -->
-    <footer style="background: rgba(15,23,42,0.98); padding: 3rem 2rem; text-align: center; border-top: 1px solid rgba(178, 149, 98, 0.15);">
+    <footer style="background: #FFFFFF; padding: 3rem 2rem; text-align: center; border-top: 1px solid rgba(178, 149, 98, 0.15);">
         <p style="color: var(--color-text-secondary); font-size: 0.85rem;" data-i18n="footer.copyright">&copy; 2026 BORVAN SINGAPORE. All Rights Reserved.</p>
     </footer>
 
