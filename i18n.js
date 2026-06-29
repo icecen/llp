@@ -944,7 +944,7 @@ const translations = {
     }
 };
 
-function changeLanguage(lang) {
+function changeLanguage(lang, shouldRedirect = false) {
     if (!translations[lang]) lang = 'zh';
     
     try {
@@ -953,7 +953,22 @@ function changeLanguage(lang) {
         console.warn('LocalStorage unavailable:', e);
     }
     
-    // Update URL parameter without reloading page for clear visual feedback & sharing
+    // If requested to jump/redirect URL (e.g. user selected option in dropdown)
+    if (shouldRedirect) {
+        try {
+            const url = new URL(window.location.href);
+            if (url.searchParams.get('lang') !== lang) {
+                url.searchParams.set('lang', lang);
+                window.location.href = url.toString();
+                return;
+            }
+        } catch (e) {
+            window.location.href = '?lang=' + lang;
+            return;
+        }
+    }
+    
+    // Update URL parameter without reloading page for visual feedback
     try {
         if (window.history && window.history.replaceState) {
             const url = new URL(window.location.href);
@@ -1016,7 +1031,7 @@ window.changeLanguage = changeLanguage;
 // Global event listener via delegation so dynamically added or existing elements trigger reliably
 document.addEventListener('change', (e) => {
     if (e.target && (e.target.classList.contains('lang-switch') || e.target.id === 'lang-switch')) {
-        changeLanguage(e.target.value);
+        changeLanguage(e.target.value, true);
     }
 });
 
@@ -1040,7 +1055,7 @@ function initI18n() {
         } catch (err) {}
     }
     
-    changeLanguage(savedLang);
+    changeLanguage(savedLang, false);
 }
 
 if (document.readyState === 'loading') {
