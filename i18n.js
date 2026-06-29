@@ -959,7 +959,12 @@ function changeLanguage(lang, shouldRedirect = false) {
             const url = new URL(window.location.href);
             if (url.searchParams.get('lang') !== lang) {
                 url.searchParams.set('lang', lang);
-                window.location.href = url.toString();
+                // On mobile webviews (WeChat, Safari), replace or href works reliably
+                if (window.location.replace) {
+                    window.location.replace(url.toString());
+                } else {
+                    window.location.href = url.toString();
+                }
                 return;
             }
         } catch (e) {
@@ -1028,11 +1033,13 @@ function changeLanguage(lang, shouldRedirect = false) {
 // Export to global window explicitly
 window.changeLanguage = changeLanguage;
 
-// Global event listener via delegation so dynamically added or existing elements trigger reliably
-document.addEventListener('change', (e) => {
-    if (e.target && (e.target.classList.contains('lang-switch') || e.target.id === 'lang-switch')) {
-        changeLanguage(e.target.value, true);
-    }
+// Global event listener via delegation (binding both change and input for mobile pickers)
+['change', 'input'].forEach(eventType => {
+    document.addEventListener(eventType, (e) => {
+        if (e.target && (e.target.classList.contains('lang-switch') || e.target.id === 'lang-switch')) {
+            changeLanguage(e.target.value, true);
+        }
+    });
 });
 
 // Initialize on load and DOMContentLoaded
