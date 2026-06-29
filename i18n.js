@@ -950,14 +950,19 @@ function changeLanguage(lang) {
     localStorage.setItem('selectedLanguage', lang);
     document.documentElement.lang = lang;
     
+    // Sync all language switcher dropdowns on the page
+    document.querySelectorAll('.lang-switch').forEach(select => {
+        select.value = lang;
+    });
+    
     document.querySelectorAll('[data-i18n], [data-i18n-label]').forEach(element => {
         const key = element.getAttribute('data-i18n');
-        if (key && translations[lang][key]) {
+        if (key && translations[lang] && translations[lang][key] !== undefined) {
             element.innerHTML = translations[lang][key];
         }
         
         const labelKey = element.getAttribute('data-i18n-label');
-        if (labelKey && translations[lang][labelKey]) {
+        if (labelKey && translations[lang] && translations[lang][labelKey] !== undefined) {
             element.setAttribute('data-label', translations[lang][labelKey]);
         }
     });
@@ -965,30 +970,12 @@ function changeLanguage(lang) {
 
 // Initialize default language
 document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('selectedLanguage');
-    const langSwitch = document.getElementById('lang-switch');
+    const savedLang = localStorage.getItem('selectedLanguage') || 'zh';
+    changeLanguage(savedLang);
     
-    if (savedLang) {
-        changeLanguage(savedLang);
-        if (langSwitch) {
-            langSwitch.value = savedLang;
-        }
-    } else {
-        // Default state: Page displays in Chinese (default HTML), but select box visually displays English
-        if (langSwitch) {
-            langSwitch.value = 'en';
-        }
-    }
-    
-    if (langSwitch) {
-        // Ensure clicking English when it is visually selected in initial state triggers changeLanguage('en')
-        langSwitch.addEventListener('click', function() {
-            if (!localStorage.getItem('selectedLanguage') && this.value === 'en') {
-                changeLanguage('en');
-            }
-        });
-        langSwitch.addEventListener('change', function() {
+    document.querySelectorAll('.lang-switch').forEach(select => {
+        select.addEventListener('change', function() {
             changeLanguage(this.value);
         });
-    }
+    });
 });
