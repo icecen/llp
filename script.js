@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const indexPrefix = isIndex ? '' : 'index.html';
         const isPricing = window.location.pathname.includes('pricing.html');
         const isSevenSquare = window.location.pathname.includes('sevensquare.html');
+        const isAdvisor = window.location.pathname.includes('advisor.html');
         
         const mobileNavHtml = `
             <div class="mobile-bottom-nav">
@@ -93,6 +94,15 @@ document.addEventListener('DOMContentLoaded', () => {
                             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                         </svg>
                         <span class="mobile-nav-text" data-i18n="nav.mission">课程</span>
+                    </a>
+                    <a href="advisor.html" class="mobile-nav-item ${isAdvisor ? 'active' : ''}" data-nav="advisor">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 7h-3a2 2 0 0 1-2-2V2"></path>
+                            <path d="M9 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
+                            <path d="M10 10v4l3-2z"></path>
+                            <rect x="2" y="3" width="20" height="18" rx="2" ry="2"></rect>
+                        </svg>
+                        <span class="mobile-nav-text" data-i18n="nav.ecosystem">顾问</span>
                     </a>
                     <a href="sevensquare.html" class="mobile-nav-item ${isSevenSquare ? 'active' : ''}" data-nav="core">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -109,12 +119,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         </svg>
                         <span class="mobile-nav-text" data-i18n="nav.pricing">报价</span>
                     </a>
-                    <a href="${indexPrefix}#contact" class="mobile-nav-item" data-nav="contact">
+                    <a href="${indexPrefix}#booking" class="mobile-nav-item" data-nav="booking">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
                         </svg>
-                        <span class="mobile-nav-text" data-i18n="nav.contact">联络</span>
+                        <span class="mobile-nav-text" data-i18n="nav.contact">预约</span>
                     </a>
                 </div>
             </div>

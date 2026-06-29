@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="advisor.title">品牌国际化定制方案与顾问服务 | BORVAN SINGAPORE</title>
+    <meta name="description" content="为企业家提供全方位品牌国际化出海评估、品牌影响力构建与组织系统增效的定制化顾问咨询与落地实施。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+SC:wght@300;400;600;900&family=Inter:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
+    <style>
+        .advisor-header {
+            padding: 18vh 5vw 10vh 5vw;
+            background-color: var(--color-dark-bg);
+            color: var(--color-dark-text);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .advisor-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at 50% 30%, rgba(201, 160, 99, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+            pointer-events: none;
+        }
+        .advisor-content {
+            padding: 8vh 5vw 12vh 5vw;
+            background-color: var(--color-surface);
+        }
+        .solution-card {
+            background-color: #FFF;
+            border-radius: 16px;
+            padding: 3.5rem;
+            margin-bottom: 4rem;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.06);
+            border-top: 4px solid var(--color-accent);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 70px rgba(0,0,0,0.08);
+        }
+        .solution-badge-num {
+            font-family: var(--font-english);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .card-header-title {
+            font-size: 2rem;
+            color: var(--color-text-primary);
+            font-family: var(--font-heading);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .price-chip {
+            font-size: 1.1rem;
+            font-family: var(--font-body);
+            font-weight: 600;
+            color: var(--color-accent);
+            background-color: rgba(201, 160, 99, 0.1);
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+        }
+        .section-subgrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0 3rem 0;
+        }
+        .subgrid-item {
+            background-color: #F8FAFC;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 3px solid var(--color-accent);
+        }
+        .subgrid-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 0.5rem;
+        }
+        .subgrid-desc {
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+        .deliver-box {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            color: #FFF;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+        .deliver-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .deliver-column h4 {
+            font-size: 1.2rem;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .deliver-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .deliver-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 0.98rem;
+            color: #CBD5E1;
+            line-height: 1.6;
+        }
+        .deliver-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+        .cta-booking-box {
+            text-align: center;
+            margin-top: 5rem;
+            padding: 4rem 2rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 20px;
+        }
+        @media (max-width: 768px) {
+            .solution-card { padding: 2rem; }
+            .deliver-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="architect-nav scrolled">
+        <div class="nav-branding">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <div class="nav-logo">BORVAN SINGAPORE</div>
+                <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value, true)" oninput="changeLanguage(this.value, true)">
+                    <option value="zh">中文</option>
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase; margin-top: 0.2rem;" data-i18n="nav.badge">用好新加坡 创造新可能</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#mission" data-i18n="nav.back_to_home">返回主页</a></li>
+        </ul>
+    </nav>
+
+    <header class="advisor-header">
+        <div class="container">
+            <div class="nav-badge" style="display: inline-block; font-size: 0.85rem; padding: 0.25rem 0.8rem; margin-bottom: 1rem; color: #FFF; background: rgba(201,160,99,0.2); border: 1px solid var(--color-accent);">高层战略咨询与陪伴式落地</div>
+            <h1 class="section-title text-accent" style="margin-bottom: 1rem;">品牌国际化定制方案顾问服务</h1>
+            <div class="title-line center mx-auto"></div>
+            <p class="section-desc" style="max-width: 800px; margin: 0 auto; color: #94A3B8; font-size: 1.15rem; line-height: 1.8;">
+                我们不仅是顾问，更是您在东南亚落地与品牌国际化传播的长期实施战略伙伴。深度整合“出海评估”、“品牌影响力”与“组织系统增效”三大核心方案。
+            </p>
+        </div>
+    </header>
+
+    <section class="advisor-content">
+        <div class="container" style="max-width: 1050px;">
+            
+            <!-- Solution 01 -->
+            <div class="solution-card">
+                <div class="solution-badge-num">01</div>
+                <div class="card-header-title">
+                    <span>企业出海评估与改善</span>
+                    <span class="price-tag price-chip">2.4万新币起</span>
+                </div>
+                <p style="color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem;">
+                    为企业建立稳固的出海大本营，全面打通在新加坡落地启动的合规路径、实体建构与长期维护，保障商业版图稳健扩张。
+                </p>
+                
+                <div class="section-subgrid">
+                    <div class="subgrid-item">
+                        <div class="subgrid-title">海外机构设置</div>
+                        <div class="subgrid-desc">在地化落地全景规划，一站式构建工商注册体系与实体经营场所，深度适配当地政策人文。</div>
+                    </div>
+                    <div class="subgrid-item">
+                        <div class="subgrid-title">年度运营维护</div>
+                        <div class="subgrid-desc">全天候持久动能支持，涵盖财务税务系统化管理、人事组织构架优化及日常综合后勤运营。</div>
+                    </div>
+                    <div class="subgrid-item">
+                        <div class="subgrid-title">合规咨询与风控</div>
+                        <div class="subgrid-desc">洞察区域法律法规、劳动守则与行业标准，提前排除潜在风险漏洞，建立全生命周期审查机制。</div>
+                    </div>
+                </div>
+
+                <div class="deliver-box">
+                    <div class="deliver-grid">
+                        <div class="deliver-column">
+                            <h4>📌 实施与交付流程</h4>
+                            <ul class="deliver-list">
+                                <li><strong>阶段一（前期诊断）：</strong>企业出海目标调研与在地合规架构全景设计（1-2周）。</li>
+                                <li><strong>阶段二（实体落地）：</strong>完成新加坡公司注册、银行开户与实体办公场所选址搭建（2-4周）。</li>
+                                <li><strong>阶段三（机制交接）：</strong>财税合规体系建立与日常运营标准化机制交接（持续陪伴）。</li>
+                            </ul>
+                        </div>
+                        <div class="deliver-column">
+                            <h4>🏆 核心交付成果与标准</h4>
+                            <ul class="deliver-list">
+                                <li>《海外实体合规架构设计与落地评估报告》</li>
+                                <li>完整的新加坡合规公司实体及相关营业许可资质</li>
+                                <li>《年度财税与合规风控标准化操作指南》</li>
+                                <li>保证100%符合新加坡ACRA及相关监管部门的最新合规要求</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solution 02 -->
+            <div class="solution-card">
+                <div class="solution-badge-num">02</div>
+                <div class="card-header-title">
+                    <span>构筑品牌影响力</span>
+                    <span class="price-tag price-chip">1.4万新币起</span>
+                </div>
+                <p style="color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem;">
+                    构建顺畅无阻的跨境合作网络与高价值核心客群圈层，将品牌核心理念转化为直抵人心的极具美感的跨文化叙事。
+                </p>
+                
+                <div class="section-subgrid">
+                    <div class="subgrid-item">
+                        <div class="subgrid-title">跨文化品牌呈现</div>
+                        <div class="subgrid-desc">提炼核心理念并转化为跨文化叙事，确保品牌在海外主流渠道与专业圈层以最具视觉张力呈现。</div>
+                    </div>
+                    <div class="subgrid-item">
+                        <div class="subgrid-title">用AI构建成长社群</div>
+                        <div class="subgrid-desc">精准连接本土衍生需求与品牌优势，借助AI赋能社群运营，促成产业链上下游黄金合作通道。</div>
+                    </div>
+                    <div class="subgrid-item">
+                        <div class="subgrid-title">战略客户圈层渗透</div>
+                        <div class="subgrid-desc">锁定高价值战略核心客群，代表企业展开系统性深度渗透与互动，助推建立持久伙伴关系。</div>
+                    </div>
+                </div>
+
+                <div class="deliver-box">
+                    <div class="deliver-grid">
+                        <div class="deliver-column">
+                            <h4>📌 实施与交付流程</h4>
+                            <ul class="deliver-list">
+                                <li><strong>阶段一（叙事重构）：</strong>解构品牌商业逻辑，重塑适配跨文化语境的品牌国际化叙事白皮书。</li>
+                                <li><strong>阶段二（AI与渠道搭建）：</strong>部署AI驱动的增长与社群沟通体系，建立品牌海外官方呈现阵地。</li>
+                                <li><strong>阶段三（圈层对接）：</strong>对接东南亚及国际主流商业圈层，开展高意向战略客户的精准撮合。</li>
+                            </ul>
+                        </div>
+                        <div class="deliver-column">
+                            <h4>🏆 核心交付成果与标准</h4>
+                            <ul class="deliver-list">
+                                <li>《品牌文明国际化叙事与视觉呈现白皮书》</li>
+                                <li>一套定制化 AI 社群增长与自动化客服模型工具</li>
+                                <li>《海外战略圈层客户对接与撮合报告》</li>
+                                <li>确保品牌海外呈现达到国际一线水准，并成功建立深度客群触达通道</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solution 03 -->
+            <div class="solution-card">
+                <div class="solution-badge-num">03</div>
+                <div class="card-header-title">
+                    <span>组织系统增效</span>
+                    <span class="price-tag price-chip">9万新币起</span>
+                </div>
+                <p style="color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem;">
+                    组织核心价值的系统化落地，激活团队凝聚力与主动性，实现跨国团队在异地协作中的高效顺畅运转。
+                </p>
+                
+                <div class="section-subgrid">
+                    <div class="subgrid-item">
+                        <div class="subgrid-title">核心价值与愿景对齐</div>
+                        <div class="subgrid-desc">提炼创始人精神与品牌核心价值观，统一核心管理层的认知与愿景，转化为组织行为准则。</div>
+                    </div>
+                    <div class="subgrid-item">
+                        <div class="subgrid-title">营运与管理系统重构</div>
+                        <div class="subgrid-desc">梳理标准营运流程（SOP），建立高效自我纠偏与日常运行机制，保障异地协作顺畅。</div>
+                    </div>
+                    <div class="subgrid-item">
+                        <div class="subgrid-title">团队激活与陪伴式陪跑</div>
+                        <div class="subgrid-desc">重塑沟通路径，创新机制激活团队，提供定期现场督导与量化数据看板，实现长效增效。</div>
+                    </div>
+                </div>
+
+                <div class="deliver-box">
+                    <div class="deliver-grid">
+                        <div class="deliver-column">
+                            <h4>📌 实施与交付流程</h4>
+                            <ul class="deliver-list">
+                                <li><strong>阶段一（基因访谈）：</strong>开展创始人及核心高管深度访谈，举办价值观对齐与共识工坊。</li>
+                                <li><strong>阶段二（系统重构）：</strong>梳理业务营运标准化流程，设计组织架构与岗位标准化说明书。</li>
+                                <li><strong>阶段三（驻场陪跑）：</strong>导师团队定期驻场指导，部署效能数据看板，开展月度复盘陪伴。</li>
+                            </ul>
+                        </div>
+                        <div class="deliver-column">
+                            <h4>🏆 核心交付成果与标准</h4>
+                            <ul class="deliver-list">
+                                <li>《品牌基因与组织核心价值观白皮书》</li>
+                                <li>《组织架构与岗位说明书》及《业务营运标准化操作手册（SOP）》</li>
+                                <li>《团队效能评估与反馈数据看板》</li>
+                                <li>《日常陪跑成效追踪月报》（按月输出量化增效成果）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="cta-booking-box">
+                <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--color-text-primary); margin-bottom: 1rem;">需要为您定制专属的出海与品牌战略？</h3>
+                <p style="color: var(--color-text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">与导师梁陈及专家团队开启一对一深度咨询沟通。</p>
+                <a href="index.html#booking" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 50px; text-decoration: none; display: inline-block;">预约梁陈导师时间 →</a>
+            </div>
+
+            <a href="index.html" class="back-link" data-i18n="course.back_link" style="margin-top: 4rem;">← 返 回 主 页</a>
+        </div>
+    </section>
+
+    <script src="i18n.js?v=20260630_v3"></script>
+    <script src="script.js?v=2"></script>
+</body>
+</html>
