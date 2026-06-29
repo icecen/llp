@@ -18,24 +18,16 @@
 <body>
     <nav class="architect-nav">
         <div class="nav-branding">
-            <div class="nav-logo">BORVAN SINGAPORE</div>
-            <div class="nav-badge"
-                style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase;" data-i18n="nav.badge">
-                用好新加坡，种好新种子</div>
-            <div class="lang-selector">
-                <div class="lang-selector-group">
-                    <button type="button" class="lang-btn" onclick="changeLanguage('zh')" data-lang-val="zh">中文</button>
-                    <button type="button" class="lang-btn" onclick="changeLanguage('en')" data-lang-val="en">EN</button>
-                    <button type="button" class="lang-btn" onclick="changeLanguage('ja')" data-lang-val="ja">JA</button>
-                    <button type="button" class="lang-btn" onclick="changeLanguage('es')" data-lang-val="es">ES</button>
-                    <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)" style="background: transparent; color: inherit; border: 1px solid var(--color-accent); border-radius: 4px; padding: 1px 4px; font-family: var(--font-english); font-size: 0.65rem; text-transform: uppercase; cursor: pointer; outline: none;">
-                        <option value="zh" style="color: black;">中文</option>
-                        <option value="en" style="color: black;">English</option>
-                        <option value="ja" style="color: black;">日本語</option>
-                        <option value="es" style="color: black;">Español</option>
-                    </select>
-                </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <div class="nav-logo">BORVAN SINGAPORE</div>
+                <select id="lang-switch" class="lang-switch" onchange="changeLanguage(this.value)">
+                    <option value="zh">中文</option>
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                    <option value="es">Español</option>
+                </select>
             </div>
+            <div class="nav-badge" style="font-family: var(--font-english); font-size: 0.78rem; padding: 0.15rem 0.4rem; text-transform: uppercase; margin-top: 0.2rem;" data-i18n="nav.badge">用好新加坡，种好新种子</div>
         </div>
         <ul class="nav-links">
             <li><a href="#course" data-i18n="nav.mission">课程</a></li>
