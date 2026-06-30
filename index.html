@@ -26,6 +26,53 @@
             box-shadow: 0 30px 60px rgba(178, 149, 98, 0.15);
             border-top-color: var(--color-text-primary);
         }
+        .slot-btn {
+            background: transparent;
+            border: 1px solid rgba(178, 149, 98, 0.4);
+            border-radius: 6px;
+            padding: 1.2rem;
+            color: #FFF;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+            font-family: var(--font-body);
+            width: 100%;
+        }
+        .slot-btn:hover {
+            background: var(--color-accent);
+            color: var(--color-dark-bg);
+            border-color: var(--color-accent);
+        }
+        .slot-btn .time {
+            font-size: 1.05rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+        .slot-btn .status {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+        .slot-btn.booked {
+            background: rgba(179, 58, 58, 0.15) !important;
+            border-color: rgba(179, 58, 58, 0.5) !important;
+            color: rgba(255, 255, 255, 0.8) !important;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        .slot-btn.booked .status {
+            color: #ff6b6b;
+            font-weight: bold;
+            opacity: 1;
+        }
+        @media (max-width: 900px) {
+            .direct-booking-grid {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem !important;
+            }
+        }
         @media (max-width: 768px) {
             .services-promo-card {
                 padding: 3rem 2rem;
@@ -258,20 +305,87 @@
         </div>
     </section>
 
-    <!-- Calendly Booking Section -->
+    <!-- Direct Booking Section -->
     <section class="section booking-section" id="booking" style="padding: 6rem 0; background: linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, rgba(15, 23, 42, 0.6) 100%);">
         <div class="container text-center">
             <div class="nav-badge reveal-up" style="display: inline-block; font-size: 0.85rem; padding: 0.25rem 0.8rem; margin-bottom: 1rem;" data-i18n="booking.badge">一对一深度咨询</div>
             <h2 class="section-title reveal-up delay-1" data-i18n="booking.title">预约梁陈导师与专家团队的时间</h2>
             <div class="title-line center mx-auto reveal-up delay-1"></div>
-            <p class="lead-text reveal-up delay-2" style="max-width: 750px; margin: 1.5rem auto 2.5rem; color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.8;" data-i18n="booking.desc">
-                直接在线查看梁陈（liangchen01@gmail.com）可预约时段，挑选适合您的日程并填写表单，预定成功后将自动同步至导师日历。
+            <p class="lead-text reveal-up delay-2" style="max-width: 750px; margin: 1.5rem auto 2.5rem; color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.8;" data-i18n="booking.direct_info">
+                可预约时段：每周一、周二、周五 (上午 9:00 至 下午 5:00)<br>每次咨询以 2 小时为预约单元。红色时段代表已被预约，暂不可定。
             </p>
-            <div class="booking-card reveal-up delay-2" style="background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 1.5rem; box-shadow: 0 30px 60px rgba(0,0,0,0.4); max-width: 1050px; margin: 0 auto; overflow: hidden;">
-                <!-- Calendly inline widget begin -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/liangchen01?primary_color=c9a063&text_color=ffffff&bg_color=0f172a" style="min-width:320px;height:750px;width:100%;"></div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                <!-- Calendly inline widget end -->
+            
+            <div class="booking-card reveal-up delay-2" style="background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 3rem 2rem; box-shadow: 0 30px 60px rgba(0,0,0,0.4); max-width: 1050px; margin: 0 auto; overflow: hidden;">
+                <div class="direct-booking-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 950px; margin: 0 auto;">
+                    <!-- Monday -->
+                    <div class="day-column" style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px;">
+                        <h4 style="font-family: var(--font-heading); color: var(--color-accent); font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: bold;" data-i18n="booking.mon">周一 / Monday</h4>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <button class="slot-btn" data-day="Mon" data-slot="1" onclick="handleSlotClick('Mon', '1', '09:00 - 11:00')">
+                                <span class="time">09:00 - 11:00</span>
+                                <span class="status" data-i18n="booking.available">可预约</span>
+                            </button>
+                            <button class="slot-btn" data-day="Mon" data-slot="2" onclick="handleSlotClick('Mon', '2', '11:00 - 13:00')">
+                                <span class="time">11:00 - 13:00</span>
+                                <span class="status" data-i18n="booking.available">可预约</span>
+                            </button>
+                            <button class="slot-btn" data-day="Mon" data-slot="3" onclick="handleSlotClick('Mon', '3', '13:00 - 15:00')">
+                                <span class="time">13:00 - 15:00</span>
+                                <span class="status" data-i18n="booking.available">可预约</span>
+                            </button>
+                            <button class="slot-btn" data-day="Mon" data-slot="4" onclick="handleSlotClick('Mon', '4', '15:00 - 17:00')">
+                                <span class="time">15:00 - 17:00</span>
+                                <span class="status" data-i18n="booking.available">可预约</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tuesday -->
+                    <div class="day-column" style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px;">
+                        <h4 style="font-family: var(--font-heading); color: var(--color-accent); font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: bold;" data-i18n="booking.tue">周二 / Tuesday</h4>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <button class="slot-btn" data-day="Tue" data-slot="1" onclick="handleSlotClick('Tue', '1', '09:00 - 11:00')">
+                                <span class="time">09:00 - 11:00</span>
+                                <span class="status" data-i18n="booking.available">可预约</span>
+                            </button>
+                            <button class="slot-btn" data-day="Tue" data-slot="2" onclick="handleSlotClick('Tue', '2', '11:00 - 13:00')">
+                                <span class="time">11:00 - 13:00</span>
+                                <span class="status" data-i18n="booking.available">可预约</span>
+                            </button>
+                            <button class="slot-btn" data-day="Tue" data-slot="3" onclick="handleSlotClick('Tue', '3', '13:00 - 15:00')">
+                                <span class="time">13:00 - 15:00</span>
+                                <span class="status" data-i18n="booking.available">可预约</span>
+                            </button>
+                            <button class="slot-btn" data-day="Tue" data-slot="4" onclick="handleSlotClick('Tue', '4', '15:00 - 17:00')">
+                                <span class="time">15:00 - 17:00</span>
+                                <span class="status" data-i18n="booking.available">可预约</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Friday -->
+                    <div class="day-column" style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px;">
+                        <h4 style="font-family: var(--font-heading); color: var(--color-accent); font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: bold;" data-i18n="booking.fri">周五 / Friday</h4>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <button class="slot-btn" data-day="Fri" data-slot="1" onclick="handleSlotClick('Fri', '1', '09:00 - 11:00')">
+                                <span class="time">09:00 - 11:00</span>
+                                <span class="status" data-i18n="booking.available">可预约</span>
+                            </button>
+                            <button class="slot-btn" data-day="Fri" data-slot="2" onclick="handleSlotClick('Fri', '2', '11:00 - 13:00')">
+                                <span class="time">11:00 - 13:00</span>
+                                <span class="status" data-i18n="booking.available">可预约</span>
+                            </button>
+                            <button class="slot-btn" data-day="Fri" data-slot="3" onclick="handleSlotClick('Fri', '3', '13:00 - 15:00')">
+                                <span class="time">13:00 - 15:00</span>
+                                <span class="status" data-i18n="booking.available">可预约</span>
+                            </button>
+                            <button class="slot-btn" data-day="Fri" data-slot="4" onclick="handleSlotClick('Fri', '4', '15:00 - 17:00')">
+                                <span class="time">15:00 - 17:00</span>
+                                <span class="status" data-i18n="booking.available">可预约</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -312,6 +426,146 @@
 
     <script src="i18n.js?v=20260630_v3"></script>
     <script src="script.js?v=2"></script>
+
+    <!-- Modals for Direct Booking -->
+    <div class="modal-overlay" id="direct-booking-modal">
+        <div class="modal-content" style="background-color: var(--color-bg); border-top: 4px solid var(--color-accent);">
+            <i class="modal-close" onclick="closeDirectModal('direct-booking-modal')">&times;</i>
+            <div class="modal-header">
+                <h3 id="booking-modal-title" style="font-family: var(--font-heading); color: var(--color-text-primary); font-size: 1.8rem; margin-bottom: 1rem;">预约登记</h3>
+                <div class="title-line"></div>
+            </div>
+            <form id="direct-booking-form" onsubmit="submitDirectBooking(event)">
+                <input type="hidden" id="booking-day">
+                <input type="hidden" id="booking-slot">
+                <input type="hidden" id="booking-time-str">
+                
+                <p style="color: var(--color-text-secondary); margin-bottom: 2rem; font-size: 1.05rem;">
+                    您正在登记预约时段：<strong id="booking-display-time" style="color: var(--color-accent);">周一 09:00 - 11:00</strong>
+                </p>
+                
+                <div class="form-group" style="margin-bottom: 1.5rem; text-align: left;">
+                    <label for="booking-client-name" style="display: block; font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 0.5rem; font-weight: 500;">您的姓名 / Your Name *</label>
+                    <input type="text" id="booking-client-name" required style="width: 100%; padding: 0.8rem 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; font-family: var(--font-body); font-size: 1rem; background: #fff; color: #000;">
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 2rem; text-align: left;">
+                    <label for="booking-client-contact" style="display: block; font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 0.5rem; font-weight: 500;">联系电话或邮箱 / Phone or Email *</label>
+                    <input type="text" id="booking-client-contact" required style="width: 100%; padding: 0.8rem 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; font-family: var(--font-body); font-size: 1rem; background: #fff; color: #000;">
+                </div>
+                
+                <button type="submit" class="highlight-bg course-booking-btn" style="width: 100%; padding: 1rem; border: none; font-size: 1rem; letter-spacing: 0.1em; font-family: var(--font-english); font-weight: 600; text-transform: uppercase; border-radius: 4px; cursor: pointer; transition: var(--transition-smooth); background-color: var(--color-accent); color: #fff;">
+                    确认登记预约 / Confirm Booking
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="direct-payment-prompt-modal">
+        <div class="modal-content" style="text-align: center; background-color: var(--color-bg); border-top: 4px solid var(--color-accent);">
+            <i class="modal-close" onclick="closeDirectModal('direct-payment-prompt-modal')">&times;</i>
+            <div class="modal-header" style="text-align: center;">
+                <h3 style="font-family: var(--font-heading); color: var(--color-accent); font-size: 1.6rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                    预约登记已提交，待付费确认
+                </h3>
+                <div class="title-line center mx-auto"></div>
+            </div>
+            
+            <div style="color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.8; margin-top: 2rem; margin-bottom: 3rem; text-align: left; background: rgba(178, 149, 98, 0.05); padding: 2rem; border-radius: 8px; border-left: 4px solid var(--color-accent);">
+                <p style="margin-bottom: 1.5rem; font-weight: 600; color: var(--color-text-primary);">
+                    您的预约时段已临时登记锁定，时间显示已变为不可选定的红色状态。
+                </p>
+                <p style="margin-bottom: 1.5rem;">
+                    因咨询资源稀缺，此预约需在 **24 小时内** 完成服务付费，款项支付并确认后预订方正式生效。若超时未付，时段将被重新释放给其他客户。
+                </p>
+                <p style="margin-bottom: 0;">
+                    <strong>付费与联系方式</strong>：<br>
+                    请发送邮件至电子邮件 <a href="mailto:iencen@yahoo.com" style="color: var(--color-accent); font-weight: 600;">iencen@yahoo.com</a>，或点击下方社交链接通过 WhatsApp / WeChat 与我们取得联系。
+                </p>
+            </div>
+            
+            <button class="highlight-bg course-booking-btn" onclick="closeDirectModal('direct-payment-prompt-modal')" style="padding: 1rem 3rem; border: none; font-size: 1rem; letter-spacing: 0.1em; font-family: var(--font-english); font-weight: 600; text-transform: uppercase; border-radius: 4px; cursor: pointer; transition: var(--transition-smooth); background-color: var(--color-accent); color: #fff; width: 100%;">
+                我知道了 / Got It
+            </button>
+        </div>
+    </div>
+
+    <!-- Booking Scheduler Script -->
+    <script>
+        const STORAGE_KEY = 'borvan_direct_bookings';
+
+        function initDirectBookings() {
+            let bookings = localStorage.getItem(STORAGE_KEY);
+            bookings = bookings ? JSON.parse(bookings) : {};
+            
+            document.querySelectorAll('.slot-btn').forEach(btn => {
+                const day = btn.getAttribute('data-day');
+                const slot = btn.getAttribute('data-slot');
+                const key = `${day}-${slot}`;
+                
+                if (bookings[key]) {
+                    btn.classList.add('booked');
+                    const statusSpan = btn.querySelector('.status');
+                    if (statusSpan) {
+                        statusSpan.setAttribute('data-i18n', 'booking.booked');
+                        statusSpan.textContent = '已预约';
+                    }
+                }
+            });
+
+            if (window.changeLanguage) {
+                const savedLang = localStorage.getItem('selectedLanguage') || 'zh';
+                window.changeLanguage(savedLang);
+            }
+        }
+
+        function handleSlotClick(day, slot, timeStr) {
+            let dayChinese = '周一';
+            if (day === 'Tue') dayChinese = '周二';
+            if (day === 'Fri') dayChinese = '周五';
+            
+            document.getElementById('booking-day').value = day;
+            document.getElementById('booking-slot').value = slot;
+            document.getElementById('booking-time-str').value = timeStr;
+            
+            document.getElementById('booking-display-time').textContent = `${dayChinese} ${timeStr}`;
+            
+            document.getElementById('direct-booking-modal').classList.add('active');
+        }
+
+        function closeDirectModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+        }
+
+        function submitDirectBooking(e) {
+            e.preventDefault();
+            
+            const day = document.getElementById('booking-day').value;
+            const slot = document.getElementById('booking-slot').value;
+            const key = `${day}-${slot}`;
+            
+            const name = document.getElementById('booking-client-name').value;
+            const contact = document.getElementById('booking-client-contact').value;
+            
+            let bookings = localStorage.getItem(STORAGE_KEY);
+            bookings = bookings ? JSON.parse(bookings) : {};
+            bookings[key] = {
+                name: name,
+                contact: contact,
+                timestamp: new Date().toISOString()
+            };
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(bookings));
+            
+            closeDirectModal('direct-booking-modal');
+            document.getElementById('direct-booking-form').reset();
+            
+            initDirectBookings();
+            
+            document.getElementById('direct-payment-prompt-modal').classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', initDirectBookings);
+    </script>
 </body>
 
 </html>
