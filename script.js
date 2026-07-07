@@ -79,11 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Inject Mobile Floating Bottom Navigation
     const injectMobileNav = () => {
+        const isAdvisor = window.location.pathname.includes('advisor.html');
+        if (isAdvisor) return;
+
         const isIndex = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/') || !window.location.pathname.includes('.html');
         const indexPrefix = isIndex ? '' : 'index.html';
         const isPricing = window.location.pathname.includes('pricing.html');
         const isSevenSquare = window.location.pathname.includes('sevensquare.html');
-        const isAdvisor = window.location.pathname.includes('advisor.html');
         
         const mobileNavHtml = `
             <div class="mobile-bottom-nav">

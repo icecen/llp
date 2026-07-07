@@ -127,7 +127,9 @@ const translations = {
         // Secondary Pages Common
         "nav.back_to_home": "BACK TO HOME",
         "course.back_link": "&#8594; BACK TO HOME",
-        "advisor.title": "International Brand Overseas Advisory Services | BORVAN SINGAPORE",
+        "advisor.title": "Brand Cross-border Investment Advisory Services | BORVAN SINGAPORE",
+        "advisor.heading": "Brand Cross-border Investment Advisory Services",
+        "advisor.cta_email": "Contact Liang Chen via Email &rarr;",
         
         // channel.html
         "channel.title": "Business Expression of Value | BORVAN SINGAPORE",
@@ -421,7 +423,9 @@ const translations = {
         // Secondary Pages Common
         "nav.back_to_home": "返回主页",
         "course.back_link": "&#8594; 返 回 主 页",
-        "advisor.title": "国际化品牌海外顾问服务 | BORVAN SINGAPORE",
+        "advisor.title": "品牌跨境投资顾问服务 | BORVAN SINGAPORE",
+        "advisor.heading": "品牌跨境投资顾问服务",
+        "advisor.cta_email": "邮件联系梁陈导师 &rarr;",
         
         // channel.html
         "channel.title": "价值的商业表达 | BORVAN SINGAPORE",
@@ -671,7 +675,9 @@ const translations = {
         
         "nav.back_to_home": "ホームに戻る BACK",
         "course.back_link": "&#8594; ホ ー ム に 戻 る",
-        "advisor.title": "国際化ブランド海外アドバイザリーサービス | BORVAN SINGAPORE",
+        "advisor.title": "ブランドクロスボーダー投資アドバイザリーサービス | BORVAN SINGAPORE",
+        "advisor.heading": "ブランドクロスボーダー投資アドバイザリーサービス",
+        "advisor.cta_email": "メールで梁陳（Liang Chen）に連絡する &rarr;",
         
         "channel.title": "ブランド影響力の構築 | BORVAN SINGAPORE",
         "channel.header_title": "ブランド影響力の構築",
@@ -916,7 +922,9 @@ const translations = {
         
         "nav.back_to_home": "VOLVER AL INICIO",
         "course.back_link": "&#8594; VOLVER AL INICIO",
-        "advisor.title": "Servicios de Asesoría de Marca Internacional en el Extranjero | BORVAN SINGAPORE",
+        "advisor.title": "Servicios de Asesoría de Inversión Transfronteriza de Marca | BORVAN SINGAPORE",
+        "advisor.heading": "Servicios de Asesoría de Inversión Transfronteriza de Marca",
+        "advisor.cta_email": "Contactar a Liang Chen por Correo &rarr;",
         
         "channel.title": "Construir la Influencia de la Marca | BORVAN SINGAPORE",
         "channel.header_title": "Construir la Influencia de la Marca",
