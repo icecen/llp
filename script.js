@@ -85,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const isIndex = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/') || !window.location.pathname.includes('.html');
         const indexPrefix = isIndex ? '' : 'index.html';
         const isPricing = window.location.pathname.includes('pricing.html');
-        const isSevenSquare = window.location.pathname.includes('sevensquare.html');
         
         const mobileNavHtml = `
             <div class="mobile-bottom-nav">
@@ -106,29 +105,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         </svg>
                         <span class="mobile-nav-text" data-i18n="nav.ecosystem">顾问</span>
                     </a>
-                    <a href="sevensquare.html" class="mobile-nav-item ${isSevenSquare ? 'active' : ''}" data-nav="core">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M6 3h12l4 6-10 13L2 9z"></path>
-                            <path d="M11 3 8 9l4 13 4-13-3-6z"></path>
-                            <path d="M2 9h20"></path>
-                        </svg>
-                        <span class="mobile-nav-text" data-i18n="nav.core">AI</span>
-                    </a>
                     <a href="pricing.html" class="mobile-nav-item ${isPricing ? 'active' : ''}" data-nav="pricing">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
                             <line x1="7" y1="7" x2="7.01" y2="7"></line>
                         </svg>
                         <span class="mobile-nav-text" data-i18n="nav.pricing">报价</span>
-                    </a>
-                    <a href="${indexPrefix}#booking" class="mobile-nav-item" data-nav="booking">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="16" y1="2" x2="16" y2="6"></line>
-                            <line x1="8" y1="2" x2="8" y2="6"></line>
-                            <line x1="3" y1="10" x2="21" y2="10"></line>
-                        </svg>
-                        <span class="mobile-nav-text" data-i18n="nav.contact">预约</span>
                     </a>
                 </div>
             </div>
