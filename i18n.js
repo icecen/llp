@@ -1,6 +1,6 @@
 const translations = {
     en: {
-        "nav.badge": "Leverage Singapore Create New Possibilities",
+        "nav.badge": "Leverage Singapore Value Gravity Field",
         "nav.mission": "Course",
         "nav.core": "AI",
         "nav.ecosystem": "Advisory",
@@ -253,7 +253,7 @@ const translations = {
         "pricing.item7_price": "From 90,000 SGD"
     },
     zh: {
-        "nav.badge": "用好新加坡 创造新可能",
+        "nav.badge": "用好新加坡 价值引力场",
         "nav.mission": "课程",
         "nav.core": "AI",
         "nav.ecosystem": "顾问",
