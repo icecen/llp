@@ -152,6 +152,9 @@
                     <a href="advisor.html" class="nav-item hover:text-gold transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold hover:after:w-full after:transition-all after:duration-300" data-i18n="nav.advisor">
                         顾问
                     </a>
+                    <a href="#about" class="nav-item hover:text-gold transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold hover:after:w-full after:transition-all after:duration-300" data-i18n="nav.about">
+                        导师
+                    </a>
                     <a href="#contact" class="nav-item hover:text-gold transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold hover:after:w-full after:transition-all after:duration-300" data-i18n="nav.contact">
                         联系
                     </a>
@@ -180,6 +183,7 @@
             <div class="flex flex-col space-y-4 text-sm uppercase tracking-wider font-medium text-slate-200">
                 <a href="#courses" onclick="toggleMobileMenu()" class="hover:text-gold py-1" data-i18n="nav.courses">课程</a>
                 <a href="advisor.html" onclick="toggleMobileMenu()" class="hover:text-gold py-1" data-i18n="nav.advisor">顾问</a>
+                <a href="#about" onclick="toggleMobileMenu()" class="hover:text-gold py-1" data-i18n="nav.about">导师</a>
                 <a href="#contact" onclick="toggleMobileMenu()" class="hover:text-gold py-1" data-i18n="nav.contact">联系</a>
                 <div class="pt-4 border-t border-white/10 flex items-center justify-between">
                     <span class="text-xs text-slate-400">选择语言 / LANGUAGE</span>
@@ -592,6 +596,159 @@
     </section>
 
     <!-- ========================================================================= -->
+    <!-- 领袖与引荐官 (Leadership & Mentorship)                                      -->
+    <!-- 恢复梁陈导师个人介绍与肖像照片                                              -->
+    <!-- ========================================================================= -->
+    <section id="about" class="bg-obsidian py-24 sm:py-32 px-6 sm:px-10 md:px-16 border-t border-white/5 relative overflow-hidden">
+        <!-- Subtle background glow -->
+        <div class="absolute top-1/4 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 left-0 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+                <span class="text-xs uppercase tracking-widest-plus text-gold font-semibold block mb-3" data-i18n="about.tag">
+                    LEADERSHIP & MENTORSHIP · 领袖与引荐官
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4" data-i18n="about.title">
+                    卓越领航 · 赋能品牌文明生长
+                </h2>
+                <p class="text-sm sm:text-base text-slate-400 leading-relaxed" data-i18n="about.subtitle">
+                    连接中国与东南亚商业智慧，以学者严谨与实战经验引领企业价值升维。
+                </p>
+                <div class="w-16 h-[2px] bg-gold mx-auto mt-6"></div>
+            </div>
+
+            <!-- 梁陈 导师核心大卡片 (Featured Profile Card) -->
+            <div class="reveal-element bg-slateDark/80 border border-white/10 hover:border-gold/40 transition-all duration-500 p-8 sm:p-12 mb-12 shadow-2xl relative">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                    
+                    <!-- 肖像照 Portrait Column (5 cols) -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <a href="liangchen.html" class="group relative block w-full max-w-[340px] aspect-[2/3] overflow-hidden border border-gold/30 hover:border-gold transition-all duration-500 shadow-2xl">
+                            <img src="portrait-img.jpg" alt="梁陈 (LC) 肖像" class="w-full h-full object-cover object-top filter grayscale contrast-110 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                            <!-- Subtle gold accent badge -->
+                            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-obsidian via-obsidian/80 to-transparent">
+                                <span class="text-[10px] uppercase tracking-widest text-gold font-semibold block">BORVAN SINGAPORE</span>
+                                <span class="font-serif text-sm text-white font-bold">引荐官 · 战略架构顾问</span>
+                            </div>
+                            <div class="absolute inset-0 ring-1 ring-inset ring-white/10 group-hover:ring-gold/40 transition-all pointer-events-none"></div>
+                        </a>
+                    </div>
+
+                    <!-- 个人介绍 Content Column (7 cols) -->
+                    <div class="lg:col-span-7 flex flex-col justify-center">
+                        <div class="mb-4">
+                            <span class="text-xs uppercase tracking-widest text-gold font-medium mb-1 block" data-i18n="team.role1">STRATEGIC INTRODUCER & ADVISOR</span>
+                            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white tracking-wide">
+                                <a href="liangchen.html" class="hover:text-gold transition-colors" data-i18n="team.title1">
+                                    （LC）梁陈 | 成就梦想的价值。
+                                </a>
+                            </h3>
+                        </div>
+
+                        <!-- 导师引言 / Quote -->
+                        <div class="relative pl-5 border-l-2 border-gold my-4">
+                            <p class="font-serif italic text-sm sm:text-base text-slate-300 leading-relaxed" data-i18n="team.quote1">
+                                "我们推动文明的升级，激发人的决策统筹、人文共情、系统化思维。AI让教育成为灵魂的建筑学（architecture of the soul）。"
+                            </p>
+                        </div>
+
+                        <!-- 个人概述 / Description -->
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed mb-6" data-i18n="team.desc1">
+                            像建筑师雕琢每一寸空间一样，我们表达品牌背后的生命张力。在这个跨越国界与文化的时代，我们致力于发现隐藏的商业价值，促进跨越传统的生态交易。
+                        </p>
+
+                        <!-- 学术背景与社会责任标签 -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 pt-4 border-t border-white/5">
+                            <div class="flex items-start gap-2.5">
+                                <i data-lucide="graduation-cap" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="text-xs text-white font-medium block">中国传媒大学</span>
+                                    <span class="text-[11px] text-slate-400">工商管理硕士 (MBA)</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <i data-lucide="award" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="text-xs text-white font-medium block">安徽财经大学</span>
+                                    <span class="text-[11px] text-slate-400">会计学学士 · MPAcc 实践导师</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <i data-lucide="briefcase" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="text-xs text-white font-medium block">海南农垦热作产业集团</span>
+                                    <span class="text-[11px] text-slate-400">高级顾问</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <i data-lucide="compass" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="text-xs text-white font-medium block">中国传媒大学 MBA学院</span>
+                                    <span class="text-[11px] text-slate-400">实践导师</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 按钮互动区 -->
+                        <div class="flex flex-wrap items-center gap-4">
+                            <a href="liangchen.html" class="px-6 py-3 bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-all flex items-center gap-2">
+                                <span data-i18n="about.btn_profile">查看详细履历与学术资质</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </a>
+                            <a href="advisor.html" class="px-6 py-3 border border-white/20 text-slate-300 text-xs uppercase tracking-widest font-medium hover:border-gold hover:text-gold transition-colors flex items-center gap-2">
+                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-gold"></i>
+                                <span data-i18n="about.btn_book">预约一对一咨询</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 伙伴与执行合伙人团队展示 (Xi Ming & Dong Xianfu) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 董仙富 联合创始人 -->
+                <div class="reveal-element bg-slateDark/50 border border-white/5 p-6 sm:p-8 hover:border-white/15 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[10px] uppercase tracking-widest text-slate-400 font-medium">CO-FOUNDER</span>
+                            <span class="w-2 h-2 rounded-full bg-gold/60"></span>
+                        </div>
+                        <h4 class="font-serif text-lg font-bold text-white mb-2" data-i18n="team.title2">董仙富 | 联合创始人</h4>
+                        <p class="font-serif italic text-xs text-slate-300 mb-3" data-i18n="team.quote2">"共同构筑连接地域与文化的商业桥梁。"</p>
+                        <p class="text-xs text-slate-400 leading-relaxed" data-i18n="team.desc2">
+                            作为联合创始人，董仙富先生致力于将最前沿的企业教练视角融入每一次合作。深入洞察区域市场的多元需求，与品牌共建长远且厚重的价值引力场。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 西明 执行合伙人 -->
+                <div class="reveal-element bg-slateDark/50 border border-white/5 p-6 sm:p-8 hover:border-white/15 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[10px] uppercase tracking-widest text-slate-400 font-medium">EXECUTIVE PARTNER</span>
+                            <span class="w-2 h-2 rounded-full bg-gold/60"></span>
+                        </div>
+                        <div class="flex items-start gap-4 mb-3">
+                            <img src="ximing.jpg" alt="西明 肖像" class="w-14 h-18 object-cover border border-white/10 shrink-0">
+                            <div>
+                                <h4 class="font-serif text-lg font-bold text-white" data-i18n="team.title3">西明 | 执行合伙人</h4>
+                                <p class="font-serif italic text-xs text-slate-300 mt-1" data-i18n="team.quote3">"像领航者锚定每一次航向一样，我们唤醒企业深处的神圣希望。"</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-400 leading-relaxed" data-i18n="team.desc3">
+                            在这个充满变革与挑战的时代，我们致力于重塑组织存在的终极意义，将无形的使命转化为生生不息的成长能力。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
     <!-- 商业生态与伙伴案例 (Ecosystem & Global Trust)                             -->
     <!-- ========================================================================= -->
     <section class="bg-slateDark py-20 px-6 sm:px-10 md:px-16 border-t border-white/5">
@@ -887,6 +1044,7 @@
             zh: {
                 "nav.courses": "课程",
                 "nav.advisor": "顾问",
+                "nav.about": "导师",
                 "nav.contact": "联系",
                 "nav.pricing": "报价",
                 "hero.subtitle": "激发人的创造力",
@@ -934,6 +1092,21 @@
                 "banner.title": "企业定制与私董会闭门培训",
                 "banner.desc": "如需为创始人或高管团队量身打造专属出海与心智陪跑体系，欢迎预约顾问深度交流。",
                 "banner.btn": "预约顾问深度对话 →",
+                "about.tag": "LEADERSHIP & MENTORSHIP · 领袖与引荐官",
+                "about.title": "卓越领航 · 赋能品牌文明生长",
+                "about.subtitle": "连接中国与东南亚商业智慧，以学者严谨与实战经验引领企业价值升维。",
+                "about.btn_profile": "查看详细履历与学术资质",
+                "about.btn_book": "预约一对一咨询",
+                "team.role1": "STRATEGIC INTRODUCER & ADVISOR",
+                "team.title1": "（LC）梁陈 | 成就梦想的价值。",
+                "team.quote1": "\"我们推动文明的升级，激发人的决策统筹、人文共情、系统化思维。AI让教育成为灵魂的建筑学（architecture of the soul）。\"",
+                "team.desc1": "像建筑师雕琢每一寸空间一样，我们表达品牌背后的生命张力。在这个跨越国界与文化的时代，我们致力于发现隐藏的商业价值，促进跨越传统的生态交易。",
+                "team.title2": "董仙富 | 联合创始人",
+                "team.quote2": "\"共同构筑连接地域与文化的商业桥梁。\"",
+                "team.desc2": "作为联合创始人，董仙富先生致力于将最前沿的企业教练视角融入每一次合作。深入洞察区域市场的多元需求，与品牌共建长远且厚重的价值引力场。",
+                "team.title3": "西明 | 执行合伙人",
+                "team.quote3": "\"像领航者锚定每一次航向一样，我们唤醒企业深处的神圣希望。\"",
+                "team.desc3": "在这个充满变革与挑战的时代，我们致力于重塑组织存在的终极意义，将无形的使命转化为生生不息的成长能力。",
                 "partners.tag": "TRUSTED BY GLOBAL VISIONARIES",
                 "partners.title": "价值引力场 · 生态共建者伙伴",
                 "footer.motto": "激发人的创造力，传承文明影响力。在新加坡立足全球，赋能企业领袖实现长效价值表达与传承。",
@@ -945,6 +1118,7 @@
             en: {
                 "nav.courses": "Courses",
                 "nav.advisor": "Advisory",
+                "nav.about": "Mentors",
                 "nav.contact": "Contact",
                 "nav.pricing": "Pricing",
                 "hero.subtitle": "Ignite Human Creativity",
@@ -992,6 +1166,21 @@
                 "banner.title": "Bespoke Corporate Advisory & Closed-Door Retreats",
                 "banner.desc": "For customized globalization frameworks and founder identity coaching, schedule an executive consultation.",
                 "banner.btn": "Schedule Advisory Dialogue →",
+                "about.tag": "LEADERSHIP & MENTORSHIP · LEADERSHIP",
+                "about.title": "Enduring Leadership · Empowering Brand Heritage",
+                "about.subtitle": "Bridging Chinese and Southeast Asian business wisdom, leading enterprise value transformation with scholarly rigor and executive acumen.",
+                "about.btn_profile": "View Full Profile & Academic Credentials",
+                "about.btn_book": "Schedule Executive Session",
+                "team.role1": "STRATEGIC INTRODUCER & ADVISOR",
+                "team.title1": "(LC) Liang Chen | The Value of Achieving Dreams.",
+                "team.quote1": "“We advance the upgrade of civilization, inspiring strategic decision-making, human empathy, and systematic thinking. AI makes education the architecture of the soul.”",
+                "team.desc1": "Just as an architect sculpts space, we express the vitality behind brands. In this era transcending borders, we discover hidden value and facilitate transformative cross-border ecosystems.",
+                "team.title2": "Dong Xianfu | Co-Founder",
+                "team.quote2": "“Building commercial bridges across regions and cultures.”",
+                "team.desc2": "As Co-Founder, Mr. Dong integrates corporate coaching perspectives to co-create enduring value gravity fields with global brands.",
+                "team.title3": "Xi Ming | Executive Partner",
+                "team.quote3": "“Just as a navigator anchors every heading, we awaken the sacred hope deep within organizations.”",
+                "team.desc3": "In an era of rapid transformation, we reshape the ultimate purpose of organizational existence into sustainable growth capabilities.",
                 "partners.tag": "TRUSTED BY GLOBAL VISIONARIES",
                 "partners.title": "Global Ecosystem & Strategic Partners",
                 "footer.motto": "Ignite human creativity, inherit civilization influence. Empowering global leaders from Singapore.",
@@ -1013,7 +1202,26 @@
             const selectEl = document.getElementById('lang-select');
             if (selectEl) selectEl.value = lang;
             document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+            
+            try {
+                const url = new URL(window.location.href);
+                if (url.searchParams.get('lang') !== lang) {
+                    url.searchParams.set('lang', lang);
+                    window.history.replaceState(null, '', url.toString());
+                }
+            } catch (e) {}
         }
+
+        // On page load, synchronize with ?lang= parameter if present
+        window.addEventListener('DOMContentLoaded', () => {
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                const lang = urlParams.get('lang');
+                if (lang && (lang === 'zh' || lang === 'en')) {
+                    switchLanguage(lang);
+                }
+            } catch (e) {}
+        });
     </script>
 </body>
 
