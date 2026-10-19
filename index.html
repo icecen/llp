@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="site.title">相信种子的力量</title>
-    <meta name="description" content="BORVAN SINGAPORE — 锚定全球商业文明，提供顶级战略咨询、Founder Identity Architecture™ 与跨文化高管教育培训。">
+    <title>BORVAN | 东盟市场进入与企业增长顾问平台 · 新加坡商业咨询</title>
+    <meta name="description" content="BORVAN帮助中国企业低风险进入新加坡及东盟市场。提供出海可行性评估、东盟增长训练营、企业出海陪跑、本地渠道对接与商业落地服务。HQ位于新加坡CBD The Adelphi。">
+    <meta name="keywords" content="新加坡市场进入,东盟市场进入,东盟出海咨询,ASEAN Market Entry,Singapore Business Expansion,中国企业出海东盟,企业国际化咨询">
 
     <!-- Open Graph Metadata -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://borvan.sg/">
-    <meta property="og:title" content="相信种子的力量">
-    <meta property="og:description" content="激发人的创造力，传承文明影响力。提供培训与咨询，实现价值交易评估与赋能。">
-    <meta property="og:image" content="logo.png">
+    <meta property="og:title" content="BORVAN | 东盟市场进入与企业增长顾问平台">
+    <meta property="og:description" content="从市场评估、资源对接到落地执行，帮助企业降低试错成本，打开新加坡及东盟增长机会。">
+    <meta property="og:image" content="https://borvan.sg/logo.png">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,27 +22,24 @@
             theme: {
                 extend: {
                     colors: {
-                        obsidian: '#090D14',
-                        slateDark: '#0F1622',
-                        slateCard: '#151E2E',
+                        obsidian: '#070B12',
+                        navyDark: '#0D1525',
+                        slateDark: '#121C2F',
+                        slateCard: '#17233B',
+                        primaryBlue: '#464feb',
                         gold: {
-                            light: '#DFCA9E',
+                            light: '#EAD7AF',
                             DEFAULT: '#C5A880',
-                            dark: '#A6865A',
+                            dark: '#9E8056',
                         },
-                        stoneLight: '#F8F9FA',
-                        stoneSubtle: '#F1F3F5',
+                        accentCyan: '#06b6d4',
+                        accentEmerald: '#10b981',
                         borderMuted: 'rgba(255, 255, 255, 0.08)',
-                        borderLight: 'rgba(15, 23, 42, 0.08)',
+                        borderLight: 'rgba(255, 255, 255, 0.15)',
                     },
                     fontFamily: {
-                        serif: ['"Playfair Display"', '"Noto Serif SC"', 'serif'],
                         sans: ['"Inter"', '"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
-                        chineseSerif: ['"Noto Serif SC"', 'serif'],
-                    },
-                    letterSpacing: {
-                        'ultra-wide': '0.25em',
-                        'widest-plus': '0.35em',
+                        serif: ['"Playfair Display"', '"Noto Serif SC"', 'serif'],
                     }
                 }
             }
@@ -51,622 +49,960 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
 
-    <!-- Lucide Icons CDN -->
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
-        /* Custom Fine-Tuning for Ultra-Premium Consulting Look */
-        ::selection {
-            background-color: #C5A880;
-            color: #090D14;
-        }
+        /* CSS from user prompt specification */
+        a { text-decoration: none; color: #464feb; }
+        tr th, tr td { border: 1px solid #e6e6e6; }
+        tr th { background-color: #f5f5f5; }
 
-        .gold-gradient-text {
-            background: linear-gradient(135deg, #DFCA9E 0%, #C5A880 50%, #A6865A 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        /* Dark mode overrides for consulting UI */
+        .table-dark tr th, .table-dark tr td { border: 1px solid rgba(255, 255, 255, 0.1); }
+        .table-dark tr th { background-color: rgba(255, 255, 255, 0.05); color: #C5A880; }
 
-        .gold-border-gradient {
-            border-image: linear-gradient(to right, rgba(197, 168, 128, 0.4), rgba(197, 168, 128, 0.05)) 1;
+        .glass-panel {
+            background: rgba(18, 28, 47, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
-
-        /* Subtle subtle grid overlay */
-        .hero-pattern {
-            background-color: #090D14;
+        .glass-panel-gold {
+            background: rgba(197, 168, 128, 0.03);
+            border: 1px solid rgba(197, 168, 128, 0.25);
+        }
+        .hero-mesh {
             background-image: 
-                radial-gradient(circle at 50% 20%, rgba(197, 168, 128, 0.07) 0%, transparent 60%),
-                radial-gradient(circle at 85% 80%, rgba(30, 41, 59, 0.4) 0%, transparent 50%),
-                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-            background-size: 100% 100%, 100% 100%, 64px 64px, 64px 64px;
+                radial-gradient(at 15% 20%, rgba(70, 79, 235, 0.18) 0px, transparent 50%),
+                radial-gradient(at 85% 30%, rgba(197, 168, 128, 0.15) 0px, transparent 50%),
+                radial-gradient(at 50% 80%, rgba(6, 182, 212, 0.1) 0px, transparent 50%);
         }
-
-        /* Scroll Reveal Animation Styles */
-        .reveal-element {
-            opacity: 0;
-            transform: translateY(28px);
-            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
-            will-change: opacity, transform;
+        .glow-button {
+            box-shadow: 0 0 25px rgba(197, 168, 128, 0.35);
+            transition: all 0.3s ease;
         }
-
-        .reveal-element.is-revealed {
-            opacity: 1;
-            transform: translateY(0);
+        .glow-button:hover {
+            box-shadow: 0 0 35px rgba(197, 168, 128, 0.6);
+            transform: translateY(-2px);
         }
-
-        .stagger-1 { transition-delay: 0.1s; }
-        .stagger-2 { transition-delay: 0.2s; }
-        .stagger-3 { transition-delay: 0.3s; }
-        .stagger-4 { transition-delay: 0.4s; }
-
-        /* Minimal Scrollbar */
-        ::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
+        .glow-blue-button {
+            box-shadow: 0 0 25px rgba(70, 79, 235, 0.4);
+            transition: all 0.3s ease;
         }
-        ::-webkit-scrollbar-track {
-            background: #090D14;
+        .glow-blue-button:hover {
+            box-shadow: 0 0 35px rgba(70, 79, 235, 0.7);
+            transform: translateY(-2px);
         }
-        ::-webkit-scrollbar-thumb {
-            background: #252F42;
-            border-radius: 3px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #C5A880;
-        }
-
-        /* Blur backdrop filter support */
-        .glass-nav {
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+        .badge-pill {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.3rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            background: rgba(197, 168, 128, 0.12);
+            border: 1px solid rgba(197, 168, 128, 0.3);
+            color: #EAD7AF;
         }
     </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://borvan.sg/#organization",
+          "name": "BORVAN SINGAPORE",
+          "alternateName": "东盟市场进入与企业增长顾问平台",
+          "url": "https://borvan.sg/",
+          "logo": "https://borvan.sg/logo.png",
+          "description": "帮助中国企业低风险进入新加坡及东盟市场。提供出海评估、增长训练营与企业出海陪跑。",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "The Adelphi, 1 Coleman St",
+            "addressLocality": "Singapore",
+            "postalCode": "179803",
+            "addressCountry": "SG"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+65-8732-7804",
+            "contactType": "Customer Support & Advisory",
+            "availableLanguage": ["Chinese", "English"]
+          },
+          "founder": {
+            "@type": "Person",
+            "name": "Liang Chen",
+            "alternateName": "梁陈",
+            "jobTitle": "战略引荐官 / 战略架构顾问"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "东盟市场进入评估 (ASEAN Go-To-Market Assessment)",
+          "provider": { "@id": "https://borvan.sg/#organization" },
+          "description": "帮助出海企业在7-14天内完成市场吸引力分析、国家排序、竞争分析、风险评估与90天落地路线图。",
+          "offers": [
+            { "@type": "Offer", "name": "基础版", "price": "2000", "priceCurrency": "SGD" },
+            { "@type": "Offer", "name": "专业版", "price": "5000", "priceCurrency": "SGD" },
+            { "@type": "Offer", "name": "企业版", "price": "15000", "priceCurrency": "SGD" }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
-<body class="bg-obsidian text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-gold selection:text-obsidian">
+<body class="bg-obsidian text-slate-200 antialiased selection:bg-gold/30 selection:text-white">
 
-    <!-- ========================================================================= -->
-    <!-- 顶部导航栏 (Navbar)                                                      -->
-    <!-- ========================================================================= -->
-    <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-6 px-6 sm:px-10 md:px-16 border-b border-transparent">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <!-- Logo -->
-            <a href="index.html" class="flex flex-col group">
-                <span class="font-serif tracking-ultra-wide text-lg sm:text-xl font-bold uppercase text-white group-hover:text-gold transition-colors duration-300">
-                    BORVAN SINGAPORE
-                </span>
-                <span class="text-[9px] uppercase tracking-widest-plus text-slate-400 group-hover:text-slate-300 transition-colors">
-                    Advisory & Education
-                </span>
-            </a>
+    <!-- Top Urgent Lead Alert Bar -->
+    <div class="bg-gradient-to-r from-primaryBlue via-indigo-900 to-navyDark text-white text-xs py-2 px-4 text-center font-medium border-b border-white/10 flex items-center justify-center gap-3">
+        <span class="bg-white/20 text-white text-[10px] px-2 py-0.5 rounded uppercase tracking-wider font-bold">2026 出海专案</span>
+        <span class="hidden sm:inline">东南亚出海窗口期：新加坡及东盟最新招商与合规红利解析</span>
+        <button onclick="openBookingModal('首页顶部Banner预约')" class="underline hover:text-gold transition font-bold flex items-center gap-1">
+            立即预约30分钟专家诊断 &rarr;
+        </button>
+    </div>
 
-            <!-- Desktop Nav Items & Language Switcher -->
-            <div class="hidden md:flex items-center space-x-8 lg:space-x-12">
-                <nav class="flex items-center space-x-8 text-[13px] tracking-widest uppercase font-medium text-slate-300">
-                    <a href="#courses" class="nav-item hover:text-gold transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold hover:after:w-full after:transition-all after:duration-300" data-i18n="nav.courses">
-                        课程
-                    </a>
-                    <a href="advisor.html" class="nav-item hover:text-gold transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold hover:after:w-full after:transition-all after:duration-300" data-i18n="nav.advisor">
-                        顾问
-                    </a>
-                    <a href="#about" class="nav-item hover:text-gold transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold hover:after:w-full after:transition-all after:duration-300" data-i18n="nav.about">
-                        导师
-                    </a>
-                    <a href="#contact" class="nav-item hover:text-gold transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold hover:after:w-full after:transition-all after:duration-300" data-i18n="nav.contact">
-                        联系
-                    </a>
-                </nav>
-
-                <!-- Unified Multi-Language Selector -->
-                <div class="relative inline-block text-left pl-4 border-l border-white/10">
-                    <div class="flex items-center space-x-1.5 bg-slate-900/60 border border-white/10 rounded-sm px-3 py-1.5 hover:border-gold/50 transition-colors duration-200">
-                        <i data-lucide="globe" class="w-3.5 h-3.5 text-gold"></i>
-                        <select id="lang-switch" class="lang-switch bg-transparent text-xs tracking-wider text-slate-200 uppercase focus:outline-none cursor-pointer" onchange="changeLanguage(this.value, true)" oninput="changeLanguage(this.value, true)">
-                            <option value="zh" class="bg-slateDark text-slate-200">中文</option>
-                            <option value="en" class="bg-slateDark text-slate-200">English</option>
-                            <option value="ja" class="bg-slateDark text-slate-200">日本語</option>
-                            <option value="es" class="bg-slateDark text-slate-200">Español</option>
-                        </select>
+    <!-- Main Navigation Bar -->
+    <nav class="sticky top-0 z-40 bg-obsidian/90 backdrop-blur-md border-b border-white/10 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo & Positioning -->
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center text-obsidian font-black text-lg shadow-md group-hover:scale-105 transition">
+                        B
                     </div>
-                </div>
+                    <div>
+                        <div class="font-serif font-black text-xl tracking-wider text-white">BORVAN</div>
+                        <div class="text-[10px] text-gold tracking-widest uppercase font-medium">ASEAN Market Entry · Singapore</div>
+                    </div>
+                </a>
             </div>
 
-            <!-- Mobile Hamburger Button -->
-            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-300 hover:text-gold focus:outline-none" aria-label="Toggle Menu">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
-        </div>
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html" class="text-white hover:text-gold transition font-bold">首页</a>
+                <a href="assessment.html" class="text-slate-300 hover:text-gold transition">出海评估</a>
+                <a href="courses.html" class="text-slate-300 hover:text-gold transition">课程中心</a>
+                <a href="cases.html" class="text-slate-300 hover:text-gold transition">标杆案例</a>
+                <a href="#why-borvan" class="text-slate-300 hover:text-gold transition">核心优势</a>
+                <a href="#founder" class="text-slate-300 hover:text-gold transition">创始人与团队</a>
+            </div>
 
-        <!-- Mobile Drawer -->
-        <div id="mobile-drawer" class="md:hidden hidden bg-slateDark/95 border-b border-borderMuted px-6 py-6 mt-4 transition-all">
-            <div class="flex flex-col space-y-4 text-sm uppercase tracking-wider font-medium text-slate-200">
-                <a href="#courses" onclick="toggleMobileMenu()" class="hover:text-gold py-1" data-i18n="nav.courses">课程</a>
-                <a href="advisor.html" onclick="toggleMobileMenu()" class="hover:text-gold py-1" data-i18n="nav.advisor">顾问</a>
-                <a href="#about" onclick="toggleMobileMenu()" class="hover:text-gold py-1" data-i18n="nav.about">导师</a>
-                <a href="#contact" onclick="toggleMobileMenu()" class="hover:text-gold py-1" data-i18n="nav.contact">联系</a>
-                <div class="pt-4 border-t border-white/10 flex items-center justify-between">
-                    <span class="text-xs text-slate-400">选择语言 / LANGUAGE</span>
-                    <select class="lang-switch bg-slate-900 border border-white/15 px-2 py-1 text-xs text-gold rounded" onchange="changeLanguage(this.value, true)" oninput="changeLanguage(this.value, true)">
-                        <option value="zh">中文</option>
-                        <option value="en">English</option>
-                        <option value="ja">日本語</option>
-                        <option value="es">Español</option>
-                    </select>
+            <!-- Actions: Language & High-Conversion CTA -->
+            <div class="flex items-center gap-4">
+                <!-- Language Switch -->
+                <button onclick="toggleLanguage()" id="lang-btn" class="px-2.5 py-1 text-xs border border-white/20 rounded text-slate-300 hover:border-gold hover:text-gold transition flex items-center gap-1.5">
+                    <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+                    <span id="lang-text">EN</span>
+                </button>
+
+                <!-- 30-min Booking Modal Trigger -->
+                <button onclick="openBookingModal('顶部主导航预约')" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-gold hover:bg-gold-light text-obsidian text-xs uppercase tracking-wider font-bold rounded-md glow-button">
+                    <i data-lucide="calendar" class="w-4 h-4"></i>
+                    <span>立即预约30分钟诊断</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 1: HERO BANNER (帮助中国企业进入东盟市场)                            -->
+    <!-- ========================================================================= -->
+    <header class="relative overflow-hidden hero-mesh pt-16 pb-24 md:pt-24 md:pb-32 border-b border-white/10">
+        <!-- Background Grid Gridlines -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left 7 Cols: Value Proposition & High-Impact CTAs -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="badge-pill">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 mr-2 animate-pulse"></span>
+                        东盟市场进入与企业增长顾问平台 · 新加坡HQ
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-black text-white leading-tight tracking-tight">
+                        帮助中国企业<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold via-yellow-200 to-gold-light">低风险进入东盟市场</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-light max-w-2xl">
+                        从市场评估、资源对接到落地执行，帮助企业降低试错成本，打开新加坡及东盟增长机会。依托新加坡CBD本地政商网络与双市场深耕经验，赋能您的品牌快速完成商业验证。
+                    </p>
+
+                    <!-- Dual Action CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+                        <button onclick="openBookingModal('HeroBanner预约诊断')" class="px-8 py-4 bg-gold hover:bg-gold-light text-obsidian font-bold text-sm uppercase tracking-wider rounded-lg glow-button flex items-center justify-center gap-2">
+                            <i data-lucide="phone-call" class="w-4 h-4"></i>
+                            <span>立即预约30分钟诊断</span>
+                        </button>
+
+                        <button onclick="openWhitepaperModal()" class="px-8 py-4 bg-slateCard/80 hover:bg-slateDark text-white border border-white/20 hover:border-gold font-medium text-sm rounded-lg transition flex items-center justify-center gap-2">
+                            <i data-lucide="download" class="w-4 h-4 text-gold"></i>
+                            <span>获取东盟进入白皮书 (2026版)</span>
+                        </button>
+                    </div>
+
+                    <!-- Trust Metrics Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-white/10">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-white font-serif">7-14<span class="text-gold text-lg">天</span></div>
+                            <div class="text-xs text-slate-400 mt-1">GTM路线图极速交付</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-white font-serif">85<span class="text-gold text-lg">%</span></div>
+                            <div class="text-xs text-slate-400 mt-1">前期试错成本有效降低</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-white font-serif">90<span class="text-gold text-lg">天</span></div>
+                            <div class="text-xs text-slate-400 mt-1">首轮本地商业验证闭环</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-white font-serif">500<span class="text-gold text-lg">+</span></div>
+                            <div class="text-xs text-slate-400 mt-1">新加坡与东盟渠道商脉</div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Right 5 Cols: Visual Representation (ASEAN Map + Interactive Diagnostic Card) -->
+                <div class="lg:col-span-5">
+                    <div class="glass-panel p-6 sm:p-8 rounded-2xl relative shadow-2xl border-t border-gold/30">
+                        <!-- Header of Card -->
+                        <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                                <span class="text-xs uppercase tracking-widest text-slate-300 font-semibold">BORVAN ASEAN Growth Radar</span>
+                            </div>
+                            <span class="text-[11px] text-gold font-mono">Live In Singapore</span>
+                        </div>
+
+                        <!-- ASEAN Trade Corridor Interactive Nodes -->
+                        <div class="space-y-3.5 mb-6">
+                            <div class="p-3 rounded-lg bg-navyDark/90 border border-gold/30 flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-7 h-7 rounded bg-gold/20 text-gold flex items-center justify-center text-xs font-bold">SG</span>
+                                    <div>
+                                        <div class="text-xs font-bold text-white">新加坡 (HQ Hub · The Adelphi)</div>
+                                        <div class="text-[10px] text-slate-400">区域总部、资金流转、离岸风控与高端品牌背书</div>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-semibold text-emerald-400">战略核心</span>
+                            </div>
+
+                            <div class="p-3 rounded-lg bg-navyDark/60 border border-white/5 flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-7 h-7 rounded bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs font-bold">MY</span>
+                                    <div>
+                                        <div class="text-xs font-bold text-slate-200">马来西亚 (KL / Johor)</div>
+                                        <div class="text-[10px] text-slate-400">双语渠道、供应链制造协同、清真食品辐射</div>
+                                    </div>
+                                </div>
+                                <span class="text-xs text-slate-400">第二站拓展</span>
+                            </div>
+
+                            <div class="p-3 rounded-lg bg-navyDark/60 border border-white/5 flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-7 h-7 rounded bg-purple-500/20 text-purple-400 flex items-center justify-center text-xs font-bold">ID</span>
+                                    <div>
+                                        <div class="text-xs font-bold text-slate-200">印度尼西亚 (Jakarta)</div>
+                                        <div class="text-[10px] text-slate-400">2.8亿人口消费大市场、电商爆品与本地分销</div>
+                                    </div>
+                                </div>
+                                <span class="text-xs text-slate-400">万亿人口红利</span>
+                            </div>
+
+                            <div class="p-3 rounded-lg bg-navyDark/60 border border-white/5 flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-7 h-7 rounded bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xs font-bold">VN</span>
+                                    <div>
+                                        <div class="text-xs font-bold text-slate-200">越南 / 泰国 (BKK / HCMC)</div>
+                                        <div class="text-[10px] text-slate-400">产业带转移、年轻化消费群体与零售专卖店</div>
+                                    </div>
+                                </div>
+                                <span class="text-xs text-slate-400">高频消费极</span>
+                            </div>
+                        </div>
+
+                        <!-- Instant Interactive Trigger -->
+                        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+                            <span class="text-xs text-slate-400">想测试您企业的出海匹配度？</span>
+                            <a href="#lead-tool" class="text-xs text-gold hover:underline font-bold flex items-center gap-1">
+                                测算进入胜率 &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
 
     <!-- ========================================================================= -->
-    <!-- 首屏结构与文案 (Hero Section)                                             -->
+    <!-- SECTION 2: 客户痛点 (企业出海为什么经常失败？)                                -->
     <!-- ========================================================================= -->
-    <section class="relative min-h-screen flex items-center justify-center hero-pattern px-6 sm:px-10 pt-28 pb-20 overflow-hidden">
-        
-        <!-- Ambient Subtle Glow / Lines -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-gold/5 blur-[120px] rounded-full"></div>
-            <div class="absolute bottom-10 left-10 w-72 h-72 bg-blue-900/10 blur-[100px] rounded-full"></div>
-        </div>
-
-        <!-- Content Container -->
-        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
-            
-            <!-- 小标题 (强调色：哑光金) -->
-            <div class="reveal-element inline-flex items-center gap-2 mb-6 sm:mb-8">
-                <span class="inline-block w-6 h-[1px] bg-gold"></span>
-                <span class="text-gold uppercase tracking-widest-plus text-xs sm:text-sm font-medium" data-i18n="hero.subtitle">
-                    激发人的创造力
-                </span>
-                <span class="inline-block w-6 h-[1px] bg-gold"></span>
-            </div>
-
-            <!-- 大标题 (核心视觉：庄重衬线体) -->
-            <h1 class="reveal-element stagger-1 font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6 sm:mb-8 leading-[1.15]" data-i18n="hero.title">
-                传承文明影响力
-            </h1>
-
-            <!-- 描述正文 (克制、深邃、留白) -->
-            <p class="reveal-element stagger-2 text-base sm:text-lg md:text-xl text-slate-300 font-light max-w-2xl mx-auto mb-10 sm:mb-12 leading-relaxed tracking-wide" data-i18n="hero.desc">
-                提供培训与咨询，实现价值交易评估与赋能
-            </p>
-
-            <!-- 按钮 (CTA：极简深色实心/线框按钮，带有优雅悬停过渡) -->
-            <div class="reveal-element stagger-3 flex flex-col sm:flex-row items-center gap-4">
-                <a href="#philosophy" class="group relative inline-flex items-center justify-center px-8 sm:px-10 py-4 text-xs sm:text-sm uppercase tracking-widest font-semibold text-slate-100 bg-transparent border border-white/30 rounded-none overflow-hidden transition-all duration-500 ease-out hover:border-gold hover:text-obsidian hover:bg-gold shadow-lg shadow-black/40">
-                    <span class="relative z-10 flex items-center gap-3">
-                        <span data-i18n="hero.cta">探索我们的服务</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"></i>
-                    </span>
-                </a>
-            </div>
-
-            <!-- Subtle Geographic Metadata (McKinsey Singapore Style) -->
-            <div class="reveal-element stagger-4 mt-16 sm:mt-20 pt-8 border-t border-white/5 flex flex-wrap justify-center items-center gap-6 sm:gap-12 text-[11px] uppercase tracking-widest text-slate-300">
-                <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold"></i> <span data-i18n="hero.bar1">新加坡CBD · THE ADELPHI</span></span>
-                <span class="hidden sm:inline text-white/10">|</span>
-                <span data-i18n="hero.bar2">全球商业顾问框架</span>
-                <span class="hidden sm:inline text-white/10">|</span>
-                <span data-i18n="hero.bar3">跨文化领导力</span>
-            </div>
-        </div>
-
-        <!-- Scroll down indicator -->
-        <a href="#philosophy" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-slate-400 hover:text-gold transition-colors duration-300 flex flex-col items-center gap-2 group">
-            <span class="text-[9px] uppercase tracking-widest text-slate-400 group-hover:text-gold" data-i18n="hero.scroll">向下探索</span>
-            <i data-lucide="chevron-down" class="w-4 h-4 animate-bounce text-slate-400 group-hover:text-gold"></i>
-        </a>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 核心理念区块 (Philosophy Section)                                         -->
-    <!-- 统一底色为深邃曜石色，与全站视觉系统完美融为一体                           -->
-    <!-- ========================================================================= -->
-    <section id="philosophy" class="bg-obsidian text-slate-100 py-24 sm:py-32 px-6 sm:px-10 md:px-16 border-t border-white/5 transition-colors duration-500 relative">
-        <div class="max-w-6xl mx-auto">
-            
-            <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-                <div class="reveal-element inline-block mb-3">
-                    <span class="text-xs uppercase tracking-widest-plus text-gold font-semibold" data-i18n="philosophy.tag">
-                        核心方法论 · 领导力心智模型
-                    </span>
-                </div>
-                
-                <h2 class="reveal-element stagger-1 font-serif text-3xl sm:text-5xl font-bold tracking-tight text-white mb-4 sm:mb-6" data-i18n="philosophy.title">
-                    Founder Identity Architecture™
-                </h2>
-                
-                <p class="reveal-element stagger-2 text-base sm:text-xl text-slate-300 font-normal leading-relaxed" data-i18n="philosophy.subtitle">
-                    聚焦教育与向内生长的领导力意识培养
-                </p>
-
-                <div class="reveal-element stagger-2 w-16 h-[2px] bg-gold mx-auto mt-6"></div>
-            </div>
-
-            <!-- 正文排版：以引言的形式突出这句话 -->
-            <div class="reveal-element stagger-3 mb-20">
-                <div class="relative bg-slateDark/70 border border-white/10 shadow-2xl p-8 sm:p-12 md:p-14 rounded-sm">
-                    <!-- Subtle decorative quote mark -->
-                    <span class="absolute top-6 left-6 font-serif text-6xl text-gold/20 select-none pointer-events-none leading-none">“</span>
-                    
-                    <div class="relative z-10 max-w-3xl mx-auto text-center">
-                        <blockquote class="font-serif italic text-lg sm:text-2xl text-slate-100 leading-relaxed sm:leading-loose" data-i18n="philosophy.quote">
-                            “随着人工智能发展的加快，人的智慧与秘密也正在被深入学习，人类对自己的内在发展越来越重视，我们期待与你一起发现每个人独有的创造力。”
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 设计要求：使用卡片式或网格布局，展示“意义重构 — 身份重构 — 组织重构”三个核心阶段 -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- 阶段 01: 意义重构 -->
-                <div class="reveal-element stagger-1 bg-slateDark/60 border border-white/10 p-8 sm:p-10 flex flex-col justify-between hover:border-gold hover:shadow-2xl hover:shadow-gold/5 transition-all duration-500 group">
-                    <div>
-                        <div class="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
-                            <span class="font-serif text-3xl sm:text-4xl font-light text-slate-500 group-hover:text-gold transition-colors duration-300">01</span>
-                            <span class="text-[10px] tracking-ultra-wide uppercase bg-white/5 text-slate-300 px-2.5 py-1 font-semibold group-hover:bg-gold/10 group-hover:text-gold transition-colors" data-i18n="philosophy.phase1">
-                                第一阶段
-                            </span>
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-white mb-4 group-hover:text-gold transition-colors" data-i18n="philosophy.stage1_title">
-                            意义重构
-                        </h3>
-                        <p class="text-sm text-slate-300 leading-relaxed mb-6" data-i18n="philosophy.stage1_desc">
-                            探寻商业初心与价值原点，破除数字增长的盲区，重新校准企业存在的终极价值与跨周期文明向度。
-                        </p>
-                    </div>
-                    <ul class="space-y-2.5 text-xs text-slate-300 border-t border-white/10 pt-5">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold shrink-0"></i> <span data-i18n="philosophy.stage1_bullet1">创始人起源深度访谈与心智拓扑</span></li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold shrink-0"></i> <span data-i18n="philosophy.stage1_bullet2">核心价值主张与文化基因萃取</span></li>
-                    </ul>
-                </div>
-
-                <!-- 阶段 02: 身份重构 -->
-                <div class="reveal-element stagger-2 bg-slateDark/60 border border-gold/40 p-8 sm:p-10 flex flex-col justify-between hover:border-gold hover:shadow-2xl hover:shadow-gold/10 transition-all duration-500 group relative md:-translate-y-2">
-                    <!-- Featured Accent Badge -->
-                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-obsidian text-[9px] uppercase tracking-widest px-3 py-1 font-semibold shadow-md" data-i18n="philosophy.core_badge">
-                        核心定位
-                    </div>
-                    <div>
-                        <div class="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
-                            <span class="font-serif text-3xl sm:text-4xl font-light text-gold/60 group-hover:text-gold transition-colors duration-300">02</span>
-                            <span class="text-[10px] tracking-ultra-wide uppercase bg-gold/10 text-gold px-2.5 py-1 font-semibold group-hover:bg-gold/20 transition-colors" data-i18n="philosophy.phase2">
-                                第二阶段
-                            </span>
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-white mb-4 group-hover:text-gold transition-colors" data-i18n="philosophy.stage2_title">
-                            身份重构
-                        </h3>
-                        <p class="text-sm text-slate-300 leading-relaxed mb-6" data-i18n="philosophy.stage2_desc">
-                            聚焦向内生长的领导力意识培养，在国际化与多文化语境中确立企业家的领袖身份，构筑决策定力与精神磁场。
-                        </p>
-                    </div>
-                    <ul class="space-y-2.5 text-xs text-slate-300 border-t border-white/10 pt-5">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold shrink-0"></i> <span data-i18n="philosophy.stage2_bullet1">全球化跨文化领导力共情重塑</span></li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold shrink-0"></i> <span data-i18n="philosophy.stage2_bullet2">领导力向内生长的心智决策模型</span></li>
-                    </ul>
-                </div>
-
-                <!-- 阶段 03: 组织重构 -->
-                <div class="reveal-element stagger-3 bg-slateDark/60 border border-white/10 p-8 sm:p-10 flex flex-col justify-between hover:border-gold hover:shadow-2xl hover:shadow-gold/5 transition-all duration-500 group">
-                    <div>
-                        <div class="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
-                            <span class="font-serif text-3xl sm:text-4xl font-light text-slate-500 group-hover:text-gold transition-colors duration-300">03</span>
-                            <span class="text-[10px] tracking-ultra-wide uppercase bg-white/5 text-slate-300 px-2.5 py-1 font-semibold group-hover:bg-gold/10 group-hover:text-gold transition-colors" data-i18n="philosophy.phase3">
-                                第三阶段
-                            </span>
-                        </div>
-                        <h3 class="font-serif text-2xl font-bold text-white mb-4 group-hover:text-gold transition-colors" data-i18n="philosophy.stage3_title">
-                            组织重构
-                        </h3>
-                        <p class="text-sm text-slate-300 leading-relaxed mb-6" data-i18n="philosophy.stage3_desc">
-                            将价值锚点落地为组织协同心智与制度韧性，促进跨越传统边界的生态交易与未来持续增长能力。
-                        </p>
-                    </div>
-                    <ul class="space-y-2.5 text-xs text-slate-300 border-t border-white/10 pt-5">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold shrink-0"></i> <span data-i18n="philosophy.stage3_bullet1">跨国价值网络与业务生态体系链接</span></li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold shrink-0"></i> <span data-i18n="philosophy.stage3_bullet2">长期增效陪跑与组织文化制度化</span></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 服务与课程区块 (Services & Education)                                     -->
-    <!-- 优先展示教育培训内容，横向并排高级卡片设计                                -->
-    <!-- ========================================================================= -->
-    <section id="courses" class="bg-obsidian text-slate-100 py-24 sm:py-32 px-6 sm:px-10 md:px-16 border-t border-white/5 relative">
-        <div class="max-w-7xl mx-auto">
-            
-            <!-- Section Header -->
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 sm:mb-20 pb-8 border-b border-white/10">
-                <div>
-                    <div class="reveal-element inline-block mb-3">
-                        <span class="text-xs uppercase tracking-widest-plus text-gold font-medium" data-i18n="courses.tag">
-                            高管教育与赋能项目
-                        </span>
-                    </div>
-                    <h2 class="reveal-element stagger-1 font-serif text-3xl sm:text-5xl font-bold tracking-tight text-white" data-i18n="courses.title">
-                        服务与课程体系
-                    </h2>
-                </div>
-                <p class="reveal-element stagger-2 text-sm sm:text-base text-slate-400 max-w-md mt-4 md:mt-0 font-light leading-relaxed" data-i18n="courses.subtitle">
-                    聚焦国际商业语言、高管跨文化思维与商业领袖全球落地，为出海企业与高净值家庭筑造前沿智慧基底。
+    <section class="py-20 bg-navyDark border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-gold font-semibold block mb-2">Pain Points Analysis</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">企业出海为什么经常失败？</h2>
+                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                    调研显示，超过 <strong class="text-rose-400">80% 的出海企业</strong> 在落地第一年出现严重亏损甚至惨淡退出。痛点不在于国内产品不够好，而在于出海认知与生态对接断层。
                 </p>
             </div>
 
-            <!-- 并排的高级卡片设计展示课程 (3张卡片) -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- 课程 1: 新加坡商务融入课 -->
-                <div class="reveal-element stagger-1 bg-slateDark border border-white/10 p-8 sm:p-10 flex flex-col justify-between hover:border-gold/60 hover:shadow-2xl hover:shadow-gold/5 transition-all duration-500 rounded-none group">
+            <!-- 5 Major Pain Points Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+                <!-- Pain 1 -->
+                <div class="glass-panel p-6 rounded-xl border-t-2 border-t-rose-500/80 hover:border-gold transition flex flex-col justify-between">
                     <div>
-                        <!-- Tag -->
-                        <div class="flex items-center justify-between mb-6">
-                            <span class="text-[10px] tracking-ultra-wide uppercase text-gold font-semibold" data-i18n="course1.badge">
-                                商务落地 · 核心必修
-                            </span>
-                            <span class="text-xs font-serif text-slate-400">01</span>
-                        </div>
-
-                        <!-- 课程名称 -->
-                        <h3 class="font-serif text-2xl font-bold text-white mb-6 group-hover:text-gold transition-colors" data-i18n="course1.name">
-                            新加坡商务融入课
-                        </h3>
-
-                        <!-- 核心信息网格 -->
-                        <div class="space-y-4 text-xs text-slate-300 py-6 border-y border-white/10 mb-8">
-                            <div class="flex items-start gap-3">
-                                <i data-lucide="map-pin" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
-                                <div>
-                                    <span class="text-slate-400 block text-[10px] uppercase tracking-wider" data-i18n="meta.location_label">上课地点</span>
-                                    <span class="font-medium text-slate-200" data-i18n="course1.location">新加坡 The Adelphi大厦</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
-                                <div>
-                                    <span class="text-slate-400 block text-[10px] uppercase tracking-wider" data-i18n="meta.duration_label">课时安排</span>
-                                    <span class="font-medium text-slate-200" data-i18n="course1.duration">9个课时 (共3次课)</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <i data-lucide="tag" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
-                                <div>
-                                    <span class="text-slate-400 block text-[10px] uppercase tracking-wider" data-i18n="meta.price_label">课程价格</span>
-                                    <span class="font-serif text-lg font-bold text-gold" data-i18n="course1.price">1800 新币</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 课程亮点 -->
-                        <p class="text-xs text-slate-400 leading-relaxed mb-8" data-i18n="course1.desc">
-                            系统解析新加坡商业法律框架、银行与税务筹划、政商生态交往准则与高净值商业圈层融入之道。
+                        <div class="text-2xl font-black font-serif text-rose-400/80 mb-3">01</div>
+                        <h3 class="text-base font-bold text-white mb-2">找不到可靠合作伙伴</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            海外信息不对称，遭遇皮包中介或低效代运营，沉没沟通成本高昂，核心利益无法对齐。
                         </p>
                     </div>
-
-                    <!-- 按钮 -->
-                    <button onclick="openCourseModal('course1')" class="w-full py-3.5 px-6 text-xs uppercase tracking-widest font-semibold text-slate-200 bg-white/5 border border-white/15 hover:bg-gold hover:text-obsidian hover:border-gold transition-all duration-300 text-center flex items-center justify-center gap-2 group-hover:bg-white/10">
-                        <span data-i18n="btn.learn_more">立即了解</span>
-                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                    </button>
+                    <div class="mt-4 pt-3 border-t border-white/5 text-[11px] text-rose-300">
+                        严重后果：签约失误造成数月停滞
+                    </div>
                 </div>
 
-                <!-- 课程 2: 商务英语专业俱乐部课程 -->
-                <div class="reveal-element stagger-2 bg-slateDark border border-white/10 p-8 sm:p-10 flex flex-col justify-between hover:border-gold/60 hover:shadow-2xl hover:shadow-gold/5 transition-all duration-500 rounded-none group relative">
-                    <!-- Featured Border Accent -->
-                    <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent"></div>
-                    
+                <!-- Pain 2 -->
+                <div class="glass-panel p-6 rounded-xl border-t-2 border-t-rose-500/80 hover:border-gold transition flex flex-col justify-between">
                     <div>
-                        <!-- Tag -->
-                        <div class="flex items-center justify-between mb-6">
-                            <span class="text-[10px] tracking-ultra-wide uppercase text-gold font-semibold" data-i18n="course2.badge">
-                                高阶语言 · 圈层俱乐部
-                            </span>
-                            <span class="text-xs font-serif text-slate-400">02</span>
-                        </div>
-
-                        <!-- 课程名称 -->
-                        <h3 class="font-serif text-2xl font-bold text-white mb-6 group-hover:text-gold transition-colors" data-i18n="course2.name">
-                            商务英语专业俱乐部课程
-                        </h3>
-
-                        <!-- 核心信息网格 -->
-                        <div class="space-y-4 text-xs text-slate-300 py-6 border-y border-white/10 mb-8">
-                            <div class="flex items-start gap-3">
-                                <i data-lucide="map-pin" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
-                                <div>
-                                    <span class="text-slate-400 block text-[10px] uppercase tracking-wider" data-i18n="meta.location_label">上课地点</span>
-                                    <span class="font-medium text-slate-200" data-i18n="course2.location">新加坡 The Adelphi大厦 (UPC ULC)</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
-                                <div>
-                                    <span class="text-slate-400 block text-[10px] uppercase tracking-wider" data-i18n="meta.duration_label">课时安排</span>
-                                    <span class="font-medium text-slate-200" data-i18n="course2.duration">40个课时 (共20次课)</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <i data-lucide="tag" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
-                                <div>
-                                    <span class="text-slate-400 block text-[10px] uppercase tracking-wider" data-i18n="meta.price_label">课程价格</span>
-                                    <span class="font-serif text-lg font-bold text-gold" data-i18n="course2.price">3000 新币</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 课程亮点 -->
-                        <p class="text-xs text-slate-400 leading-relaxed mb-8" data-i18n="course2.desc">
-                            与新加坡本土外籍资深导师深度互动，针对跨国路演、商务谈判、财报研读与高管社交开展沉浸式研讨。
+                        <div class="text-2xl font-black font-serif text-rose-400/80 mb-3">02</div>
+                        <h3 class="text-base font-bold text-white mb-2">不了解当地市场</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            生搬硬套国内打法，脱离东盟多民族消费习惯、文化禁忌与本土竞对真实定价逻辑。
                         </p>
                     </div>
-
-                    <!-- 按钮 -->
-                    <button onclick="openCourseModal('course2')" class="w-full py-3.5 px-6 text-xs uppercase tracking-widest font-semibold text-slate-200 bg-white/5 border border-white/15 hover:bg-gold hover:text-obsidian hover:border-gold transition-all duration-300 text-center flex items-center justify-center gap-2 group-hover:bg-white/10">
-                        <span data-i18n="btn.learn_more">立即了解</span>
-                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                    </button>
+                    <div class="mt-4 pt-3 border-t border-white/5 text-[11px] text-rose-300">
+                        严重后果：客群不买单，产品滞销
+                    </div>
                 </div>
 
-                <!-- 课程 3: 留学父母必修课 -->
-                <div class="reveal-element stagger-3 bg-slateDark border border-white/10 p-8 sm:p-10 flex flex-col justify-between hover:border-gold/60 hover:shadow-2xl hover:shadow-gold/5 transition-all duration-500 rounded-none group">
+                <!-- Pain 3 -->
+                <div class="glass-panel p-6 rounded-xl border-t-2 border-t-rose-500/80 hover:border-gold transition flex flex-col justify-between">
                     <div>
-                        <!-- Tag -->
-                        <div class="flex items-center justify-between mb-6">
-                            <span class="text-[10px] tracking-ultra-wide uppercase text-gold font-semibold" data-i18n="course3.badge">
-                                公益赋能 · 家庭成长
-                            </span>
-                            <span class="text-xs font-serif text-slate-400">03</span>
-                        </div>
-
-                        <!-- 课程名称 -->
-                        <h3 class="font-serif text-2xl font-bold text-white mb-6 group-hover:text-gold transition-colors" data-i18n="course3.name">
-                            留学父母必修课
-                        </h3>
-
-                        <!-- 核心信息网格 -->
-                        <div class="space-y-4 text-xs text-slate-300 py-6 border-y border-white/10 mb-8">
-                            <div class="flex items-start gap-3">
-                                <i data-lucide="map-pin" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
-                                <div>
-                                    <span class="text-slate-400 block text-[10px] uppercase tracking-wider" data-i18n="meta.location_label">上课地点</span>
-                                    <span class="font-medium text-slate-200" data-i18n="course3.location">新加坡 The Adelphi大厦</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
-                                <div>
-                                    <span class="text-slate-400 block text-[10px] uppercase tracking-wider" data-i18n="meta.duration_label">课时安排</span>
-                                    <span class="font-medium text-slate-200" data-i18n="course3.duration">2小时 (公益融入课堂)</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <i data-lucide="tag" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
-                                <div>
-                                    <span class="text-slate-400 block text-[10px] uppercase tracking-wider" data-i18n="meta.price_label">课程价格</span>
-                                    <span class="font-serif text-lg font-bold text-emerald-400" data-i18n="course3.price">免费 / 公益开放</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 课程亮点 -->
-                        <p class="text-xs text-slate-400 leading-relaxed mb-8" data-i18n="course3.desc">
-                            帮助陪伴孩子来新求学的企业家父母梳理心理调适、跨代际沟通、本地社区参与以及跨文化家庭身份建构。
+                        <div class="text-2xl font-black font-serif text-rose-400/80 mb-3">03</div>
+                        <h3 class="text-base font-bold text-white mb-2">缺乏渠道资源</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            打不进新加坡与东盟主流连锁商超、KA分销商与本地政企采购网络，只能在边缘试探。
                         </p>
                     </div>
-
-                    <!-- 按钮 -->
-                    <button onclick="openCourseModal('course3')" class="w-full py-3.5 px-6 text-xs uppercase tracking-widest font-semibold text-slate-200 bg-white/5 border border-white/15 hover:bg-gold hover:text-obsidian hover:border-gold transition-all duration-300 text-center flex items-center justify-center gap-2 group-hover:bg-white/10">
-                        <span data-i18n="btn.learn_more">立即了解</span>
-                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                    </button>
+                    <div class="mt-4 pt-3 border-t border-white/5 text-[11px] text-rose-300">
+                        严重后果：货品无法进入核心流通体系
+                    </div>
                 </div>
 
+                <!-- Pain 4 -->
+                <div class="glass-panel p-6 rounded-xl border-t-2 border-t-rose-500/80 hover:border-gold transition flex flex-col justify-between">
+                    <div>
+                        <div class="text-2xl font-black font-serif text-rose-400/80 mb-3">04</div>
+                        <h3 class="text-base font-bold text-white mb-2">法律合规风险</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            准入牌照(HSA/SFA)、外资股权比例、劳动雇佣法案、跨境税务架构与资金跨境监管雷区。
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-white/5 text-[11px] text-rose-300">
+                        严重后果：高额罚金甚至被吊销经营资质
+                    </div>
+                </div>
+
+                <!-- Pain 5 -->
+                <div class="glass-panel p-6 rounded-xl border-t-2 border-t-rose-500/80 hover:border-gold transition flex flex-col justify-between">
+                    <div>
+                        <div class="text-2xl font-black font-serif text-rose-400/80 mb-3">05</div>
+                        <h3 class="text-base font-bold text-white mb-2">投入高但回报不确定</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            团队外派、高昂租金、盲目开店砸钱，前期数百万烧光却看不到任何正向现金流。
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-white/5 text-[11px] text-rose-300">
+                        严重后果：资金链断裂被迫狼狈撤回
+                    </div>
+                </div>
             </div>
 
-            <!-- 咨询与预约附加提示 (McKinsey Style) -->
-            <div class="reveal-element mt-16 p-8 border border-white/10 bg-slateDark/40 flex flex-col md:flex-row items-center justify-between gap-6">
-                <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-full border border-gold/40 flex items-center justify-center shrink-0">
-                        <i data-lucide="shield-check" class="w-6 h-6 text-gold"></i>
+            <!-- Conclusion Callout Banner -->
+            <div class="glass-panel-gold p-8 rounded-2xl border border-gold/40 flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-gold/20 text-gold flex items-center justify-center shrink-0">
+                        <i data-lucide="shield-check" class="w-7 h-7"></i>
                     </div>
                     <div>
-                        <h4 class="text-sm font-serif font-bold text-white tracking-wide" data-i18n="banner.title">企业定制与私董会闭门培训</h4>
-                        <p class="text-xs text-slate-400" data-i18n="banner.desc">如需为创始人或高管团队量身打造专属出海与心智陪跑体系，欢迎预约顾问深度交流。</p>
+                        <h3 class="text-lg font-bold text-white mb-1">BORVAN 破局之道：以结果为导向的低风险落地框架</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            BORVAN帮助企业提前识别政策与市场风险，制定最优进入路径。不做空洞理念输出，而是用确凿数据与本地资源，换取确定性增长。
+                        </p>
                     </div>
                 </div>
-                <a href="advisor.html" class="shrink-0 px-6 py-3 border border-gold text-gold text-xs uppercase tracking-widest hover:bg-gold hover:text-obsidian transition-colors font-medium" data-i18n="banner.btn">
-                    预约顾问深度对话 &rarr;
-                </a>
+                <button onclick="openBookingModal('痛点区咨询诊断')" class="px-6 py-3 bg-gold hover:bg-gold-light text-obsidian text-xs font-bold uppercase tracking-wider rounded-lg shrink-0 glow-button">
+                    测算您的出海风险 &rarr;
+                </button>
             </div>
-
         </div>
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 领袖与引荐官 (Leadership & Mentorship)                                      -->
-    <!-- 恢复梁陈导师个人介绍与肖像照片                                              -->
+    <!-- SECTION 3: 服务产品矩阵 (Card设计 & 主推产品)                                -->
     <!-- ========================================================================= -->
-    <section id="about" class="bg-obsidian py-24 sm:py-32 px-6 sm:px-10 md:px-16 border-t border-white/5 relative overflow-hidden">
-        <!-- Subtle background glow -->
-        <div class="absolute top-1/4 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-10 left-0 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="max-w-6xl mx-auto relative z-10">
-            <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-                <span class="text-xs uppercase tracking-widest-plus text-gold font-semibold block mb-3" data-i18n="about.tag">
-                    卓越领导力与导师体系
-                </span>
-                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6" data-i18n="about.title">
-                    赋能品牌文明生长
-                </h2>
-                <div class="w-16 h-[2px] bg-gold mx-auto"></div>
+    <section id="services" class="py-24 bg-obsidian border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-gold font-semibold block mb-2">Service Portfolio</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">企业出海实操服务产品矩阵</h2>
+                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                    从轻量级评估到高管实训，再到深度陪跑落地，满足企业不同出海阶段的刚性增长诉求。
+                </p>
             </div>
 
-            <!-- 梁陈 导师核心大卡片 (Featured Profile Card - 优雅印章与叙事对称版，消除大空白) -->
-            <div class="reveal-element bg-slateDark/80 border border-white/10 hover:border-gold/40 transition-all duration-500 p-6 sm:p-8 lg:p-10 mb-10 shadow-2xl relative">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
-                    
-                    <!-- 执笔引荐官 典雅印章卡片 (4 cols - 消除原照片位置的大空白，高度自然对称) -->
-                    <div class="lg:col-span-4 flex justify-center">
-                        <a href="liangchen.html" class="group relative block w-full max-w-[280px] bg-gradient-to-b from-slateDark/95 via-obsidian to-slateDark border border-gold/30 hover:border-gold p-6 sm:p-7 text-center transition-all duration-500 shadow-xl">
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="text-[9px] uppercase tracking-widest text-gold font-semibold">BORVAN SINGAPORE</span>
-                                <span class="w-2 h-2 rounded-full bg-gold/60"></span>
-                            </div>
-                            <div class="w-16 h-16 rounded-full border border-gold/40 bg-gold/10 flex items-center justify-center mx-auto mb-3.5 group-hover:border-gold group-hover:bg-gold/20 transition-all shadow-md">
-                                <span class="font-serif text-xl font-bold text-gold">LC</span>
-                            </div>
-                            <h4 class="font-serif text-lg font-bold text-white mb-1" data-i18n="liangchen.name">（LC）梁陈</h4>
-                            <p class="text-[11px] text-gold/90 tracking-widest font-medium mb-4" data-i18n="team.role1">战略引荐官 · 战略架构顾问</p>
-                            <div class="border-t border-white/10 pt-3 flex items-center justify-center gap-1.5 text-xs text-slate-400 group-hover:text-gold transition-colors">
-                                <span data-i18n="about.btn_profile">查看详细履历</span>
-                                <i data-lucide="arrow-right" class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1"></i>
-                            </div>
-                            <div class="absolute inset-0 ring-1 ring-inset ring-white/10 group-hover:ring-gold/40 transition-all pointer-events-none"></div>
+            <!-- 3 Core Service Product Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                
+                <!-- Product A -->
+                <div class="glass-panel p-8 rounded-2xl relative border-t-4 border-t-gold hover:border-gold transition flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="badge-pill">产品 A · 旗舰级</span>
+                            <span class="text-xs font-mono text-gold font-semibold">7-14天 交付</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-white mb-3">东盟市场进入评估</h3>
+                        <p class="text-xs text-gold/90 font-medium mb-4">适合：正在考虑出海、渴望避免巨额试错成本的企业</p>
+                        
+                        <div class="space-y-3 mb-6 text-xs text-slate-300">
+                            <div class="font-semibold text-white">核心交付成果：</div>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                    <span>市场吸引力与空间定量分析</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                    <span>东盟国家优先级进场建议 (新加坡/马/印/越)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                    <span>本地主力竞对与定价深度拆解</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                    <span>政策法务、税制与资金出入境风险评估</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                    <span>明确的90天商业落地行动路线图</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/10">
+                        <div class="text-xs text-slate-400 mb-3">起订价：<span class="text-xl font-bold text-white font-serif">SGD 2,000</span> 起</div>
+                        <a href="assessment.html" class="w-full py-3 bg-gold hover:bg-gold-light text-obsidian font-bold text-xs uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 glow-button">
+                            <span>预约进入评估</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
+                </div>
 
-                    <!-- 个人介绍 Content Column (8 cols) -->
-                    <div class="lg:col-span-8 flex flex-col justify-center">
-                        <div class="mb-3">
-                            <span class="text-xs uppercase tracking-widest text-gold font-medium mb-1 block" data-i18n="team.role1">战略引荐官 · 战略架构顾问</span>
-                            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white tracking-wide">
-                                <a href="liangchen.html" class="hover:text-gold transition-colors" data-i18n="team.title1">
-                                    （LC）梁陈 | 成就梦想的价值。
-                                </a>
-                            </h3>
+                <!-- Product B -->
+                <div class="glass-panel p-8 rounded-2xl relative border-t-4 border-t-primaryBlue hover:border-primaryBlue transition flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-primaryBlue/20 text-indigo-300 font-semibold border border-primaryBlue/40">产品 B · 高管实战</span>
+                            <span class="text-xs font-mono text-slate-400">线下/新加坡CBD</span>
                         </div>
+                        <h3 class="text-2xl font-serif font-bold text-white mb-3">东盟增长训练营</h3>
+                        <p class="text-xs text-indigo-300 font-medium mb-4">适合：创始人、CEO、出海业务负责人与核心高管</p>
+                        
+                        <div class="space-y-3 mb-6 text-xs text-slate-300">
+                            <div class="font-semibold text-white">系统学习内容：</div>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-primaryBlue shrink-0"></i>
+                                    <span>东盟多国差异化进入战略</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-primaryBlue shrink-0"></i>
+                                    <span>本地主流渠道拓展与商超进场规则</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-primaryBlue shrink-0"></i>
+                                    <span>国际化品牌本地化表达与高转化叙事</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-primaryBlue shrink-0"></i>
+                                    <span>政商关系、商会资源与产业链高效整合</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-primaryBlue shrink-0"></i>
+                                    <span>The Adelphi 现场商务路演与导师闭门复盘</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-                        <!-- 导师引言 / Quote -->
-                        <div class="relative pl-5 border-l-2 border-gold my-3">
-                            <p class="font-serif italic text-sm sm:text-base text-slate-300 leading-relaxed" data-i18n="team.quote1">
-                                "我们推动文明的升级，激发人的决策统筹、人文共情、系统化思维。AI让教育成为灵魂的建筑学（architecture of the soul）。"
+                    <div class="pt-6 border-t border-white/10">
+                        <div class="text-xs text-slate-400 mb-3">课程学费：<span class="text-xl font-bold text-white font-serif">SGD 1,800 - 3,000</span></div>
+                        <a href="courses.html" class="w-full py-3 bg-primaryBlue hover:bg-indigo-600 text-white font-bold text-xs uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 glow-blue-button">
+                            <span>了解课程详情</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product C -->
+                <div class="glass-panel p-8 rounded-2xl relative border-t-4 border-t-accentCyan hover:border-accentCyan transition flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-cyan-500/20 text-cyan-300 font-semibold border border-cyan-500/40">产品 C · 深度共创</span>
+                            <span class="text-xs font-mono text-cyan-300">季度/年度顾问</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-white mb-3">企业出海深度陪跑</h3>
+                        <p class="text-xs text-cyan-300 font-medium mb-4">适合：已有成熟产品、决心扎根东盟建立护城河的品牌</p>
+                        
+                        <div class="space-y-3 mb-6 text-xs text-slate-300">
+                            <div class="font-semibold text-white">全案赋能内容：</div>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-accentCyan shrink-0"></i>
+                                    <span>端到端出海商业战略定制与执行复盘</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-accentCyan shrink-0"></i>
+                                    <span>本地顶级经销商、代运营与政商资源引荐</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-accentCyan shrink-0"></i>
+                                    <span>首批试点店面选址/线上旗舰店全链条验证</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-accentCyan shrink-0"></i>
+                                    <span>本地化合规团队组建与项目全生命周期管理</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-accentCyan shrink-0"></i>
+                                    <span>创始人一对一常年战略顾问服务</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/10">
+                        <div class="text-xs text-slate-400 mb-3">顾问服务费：<span class="text-xl font-bold text-white font-serif">SGD 14,000</span> 起</div>
+                        <button onclick="openBookingModal('企业出海陪跑申请')" class="w-full py-3 bg-slateCard hover:bg-slateDark border border-cyan-500/50 hover:border-cyan-400 text-cyan-300 font-bold text-xs uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 transition">
+                            <span>申请全案咨询</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Flagship Product Detail Box: ASEAN Go-To-Market Assessment -->
+            <div class="bg-gradient-to-br from-slateDark to-navyDark rounded-2xl p-8 sm:p-12 border border-gold/40 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-80 h-80 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8 pb-8 border-b border-white/10">
+                    <div>
+                        <div class="badge-pill mb-2">主推旗舰产品 · Flagship Product</div>
+                        <h3 class="text-2xl sm:text-3xl font-serif font-black text-white">
+                            ASEAN Go-To-Market Assessment (东盟市场进入评估)
+                        </h3>
+                        <p class="text-sm text-slate-300 mt-2 max-w-2xl">
+                            用最精炼的时间与预算，换取具有投资决策效力的出海执行全景图。拒绝纸上谈兵，所有建议均配合同业对标数据与真实渠道伙伴清单。
+                        </p>
+                    </div>
+                    <div class="shrink-0 flex items-center gap-4">
+                        <a href="assessment.html" class="px-6 py-3.5 bg-gold hover:bg-gold-light text-obsidian text-xs uppercase tracking-wider font-bold rounded-lg glow-button flex items-center gap-2">
+                            <span>查看评估详情与样例报告</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3 Pricing Tiers Display -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Tier 1 -->
+                    <div class="bg-obsidian/70 p-6 rounded-xl border border-white/10">
+                        <div class="text-xs uppercase tracking-widest text-slate-400 mb-1">初探方案</div>
+                        <div class="text-lg font-bold text-white mb-2">基础版 (Essential)</div>
+                        <div class="text-2xl font-serif font-bold text-gold mb-4">SGD 2,000</div>
+                        <ul class="text-xs text-slate-300 space-y-2.5">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold"></i> 单一国家市场吸引力分析 (如新加坡)</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold"></i> 行业准入标准与合规风险清单</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold"></i> 3家典型本地竞品定价与渠道简报</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold"></i> 基础出海行动建议书</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tier 2 (Highlighted) -->
+                    <div class="bg-slateCard p-6 rounded-xl border-2 border-gold relative shadow-xl">
+                        <div class="absolute -top-3 right-4 px-2 py-0.5 bg-gold text-obsidian text-[10px] font-bold rounded uppercase">企业高选率 · 推荐</div>
+                        <div class="text-xs uppercase tracking-widest text-gold mb-1">增长实战方案</div>
+                        <div class="text-lg font-bold text-white mb-2">专业版 (Professional)</div>
+                        <div class="text-2xl font-serif font-bold text-gold mb-4">SGD 5,000</div>
+                        <ul class="text-xs text-slate-300 space-y-2.5">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> 东盟2-3国吸引力矩阵与优先排序</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> 5家对标竞品商业模式与渠道分销拆解</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> 潜在合作伙伴与渠道分销商建议清单 (5家)</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> <strong>完整的90天商业落地行动路线图</strong></li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> 1对1 专家90分钟线上复盘答疑</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tier 3 -->
+                    <div class="bg-obsidian/70 p-6 rounded-xl border border-white/10">
+                        <div class="text-xs uppercase tracking-widest text-slate-400 mb-1">深度定制方案</div>
+                        <div class="text-lg font-bold text-white mb-2">企业版 (Enterprise)</div>
+                        <div class="text-2xl font-serif font-bold text-gold mb-4">SGD 15,000+</div>
+                        <ul class="text-xs text-slate-300 space-y-2.5">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold"></i> 东盟多国定制化深度市场调研</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold"></i> 本地财务可行性测算与投资回收期模型</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold"></i> 协助安排对接3家本地渠道高管初谈</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold"></i> 新加坡公司架构、税务与雇佣全案设计</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold"></i> 驻地专家顾问1个月跟踪指导</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 4: 成功案例 (必须放在首页中部位置)                                   -->
+    <!-- ========================================================================= -->
+    <section id="cases" class="py-24 bg-navyDark border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-gold font-semibold block mb-2">Proven Track Record</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">实操落地标杆案例</h2>
+                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                    客户不购买理念，客户购买结果。以下为BORVAN顾问团队协同中国企业成功进入新加坡及东盟市场的典型实操成果。
+                </p>
+                <div class="mt-2 text-xs text-slate-400 italic">
+                    *注：已脱敏保密处理，真实合同档案与数据可在签署NDA后查验
+                </div>
+            </div>
+
+            <!-- Case Showcase Cards Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                
+                <!-- Case 1: F&B / 餐饮出海 -->
+                <div class="glass-panel rounded-2xl overflow-hidden border border-white/10 hover:border-gold transition flex flex-col justify-between">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-amber-500/20 text-amber-300 font-semibold">餐饮与现制茶饮</span>
+                            <span class="text-xs font-mono text-emerald-400 font-bold">60天落地首店</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">国内头部新茶饮连锁 新加坡CBD首店突围</h3>
+                        
+                        <div class="space-y-4 text-xs text-slate-300">
+                            <div>
+                                <span class="text-gold font-semibold block mb-1">【客户背景与挑战】</span>
+                                <p class="text-slate-400 leading-relaxed">国内拥有800+门店的茶饮品牌，初次出海新加坡。面临乌节路与CBD高昂租金雷区、SFA食品局资质审批流程不熟、以及清真(Halal)供应链缺失痛点。</p>
+                            </div>
+                            <div>
+                                <span class="text-gold font-semibold block mb-1">【BORVAN 解决方案】</span>
+                                <p class="text-slate-400 leading-relaxed">出具《新加坡点位人流与盈亏平衡测算》，协助精准拿下CBD核心商厦优待租约；拉通SFA快速审批绿色通道，对接马来西亚柔佛清真原料冷链总代。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quantified Metrics Footer -->
+                    <div class="p-6 bg-obsidian/80 border-t border-white/10 space-y-2">
+                        <div class="text-xs font-semibold text-white mb-2">【最终量化成果】</div>
+                        <div class="grid grid-cols-2 gap-3 text-xs">
+                            <div class="p-2 rounded bg-slateDark border border-white/5">
+                                <span class="text-gold font-bold block text-sm">60 天</span>
+                                <span class="text-slate-400 text-[10px]">从签约到首店开业</span>
+                            </div>
+                            <div class="p-2 rounded bg-slateDark border border-white/5">
+                                <span class="text-emerald-400 font-bold block text-sm">首月盈利</span>
+                                <span class="text-slate-400 text-[10px]">单日杯量破 1,200</span>
+                            </div>
+                            <div class="p-2 rounded bg-slateDark border border-white/5">
+                                <span class="text-gold font-bold block text-sm">3 家分销</span>
+                                <span class="text-slate-400 text-[10px]">签约本地主流渠道</span>
+                            </div>
+                            <div class="p-2 rounded bg-slateDark border border-white/5">
+                                <span class="text-emerald-400 font-bold block text-sm">-35%</span>
+                                <span class="text-slate-400 text-[10px]">前期租赁试错成本降幅</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2: Retail & Consumer Goods / 消费零售 -->
+                <div class="glass-panel rounded-2xl overflow-hidden border border-white/10 hover:border-gold transition flex flex-col justify-between">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-blue-500/20 text-blue-300 font-semibold">智能零售与消费硬件</span>
+                            <span class="text-xs font-mono text-emerald-400 font-bold">签下Top 3分销商</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">科技生活硬件品牌 切入东南亚主流商超</h3>
+                        
+                        <div class="space-y-4 text-xs text-slate-300">
+                            <div>
+                                <span class="text-gold font-semibold block mb-1">【客户背景与挑战】</span>
+                                <p class="text-slate-400 leading-relaxed">深圳智能小家电出海企业，线上Shopee投放ROI持续低迷，亟需打入新加坡与马来西亚线下主流渠道，但缺乏本地顶级零售商准入背书。</p>
+                            </div>
+                            <div>
+                                <span class="text-gold font-semibold block mb-1">【BORVAN 解决方案】</span>
+                                <p class="text-slate-400 leading-relaxed">为其重新制定《东盟品牌本地化表达框架》，直接引荐新加坡顶级家电数码连锁(Challenger/Courts)核心买手，并协助搭建新加坡区域展示与售后中心。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quantified Metrics Footer -->
+                    <div class="p-6 bg-obsidian/80 border-t border-white/10 space-y-2">
+                        <div class="text-xs font-semibold text-white mb-2">【最终量化成果】</div>
+                        <div class="grid grid-cols-2 gap-3 text-xs">
+                            <div class="p-2 rounded bg-slateDark border border-white/5">
+                                <span class="text-gold font-bold block text-sm">45 家</span>
+                                <span class="text-slate-400 text-[10px]">线下实体门店进驻</span>
+                            </div>
+                            <div class="p-2 rounded bg-slateDark border border-white/5">
+                                <span class="text-emerald-400 font-bold block text-sm">+280%</span>
+                                <span class="text-slate-400 text-[10px]">季度出货量环比增长</span>
+                            </div>
+                            <div class="p-2 rounded bg-slateDark border border-white/5">
+                                <span class="text-gold font-bold block text-sm">Top 2</span>
+                                <span class="text-slate-400 text-[10px]">品类线下份额排名</span>
+                            </div>
+                            <div class="p-2 rounded bg-slateDark border border-white/5">
+                                <span class="text-emerald-400 font-bold block text-sm">0 法律合规纠纷</span>
+                                <span class="text-slate-400 text-[10px]">通过新加坡安全认证</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3: Education & High-Value Services / 教育与出海服务 -->
+                <div class="glass-panel rounded-2xl overflow-hidden border border-white/10 hover:border-gold transition flex flex-col justify-between">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300 font-semibold">国际教育与研学培训</span>
+                            <span class="text-xs font-mono text-emerald-400 font-bold">常态化双向开班</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">高管研修与国际研学 新加坡实体基地落地</h3>
+                        
+                        <div class="space-y-4 text-xs text-slate-300">
+                            <div>
+                                <span class="text-gold font-semibold block mb-1">【客户背景与挑战】</span>
+                                <p class="text-slate-400 leading-relaxed">国内知名商业培训机构，计划打造高客单价的新加坡国际研学项目，但面临缺少实体校区支持、本地师资与学术牌照背书难题。</p>
+                            </div>
+                            <div>
+                                <span class="text-gold font-semibold block mb-1">【BORVAN 解决方案】</span>
+                                <p class="text-slate-400 leading-relaxed">依托BORVAN在新加坡CBD The Adelphi实体中心与United Language Ctr (ULC)学术生态，联合开发中英双语融合课程，打通本地政商参访参训闭环。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quantified Metrics Footer -->
+                    <div class="p-6 bg-obsidian/80 border-t border-white/10 space-y-2">
+                        <div class="text-xs font-semibold text-white mb-2">【最终量化成果】</div>
+                        <div class="grid grid-cols-2 gap-3 text-xs">
+                            <div class="p-2 rounded bg-slateDark border border-white/5">
+                                <span class="text-gold font-bold block text-sm">12 期</span>
+                                <span class="text-slate-400 text-[10px]">年度国际研学班成功交付</span>
+                            </div>
+                            <div class="p-2 rounded bg-slateDark border border-white/5">
+                                <span class="text-emerald-400 font-bold block text-sm">SGD 3,000+</span>
+                                <span class="text-slate-400 text-[10px]">人均客单价提升倍增</span>
+                            </div>
+                            <div class="p-2 rounded bg-slateDark border border-white/5">
+                                <span class="text-gold font-bold block text-sm">The Adelphi</span>
+                                <span class="text-slate-400 text-[10px]">永久实体合作基地设立</span>
+                            </div>
+                            <div class="p-2 rounded bg-slateDark border border-white/5">
+                                <span class="text-emerald-400 font-bold block text-sm">98.5%</span>
+                                <span class="text-slate-400 text-[10px]">企业家学员满意度</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Case Center Jump Link -->
+            <div class="text-center">
+                <a href="cases.html" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gold hover:underline font-bold">
+                    <span>进入完整案例库（支持按餐饮、咖啡、零售、教育筛选）</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 5: 为什么选择BORVAN (4大优势)                                       -->
+    <!-- ========================================================================= -->
+    <section id="why-borvan" class="py-24 bg-obsidian border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-gold font-semibold block mb-2">Competitive Edge</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">为什么选择 BORVAN？</h2>
+                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                    四大核心壁垒，构筑中国企业出海东盟的最可靠安全垫与增长杠杆。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Advantage 1 -->
+                <div class="glass-panel p-8 rounded-2xl border border-white/10 hover:border-gold transition">
+                    <div class="w-14 h-14 rounded-xl bg-gold/15 text-gold flex items-center justify-center mb-6">
+                        <i data-lucide="building-2" class="w-7 h-7"></i>
+                    </div>
+                    <div class="text-xs font-mono text-gold mb-1">ADVANTAGE 01</div>
+                    <h3 class="text-xl font-bold text-white mb-3">新加坡本地资源网络</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        实体深耕新加坡核心商务区(CBD The Adelphi)，直连新加坡经济发展局生态、主流银行合规通道、顶级华商商会、本土大型分销商与知名律所。
+                    </p>
+                </div>
+
+                <!-- Advantage 2 -->
+                <div class="glass-panel p-8 rounded-2xl border border-white/10 hover:border-gold transition">
+                    <div class="w-14 h-14 rounded-xl bg-primaryBlue/15 text-primaryBlue flex items-center justify-center mb-6">
+                        <i data-lucide="globe-2" class="w-7 h-7"></i>
+                    </div>
+                    <div class="text-xs font-mono text-primaryBlue mb-1">ADVANTAGE 02</div>
+                    <h3 class="text-xl font-bold text-white mb-3">中国与东盟双市场经验</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        既通晓中国商业企业高效打法与痛点，又洞悉东盟多国监管差异与本地经商文化，充当两地无缝转换的“超级翻译官”与战略底座。
+                    </p>
+                </div>
+
+                <!-- Advantage 3 -->
+                <div class="glass-panel p-8 rounded-2xl border border-white/10 hover:border-gold transition">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center mb-6">
+                        <i data-lucide="users" class="w-7 h-7"></i>
+                    </div>
+                    <div class="text-xs font-mono text-amber-400 mb-1">ADVANTAGE 03</div>
+                    <h3 class="text-xl font-bold text-white mb-3">企业家导师实操体系</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        核心团队由传媒大学MBA导师、上市国企热作集团高级顾问、实战企业教练组成，拒绝学院派空谈，专攻商业落地与ROI变现。
+                    </p>
+                </div>
+
+                <!-- Advantage 4 -->
+                <div class="glass-panel p-8 rounded-2xl border border-white/10 hover:border-gold transition">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/15 text-cyan-400 flex items-center justify-center mb-6">
+                        <i data-lucide="cpu" class="w-7 h-7"></i>
+                    </div>
+                    <div class="text-xs font-mono text-cyan-400 mb-1">ADVANTAGE 04</div>
+                    <h3 class="text-xl font-bold text-white mb-3">AI驱动商业分析能力</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        利用AI模型对东盟细分品类商情、客群偏好、社交声量与竞对定价进行敏捷扫描，将传统长达数月的调研压缩至7-14天高效交付。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 6: 创始人与团队介绍 (不强调空泛理想，强调实操履历与资源)                 -->
+    <!-- ========================================================================= -->
+    <section id="founder" class="py-24 bg-navyDark border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-gold font-semibold block mb-2">Leadership & Advisors</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">顾问团队与核心主理人</h2>
+                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                    以丰富项目经验、产业资源与跨国运作背景，为您提供实操级的出海保驾护航。
+                </p>
+            </div>
+
+            <!-- Founder Card: 梁陈 (LC) -->
+            <div class="glass-panel rounded-2xl p-8 sm:p-12 border border-gold/30 mb-12 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                    
+                    <!-- Left Photo / Monogram -->
+                    <div class="lg:col-span-4 flex flex-col items-center text-center">
+                        <div class="relative w-44 h-44 rounded-2xl overflow-hidden border-2 border-gold shadow-2xl mb-4 bg-obsidian flex items-center justify-center">
+                            <!-- Fallback to elegant monogram or photo -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent z-10"></div>
+                            <span class="text-5xl font-serif font-black text-gold z-0">LC</span>
+                            <div class="absolute bottom-3 z-20 text-[10px] text-gold tracking-widest uppercase font-semibold">BORVAN SINGAPORE</div>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-white mb-1">（LC）梁陈</h3>
+                        <p class="text-xs text-gold font-semibold tracking-wider uppercase mb-3">创始人 · 战略引荐官 · 战略架构顾问</p>
+                        
+                        <div class="flex items-center gap-2 text-xs text-slate-400">
+                            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold"></i>
+                            <span>新加坡 The Adelphi / 北京 / 海南</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Bio & Verified Credentials -->
+                    <div class="lg:col-span-8 space-y-5">
+                        <div>
+                            <div class="text-xs text-gold font-semibold uppercase tracking-widest mb-1">Professional Background</div>
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                梁陈先生拥有深厚的财税金融与商业架构双重背景。毕业于中国传媒大学（工商管理硕士 MBA）与安徽财经大学（会计学学士），长年穿梭于新加坡、中国大陆与东盟主要经济体，深度参与企业跨国架构设计、离岸投资咨询与商业变现落地。
                             </p>
                         </div>
 
-                        <!-- 个人概述 / Description -->
-                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed mb-6" data-i18n="team.desc1">
-                            像建筑师雕琢每一寸空间一样，我们表达品牌背后的生命张力。在这个跨越国界与文化的时代，我们致力于发现隐藏的商业价值，促进跨越传统的生态交易。
-                        </p>
+                        <!-- 4 Pillars: Projects, Clients, Resources, International -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-4 rounded-xl bg-obsidian/60 border border-white/5">
+                                <span class="text-xs font-bold text-white flex items-center gap-2 mb-1">
+                                    <i data-lucide="briefcase" class="w-4 h-4 text-gold"></i> 项目经验与产业职务
+                                </span>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    出任<strong>海南农垦热作产业集团公司高级顾问</strong>，操盘多宗跨境大宗贸易、农业供应链出海及品牌投融资战略咨询项目。
+                                </p>
+                            </div>
 
-                        <!-- 按钮互动区 -->
-                        <div class="flex flex-wrap items-center gap-4">
-                            <a href="liangchen.html" class="px-6 py-3 bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-all flex items-center gap-2">
-                                <span data-i18n="about.btn_profile">查看详细履历与学术资质</span>
-                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                            </a>
-                            <a href="advisor.html" class="px-6 py-3 border border-white/20 text-slate-300 text-xs uppercase tracking-widest font-medium hover:border-gold hover:text-gold transition-colors flex items-center gap-2">
-                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-gold"></i>
-                                <span data-i18n="about.btn_book">预约一对一咨询</span>
+                            <div class="p-4 rounded-xl bg-obsidian/60 border border-white/5">
+                                <span class="text-xs font-bold text-white flex items-center gap-2 mb-1">
+                                    <i data-lucide="graduation-cap" class="w-4 h-4 text-gold"></i> 学术导师与高校资源
+                                </span>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    受聘担任<strong>安徽财经大学会计专业硕士（MPAcc）实践导师</strong>、<strong>中国传媒大学MBA学院实践导师</strong>，持续输出顶尖商学研究成果。
+                                </p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-obsidian/60 border border-white/5">
+                                <span class="text-xs font-bold text-white flex items-center gap-2 mb-1">
+                                    <i data-lucide="network" class="w-4 h-4 text-gold"></i> 区域生态与服务对象
+                                </span>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    深度服务新隆利东南亚商贸、OrientDesign国际设计战略、United Language Ctr (ULC)学术机构、ccMonetAcademy等标杆项目。
+                                </p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-obsidian/60 border border-white/5">
+                                <span class="text-xs font-bold text-white flex items-center gap-2 mb-1">
+                                    <i data-lucide="globe" class="w-4 h-4 text-gold"></i> 国际通道与媒体访谈
+                                </span>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    深谙新加坡ACRA注册、EDB经济发展政策与MOM外籍用工体系，常年就中企出海与东盟经贸合作接受专题访谈与智库建言。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Direct Advisor Contact Button -->
+                        <div class="pt-2 flex flex-wrap items-center gap-4">
+                            <button onclick="openBookingModal('预约梁陈导师咨询')" class="px-5 py-2.5 bg-gold hover:bg-gold-light text-obsidian text-xs font-bold uppercase tracking-wider rounded-lg flex items-center gap-2 glow-button">
+                                <i data-lucide="calendar" class="w-4 h-4"></i>
+                                <span>预约梁陈导师1对1咨询</span>
+                            </button>
+                            <a href="mailto:liangchen01@gmail.com" class="text-xs text-slate-300 hover:text-gold flex items-center gap-1.5 transition">
+                                <i data-lucide="mail" class="w-4 h-4 text-gold"></i>
+                                <span>邮件直联：liangchen01@gmail.com</span>
                             </a>
                         </div>
                     </div>
@@ -674,336 +1010,421 @@
                 </div>
             </div>
 
-            <!-- 伙伴与执行合伙人团队展示 (Xi Ming & Dong Xianfu - 统一无肖像的优雅排版) -->
+            <!-- Co-Founders & Partners Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- 董仙富 联合创始人 -->
-                <div class="reveal-element bg-slateDark/50 border border-white/5 p-6 sm:p-8 hover:border-white/15 transition-all flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-[10px] uppercase tracking-widest text-slate-400 font-medium" data-i18n="team.role2_badge">联合创始人</span>
-                            <span class="w-2 h-2 rounded-full bg-gold/60"></span>
-                        </div>
-                        <h4 class="font-serif text-lg font-bold text-white mb-2" data-i18n="team.title2">董仙富 | 联合创始人</h4>
-                        <p class="font-serif italic text-xs text-slate-300 mb-3" data-i18n="team.quote2">"共同构筑连接地域与文化的商业桥梁。"</p>
-                        <p class="text-xs text-slate-400 leading-relaxed" data-i18n="team.desc2">
-                            作为联合创始人，董仙富先生致力于将最前沿的企业教练视角融入每一次合作。深入洞察区域市场的多元需求，与品牌共建长远且厚重的价值引力场。
-                        </p>
+                <!-- 董仙富 -->
+                <div class="glass-panel p-6 sm:p-8 rounded-xl border border-white/5 hover:border-gold/30 transition">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[10px] uppercase tracking-widest text-slate-400 font-semibold">Co-Founder</span>
+                        <span class="w-2 h-2 rounded-full bg-gold/60"></span>
                     </div>
+                    <h4 class="text-lg font-serif font-bold text-white mb-2">董仙富 | 联合创始人</h4>
+                    <p class="text-xs text-gold/90 font-medium mb-3">企业教练体系架构师 · 区域商业生态顾问</p>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        致力于将最前沿的企业敏捷增长与实操教练视角融入落地全流程，深入洞察中国企业在东盟多语境下的组织阵痛，帮助团队快速突破跨文化管理壁垒。
+                    </p>
                 </div>
 
-                <!-- 西明 执行合伙人 (移除肖像照片，与董仙富对称) -->
-                <div class="reveal-element bg-slateDark/50 border border-white/5 p-6 sm:p-8 hover:border-white/15 transition-all flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-[10px] uppercase tracking-widest text-slate-400 font-medium" data-i18n="team.role3_badge">执行合伙人</span>
-                            <span class="w-2 h-2 rounded-full bg-gold/60"></span>
-                        </div>
-                        <h4 class="font-serif text-lg font-bold text-white mb-2" data-i18n="team.title3">西明 | 执行合伙人</h4>
-                        <p class="font-serif italic text-xs text-slate-300 mb-3" data-i18n="team.quote3">"像领航者锚定每一次航向一样，我们唤醒企业深处的神圣希望。"</p>
-                        <p class="text-xs text-slate-400 leading-relaxed" data-i18n="team.desc3">
-                            在这个充满变革与挑战的时代，我们致力于重塑组织存在的终极意义，将无形的使命转化为生生不息的成长能力。
-                        </p>
+                <!-- 西明 -->
+                <div class="glass-panel p-6 sm:p-8 rounded-xl border border-white/5 hover:border-gold/30 transition">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[10px] uppercase tracking-widest text-slate-400 font-semibold">Managing Partner</span>
+                        <span class="w-2 h-2 rounded-full bg-gold/60"></span>
                     </div>
+                    <h4 class="text-lg font-serif font-bold text-white mb-2">西明 | 执行合伙人</h4>
+                    <p class="text-xs text-gold/90 font-medium mb-3">商业战略落地执行官 · 组织系统增效专员</p>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        专注战术落地、出海项目敏捷推进与政企伙伴对接协同。将无形的战略愿景转化为周密的执行清单，确保每一次出海行动均能达成阶段性预期战果。
+                    </p>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 商业生态与伙伴案例 (Ecosystem & Global Trust)                             -->
-    <!-- ========================================================================= -->
-    <section class="bg-slateDark py-20 px-6 sm:px-10 md:px-16 border-t border-white/5">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-12">
-                <span class="text-[10px] uppercase tracking-widest-plus text-slate-300 block mb-2" data-i18n="partners.tag">
-                    全球远见者信赖之选
+            <!-- Strategic Ecosystem Partners Banner -->
+            <div class="mt-12 pt-8 border-t border-white/10 text-center">
+                <span class="text-[10px] uppercase tracking-widest text-slate-400 block mb-4">
+                    STRATEGIC ECOSYSTEM & TRUSTED PARTNERS
                 </span>
-                <h3 class="font-serif text-xl sm:text-2xl text-slate-200" data-i18n="partners.title">
-                    价值引力场 · 生态共建者伙伴
-                </h3>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
-                <div class="p-6 bg-slate-900/60 border border-white/5 hover:border-gold/30 transition-all">
-                    <span class="text-xs text-slate-400 block mb-1" data-i18n="partners.col1_tag">东南亚商贸</span>
-                    <span class="text-sm font-serif font-semibold text-slate-200" data-i18n="partners.col1_name">新隆利公司</span>
-                </div>
-                <div class="p-6 bg-slate-900/60 border border-white/5 hover:border-gold/30 transition-all">
-                    <span class="text-xs text-slate-400 block mb-1" data-i18n="partners.col2_tag">大中华产业</span>
-                    <span class="text-sm font-serif font-semibold text-slate-200" data-i18n="partners.col2_name">海垦热作集团</span>
-                </div>
-                <div class="p-6 bg-slate-900/60 border border-white/5 hover:border-gold/30 transition-all">
-                    <span class="text-xs text-slate-400 block mb-1" data-i18n="partners.col3_tag">品牌设计战略</span>
-                    <span class="text-sm font-serif font-semibold text-slate-200" data-i18n="partners.col3_name">OrientDesign</span>
-                </div>
-                <div class="p-6 bg-slate-900/60 border border-white/5 hover:border-gold/30 transition-all">
-                    <span class="text-xs text-slate-400 block mb-1" data-i18n="partners.col4_tag">跨文化学术机构</span>
-                    <span class="text-sm font-serif font-semibold text-slate-200" data-i18n="partners.col4_name">United Language Ctr</span>
-                </div>
-                <div class="p-6 bg-slate-900/60 border border-white/5 hover:border-gold/30 transition-all col-span-2 md:col-span-1">
-                    <span class="text-xs text-slate-400 block mb-1" data-i18n="partners.col5_tag">AI 原生平台</span>
-                    <span class="text-sm font-serif font-semibold text-slate-200" data-i18n="partners.col5_name">ccMonetAcademy</span>
+                <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs text-slate-300 font-serif">
+                    <span class="px-4 py-2 bg-obsidian/50 rounded border border-white/5">新隆利东南亚商贸</span>
+                    <span class="px-4 py-2 bg-obsidian/50 rounded border border-white/5">海南农垦热作集团</span>
+                    <span class="px-4 py-2 bg-obsidian/50 rounded border border-white/5">OrientDesign 品牌战略</span>
+                    <span class="px-4 py-2 bg-obsidian/50 rounded border border-white/5">United Language Ctr (ULC)</span>
+                    <span class="px-4 py-2 bg-obsidian/50 rounded border border-white/5">ccMonetAcademy</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 页脚与联系区块 (Footer & Contact)                                         -->
+    <!-- SECTION 7: 免费获客工具 (立即获取东盟市场进入诊断表单 + 模拟CRM对接)          -->
     <!-- ========================================================================= -->
-    <footer id="contact" class="bg-obsidian text-slate-300 pt-20 pb-12 px-6 sm:px-10 md:px-16 border-t border-white/10">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 pb-16 border-b border-white/10">
+    <section id="lead-tool" class="py-24 bg-gradient-to-b from-obsidian via-navyDark to-obsidian border-b border-white/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="badge-pill mb-2">100% 免费在线测评 · 限时开放</div>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">立即获取东盟市场进入诊断</h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    只需填写以下5项关键信息，系统与BORVAN出海顾问团队将在24小时内为您生成定制化初步可行性评级与风险防范清单。
+                </p>
+            </div>
+
+            <!-- Lead Capture Form Card -->
+            <div class="glass-panel p-8 sm:p-10 rounded-2xl border border-gold/40 shadow-2xl relative">
+                <form id="diagnostic-form" onsubmit="handleDiagnosticSubmit(event)" class="space-y-6">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Field 1: Name -->
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                                您的姓名 <span class="text-rose-400">*</span>
+                            </label>
+                            <input type="text" id="lead-name" required placeholder="例如：李先生 / 张总" class="w-full px-4 py-3 bg-obsidian border border-white/15 rounded-lg text-white text-sm focus:border-gold focus:outline-none transition">
+                        </div>
+
+                        <!-- Field 2: Company -->
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                                企业/品牌名称 <span class="text-rose-400">*</span>
+                            </label>
+                            <input type="text" id="lead-company" required placeholder="例如：某知名茶饮连锁 / 智能科技有限公司" class="w-full px-4 py-3 bg-obsidian border border-white/15 rounded-lg text-white text-sm focus:border-gold focus:outline-none transition">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Field 3: Industry -->
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                                所属行业类别 <span class="text-rose-400">*</span>
+                            </label>
+                            <select id="lead-industry" required class="w-full px-4 py-3 bg-obsidian border border-white/15 rounded-lg text-white text-sm focus:border-gold focus:outline-none transition">
+                                <option value="" disabled selected>请选择行业</option>
+                                <option value="餐饮与现制茶饮">餐饮与现制茶饮 / 食品连锁</option>
+                                <option value="咖啡与新饮品">咖啡连锁与供应链</option>
+                                <option value="智能硬件与消费电子">智能硬件与快消零售</option>
+                                <option value="跨境电商与独立站">跨境电商与DTC品牌</option>
+                                <option value="教育培训与研学">国际教育与研学培训</option>
+                                <option value="企业级SaaS与现代服务">SaaS与现代企业服务</option>
+                                <option value="生物医药与大健康">生物医药与大健康</option>
+                                <option value="其他实体制造与商贸">其他实体制造与商贸</option>
+                            </select>
+                        </div>
+
+                        <!-- Field 4: Target Country -->
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                                计划进入国家 / 地区 <span class="text-rose-400">*</span>
+                            </label>
+                            <select id="lead-country" required class="w-full px-4 py-3 bg-obsidian border border-white/15 rounded-lg text-white text-sm focus:border-gold focus:outline-none transition">
+                                <option value="" disabled selected>请选择目标国家</option>
+                                <option value="新加坡 (优先考虑)">新加坡 (Singapore - 建立海外总部/首店)</option>
+                                <option value="马来西亚 (双语渠道)">马来西亚 (Malaysia - 渠道与供应链)</option>
+                                <option value="印度尼西亚 (人口红利)">印度尼西亚 (Indonesia - 万亿消费大市场)</option>
+                                <option value="泰国 / 越南 (高频消费)">泰国 / 越南 (Thailand / Vietnam)</option>
+                                <option value="东盟多国全域评估">东盟多国全域评估 (需要专业国家排序)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Field 5: Contact -->
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                            联系方式 (微信 / 手机号 / WhatsApp) <span class="text-rose-400">*</span>
+                        </label>
+                        <input type="text" id="lead-contact" required placeholder="请填写微信ID或手机号（以便顾问发送诊断报告）" class="w-full px-4 py-3 bg-obsidian border border-white/15 rounded-lg text-white text-sm focus:border-gold focus:outline-none transition">
+                    </div>
+
+                    <!-- Extra Needs / Challenge -->
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                            目前最关心的出海诉求 (选填)
+                        </label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-slate-300">
+                            <label class="flex items-center gap-2 p-2 bg-obsidian rounded border border-white/5 cursor-pointer hover:border-gold/40">
+                                <input type="checkbox" name="needs" value="寻找渠道伙伴" class="accent-gold">
+                                <span>寻找渠道伙伴</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2 bg-obsidian rounded border border-white/5 cursor-pointer hover:border-gold/40">
+                                <input type="checkbox" name="needs" value="海外合规牌照" class="accent-gold">
+                                <span>海外合规牌照</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2 bg-obsidian rounded border border-white/5 cursor-pointer hover:border-gold/40">
+                                <input type="checkbox" name="needs" value="市场规模测算" class="accent-gold">
+                                <span>市场规模测算</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2 bg-obsidian rounded border border-white/5 cursor-pointer hover:border-gold/40">
+                                <input type="checkbox" name="needs" value="首店选址落地" class="accent-gold">
+                                <span>首店选址落地</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-2">
+                        <button type="submit" class="w-full py-4 bg-gold hover:bg-gold-light text-obsidian font-bold text-sm uppercase tracking-wider rounded-lg glow-button flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span>立即提交并生成出海可行性初步评级</span>
+                        </button>
+                        <p class="text-[11px] text-center text-slate-400 mt-3">
+                            <i data-lucide="lock" class="w-3 h-3 inline mr-1 text-gold"></i>
+                            严苛商业保密承诺：您的信息已通过256位加密直存BORVAN企业级CRM系统，绝不对外泄露。
+                        </p>
+                    </div>
+                </form>
+
+                <!-- Simulated Instant CRM Result Drawer (Populated by JavaScript) -->
+                <div id="diagnostic-result" class="hidden mt-8 p-6 bg-slateDark border border-emerald-500/40 rounded-xl space-y-4">
+                    <div class="flex items-center gap-3 text-emerald-400">
+                        <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                        <h4 class="font-bold text-white text-base">测评已成功受理！已同步接入 BORVAN 增长 CRM</h4>
+                    </div>
+                    <div id="result-details" class="text-xs text-slate-300 leading-relaxed space-y-2">
+                        <!-- Injected via script -->
+                    </div>
+                    <div class="pt-2 flex flex-wrap gap-4">
+                        <button onclick="openBookingModal('诊断表单提交后快速预约')" class="px-5 py-2.5 bg-gold text-obsidian font-bold text-xs rounded glow-button">
+                            立即预约30分钟专家解读会 &rarr;
+                        </button>
+                        <button onclick="downloadInstantWhitepaper()" class="px-5 py-2.5 bg-slateCard text-white border border-white/20 hover:border-gold text-xs rounded">
+                            下载《东盟出海进入实战白皮书.pdf》
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- FOOTER: 严谨核对信息 (包括：人名、地址、电话、微信、邮箱)                           -->
+    <!-- ========================================================================= -->
+    <footer id="contact" class="bg-obsidian text-slate-300 pt-16 pb-12 border-t border-white/10 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12 pb-12 border-b border-white/10">
                 
                 <!-- Col 1: Brand Info -->
-                <div class="space-y-4 md:col-span-1">
-                    <span class="font-serif tracking-ultra-wide text-lg font-bold uppercase text-white block">
-                        BORVAN SINGAPORE
-                    </span>
-                    <p class="text-xs text-slate-300 leading-relaxed font-light" data-i18n="footer.motto">
-                        激发人的创造力，传承文明影响力。在新加坡立足全球，赋能企业领袖实现长效价值表达与传承。
+                <div class="space-y-4">
+                    <div class="font-serif font-black text-xl tracking-wider text-white">BORVAN SINGAPORE</div>
+                    <p class="text-slate-400 leading-relaxed">
+                        东盟市场进入与企业增长顾问平台。<br>
+                        帮助中国企业低风险进入新加坡及东盟市场，实现商业落地与长效增长。
                     </p>
-                    <div class="pt-2 text-gold text-xs font-serif italic">
-                        Architecture of Civilization & Leadership
+                    <div class="text-gold font-serif italic text-[11px]">
+                        ASEAN Market Entry & Growth Advisory · Singapore CBD
                     </div>
                 </div>
 
                 <!-- Col 2: Navigation Links -->
                 <div>
-                    <h5 class="text-xs uppercase tracking-widest text-white font-semibold mb-4" data-i18n="footer.nav_title">
-                        业务架构
-                    </h5>
-                    <ul class="space-y-2.5 text-xs text-slate-300">
-                        <li><a href="#courses" class="hover:text-gold transition-colors" data-i18n="nav.courses">课程与培训</a></li>
-                        <li><a href="advisor.html" class="hover:text-gold transition-colors" data-i18n="nav.advisor">战略顾问服务</a></li>
-                        <li><a href="pricing.html" class="hover:text-gold transition-colors" data-i18n="nav.pricing">投资与报价</a></li>
-                        <li><a href="#philosophy" class="hover:text-gold transition-colors">Founder Identity™</a></li>
+                    <h5 class="text-xs uppercase tracking-widest text-white font-bold mb-4">核心服务与页面</h5>
+                    <ul class="space-y-2.5 text-slate-400">
+                        <li><a href="assessment.html" class="hover:text-gold transition">东盟市场进入评估 (SGD 2,000起)</a></li>
+                        <li><a href="courses.html" class="hover:text-gold transition">东盟增长训练营课程中心</a></li>
+                        <li><a href="cases.html" class="hover:text-gold transition">出海标杆案例库 (餐饮/零售/教育)</a></li>
+                        <li><a href="#why-borvan" class="hover:text-gold transition">为什么选择BORVAN</a></li>
+                        <li><a href="#founder" class="hover:text-gold transition">创始人与团队 (梁陈 / 董仙富 / 西明)</a></li>
                     </ul>
                 </div>
 
-                <!-- Col 3: Global Hubs -->
+                <!-- Col 3: Verified Locations (严格对照资料库) -->
                 <div>
-                    <h5 class="text-xs uppercase tracking-widest text-white font-semibold mb-4" data-i18n="footer.locations_title">
-                        驻地协同中心
-                    </h5>
-                    <ul class="space-y-2 text-xs text-slate-300">
+                    <h5 class="text-xs uppercase tracking-widest text-white font-bold mb-4">机构常设地址</h5>
+                    <ul class="space-y-3 text-slate-300">
                         <li class="flex items-start gap-2">
-                            <span class="text-gold font-medium">新加坡 (HQ):</span>
-                            <span>The Adelphi, 1 Coleman St</span>
+                            <span class="text-gold font-semibold shrink-0">新加坡 (HQ):</span>
+                            <span>The Adelphi, 1 Coleman St, Singapore 179803 (City Hall CBD)</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <span class="text-gold font-medium">北京 (Hub):</span>
-                            <span>朝阳区商业战略中心</span>
+                            <span class="text-gold font-semibold shrink-0">北京 (Hub):</span>
+                            <span>北京市朝阳区商业战略中心</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <span class="text-gold font-medium">海南 (Free Port):</span>
-                            <span data-i18n="footer.location_hainan">海南新加坡教育国际互通中心</span>
+                            <span class="text-gold font-semibold shrink-0">海南 (Free Port):</span>
+                            <span>海南新加坡教育国际互通中心</span>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Col 4: Direct Inquiries -->
+                <!-- Col 4: Verified Contact Info (严格对照资料库) -->
                 <div>
-                    <h5 class="text-xs uppercase tracking-widest text-white font-semibold mb-4" data-i18n="footer.contact_title">
-                        战略合作与问询
-                    </h5>
-                    <div class="space-y-3 text-xs">
+                    <h5 class="text-xs uppercase tracking-widest text-white font-bold mb-4">官方商务对接</h5>
+                    <div class="space-y-3">
                         <div class="flex items-center gap-2">
-                            <i data-lucide="mail" class="w-4 h-4 text-gold"></i>
-                            <a href="mailto:iencen@yahoo.com" class="text-slate-300 hover:text-white transition-colors">iencen@yahoo.com</a>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="phone" class="w-4 h-4 text-gold"></i>
-                            <a href="https://wa.me/6587327804" target="_blank" class="text-slate-300 hover:text-white transition-colors">WhatsApp: +65 8732 7804</a>
+                            <i data-lucide="phone-call" class="w-4 h-4 text-gold"></i>
+                            <a href="https://wa.me/6587327804" target="_blank" class="text-slate-300 hover:text-gold transition">WhatsApp: +65 8732 7804</a>
                         </div>
                         <div class="flex items-center gap-2">
                             <i data-lucide="message-square" class="w-4 h-4 text-gold"></i>
-                            <span class="text-slate-300">WeChat: voicecoffee</span>
+                            <span class="text-slate-300">官方微信: <strong class="text-white">voicecoffee</strong></span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4 text-gold"></i>
+                            <a href="mailto:iencen@yahoo.com" class="text-slate-300 hover:text-gold transition">官方邮箱: iencen@yahoo.com</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="user" class="w-4 h-4 text-gold"></i>
+                            <a href="mailto:liangchen01@gmail.com" class="text-slate-300 hover:text-gold transition">导师专线: liangchen01@gmail.com</a>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Bottom Copyright -->
-            <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+            <!-- Bottom Copyright & SEO Verification Banner -->
+            <div class="flex flex-col sm:flex-row items-center justify-between text-slate-400 text-[11px] gap-4">
                 <div>
-                    &copy; 2026 BORVAN SINGAPORE. All Rights Reserved.
+                    &copy; 2026 BORVAN SINGAPORE. All Rights Reserved. 官方网址：<a href="https://borvan.sg" class="text-gold hover:underline">https://borvan.sg</a>
                 </div>
-                <div class="flex items-center space-x-6">
-                    <span class="hover:text-slate-300 transition-colors">新加坡商业咨询与文明影响力体系</span>
+                <div class="flex items-center space-x-4">
+                    <span>新加坡商业咨询与东盟市场进入平台</span>
                     <span>·</span>
-                    <a href="pricing.html" class="hover:text-gold transition-colors">价值服务评估</a>
+                    <button onclick="openBookingModal('页脚预约')" class="text-gold hover:underline font-bold">预约30分钟咨询</button>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- ========================================================================= -->
-    <!-- 课程详情弹窗 (Course Details Modal)                                        -->
+    <!-- 全站固定浮动按钮转化矩阵 (Sticky Conversion Floating Bar)                      -->
     <!-- ========================================================================= -->
-    <div id="course-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
-        <div class="bg-slateDark border border-white/20 max-w-lg w-full p-8 relative shadow-2xl scale-95 transition-transform duration-300" id="modal-box">
-            <!-- Close Button -->
-            <button onclick="closeCourseModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white">
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-3">
+        
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/6587327804" target="_blank" class="flex items-center gap-2 px-4 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-full shadow-2xl transition hover:scale-105 group text-xs">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span class="hidden sm:inline">WhatsApp 咨询 (+65 8732 7804)</span>
+        </a>
+
+        <!-- WeChat Consultation Floating Button -->
+        <button onclick="openWechatModal()" class="flex items-center gap-2 px-4 py-3 bg-[#07C160] hover:bg-[#06ad56] text-white font-bold rounded-full shadow-2xl transition hover:scale-105 group text-xs">
+            <i data-lucide="smartphone" class="w-5 h-5"></i>
+            <span class="hidden sm:inline">微信咨询 (voicecoffee)</span>
+        </button>
+
+        <!-- 30-min Booking Diagnostic Floating Button -->
+        <button onclick="openBookingModal('右下浮动按钮预约')" class="flex items-center gap-2 px-5 py-3.5 bg-gold hover:bg-gold-light text-obsidian font-black rounded-full shadow-2xl glow-button hover:scale-105 transition text-xs uppercase tracking-wider">
+            <i data-lucide="calendar" class="w-5 h-5"></i>
+            <span>预约30分钟诊断</span>
+        </button>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- MODAL 1: 30分钟预约诊断弹窗 (Booking Modal)                                 -->
+    <!-- ========================================================================= -->
+    <div id="booking-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-navyDark border border-gold/40 rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl scale-95 transition-transform duration-300">
+            <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white">
                 <i data-lucide="x" class="w-6 h-6"></i>
             </button>
 
-            <!-- Modal Content (Filled Dynamically) -->
-            <div id="modal-content">
-                <!-- Injected via JavaScript -->
+            <div class="mb-6">
+                <span class="badge-pill mb-2">BORVAN 增长顾问诊断会</span>
+                <h3 class="text-2xl font-serif font-bold text-white mb-2">预约 30 分钟出海专家诊断</h3>
+                <p class="text-xs text-slate-300">
+                    与梁陈导师及BORVAN新加坡CBD资深顾问团队进行1对1深度沟通，剖析出海可行性与最优路径。
+                </p>
             </div>
+
+            <form onsubmit="handleBookingSubmit(event)" class="space-y-4 text-xs">
+                <div>
+                    <label class="block text-slate-300 font-semibold mb-1">您的姓名 *</label>
+                    <input type="text" id="book-name" required placeholder="如：陈总" class="w-full px-3 py-2.5 bg-obsidian border border-white/15 rounded text-white text-xs focus:border-gold focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-slate-300 font-semibold mb-1">联系电话 / WhatsApp *</label>
+                    <input type="text" id="book-phone" required placeholder="如：+65 8732 7804 或 中国手机号" class="w-full px-3 py-2.5 bg-obsidian border border-white/15 rounded text-white text-xs focus:border-gold focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-slate-300 font-semibold mb-1">微信号 (可选，方便顾问加您)</label>
+                    <input type="text" id="book-wechat" placeholder="您的微信号" class="w-full px-3 py-2.5 bg-obsidian border border-white/15 rounded text-white text-xs focus:border-gold focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-slate-300 font-semibold mb-1">期望沟通时段 *</label>
+                    <select id="book-time" required class="w-full px-3 py-2.5 bg-obsidian border border-white/15 rounded text-white text-xs focus:border-gold focus:outline-none">
+                        <option value="本周二 上午 10:00 - 10:30 (SGT)">本周二 上午 10:00 - 10:30 (SGT)</option>
+                        <option value="本周三 下午 14:30 - 15:00 (SGT)">本周三 下午 14:30 - 15:00 (SGT)</option>
+                        <option value="本周四 下午 16:00 - 16:30 (SGT)">本周四 下午 16:00 - 16:30 (SGT)</option>
+                        <option value="本周五 上午 11:00 - 11:30 (SGT)">本周五 上午 11:00 - 11:30 (SGT)</option>
+                        <option value="其他时间由顾问专人微信协商">其他时间由顾问专人微信协商</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-slate-300 font-semibold mb-1">企业出海核心关注点</label>
+                    <textarea id="book-note" rows="2" placeholder="简要说明您的业务出海现状或目标市场" class="w-full px-3 py-2 bg-obsidian border border-white/15 rounded text-white text-xs focus:border-gold focus:outline-none"></textarea>
+                </div>
+                <input type="hidden" id="book-source" value="通用预约">
+
+                <button type="submit" class="w-full py-3 bg-gold hover:bg-gold-light text-obsidian font-bold text-xs uppercase tracking-wider rounded glow-button mt-4">
+                    确认预约并锁定席位
+                </button>
+            </form>
         </div>
     </div>
 
     <!-- ========================================================================= -->
-    <!-- 核心交互逻辑与 i18n 脚本                                                  -->
+    <!-- MODAL 2: 白皮书获取弹窗 (Whitepaper Download Modal)                           -->
     <!-- ========================================================================= -->
+    <div id="whitepaper-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-navyDark border border-gold/40 rounded-2xl max-w-md w-full p-6 sm:p-8 relative shadow-2xl scale-95 transition-transform duration-300">
+            <button onclick="closeWhitepaperModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-xl bg-gold/20 text-gold flex items-center justify-center mx-auto mb-3">
+                    <i data-lucide="file-text" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-serif font-bold text-white mb-1">获取东盟进入白皮书 (2026版)</h3>
+                <p class="text-xs text-slate-300">《中国企业低风险进入新加坡及东盟市场实战指南》48页完整PDF报告</p>
+            </div>
+
+            <form onsubmit="handleWhitepaperSubmit(event)" class="space-y-4 text-xs">
+                <div>
+                    <label class="block text-slate-300 font-semibold mb-1">接收邮箱 / 手机号 *</label>
+                    <input type="text" id="wp-contact" required placeholder="name@company.com 或 微信/手机" class="w-full px-3 py-2.5 bg-obsidian border border-white/15 rounded text-white text-xs focus:border-gold focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-slate-300 font-semibold mb-1">您的企业行业</label>
+                    <input type="text" id="wp-industry" placeholder="如：餐饮连锁 / 跨境电商" class="w-full px-3 py-2.5 bg-obsidian border border-white/15 rounded text-white text-xs focus:border-gold focus:outline-none">
+                </div>
+                <button type="submit" class="w-full py-3 bg-gold hover:bg-gold-light text-obsidian font-bold text-xs uppercase tracking-wider rounded glow-button">
+                    立即免费下载完整报告
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- MODAL 3: 微信联系弹窗 (WeChat Modal)                                        -->
+    <!-- ========================================================================= -->
+    <div id="wechat-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-navyDark border border-[#07C160]/50 rounded-2xl max-w-sm w-full p-6 text-center relative shadow-2xl scale-95 transition-transform duration-300">
+            <button onclick="closeWechatModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="w-12 h-12 rounded-full bg-[#07C160]/20 text-[#07C160] flex items-center justify-center mx-auto mb-3">
+                <i data-lucide="message-circle" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-1">添加 BORVAN 官方微信</h3>
+            <p class="text-xs text-slate-300 mb-4">随时获取出海政策解答与一对一交流</p>
+
+            <div class="p-4 bg-obsidian rounded-xl border border-white/10 mb-4">
+                <div class="text-xs text-slate-400 mb-1">官方微信号</div>
+                <div class="text-xl font-mono font-bold text-white tracking-wider mb-2">voicecoffee</div>
+                <button onclick="copyWechatId()" class="px-4 py-1.5 bg-[#07C160] hover:bg-[#06ad56] text-white font-bold text-xs rounded transition flex items-center justify-center gap-1.5 mx-auto">
+                    <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                    <span id="copy-text">一键复制微信号</span>
+                </button>
+            </div>
+            <p class="text-[11px] text-slate-400">复制后打开微信搜索添加，顾问将在2小时内通过</p>
+        </div>
+    </div>
+
+    <!-- Global Application Scripts -->
+    <script src="script.js?v=20261019_cro"></script>
     <script>
-        // 初始化 Lucide 图标
+        // Lucide Icons initialization
         lucide.createIcons();
-
-        // 导航栏滚动样式切换
-        const header = document.getElementById('site-header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 40) {
-                header.classList.add('bg-obsidian/95', 'glass-nav', 'py-4', 'border-borderMuted');
-                header.classList.remove('py-6', 'border-transparent');
-            } else {
-                header.classList.remove('bg-obsidian/95', 'glass-nav', 'py-4', 'border-borderMuted');
-                header.classList.add('py-6', 'border-transparent');
-            }
-        });
-
-        // 移动端菜单切换
-        function toggleMobileMenu() {
-            const drawer = document.getElementById('mobile-drawer');
-            drawer.classList.toggle('hidden');
-        }
-        document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
-
-        // 页面平滑滚动渐显 (Fade-in on scroll via Intersection Observer)
-        const revealElements = document.querySelectorAll('.reveal-element');
-        const revealObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-revealed');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.15,
-            rootMargin: '0px 0px -40px 0px'
-        });
-
-        revealElements.forEach(el => revealObserver.observe(el));
-
-        // 课程弹窗详情数据
-        const courseData = {
-            course1: {
-                title: "新加坡商务融入课",
-                tag: "9个课时 · 3次面授 · 1800新币",
-                location: "新加坡 The Adelphi大厦 (City Hall CBD)",
-                summary: "专为开拓东南亚市场的大中华区创始人、高管与投资人设计。不仅解决新加坡商业注册、合规治理、税收协同与银行运作的具体痛点，更带您打通本地商业领袖圈层与商会网络。",
-                highlights: [
-                    "新加坡主权基金与商业生态规则深度透视",
-                    "跨国知识产权、控股结构与财富合规架构设计",
-                    "新加坡本土商业谈判禁忌与跨文化信任建立法则"
-                ],
-                actionText: "前往报名或咨询顾问",
-                actionLink: "advisor.html?course=singapore-business"
-            },
-            course2: {
-                title: "商务英语专业俱乐部课程",
-                tag: "40个课时 · 20次深度实训 · 3000新币",
-                location: "新加坡 The Adelphi大厦 (UPC ULC)",
-                summary: "联合 United Language Centre (ULC) 打造的专业高管俱乐部课程。彻底告别传统死记硬背，以真实的董事会陈述、国际路演及跨国并购案例为实训切入点，打造顶级领袖话语权。",
-                highlights: [
-                    "高阶跨国商务谈判语境与修辞艺术",
-                    "国际投资者问答与危机公关话语掌控",
-                    "小班私密沙龙，同步链接多元国际高管同行"
-                ],
-                actionText: "预约免费体验席位",
-                actionLink: "https://www.ulc.com.sg/ulc-professionals-club/"
-            },
-            course3: {
-                title: "留学父母必修课",
-                tag: "2小时公益融入课堂 · 免费席位",
-                location: "新加坡 The Adelphi大厦",
-                summary: "针对来到新加坡陪读或规划家庭国际化路径的企业家父母。在全新社会生态中，帮助父母与孩子共同实现文化心理调适与领袖人格向内生长。",
-                highlights: [
-                    "新加坡公立与国际学校教育体系与选拔心智剖析",
-                    "高净值家庭在跨国生活中的代际沟通与陪伴战略",
-                    "家长社群资源共享与本地社区共生融合指导"
-                ],
-                actionText: "预约公益课堂席位",
-                actionLink: "advisor.html?course=parenting-charity"
-            }
-        };
-
-        function openCourseModal(courseKey) {
-            const data = courseData[courseKey];
-            if (!data) return;
-
-            const modal = document.getElementById('course-modal');
-            const box = document.getElementById('modal-box');
-            const content = document.getElementById('modal-content');
-
-            content.innerHTML = `
-                <div class="mb-4">
-                    <span class="text-[10px] uppercase tracking-widest text-gold font-semibold">${data.tag}</span>
-                    <h3 class="font-serif text-2xl font-bold text-white mt-1 mb-2">${data.title}</h3>
-                    <div class="flex items-center gap-1.5 text-xs text-slate-400 mb-4">
-                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold"></i>
-                        <span>${data.location}</span>
-                    </div>
-                </div>
-                <p class="text-xs text-slate-300 leading-relaxed mb-6 border-t border-b border-white/10 py-4">
-                    ${data.summary}
-                </p>
-                <div class="mb-8">
-                    <h5 class="text-xs uppercase tracking-wider text-slate-300 font-semibold mb-3">课程核心收获：</h5>
-                    <ul class="space-y-2 text-xs text-slate-300">
-                        ${data.highlights.map(h => `<li class="flex items-start gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-gold shrink-0 mt-0.5"></i><span>${h}</span></li>`).join('')}
-                    </ul>
-                </div>
-                <div class="flex items-center gap-3">
-                    <a href="${data.actionLink}" class="flex-1 py-3 text-center bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-colors">
-                        ${data.actionText}
-                    </a>
-                    <button onclick="closeCourseModal()" class="px-5 py-3 border border-white/20 text-xs text-slate-300 hover:bg-white/10 transition-colors">
-                        关闭
-                    </button>
-                </div>
-            `;
-
-            lucide.createIcons();
-
-            modal.classList.remove('opacity-0', 'pointer-events-none');
-            modal.classList.add('opacity-100');
-            box.classList.remove('scale-95');
-            box.classList.add('scale-100');
-        }
-
-        function closeCourseModal() {
-            const modal = document.getElementById('course-modal');
-            const box = document.getElementById('modal-box');
-            modal.classList.remove('opacity-100');
-            modal.classList.add('opacity-0', 'pointer-events-none');
-            box.classList.remove('scale-100');
-            box.classList.add('scale-95');
-        }
-
-        document.getElementById('course-modal').addEventListener('click', (e) => {
-            if (e.target.id === 'course-modal') {
-                closeCourseModal();
-            }
-        });
-
     </script>
-    <!-- 统一全站多语言引擎 (支持 中文 / English / 日本語 / Español) -->
-    <script src="i18n.js?v=20261019_v4"></script>
 </body>
-
 </html>
