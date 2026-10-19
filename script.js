@@ -1,190 +1,311 @@
+/**
+ * BORVAN SINGAPORE - High-Conversion Advisory & GTM Platform
+ * Production Interactive Controller & CRM Integration Script
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('.nav-links a, .scroll-down').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const targetHref = this.getAttribute('href');
-            
-            // Ignore links that point to other HTML pages
-            if (targetHref === '#' || targetHref.includes('.html')) {
-                return; // Let standard browser navigation happen
-            }
-            
-            // For same-page anchor links, do smooth scrolling
-            e.preventDefault();
-            try {
-                const targetElement = document.querySelector(targetHref);
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            } catch (err) {
-                console.error('Invalid selector:', targetHref);
-            }
-        });
-    });
-
-    // Navigation background change on scroll
-    const nav = document.querySelector('.architect-nav');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            nav.classList.add('scrolled');
-        } else {
-            nav.classList.remove('scrolled');
-        }
-    });
-
-    // Intersection Observer for scroll animations
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.15
-    };
-
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                // Optional: unobserve if you only want the animation to happen once
-                // observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    // Initial load animations for Hero Section
-    setTimeout(() => {
-        document.querySelectorAll('.hero .reveal-text').forEach(el => {
-            el.classList.add('active');
-        });
-    }, 100);
-
-    // Observe elements to reveal on scroll
-    document.querySelectorAll('.reveal-up, .section .reveal-text').forEach(el => {
-        revealObserver.observe(el);
-    });
-
-    // Simple Parallax Effect for Hero Background
-    const heroBg = document.querySelector('.hero-bg');
-    if (heroBg) {
-        window.addEventListener('scroll', () => {
-            const scrollPosition = window.pageYOffset;
-            if (scrollPosition < window.innerHeight) {
-                // Move background slightly to create parallax
-                heroBg.style.transform = `translate3d(0, ${scrollPosition * 0.4}px, 0)`;
-            }
-        });
+    // Initialize Lucide icons if available
+    if (window.lucide) {
+        window.lucide.createIcons();
     }
 
-    // Inject Mobile Floating Bottom Navigation
-    const injectMobileNav = () => {
-        const isAdvisor = window.location.pathname.includes('advisor.html');
-        if (isAdvisor) return;
-
-        const isIndex = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/') || !window.location.pathname.includes('.html');
-        const indexPrefix = isIndex ? '' : 'index.html';
-        const isPricing = window.location.pathname.includes('pricing.html');
-        
-        const mobileNavHtml = `
-            <div class="mobile-bottom-nav">
-                <div class="mobile-bottom-nav-inner">
-                    <a href="${indexPrefix}#course" class="mobile-nav-item" data-nav="course">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                        </svg>
-                        <span class="mobile-nav-text" data-i18n="nav.mission">课程</span>
-                    </a>
-                    <a href="advisor.html" class="mobile-nav-item ${isAdvisor ? 'active' : ''}" data-nav="advisor">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20 7h-3a2 2 0 0 1-2-2V2"></path>
-                            <path d="M9 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
-                            <path d="M10 10v4l3-2z"></path>
-                            <rect x="2" y="3" width="20" height="18" rx="2" ry="2"></rect>
-                        </svg>
-                        <span class="mobile-nav-text" data-i18n="nav.ecosystem">顾问</span>
-                    </a>
-                    <a href="pricing.html" class="mobile-nav-item ${isPricing ? 'active' : ''}" data-nav="pricing">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
-                            <line x1="7" y1="7" x2="7.01" y2="7"></line>
-                        </svg>
-                        <span class="mobile-nav-text" data-i18n="nav.pricing">报价</span>
-                    </a>
-                </div>
-            </div>
-        `;
-        
-        document.body.insertAdjacentHTML('beforeend', mobileNavHtml);
-        
-        // Translate the newly injected nav
-        if (typeof changeLanguage === 'function') {
-            const currentLang = localStorage.getItem('selectedLanguage') || 'zh';
-            changeLanguage(currentLang);
-        }
-        
-        // Hide on scroll down, show on scroll up logic
-        const mobileNav = document.querySelector('.mobile-bottom-nav');
-        if (mobileNav) {
-            let lastScrollY = window.scrollY;
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > lastScrollY && window.scrollY > 100) {
-                    mobileNav.classList.add('nav-hidden');
-                } else {
-                    mobileNav.classList.remove('nav-hidden');
-                }
-                lastScrollY = window.scrollY;
-            });
-        }
-    };
-    injectMobileNav();
-
-    // WeChat copy-to-clipboard functionality with custom toast
-    const toastMessages = {
-        zh: "微信号 'voicecoffee' 已复制到剪贴板，请打开微信添加",
-        en: "WeChat ID 'voicecoffee' has been copied to clipboard. Please open WeChat to add.",
-        es: "¡El ID de WeChat 'voicecoffee' ha sido copiado al portapapeles! Abra WeChat para agregar.",
-        de: "WeChat-ID 'voicecoffee' wurde in die Zwischenablage kopiert. Bitte öffnen Sie WeChat zum Hinzufügen.",
-        it: "L'ID WeChat 'voicecoffee' è stato copiato negli appunti. Apri WeChat per aggiungere."
-    };
-
-    function showToast(message) {
-        let toast = document.getElementById('custom-toast');
-        if (!toast) {
-            toast = document.createElement('div');
-            toast.id = 'custom-toast';
-            toast.className = 'custom-toast';
-            document.body.appendChild(toast);
-        }
-        toast.textContent = message;
-        toast.classList.add('show');
-        setTimeout(() => {
-            toast.classList.remove('show');
-        }, 3000);
-    }
-
-    const wechatBtn = document.getElementById('wechat-btn');
-    if (wechatBtn) {
-        wechatBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const wechatId = wechatBtn.getAttribute('data-wechat');
-            navigator.clipboard.writeText(wechatId).then(() => {
-                const currentLang = localStorage.getItem('selectedLanguage') || 'zh';
-                const msg = toastMessages[currentLang] || toastMessages['zh'];
-                showToast(msg);
-            }).catch(err => {
-                console.error('Failed to copy: ', err);
-                const fallbackMsg = {
-                    zh: "微信号：voicecoffee",
-                    en: "WeChat ID: voicecoffee",
-                    es: "ID de WeChat: voicecoffee",
-                    de: "WeChat-ID: voicecoffee",
-                    it: "ID WeChat: voicecoffee"
-                };
-                const currentLang = localStorage.getItem('selectedLanguage') || 'zh';
-                alert((fallbackMsg[currentLang] || fallbackMsg['zh']));
-            });
-        });
+    // Initialize CRM leads repository in localStorage if empty
+    if (!localStorage.getItem('borvan_crm_leads')) {
+        localStorage.setItem('borvan_crm_leads', JSON.stringify([]));
     }
 });
+
+/* ========================================================================= */
+/* 1. Modal Controllers                                                      */
+/* ========================================================================= */
+
+// Booking Modal
+function openBookingModal(source = 'Website Consultation') {
+    const modal = document.getElementById('booking-modal');
+    if (!modal) return;
+    const sourceInput = document.getElementById('book-source');
+    if (sourceInput) sourceInput.value = source;
+
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100');
+    const box = modal.querySelector('div');
+    if (box) {
+        box.classList.remove('scale-95');
+        box.classList.add('scale-100');
+    }
+}
+
+function closeBookingModal() {
+    const modal = document.getElementById('booking-modal');
+    if (!modal) return;
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.classList.remove('opacity-100');
+    const box = modal.querySelector('div');
+    if (box) {
+        box.classList.add('scale-95');
+        box.classList.remove('scale-100');
+    }
+}
+
+// Whitepaper Modal
+function openWhitepaperModal() {
+    const modal = document.getElementById('whitepaper-modal');
+    if (!modal) return;
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100');
+    const box = modal.querySelector('div');
+    if (box) {
+        box.classList.remove('scale-95');
+        box.classList.add('scale-100');
+    }
+}
+
+function closeWhitepaperModal() {
+    const modal = document.getElementById('whitepaper-modal');
+    if (!modal) return;
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.classList.remove('opacity-100');
+    const box = modal.querySelector('div');
+    if (box) {
+        box.classList.add('scale-95');
+        box.classList.remove('scale-100');
+    }
+}
+
+// WeChat Modal
+function openWechatModal() {
+    const modal = document.getElementById('wechat-modal');
+    if (!modal) return;
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100');
+    const box = modal.querySelector('div');
+    if (box) {
+        box.classList.remove('scale-95');
+        box.classList.add('scale-100');
+    }
+}
+
+function closeWechatModal() {
+    const modal = document.getElementById('wechat-modal');
+    if (!modal) return;
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modal.classList.remove('opacity-100');
+    const box = modal.querySelector('div');
+    if (box) {
+        box.classList.add('scale-95');
+        box.classList.remove('scale-100');
+    }
+}
+
+// Copy WeChat ID
+function copyWechatId() {
+    const wechatId = 'voicecoffee';
+    navigator.clipboard.writeText(wechatId).then(() => {
+        const copyText = document.getElementById('copy-text');
+        if (copyText) {
+            const original = copyText.innerText;
+            copyText.innerText = '已复制微信号！请打开微信添加';
+            copyText.parentElement.classList.replace('bg-[#07C160]', 'bg-gold');
+            copyText.parentElement.classList.replace('text-white', 'text-obsidian');
+            setTimeout(() => {
+                copyText.innerText = original;
+                copyText.parentElement.classList.replace('bg-gold', 'bg-[#07C160]');
+                copyText.parentElement.classList.replace('text-obsidian', 'text-white');
+            }, 3000);
+        }
+    }).catch(err => {
+        alert('请手动复制微信号：voicecoffee');
+    });
+}
+
+// Close modals when clicking outside
+window.addEventListener('click', (e) => {
+    ['booking-modal', 'whitepaper-modal', 'wechat-modal'].forEach(id => {
+        const modal = document.getElementById(id);
+        if (modal && e.target === modal) {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modal.classList.remove('opacity-100');
+            const box = modal.querySelector('div');
+            if (box) {
+                box.classList.add('scale-95');
+                box.classList.remove('scale-100');
+            }
+        }
+    });
+});
+
+/* ========================================================================= */
+/* 2. Interactive Lead Capture & CRM Pipeline Simulation                     */
+/* ========================================================================= */
+
+function handleDiagnosticSubmit(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('lead-name')?.value || '';
+    const company = document.getElementById('lead-company')?.value || '';
+    const industry = document.getElementById('lead-industry')?.value || '';
+    const country = document.getElementById('lead-country')?.value || '';
+    const contact = document.getElementById('lead-contact')?.value || '';
+
+    // Collect checked needs
+    const checkedNeeds = Array.from(document.querySelectorAll('input[name="needs"]:checked')).map(cb => cb.value);
+
+    // Calculate a simulated Readiness Score
+    let readinessScore = 72;
+    if (industry.includes('餐饮') || industry.includes('咖啡')) readinessScore += 12;
+    if (country.includes('新加坡')) readinessScore += 8;
+    if (checkedNeeds.length >= 2) readinessScore += 6;
+    if (readinessScore > 96) readinessScore = 96;
+
+    // Build CRM record
+    const leadRecord = {
+        id: 'LEAD-' + Date.now().toString().slice(-6),
+        name,
+        company,
+        industry,
+        country,
+        contact,
+        needs: checkedNeeds,
+        score: readinessScore,
+        createdAt: new Date().toLocaleString(),
+        status: 'NEW_OPPORTUNITY'
+    };
+
+    // Save to CRM Local Storage
+    try {
+        const existing = JSON.parse(localStorage.getItem('borvan_crm_leads') || '[]');
+        existing.unshift(leadRecord);
+        localStorage.setItem('borvan_crm_leads', JSON.stringify(existing));
+    } catch (err) {
+        console.warn('CRM storage notice:', err);
+    }
+
+    // Display Result in UI
+    const resultBox = document.getElementById('diagnostic-result');
+    const details = document.getElementById('result-details');
+    if (resultBox && details) {
+        details.innerHTML = `
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 p-4 bg-obsidian rounded-lg border border-gold/30 my-2">
+                <div>
+                    <span class="text-slate-400 block text-[10px]">出海准备度评分</span>
+                    <span class="text-2xl font-serif font-black text-gold">${readinessScore} / 100</span>
+                </div>
+                <div>
+                    <span class="text-slate-400 block text-[10px]">优先进场推荐国家</span>
+                    <span class="text-sm font-bold text-white">${country}</span>
+                </div>
+                <div>
+                    <span class="text-slate-400 block text-[10px]">推荐落地方案</span>
+                    <span class="text-sm font-bold text-emerald-400">专业版 (SGD 5,000)</span>
+                </div>
+            </div>
+            <p class="text-slate-300 mt-2">
+                <strong>诊断简评：</strong> ${company} 在 ${industry} 赛道具备良好的海外扩张潜能。针对您关注的 <em>${checkedNeeds.join('、') || '渠道与合规'}</em> 诉求，BORVAN新加坡顾问团队已建立专属档案(ID: ${leadRecord.id})，将在2小时内通过微信或电话与您对接详细对标案。
+            </p>
+        `;
+        resultBox.classList.remove('hidden');
+        resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+}
+
+// 30-min Booking Form Submit
+function handleBookingSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('book-name')?.value || '';
+    const phone = document.getElementById('book-phone')?.value || '';
+    const wechat = document.getElementById('book-wechat')?.value || '';
+    const time = document.getElementById('book-time')?.value || '待协商';
+    const source = document.getElementById('book-source')?.value || '官网预约';
+
+    const bookingRecord = {
+        type: 'APPOINTMENT',
+        name,
+        phone,
+        wechat,
+        time,
+        source,
+        timestamp: new Date().toLocaleString()
+    };
+
+    try {
+        const existing = JSON.parse(localStorage.getItem('borvan_crm_leads') || '[]');
+        existing.unshift(bookingRecord);
+        localStorage.setItem('borvan_crm_leads', JSON.stringify(existing));
+    } catch (err) {}
+
+    alert(`感谢您的预约，${name}！\n\n已成功预约时段：${time}\nBORVAN 顾问将在微信/电话(${phone})向您发送会议链接及参会材料。`);
+    closeBookingModal();
+}
+
+// Whitepaper Form Submit
+function handleWhitepaperSubmit(e) {
+    e.preventDefault();
+    const contact = document.getElementById('wp-contact')?.value || '';
+    alert(`《2026中国企业低风险进入东盟与新加坡市场实战白皮书》(PDF) 正在为您生成。\n已将完整版下载链接发送至：${contact}！`);
+    closeWhitepaperModal();
+    downloadInstantWhitepaper();
+}
+
+function downloadInstantWhitepaper() {
+    const textContent = `=====================================================
+BORVAN SINGAPORE · 2026 东盟市场进入与企业增长实战白皮书
+=====================================================
+核心主张：客户不购买理念，客户购买结果。
+帮助中国企业低风险进入新加坡及东盟市场。
+
+第一部分：中国企业出海五大认知雷区
+1. 找不到可靠合作伙伴（信息断层，遭遇皮包中介）
+2. 不了解当地市场（生搬硬套国内打法）
+3. 缺乏渠道资源（打不进主流连锁与商超采销）
+4. 法律合规风险（准入牌照SFA/HSA、雇佣法案、税务）
+5. 投入高但回报不确定（单店选址盲目，高租金拖垮现金流）
+
+第二部分：东盟进场优先级排序 (GTM Strategy)
+- 新加坡 (HQ Hub · The Adelphi)：商业辐射极与品牌高地
+- 马来西亚 (KL/Johor)：双语供应链与清真食品第一跳
+- 印度尼西亚 (Jakarta)：万亿人口消费红利
+- 泰国/越南 (BKK/HCMC)：高频消费与轻工业制造协同
+
+第三部分：BORVAN 旗舰出海评估体系
+- 基础版 (SGD 2,000)
+- 专业版 (SGD 5,000) [企业首选]
+- 企业版 (SGD 15,000+)
+
+官方咨询对接：
+总部地址：The Adelphi, 1 Coleman St, Singapore 179803
+WhatsApp: +65 8732 7804
+官方微信: voicecoffee
+官方邮箱: iencen@yahoo.com
+官方网址: https://borvan.sg
+=====================================================`;
+
+    const blob = new Blob([textContent], { type: 'text/plain;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'BORVAN_ASEAN_Market_Entry_Whitepaper_2026.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+/* ========================================================================= */
+/* 3. Bilingual Language Toggle (ZH <-> EN)                                  */
+/* ========================================================================= */
+
+let currentLang = 'zh';
+
+function toggleLanguage() {
+    currentLang = (currentLang === 'zh') ? 'en' : 'zh';
+    const langText = document.getElementById('lang-text');
+    if (langText) langText.innerText = (currentLang === 'zh') ? 'EN' : '中';
+
+    // Update main headings and core CTAs if in index.html
+    const heroTitle = document.querySelector('h1');
+    if (heroTitle) {
+        if (currentLang === 'en') {
+            heroTitle.innerHTML = `Empowering Chinese Enterprises to<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-gold via-yellow-200 to-gold-light">Enter ASEAN Markets with Low Risk</span>`;
+        } else {
+            heroTitle.innerHTML = `帮助中国企业<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-gold via-yellow-200 to-gold-light">低风险进入东盟市场</span>`;
+        }
+    }
+}

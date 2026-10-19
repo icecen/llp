@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程中心 (Course Center) | BORVAN SINGAPORE · 东盟出海增长实战</title>
+    <meta name="description" content="BORVAN东盟出海课程中心：涵盖东盟市场进入、国际化品牌建设、AI驱动增长、领导力与组织升级四大课程矩阵。上课地址：新加坡CBD The Adelphi大厦。">
+    <meta name="keywords" content="东盟市场进入课程,新加坡商务融入课,出海高管培训,国际化品牌建设,AI出海增长">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://borvan.sg/courses.html">
+    <meta property="og:title" content="课程中心 | BORVAN SINGAPORE">
+    <meta property="og:description" content="赋能创始人与出海业务高管，系统掌握东盟商业落地实战打法。">
+    <meta property="og:image" content="https://borvan.sg/logo.png">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#070B12',
+                        navyDark: '#0D1525',
+                        slateDark: '#121C2F',
+                        slateCard: '#17233B',
+                        primaryBlue: '#464feb',
+                        gold: {
+                            light: '#EAD7AF',
+                            DEFAULT: '#C5A880',
+                            dark: '#9E8056',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', '"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                        serif: ['"Playfair Display"', '"Noto Serif SC"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & Lucide -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* CSS from user prompt specification */
+        a { text-decoration: none; color: #464feb; }
+        tr th, tr td { border: 1px solid #e6e6e6; }
+        tr th { background-color: #f5f5f5; }
+
+        .glass-panel {
+            background: rgba(18, 28, 47, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-button {
+            box-shadow: 0 0 25px rgba(197, 168, 128, 0.35);
+            transition: all 0.3s ease;
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 35px rgba(197, 168, 128, 0.6);
+            transform: translateY(-2px);
+        }
+        .badge-pill {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.3rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: rgba(197, 168, 128, 0.12);
+            border: 1px solid rgba(197, 168, 128, 0.3);
+            color: #EAD7AF;
+        }
+    </style>
+</head>
+
+<body class="bg-obsidian text-slate-200 antialiased selection:bg-gold/30">
+
+    <!-- Nav -->
+    <nav class="sticky top-0 z-40 bg-obsidian/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center text-obsidian font-black text-lg shadow-md">
+                    B
+                </div>
+                <div>
+                    <div class="font-serif font-black text-xl tracking-wider text-white">BORVAN</div>
+                    <div class="text-[10px] text-gold tracking-widest uppercase font-medium">ASEAN Market Entry · Singapore</div>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="index.html" class="text-slate-300 hover:text-gold transition">首页</a>
+                <a href="assessment.html" class="text-slate-300 hover:text-gold transition">出海评估</a>
+                <a href="courses.html" class="text-white hover:text-gold transition font-bold text-gold">课程中心</a>
+                <a href="cases.html" class="text-slate-300 hover:text-gold transition">标杆案例</a>
+                <a href="index.html#why-borvan" class="text-slate-300 hover:text-gold transition">核心优势</a>
+                <a href="index.html#founder" class="text-slate-300 hover:text-gold transition">顾问团队</a>
+            </div>
+            <button onclick="openBookingModal('课程中心顶部预约')" class="px-5 py-2.5 bg-gold hover:bg-gold-light text-obsidian text-xs uppercase tracking-wider font-bold rounded-md glow-button">
+                咨询课程席位
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="py-20 bg-gradient-to-b from-navyDark via-obsidian to-obsidian border-b border-white/10 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="badge-pill mb-3">高管与出海业务负责人实战阵地</div>
+            <h1 class="text-4xl sm:text-5xl font-serif font-black text-white mb-6 leading-tight">
+                BORVAN 课程中心<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold via-yellow-200 to-gold-light">
+                    东盟商业落地与高管实战体系
+                </span>
+            </h1>
+            <p class="text-base sm:text-lg text-slate-300 font-light max-w-2xl mx-auto leading-relaxed mb-8">
+                汇聚新加坡CBD实地商学资源、CUC产业MBA导师与东盟政商专家。拒绝学院式灌输，以战代练，带您吃透东盟经商生态与本地化变现法则。
+            </p>
+            <div class="flex items-center justify-center gap-4 text-xs text-gold">
+                <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4"></i> 上课地点：新加坡 The Adelphi 大厦 / 线上同步</span>
+                <span>·</span>
+                <span class="flex items-center gap-1.5"><i data-lucide="award" class="w-4 h-4"></i> 颁发国际商业结业证书</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 4 Course Categories Section -->
+    <section class="py-20 bg-navyDark border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+            
+            <!-- Category 1: 东盟市场进入 -->
+            <div id="course-cat1" class="glass-panel p-8 sm:p-12 rounded-2xl border-t-4 border-t-gold">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8 pb-6 border-b border-white/10">
+                    <div>
+                        <span class="badge-pill mb-2">课程分类 01</span>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white">东盟市场进入实战营 (Singapore GTM Integration)</h2>
+                        <p class="text-xs text-slate-400 mt-1">聚焦进入战略、法规牌照、本地渠道突破与试错防雷</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-serif font-bold text-gold">SGD 1,800</div>
+                        <div class="text-[11px] text-slate-400">9个课时 (共3次高强度研讨与实操)</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-xs">
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider mb-2 text-slate-300">【课程介绍】</h4>
+                        <p class="text-slate-400 leading-relaxed">
+                            本课程专为计划进入新加坡及东盟的创始人设计。从东盟十国经济画像、新加坡CBD商业惯例、SFA/HSA食品与商品准入标准，到本地渠道对接策略，全维度打通出海第一站认知。
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider mb-2 text-slate-300">【适合对象】</h4>
+                        <ul class="text-slate-400 space-y-1.5">
+                            <li>• 正在考虑进军东盟的中国民营企业创始人与CEO</li>
+                            <li>• 企业海外事业部总经理及出海业务操盘手</li>
+                            <li>• 需要在新加坡设立区域总部的投资者与高管</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider mb-2 text-slate-300">【学习成果】</h4>
+                        <ul class="text-slate-400 space-y-1.5">
+                            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold shrink-0"></i> 掌握东盟5大主要国家渠道进场路径</li>
+                            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold shrink-0"></i> 独立输出一份契合本企业的90天出海行动计划</li>
+                            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold shrink-0"></i> 直连新加坡CBD本地商会及分销渠道人脉圈</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-end gap-4">
+                    <button onclick="openBookingModal('报名：东盟市场进入实战营')" class="px-6 py-3 bg-gold hover:bg-gold-light text-obsidian font-bold text-xs uppercase tracking-wider rounded-lg glow-button">
+                        立即报名本课程 (SGD 1,800)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Category 2: 国际化品牌建设 -->
+            <div id="course-cat2" class="glass-panel p-8 sm:p-12 rounded-2xl border-t-4 border-t-primaryBlue">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8 pb-6 border-b border-white/10">
+                    <div>
+                        <span class="px-2.5 py-1 text-xs rounded-full bg-primaryBlue/20 text-indigo-300 font-semibold border border-primaryBlue/40 mb-2 inline-block">课程分类 02 · 联名打造</span>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white">国际化品牌建设与商业英文表达 (ULC 联合交付)</h2>
+                        <p class="text-xs text-slate-400 mt-1">联合知名学术机构 United Language Ctr，打通品牌跨文化叙事与商务谈判</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-serif font-bold text-gold">SGD 3,000</div>
+                        <div class="text-[11px] text-slate-400">40个课时 (共20次深度沉浸式俱乐部研修)</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-xs">
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider mb-2 text-slate-300">【课程介绍】</h4>
+                        <p class="text-slate-400 leading-relaxed">
+                            出海失败往往不是因为产品技术，而是因为“讲不好本地人听得懂的品牌故事”。本课程由OrientDesign品牌专家与ULC资深跨文化导师共同授课，系统重塑企业全球品牌形象。
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider mb-2 text-slate-300">【适合对象】</h4>
+                        <ul class="text-slate-400 space-y-1.5">
+                            <li>• 品牌CMO、市场公关总监、海外营销核心骨干</li>
+                            <li>• 需要在东南亚政商商务宴请与路演中发声的企业主</li>
+                            <li>• 寻求国际风投(VC/PE)关注的科技出海项目代表</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider mb-2 text-slate-300">【学习成果】</h4>
+                        <ul class="text-slate-400 space-y-1.5">
+                            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-primaryBlue shrink-0"></i> 重构一套符合国际高净值审美的Brand Deck</li>
+                            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-primaryBlue shrink-0"></i> 自如开展高管级英文商务谈判与答辩</li>
+                            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-primaryBlue shrink-0"></i> 获得ULC新加坡专业商务俱乐部会员资质</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-end gap-4">
+                    <button onclick="openBookingModal('报名：国际化品牌建设课程')" class="px-6 py-3 bg-primaryBlue hover:bg-indigo-600 text-white font-bold text-xs uppercase tracking-wider rounded-lg glow-blue-button">
+                        立即报名本课程 (SGD 3,000)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Category 3: AI驱动增长 -->
+            <div id="course-cat3" class="glass-panel p-8 sm:p-12 rounded-2xl border-t-4 border-t-cyan-500">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8 pb-6 border-b border-white/10">
+                    <div>
+                        <span class="px-2.5 py-1 text-xs rounded-full bg-cyan-500/20 text-cyan-300 font-semibold border border-cyan-500/40 mb-2 inline-block">课程分类 03 · 前沿赋能</span>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white">AI驱动出海商情挖掘与敏捷增长 (AI Growth Engine)</h2>
+                        <p class="text-xs text-slate-400 mt-1">运用新一代商业AI大模型，低成本逆向推演东盟竞对与客户画像</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-serif font-bold text-gold">SGD 2,400</div>
+                        <div class="text-[11px] text-slate-400">12个课时 (含AI实操工作坊与Prompt库赠送)</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-xs">
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider mb-2 text-slate-300">【课程介绍】</h4>
+                        <p class="text-slate-400 leading-relaxed">
+                            如何用不到1/10的人力与时间成本，完成东盟多国海量舆情扫描、本地爆款素材生成与竞品定价监测？本课程传授BORVAN自用的AI商业出海分析工作流。
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider mb-2 text-slate-300">【适合对象】</h4>
+                        <ul class="text-slate-400 space-y-1.5">
+                            <li>• 跨境电商运营总监、数字营销负责人</li>
+                            <li>• 渴望借助AI工具武装出海团队的企业中高层</li>
+                            <li>• 现代科技与消费品类独立站操盘手</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider mb-2 text-slate-300">【学习成果】</h4>
+                        <ul class="text-slate-400 space-y-1.5">
+                            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400 shrink-0"></i> 搭建企业专属的东盟竞对AI实时监控仪表盘</li>
+                            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400 shrink-0"></i> 效率提升5倍的多语言本土化营销内容流</li>
+                            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400 shrink-0"></i> 获取BORVAN出海AI提示词工程全套资产包</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-end gap-4">
+                    <button onclick="openBookingModal('报名：AI驱动出海增长课程')" class="px-6 py-3 bg-slateCard hover:bg-slateDark border border-cyan-500 text-cyan-300 font-bold text-xs uppercase tracking-wider rounded-lg">
+                        立即报名本课程 (SGD 2,400)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Category 4: 领导力与组织升级 -->
+            <div id="course-cat4" class="glass-panel p-8 sm:p-12 rounded-2xl border-t-4 border-t-amber-500">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8 pb-6 border-b border-white/10">
+                    <div>
+                        <span class="px-2.5 py-1 text-xs rounded-full bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 mb-2 inline-block">课程分类 04 · 闭门私董会</span>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white">跨国组织架构与海外落地陪跑营 (Org Scale & Coaching)</h2>
+                        <p class="text-xs text-slate-400 mt-1">解决出海团队外派管不动、文化冲突大、财税合规断层等底层组织顽疾</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-serif font-bold text-gold">SGD 4,500</div>
+                        <div class="text-[11px] text-slate-400">16课时 + 3个月常年导师一对一跟踪咨询</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-xs">
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider mb-2 text-slate-300">【课程介绍】</h4>
+                        <p class="text-slate-400 leading-relaxed">
+                            由BORVAN联合创始人董仙富与执行合伙人西明主讲。深度拆解跨国敏捷组织设计、海外合伙人激励机制、外籍雇佣契约与企业教练技术，打造坚不可摧的全球化远征军。
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider mb-2 text-slate-300">【适合对象】</h4>
+                        <ul class="text-slate-400 space-y-1.5">
+                            <li>• 控股集团董事长、总裁、HRVP及组织发展负责人</li>
+                            <li>• 面临海外子公司管理失控、人才流失的企业领袖</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider mb-2 text-slate-300">【学习成果】</h4>
+                        <ul class="text-slate-400 space-y-1.5">
+                            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i> 制定合规且高激励性的跨国团队股权与考核方案</li>
+                            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i> 建立两地无缝联动的敏捷周报与决策权责清单</li>
+                            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0"></i> 尊享全年新加坡高端企业家私董闭门交流权</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-end gap-4">
+                    <button onclick="openBookingModal('报名：组织领导力升级营')" class="px-6 py-3 bg-gold hover:bg-gold-light text-obsidian font-bold text-xs uppercase tracking-wider rounded-lg glow-button">
+                        申请席位甄选 (SGD 4,500)
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-obsidian text-slate-400 py-12 border-t border-white/10 text-xs text-center">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <div class="font-serif font-bold text-white text-base">BORVAN SINGAPORE</div>
+            <div>上课地点：The Adelphi, 1 Coleman St, Singapore 179803 | WhatsApp: +65 8732 7804 | 微信: voicecoffee</div>
+            <div>&copy; 2026 BORVAN SINGAPORE. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-navyDark border border-gold/40 rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl scale-95 transition-transform duration-300">
+            <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white"><i data-lucide="x" class="w-6 h-6"></i></button>
+            <div class="mb-6">
+                <span class="badge-pill mb-2">课程报名与咨询</span>
+                <h3 class="text-2xl font-serif font-bold text-white mb-2">预约课程顾问</h3>
+            </div>
+            <form onsubmit="handleBookingSubmit(event)" class="space-y-4 text-xs">
+                <div>
+                    <label class="block text-slate-300 font-semibold mb-1">姓名 *</label>
+                    <input type="text" id="book-name" required placeholder="您的姓名" class="w-full px-3 py-2.5 bg-obsidian border border-white/15 rounded text-white text-xs">
+                </div>
+                <div>
+                    <label class="block text-slate-300 font-semibold mb-1">联系电话 / WhatsApp *</label>
+                    <input type="text" id="book-phone" required placeholder="+65 或 中国手机号" class="w-full px-3 py-2.5 bg-obsidian border border-white/15 rounded text-white text-xs">
+                </div>
+                <div>
+                    <label class="block text-slate-300 font-semibold mb-1">咨询课程</label>
+                    <input type="text" id="book-source" readonly value="课程中心咨询" class="w-full px-3 py-2.5 bg-obsidian/50 border border-white/10 rounded text-gold text-xs">
+                </div>
+                <button type="submit" class="w-full py-3 bg-gold text-obsidian font-bold text-xs uppercase tracking-wider rounded glow-button mt-4">确认提交</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- WeChat Modal -->
+    <div id="wechat-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-navyDark border border-[#07C160]/50 rounded-2xl max-w-sm w-full p-6 text-center relative shadow-2xl scale-95 transition-transform duration-300">
+            <button onclick="closeWechatModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+            <h3 class="text-lg font-bold text-white mb-1">添加顾问微信</h3>
+            <div class="p-4 bg-obsidian rounded-xl border border-white/10 my-4">
+                <div class="text-xl font-mono font-bold text-white mb-2">voicecoffee</div>
+                <button onclick="copyWechatId()" class="px-4 py-1.5 bg-[#07C160] text-white font-bold text-xs rounded transition flex items-center justify-center gap-1.5 mx-auto">
+                    <i data-lucide="copy" class="w-3.5 h-3.5"></i><span id="copy-text">复制微信号</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Dock -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-3">
+        <a href="https://wa.me/6587327804" target="_blank" class="flex items-center gap-2 px-4 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-full shadow-2xl transition hover:scale-105 text-xs">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span class="hidden sm:inline">WhatsApp 咨询 (+65 8732 7804)</span>
+        </a>
+        <button onclick="openWechatModal()" class="flex items-center gap-2 px-4 py-3 bg-[#07C160] hover:bg-[#06ad56] text-white font-bold rounded-full shadow-2xl transition hover:scale-105 text-xs">
+            <i data-lucide="smartphone" class="w-5 h-5"></i>
+            <span class="hidden sm:inline">微信咨询 (voicecoffee)</span>
+        </button>
+        <button onclick="openBookingModal('课程页浮动预约')" class="flex items-center gap-2 px-5 py-3.5 bg-gold hover:bg-gold-light text-obsidian font-black rounded-full shadow-2xl glow-button hover:scale-105 transition text-xs uppercase">
+            <i data-lucide="calendar" class="w-5 h-5"></i>
+            <span>预约30分钟诊断</span>
+        </button>
+    </div>
+
+    <script src="script.js?v=20261019_cro"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
